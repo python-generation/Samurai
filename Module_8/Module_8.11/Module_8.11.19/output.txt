@@ -1,14 +1,41 @@
 # OUTPUT DATA:
 
 # TEST_1:
-{'Atos': (78510.54, 78800), 'ХайТэк': (78958.93, 77050.0), 'Инлайн Груп': (83982.7, 88350.0)}
+['Valera', 'Timur', 'Rustam', 'Artur']
+[(1, 'Valera'), (2, 'Timur'), (3, 'Rustam'), (4, 'Artur')]
 
 # TEST_2:
-{'Itransition': (80084.52, 76900.0)}
+Query([User(1, 'Valera', 35), User(4, 'Artur', 41)])
+Query([User(4, 'Artur', 41)])
 
 # TEST_3:
-{'IBS': (82393.04, 82100), 'Ростелеком': (81133.23, 82500.0)}
+Query([User(4, 'Artur', 41), User(3, 'Rustam', 22), User(2, 'Timur', 32), User(1, 'Valera', 35)])
+['Valera', 'Timur', 'Rustam', 'Artur']
 
 # TEST_4:
-{'Philax': (81582.52, 83750.0), 'Эвотор': (80148.05, 77800), 'TerraLink': (79975.66, 80100), 'Лига Цифровой Экономики': (79225.73, 78700.0)}
+[('Valera', 35), ('Timur', 32), ('Rustam', 22), ('Artur', 41)]
+
+# TEST_5:
+Query([User(1, 'Valera', 35), User(4, 'Artur', 41)])
+Query([User(3, 'Rustam', 22)])
+Query([User(1, 'Valera', 35), User(2, 'Timur', 32), User(4, 'Artur', 41)])
+Query([User(2, 'Timur', 32), User(3, 'Rustam', 22)])
+Query([User(1, 'Valera', 35), User(3, 'Rustam', 22), User(4, 'Artur', 41)])
+Query([User(2, 'Timur', 32)])
+
+# TEST_6:
+[(35, 'Valera'), (41, 'Artur')]
+[(22, 'Rustam')]
+[(35, 'Valera'), (32, 'Timur'), (41, 'Artur')]
+[(32, 'Timur'), (22, 'Rustam')]
+[(35, 'Valera'), (22, 'Rustam'), (41, 'Artur')]
+[(32, 'Timur')]
+
+# TEST_7:
+Query([Person('Anna', 'Ivanova', 34, 'f'), Person('Anna', 'Ivanova', 32, 'f'), Person('Olga', 'Ivanova', 32, 'f'), Person('Andrey', 'Petrov', 35, 'm'), Person('Ivan', 'Petrov', 32, 'm')])
+Query([Person('Ivan', 'Petrov', 32, 'm'), Person('Anna', 'Ivanova', 34, 'f'), Person('Andrey', 'Petrov', 35, 'm'), Person('Anna', 'Ivanova', 32, 'f'), Person('Olga', 'Ivanova', 32, 'f')])
+
+# TEST_8:
+Query([Person('Anna', 'Ivanova', 34, 'f'), Person('Andrey', 'Petrov', 35, 'm')])
+Query([Person('Ivan', 'Petrov', 32, 'm'), Person('Anna', 'Ivanova', 34, 'f'), Person('Andrey', 'Petrov', 35, 'm'), Person('Anna', 'Ivanova', 32, 'f'), Person('Olga', 'Ivanova', 32, 'f')])
 

@@ -1,91 +1,148 @@
 # OUTPUT DATA:
 
 # TEST_1:
-[DEBUG]: div(a=1, b=2)
-[DEBUG]: div -> 0.5
-0.5
+Отчет о функции add:
+
+Количество строк: 1
+
+Строка документации:
+Функция выполняет сложение двух чисел
+
+Исходный код функции:
+def add(a, b):
+    """Функция выполняет сложение двух чисел"""
+    return a + b
 
 # TEST_2:
-[DEBUG]: div(a=1, b=0)
-[DEBUG]: div -> На ноль делить нельзя.
-На ноль делить нельзя.
+Отчет о функции div:
+
+Количество строк: 3
+
+Строка документации:
+None
+
+Исходный код функции:
+def div(a, b):
+    if b == 0:
+        raise ZeroDivisionError('На ноль делить нельзя.')
+
+    return a / b
 
 # TEST_3:
-[INFO]: greet(name='Валерий', greeting='Привет')
-[INFO]: greet -> Привет, Валерий!
-Привет, Валерий!
-[INFO]: greet(name='Тимур', greeting='Здравствуйте')
-[INFO]: greet -> Здравствуйте, Тимур!
-Здравствуйте, Тимур!
+Отчет о функции foo1:
+
+Количество строк: 1
+
+Строка документации:
+Функция не готова
+
+Исходный код функции:
+def foo1():
+    """Функция не готова"""
+    pass
 
 # TEST_4:
-[WARNING]: get_pi()
-[WARNING]: get_pi -> 3.14159
-3.14159
+Отчет о функции foo2:
+
+Количество строк: 3
+
+Строка документации:
+Функция выполняет
+сложение двух чисел
+
+Исходный код функции:
+def foo2():
+    """Функция выполняет
+    сложение двух чисел"""
+    a = 1
+    b = 2
+    return a + b
 
 # TEST_5:
-[DEBUG]: combine(args=(1, 2, 3), kwargs={'a': 10, 'b': 20})
-[DEBUG]: combine -> ((1, 2, 3), {'a': 10, 'b': 20})
-((1, 2, 3), {'a': 10, 'b': 20})
+Отчет о функции foo3:
+
+Количество строк: 4
+
+Строка документации:
+None
+
+Исходный код функции:
+def foo3():
+    x = 1
+    y = 2
+    z = 3
+    return x + y + z
 
 # TEST_6:
-[DEBUG]: square_sum(x=2, y=3)
-[DEBUG]: multiply(a=2, b=2)
-[DEBUG]: multiply -> 4
-[DEBUG]: multiply(a=3, b=3)
-[DEBUG]: multiply -> 9
-[DEBUG]: square_sum -> 13
-13
+Отчет о функции foo4:
+
+Количество строк: 6
+
+Строка документации:
+Строка документации
+
+Исходный код функции:
+def foo4():
+    """Строка документации"""
+
+    def inner1():
+        pass
+
+    def inner2():
+        return "ok"
+
+    inner1()
+    return inner2()
 
 # TEST_7:
-[INFO]: add(a=5, b=3)
-[INFO]: add -> 8
-8
-[ERROR]: sub(a=10, b=7)
-[ERROR]: sub -> 3
-3
-[CRITICAL]: mul(a=4, b=6)
-[CRITICAL]: mul -> 24
-24
+Отчет о функции foo5:
+
+Количество строк: 6
+
+Строка документации:
+Строка документации
+
+Исходный код функции:
+def foo5():
+    """Строка документации"""
+    s = 0
+    for i in range(5):
+        s += i
+    if s > 5:
+        s = s * 2
+    return s
 
 # TEST_8:
-[DEBUG]: power(base=3, exp=2)
-[DEBUG]: power -> 9
-9
-[DEBUG]: power(base=2, exp=-1)
-[DEBUG]: power -> Отрицательная степень недопустима
-Отрицательная степень недопустима
+Отчет о функции foo6:
+
+Количество строк: 5
+
+Строка документации:
+Строка документации
+
+Исходный код функции:
+def foo6():
+    """Строка документации"""
+
+    # это комментарий
+    x = 5
+
+    # ещё комментарий
+    y = 10
+
+    return x * y
 
 # TEST_9:
-[WARNING]: concat(a='Hello, ', b='world!')
-[WARNING]: concat -> Hello, world!
-Hello, world!
+Отчет о функции format_text:
 
-# TEST_10:
-[CRITICAL]: outer(x=10)
-[ERROR]: risky_div(a=10, b=0)
-[ERROR]: risky_div -> На ноль делить нельзя.
-[CRITICAL]: outer -> На ноль делить нельзя.
-Перехват ошибки выполнен.
+Количество строк: 2
 
-# TEST_11:
-[ERROR]: run()
-[INFO]: calc_expression(x=2, y=3)
-[DEBUG]: calc_sum(a=2, b=3)
-[DEBUG]: calc_sum -> 5
-[INFO]: calc_expression -> 25
-Результат: 25
-[ERROR]: run -> 25
+Строка документации:
+Функция форматирования текста
 
-# TEST_12:
-[CRITICAL]: step3(x=6)
-[INFO]: step2(x=6)
-[DEBUG]: step1(x=6)
-[DEBUG]: step1 -> 12
-[INFO]: step2 -> 13
-[CRITICAL]: step3 -> Слишком большое значение!
-Слишком большое значение!
-
-# TEST_13:
-Результат: 25
+Исходный код функции:
+@italic
+def format_text(text):
+    """Функция форматирования текста"""
+    return f'Text: {text}'
 

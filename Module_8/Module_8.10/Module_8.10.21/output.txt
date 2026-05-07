@@ -1,0 +1,91 @@
+# OUTPUT DATA:
+
+# TEST_1:
+[DEBUG]: div(a=1, b=2)
+[DEBUG]: div -> 0.5
+0.5
+
+# TEST_2:
+[DEBUG]: div(a=1, b=0)
+[DEBUG]: div -> На ноль делить нельзя.
+На ноль делить нельзя.
+
+# TEST_3:
+[INFO]: greet(name='Валерий', greeting='Привет')
+[INFO]: greet -> Привет, Валерий!
+Привет, Валерий!
+[INFO]: greet(name='Тимур', greeting='Здравствуйте')
+[INFO]: greet -> Здравствуйте, Тимур!
+Здравствуйте, Тимур!
+
+# TEST_4:
+[WARNING]: get_pi()
+[WARNING]: get_pi -> 3.14159
+3.14159
+
+# TEST_5:
+[DEBUG]: combine(args=(1, 2, 3), kwargs={'a': 10, 'b': 20})
+[DEBUG]: combine -> ((1, 2, 3), {'a': 10, 'b': 20})
+((1, 2, 3), {'a': 10, 'b': 20})
+
+# TEST_6:
+[DEBUG]: square_sum(x=2, y=3)
+[DEBUG]: multiply(a=2, b=2)
+[DEBUG]: multiply -> 4
+[DEBUG]: multiply(a=3, b=3)
+[DEBUG]: multiply -> 9
+[DEBUG]: square_sum -> 13
+13
+
+# TEST_7:
+[INFO]: add(a=5, b=3)
+[INFO]: add -> 8
+8
+[ERROR]: sub(a=10, b=7)
+[ERROR]: sub -> 3
+3
+[CRITICAL]: mul(a=4, b=6)
+[CRITICAL]: mul -> 24
+24
+
+# TEST_8:
+[DEBUG]: power(base=3, exp=2)
+[DEBUG]: power -> 9
+9
+[DEBUG]: power(base=2, exp=-1)
+[DEBUG]: power -> Отрицательная степень недопустима
+Отрицательная степень недопустима
+
+# TEST_9:
+[WARNING]: concat(a='Hello, ', b='world!')
+[WARNING]: concat -> Hello, world!
+Hello, world!
+
+# TEST_10:
+[CRITICAL]: outer(x=10)
+[ERROR]: risky_div(a=10, b=0)
+[ERROR]: risky_div -> На ноль делить нельзя.
+[CRITICAL]: outer -> На ноль делить нельзя.
+Перехват ошибки выполнен.
+
+# TEST_11:
+[ERROR]: run()
+[INFO]: calc_expression(x=2, y=3)
+[DEBUG]: calc_sum(a=2, b=3)
+[DEBUG]: calc_sum -> 5
+[INFO]: calc_expression -> 25
+Результат: 25
+[ERROR]: run -> 25
+
+# TEST_12:
+[CRITICAL]: step3(x=6)
+[INFO]: step2(x=6)
+[DEBUG]: step1(x=6)
+[DEBUG]: step1 -> 12
+[INFO]: step2 -> 13
+[CRITICAL]: step3 -> Слишком большое значение!
+Слишком большое значение!
+
+# TEST_13:
+Результат: 25
+

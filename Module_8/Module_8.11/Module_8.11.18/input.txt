@@ -1,17 +1,47 @@
 # INPUT DATA:
 
 # TEST_1:
-print(get_most_common('deniro.csv', 2))
+class User:
+    def __init__(self, name, active):
+        self.name = name
+        self.active = active
+
+    def is_valid(self):
+        return isinstance(self.name, str) and self.name != ''
+
+    def __repr__(self):
+        return f'User({self.name!r}, {self.active})'
+
+
+users = [
+    User('', True),
+    User('Timur', False),
+    User('Valera', True),
+]
+
+print(get_active_and_valid(users))
 
 # TEST_2:
-print(get_most_common('students.csv', 1))
+class Age:
+    def __init__(self, age, active):
+        self.age = age
+        self.active = active
 
-# TEST_3:
-print(get_most_common('deniro.csv', 3))
+    def is_valid(self):
+        return 0 <= self.age < 101
 
-# TEST_4:
-print(get_most_common('deniro.csv', 1))
+    def __repr__(self):
+        return f'Age({self.age}, {self.active}'
 
-# TEST_5:
-print(get_most_common('students.csv', 2))
+
+ages = [
+    Age(-1, True),
+    Age(10, True),
+    Age(30, False),
+    Age(70, False),
+    Age(99, True),
+    Age(101, True)
+]
+
+print(get_active_and_valid(ages))
 

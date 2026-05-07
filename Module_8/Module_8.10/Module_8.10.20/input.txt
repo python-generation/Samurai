@@ -1,0 +1,155 @@
+# INPUT DATA:
+
+# TEST_1:
+@strict
+def add(a: int, b: int) -> int:
+    return a + b
+
+print(add(1, 2))
+
+# TEST_2:
+@strict
+def add(a: int, b: int) -> int:
+    return a + b
+
+try:
+    print(add(1, '2'))
+except TypeError as e:
+    print(e)
+
+# TEST_3:
+@strict
+def add(a, b: int) -> int:
+    return a + b
+
+try:
+    print(add(1, 2))
+except AnnotationError as e:
+    print(e)
+
+# TEST_4:
+@strict
+def add(a: int, b: int):
+    return a + b
+
+try:
+    print(add(1, 2))
+except AnnotationError as e:
+    print(e)
+
+# TEST_5:
+@strict
+def add(a: int, b: int) -> int:
+    return float(a + b)
+
+try:
+    print(add(1, 2))
+except TypeError as e:
+    print(e)
+
+# TEST_6:
+@strict
+def add(a, b):
+    return float(a + b)
+
+try:
+    print(add(1, 2))
+except Exception as e:
+    print(e)
+
+# TEST_7:
+@strict
+def concat(a, b: str):
+    return a + b
+
+try:
+    print(concat('abc', 'def'))
+except AnnotationError as e:
+    print(e)
+
+# TEST_8:
+@strict
+def concat(a: str, b: str) -> str:
+    return a + b
+
+try:
+    print(concat(2, 3))
+except TypeError as e:
+    print(e)
+
+# TEST_9:
+@strict
+def process(data: list) -> list:
+    return sum(data)
+
+try:
+    print(process([1, 2, 3]))
+except TypeError as e:
+    print(e)
+
+# TEST_10:
+@strict
+def sum_list(data: list) -> int:
+    return sum(data)
+
+print(sum_list([1, 2, 3]))
+
+try:
+    sum_list((1, 2, 3))
+except TypeError as e:
+    print(e)
+
+# TEST_11:
+@strict
+def dict_keys(d: dict) -> list:
+    return list(d.keys())
+
+print(dict_keys({'a': 1, 'b': 2}))
+
+try:
+    dict_keys([1, 2, 3])
+except TypeError as e:
+    print(e)
+
+# TEST_12:
+@strict
+def unique_elements(s: set):
+    return len(s)
+
+try:
+    unique_elements({1, 2, 3, 2})
+except AnnotationError as e:
+    print(e)
+
+try:
+    unique_elements([1, 2, 3])
+except TypeError as e:
+    print(e)
+
+# TEST_13:
+@strict
+def first_element(t) -> int:
+    return t[0]
+
+try:
+    first_element((10, 20, 30))
+except AnnotationError as e:
+    print(e)
+
+try:
+    first_element([10, 20, 30])
+except AnnotationError as e:
+    print(e)
+
+# TEST_14:
+@strict
+def mix(a: int, b: list, c: set) -> dict:
+    return {'a': a, 'b': b, 'c': c}
+
+print(mix(1, [1,2], {3,4}))
+
+try:
+    mix(1, (1,2), {3,4})
+except TypeError as e:
+    print(e)
+

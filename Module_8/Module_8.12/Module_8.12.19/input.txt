@@ -1,0 +1,14 @@
+# INPUT DATA:
+
+# TEST_1:
+print(get_average_and_median_salary('Инлайн Груп', 'Atos', 'ХайТэк'))
+
+# TEST_2:
+print(get_average_and_median_salary('Itransition'))
+
+# TEST_3:
+print(get_average_and_median_salary('Ростелеком', 'IBS'))
+
+# TEST_4:
+print(get_average_and_median_salary('TerraLink', 'Эвотор', 'Лига Цифровой Экономики', 'Philax'))
+

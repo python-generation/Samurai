@@ -1,17 +1,26 @@
 # INPUT DATA:
 
 # TEST_1:
-print(get_average_speed([30, 60]))
+nums1 = [1, 2, 3]
+nums2 = [4, 5, 6]
+
+print(calculate(nums1, nums2, '+'))
+print(calculate(nums1, nums2, '-'))
+print(calculate(nums1, nums2, '*'))
+print(calculate(nums1, nums2, '/'))
 
 # TEST_2:
-print(get_average_speed([22, 17, 80]))
+nums1 = [1, 2, 3]
+nums2 = [4, 0, 6]
+
+print(calculate(nums1, nums2, '/'))
 
 # TEST_3:
-print(get_average_speed([10, 20, 30, 40, 50]))
+nums1 = [33, 23, 26, 41, 39, 41, 36, 38, 42, 39]
+nums2 = [179, 92, 143, 168, 193, 186, 113, 111, 161, 161]
 
-# TEST_4:
-print(get_average_speed([100]))
-
-# TEST_5:
-print(get_average_speed([]))
+print(calculate(nums1, nums2, '+'))
+print(calculate(nums1, nums2, '-'))
+print(calculate(nums1, nums2, '*'))
+print(calculate(nums1, nums2, '/'))
 

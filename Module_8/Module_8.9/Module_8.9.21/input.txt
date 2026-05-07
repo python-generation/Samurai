@@ -1,166 +1,47 @@
 # INPUT DATA:
 
 # TEST_1:
-@log_call('DEBUG')
-def div(a, b):
-    if b == 0:
-        raise ZeroDivisionError('На ноль делить нельзя.')
-    return a / b
+from pygen import add
 
-
-print(div(1, 2))
+print(create_report(add))
 
 # TEST_2:
-@log_call('DEBUG')
-def div(a, b):
-    if b == 0:
-        raise ZeroDivisionError('На ноль делить нельзя.')
-    return a / b
+from pygen import div
 
-try:
-    print(div(1, 0))
-except ZeroDivisionError as e:
-    print(e)
+print(create_report(div))
 
 # TEST_3:
-@log_call('INFO')
-def greet(name, greeting='Привет'):
-    return f'{greeting}, {name}!'
+from pygen import foo1
 
-print(greet('Валерий'))
-print(greet('Тимур', greeting='Здравствуйте'))
+print(create_report(foo1))
 
 # TEST_4:
-@log_call('WARNING')
-def get_pi():
-    return 3.14159
+from pygen import foo2
 
-print(get_pi())
+print(create_report(foo2))
 
 # TEST_5:
-@log_call('DEBUG')
-def combine(*args, **kwargs):
-    return args, kwargs
+from pygen import foo3
 
-print(combine(1, 2, 3, a=10, b=20))
+print(create_report(foo3))
 
 # TEST_6:
-@log_call('DEBUG')
-def multiply(a, b):
-    return a * b
+from pygen import foo4
 
-@log_call('DEBUG')
-def square_sum(x, y):
-    return multiply(x, x) + multiply(y, y)
-
-print(square_sum(2, 3))
+print(create_report(foo4))
 
 # TEST_7:
-@log_call('INFO')
-def add(a, b):
-    return a + b
+from pygen import foo5
 
-@log_call('ERROR')
-def sub(a, b):
-    return a - b
-
-@log_call('CRITICAL')
-def mul(a, b):
-    return a * b
-
-print(add(b=3, a=5))
-print(sub(10, b=7))
-print(mul(a=4, b=6))
+print(create_report(foo5))
 
 # TEST_8:
-@log_call('DEBUG')
-def power(base, exp=2):
-    if exp < 0:
-        raise ValueError('Отрицательная степень недопустима')
-    return base ** exp
+from pygen import foo6
 
-print(power(3))
-try:
-    power(2, -1)
-except ValueError as e:
-    print(e)
+print(create_report(foo6))
 
 # TEST_9:
-@log_call('WARNING')
-def concat(a: str, b: str) -> str:
-    return a + b
+from pygen import format_text
 
-print(concat("Hello, ", "world!"))
-
-# TEST_10:
-@log_call('ERROR')
-def risky_div(a, b):
-    if b == 0:
-        raise ZeroDivisionError('На ноль делить нельзя.')
-    return a / b
-
-@log_call('CRITICAL')
-def outer(x):
-    return risky_div(x, 0)
-
-try:
-    outer(10)
-except ZeroDivisionError:
-    print('Перехват ошибки выполнен.')
-
-# TEST_11:
-@log_call('DEBUG')
-def calc_sum(a, b):
-    return a + b
-
-@log_call('INFO')
-def calc_expression(x, y):
-    return calc_sum(x, y) ** 2
-
-@log_call('ERROR')
-def run():
-    result = calc_expression(2, 3)
-    print('Результат:', result)
-    return result
-
-run()
-
-# TEST_12:
-@log_call('DEBUG')
-def step1(x):
-    return x * 2
-
-@log_call('INFO')
-def step2(x):
-    return step1(x) + 1
-
-@log_call('CRITICAL')
-def step3(x):
-    y = step2(x)
-    if y > 10:
-        raise ValueError('Слишком большое значение!')
-    return y
-
-try:
-    step3(6)
-except ValueError as e:
-    print(e)
-
-# TEST_13:
-logger.disabled = True
-@log_call('DEBUG')
-def calc_sum(a, b):
-    return a + b
-
-@log_call('INFO')
-def calc_expression(x, y):
-    return calc_sum(x, y) ** 2
-
-@log_call('ERROR')
-def run():
-    result = calc_expression(2, 3)
-    print('Результат:', result)
-    return result
-
-run()
+print(create_report(format_text))
 
