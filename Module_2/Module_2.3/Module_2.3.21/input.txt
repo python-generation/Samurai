@@ -1,0 +1,74 @@
+# INPUT DATA:
+
+# TEST_1:
+binary = ['101', '1111101000', '1000']
+print(normalize_bits(binary))
+
+# TEST_2:
+binary = ['1', '10', '100', '1000']
+print(normalize_bits(binary))
+
+# TEST_3:
+binary = ['1010', '1100']
+print(normalize_bits(binary))
+
+# TEST_4:
+binary = ['1111100000', '1101101000', '1110001000', '1000000001', '1011101000', '1000001000', '1000000001', '1100000000']
+print(normalize_bits(binary))
+
+# TEST_5:
+binary = ['1', '0']
+print(normalize_bits(binary))
+
+# TEST_6:
+binary = ['1']
+print(normalize_bits(binary))
+
+# TEST_7:
+binary = ['0']
+print(normalize_bits(binary))
+
+# TEST_8:
+binary = ['11111111'] * 20
+print(normalize_bits(binary))
+
+# TEST_9:
+import random
+random.seed(564)
+
+binary = [bin(i)[2:] for i in range(1, 10)]
+random.shuffle(binary)
+print(normalize_bits(binary))
+
+# TEST_10:
+import random
+random.seed(123)
+
+binary = [bin(i)[2:] for i in range(1, 100)]
+random.shuffle(binary)
+print(normalize_bits(binary))
+
+# TEST_11:
+import random
+random.seed(845)
+
+binary = [bin(i)[2:] for i in range(1, 250)]
+random.shuffle(binary)
+print(normalize_bits(binary))
+
+# TEST_12:
+import random
+random.seed(432)
+
+binary = [bin(i)[2:] for i in range(1, 501)]
+random.shuffle(binary)
+print(normalize_bits(binary))
+
+# TEST_13:
+import random
+random.seed(789)
+
+binary = [bin(i)[2:] for i in range(1, 1001)]
+random.shuffle(binary)
+print(normalize_bits(binary))
+

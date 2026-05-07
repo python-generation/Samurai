@@ -1,0 +1,42 @@
+# OUTPUT DATA:
+
+# TEST_1:
+Person('Timur', 33)
+
+# TEST_2:
+[Person('Timur', 33)]
+
+# TEST_3:
+[]
+Person('Timur', 33)
+Person('Timur', 33)
+
+# TEST_4:
+[]
+Person('Timur', 33)
+Person('Timur', 33)
+1
+Person('Valera', 35)
+
+# TEST_5:
+[]
+Person('Timur', 33)
+Person('Timur', 33)
+1
+Person('Valera', 35)
+2
+Person('Nastya', 30)
+
+# TEST_6:
+[]
+Person('Timur', 33)
+Person('Timur', 33)
+1
+Person('Valera', 35)
+2
+Person('Nastya', 30)
+Person('Valera', 35)
+Person('Nastya', 30)
+Person('Valera', 35)
+Person('Nastya', 30)
+

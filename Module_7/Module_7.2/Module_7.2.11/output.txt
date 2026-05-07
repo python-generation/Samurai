@@ -1,0 +1,23 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['Olivier Giroud', 'Mesut Ozil', 'Alex Iwobi', 'Hector Bellerin', 'Petr Cech', 'Laurent Koscielny', 'Alexis Sanchez', 'Theo Walcott']
+
+# TEST_2:
+['Juan Mata', 'David De Gea', 'Zlatan Ibrahimovic', 'Ander Herrera', 'Eric Bailly', 'Phil Jones', 'Henrikh Mkhitaryan', 'Marcus Rashford', 'Paul Pogba', 'Antonio Valencia']
+
+# TEST_3:
+['Joe Allen', 'Erik Pieters', 'Ryan Shawcross', 'Peter Crouch', 'Marko Arnautovic']
+
+# TEST_4:
+['Victor Moses', 'Gary Cahill', 'Diego Costa', 'Cesar Azpilicueta', 'Thibaut Courtois', 'Eden Hazard', 'Marcos Alonso', 'Nemanja Matic']
+
+# TEST_5:
+['Daniel Amartey', 'Jamie Vardy', 'Kasper Schmeichel', 'Wes Morgan', 'Riyad Mahrez', 'Islam Slimani', 'Robert Huth']
+
+# TEST_6:
+['Christian Benteke']
+
+# TEST_7:
+{'Arsenal': ['Mesut Ozil', 'Alex Iwobi', 'Olivier Giroud', 'Theo Walcott', 'Laurent Koscielny', 'Alexis Sanchez', 'Hector Bellerin', 'Petr Cech'], 'Chelsea': ['Gary Cahill', 'Victor Moses', 'Cesar Azpilicueta', 'Diego Costa', 'Eden Hazard', 'Marcos Alonso', 'Thibaut Courtois', 'Nemanja Matic'], 'Manchester City': ['Yaya Toure', 'Leroy Sane', 'Aleksandar Kolarov', 'David Silva', 'Kelechi Iheanacho', 'Claudio Bravo', 'Gael Clichy', 'Kevin De Bruyne', 'Sergio Aguero', 'Raheem Sterling', 'Gabriel Jesus'], 'Manchester United': ['Juan Mata', 'Henrikh Mkhitaryan', 'Paul Pogba', 'Marcus Rashford', 'Antonio Valencia', 'Ander Herrera', 'Zlatan Ibrahimovic', 'David De Gea', 'Phil Jones', 'Eric Bailly'], 'Crystal Palace': ['Christian Benteke'], 'Leicester': ['Robert Huth', 'Islam Slimani', 'Riyad Mahrez', 'Daniel Amartey', 'Wes Morgan', 'Jamie Vardy', 'Kasper Schmeichel'], 'Stoke': ['Joe Allen', 'Erik Pieters', 'Ryan Shawcross', 'Peter Crouch', 'Marko Arnautovic']}
+

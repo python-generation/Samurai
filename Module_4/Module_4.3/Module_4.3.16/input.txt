@@ -1,0 +1,93 @@
+# INPUT DATA:
+
+# TEST_1:
+def is_positive(x):
+    return x > 0
+
+def is_integer(x):
+    return isinstance(x, int)
+
+print(check_conditions([is_positive, is_integer], 10))     # is_positive(10) = True и 
+                                                           # is_integer(10) = True, ответ True
+
+# TEST_2:
+def is_positive(x):
+    return x > 0
+
+def is_integer(x):
+    return isinstance(x, int)
+
+print(check_conditions([is_positive, is_integer], -10))    # is_positive(-10) = False, ответ False
+
+# TEST_3:
+def is_positive(x):
+    return x > 0
+
+def is_integer(x):
+    return isinstance(x, int)
+
+print(check_conditions([is_positive, is_integer], 2.718))    # is_positive(2.718) = True,
+                                                             # is_integer(2.718) = False, ответ False
+
+# TEST_4:
+def is_positive_bool(x):
+    return x > 0
+
+def is_integer_bool(x):
+    return isinstance(x, int)
+
+print(check_conditions([is_positive_bool, is_integer_bool], 3.14))
+
+# TEST_5:
+def is_positive_bool(x):
+    return x > 0
+
+def is_integer_bool(x):
+    return isinstance(x, int)
+
+print(check_conditions([is_positive_bool, is_integer_bool], -3.14))
+
+# TEST_6:
+def is_string_bool(value):
+    return isinstance(value, str)
+
+def len_range_bool(value):
+    min_length = 2
+    max_length = 8
+    return min_length <= len(value) <= max_length
+
+print(check_conditions([is_string_bool, len_range_bool], 'Valera'))
+
+# TEST_7:
+def is_string_bool(value):
+    return isinstance(value, str)
+
+def len_range_bool(value):
+    min_length = 2
+    max_length = 8
+    return min_length <= len(value) <= max_length
+
+print(check_conditions([is_string_bool, len_range_bool], 'ValeraValeraValera'))
+
+# TEST_8:
+def is_string_bool(value):
+    return isinstance(value, str)
+
+def len_range_bool(value):
+    min_length = 2
+    max_length = 8
+    return min_length <= len(value) <= max_length
+
+print(check_conditions([is_string_bool, len_range_bool], 'P'))
+
+# TEST_9:
+def is_string_bool(value):
+    return isinstance(value, str)
+
+def len_range_bool(value):
+    min_length = 2
+    max_length = 8
+    return min_length <= len(value) <= max_length
+
+print(check_conditions([is_string_bool, len_range_bool], ['b']))
+

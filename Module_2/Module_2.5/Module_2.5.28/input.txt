@@ -1,0 +1,29 @@
+# INPUT DATA:
+
+# TEST_1:
+get_student_info('John Doe', 5, [3, 3, 3, 3, 3, 3, 3, 3])
+
+# TEST_2:
+get_student_info('Mary Smith', 13, [4, 3, 3, 3, 2, 2, 3, 3, 4, 2])
+
+# TEST_3:
+get_student_info('Guido van-Rossum', 10, [5, 4, 5, 4, 4, 5])
+
+# TEST_4:
+get_student_info('Timur Guev', 18, [3, 4, 4, 5, 5, 5, 5])
+
+# TEST_5:
+get_student_info('Rustam Chaniev', 2, [1, 1, 1, 1, 1, 1, 1])
+
+# TEST_6:
+get_student_info('James Gosling', 7, [5, 5, 5, 5, 5, 5, 5])
+
+# TEST_7:
+get_student_info('Bill Joy', 5, [3, 3, 3, 3, 3, 3, 3])
+
+# TEST_8:
+get_student_info('Linus Torvalds', 13, [2, 4, 2, 2, 4, 3])
+
+# TEST_9:
+get_student_info('Eric Schmidt', 13, [3, 4, 2, 2, 4, 3])
+

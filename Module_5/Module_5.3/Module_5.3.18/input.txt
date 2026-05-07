@@ -1,0 +1,60 @@
+# INPUT DATA:
+
+# TEST_1:
+numbers = [1, 'two', 3.0, 'четыре', 5, 6.0]
+print(custom_isinstance(numbers, (int,)))
+
+# TEST_2:
+numbers = [1, 'two', 3.0, 'четыре', 5, 6.0]
+print(custom_isinstance(numbers, (int, float)))
+
+# TEST_3:
+logger.disabled = True
+numbers = [1, 'two', 3.0, 'четыре', 5, 6.0]
+print(custom_isinstance(numbers, (int,)))
+
+# TEST_4:
+numbers = [8, 24, 655, 3.4, 42.31, 121,365, -6, -24, -655, -5.6, -47.33, -120,565, 'hello']
+print(custom_isinstance(numbers, (int,)))
+
+# TEST_5:
+logger.disabled = True
+numbers = [8, 24, 655, 3.4, 42.31, 121,365, -6, -24, -655, -5.6, -47.33, -120,565, 'hello']
+print(custom_isinstance(numbers, (int,)))
+
+# TEST_6:
+numbers = [8, 24, 655, 3.4, 42.31, 121,365, -6, -24, -655, -5.6, -47.33, -120,565, 'hello']
+print(custom_isinstance(numbers, (int, float)))
+
+# TEST_7:
+logger.disabled = True
+numbers = [8, 24, 655, 3.4, 42.31, 121,365, -6, -24, -655, -5.6, -47.33, -120,565, 'hello']
+print(custom_isinstance(numbers, (int, float)))
+
+# TEST_8:
+numbers = [8, 24, 655, 3.4, 42.31, 121,365, -6, -24, -655, -5.6, -47.33, -120,565, 'hello']
+print(custom_isinstance(numbers, (str,)))
+
+# TEST_9:
+logger.disabled = True
+numbers = [8, 24, 655, 3.4, 42.31, 121,365, -6, -24, -655, -5.6, -47.33, -120,565, 'hello']
+print(custom_isinstance(numbers, (str,)))
+
+# TEST_10:
+numbers = [None, [], {}]
+print(custom_isinstance(numbers, (int, str)))
+
+# TEST_11:
+logger.disabled = True
+numbers = [None, [], {}]
+print(custom_isinstance(numbers, (int, str)))
+
+# TEST_12:
+numbers = []
+print(custom_isinstance(numbers, (int,)))
+
+# TEST_13:
+logger.disabled = True
+numbers = []
+print(custom_isinstance(numbers, (int,)))
+

@@ -1,0 +1,26 @@
+# INPUT DATA:
+
+# TEST_1:
+print_tree('root/module_os')
+
+# TEST_2:
+print_tree('root/empty')
+
+# TEST_3:
+print_tree('root/desktop')
+
+# TEST_4:
+print_tree('root/data')
+
+# TEST_5:
+print_tree('root/desktop/studying')
+
+# TEST_6:
+print_tree('root/data/another_folder')
+
+# TEST_7:
+print_tree('root/module_os/Разные файлы')
+
+# TEST_8:
+print_tree('root')
+

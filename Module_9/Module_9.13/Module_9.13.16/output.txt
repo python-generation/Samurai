@@ -1,0 +1,21 @@
+# OUTPUT DATA:
+
+# TEST_1:
+('5b1b98b2-6825-3a91-9756-f1946615f48e', 'b07db5ba-597f-395c-9ef8-9d6a018f9bc2')
+
+# TEST_2:
+[(UUID('fa9722f7-340e-3d77-bddb-938703e3103b'),), (UUID('6e15ccda-8095-3a52-914a-7f94d7b3f6fe'),), (UUID('9d6d59b3-bea5-30c9-9209-468ef96c77df'),)]
+(UUID('5e8bac95-1e99-11f1-b367-30689317d5e4'),)
+
+# TEST_3:
+('fd3bcfd6-dee6-3441-b6ea-fadb16d8675f',)
+('07ca9d45-33c1-3215-8aa6-e90ab85ea03a',)
+('d2841285-7f7d-3b60-97e5-8c949501c015',)
+('60d6f570-06a1-3dd4-afc6-a3c3e52a60e4',)
+('f5ffb1fe-264d-306c-88f1-b20648773fed',)
+('e4660672-a35d-31d6-97a9-22f4ad73eb99',)
+('d8e321e0-cc3a-3878-8ab7-5f8f6cad8a32',)
+('3867c826-39d9-34c3-8522-a54d4db41330',)
+
+[(UUID('fd3bcfd6-dee6-3441-b6ea-fadb16d8675f'),), (UUID('07ca9d45-33c1-3215-8aa6-e90ab85ea03a'),), (UUID('d2841285-7f7d-3b60-97e5-8c949501c015'),), (UUID('60d6f570-06a1-3dd4-afc6-a3c3e52a60e4'),), (UUID('f5ffb1fe-264d-306c-88f1-b20648773fed'),), (UUID('e4660672-a35d-31d6-97a9-22f4ad73eb99'),), (UUID('d8e321e0-cc3a-3878-8ab7-5f8f6cad8a32'),), (UUID('3867c826-39d9-34c3-8522-a54d4db41330'),)]
+

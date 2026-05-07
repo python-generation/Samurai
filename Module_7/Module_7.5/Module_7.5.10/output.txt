@@ -1,0 +1,17 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['changelog.md', 'intro.md', 'usage.md']
+
+# TEST_2:
+['auth.md', 'users.md']
+
+# TEST_3:
+['config.md', 'install.md']
+
+# TEST_4:
+[]
+
+# TEST_5:
+['cheatsheet.md', 'tips.md']
+

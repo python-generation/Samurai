@@ -1,0 +1,186 @@
+# INPUT DATA:
+
+# TEST_1:
+class Cat(Profiler):
+    def __init__(self, name):
+        self.name = name
+
+
+print(Cat.calls)
+
+cat = Cat('Кемаль')
+print(Cat.calls)
+
+cat = Cat('Роджер')
+print(Cat.calls)
+
+# TEST_2:
+class Calculator(Profiler):
+    def add(self, a, b):
+        return a + b
+
+    def sub(self, a, b):
+        return a - b
+
+
+print(Calculator.calls)
+
+calculator = Calculator()
+calculator.add(1, 2)
+calculator.add(3, 4)
+calculator.sub(5, 6)
+
+print(Calculator.calls)
+
+# TEST_3:
+class Service(Profiler):
+    def start(self):
+        pass
+
+    def stop(self):
+        pass
+
+print(Service.calls)
+
+# TEST_4:
+class Controller(Profiler):
+    def start(self):
+        pass
+
+c1 = Controller()
+c2 = Controller()
+
+c1.start()
+c2.start()
+c2.start()
+
+print(Controller.calls)
+
+# TEST_5:
+class Repository(Profiler):
+    def connect(self):
+        pass
+
+    def close(self):
+        pass
+
+r = Repository()
+
+print(Repository.calls)
+
+# TEST_6:
+class Engine(Profiler):
+    def start(self):
+        pass
+
+    def stop(self):
+        pass
+
+    def restart(self):
+        pass
+
+e = Engine()
+
+e.start()
+e.stop()
+e.restart()
+e.restart()
+e.restart()
+
+print(Engine.calls)
+
+# TEST_7:
+class Device(Profiler):
+    def on(self):
+        pass
+
+    def off(self):
+        pass
+
+d1 = Device()
+d2 = Device()
+
+d1.on()
+d1.on()
+d1.off()
+d2.off()
+d2.on()
+d1.on()
+d1.off()
+d2.on()
+d1.off()
+
+print(Device.calls)
+
+# TEST_8:
+class Logger(Profiler):
+    def log(self, message, level='INFO'):
+        return f'[{level}] {message}'
+
+l = Logger()
+
+print(l.log('Started'))
+print(l.log('Error occurred', level='ERROR'))
+print(Logger.calls)
+
+# TEST_9:
+class Base(Profiler):
+    def method1(self):
+        return 'method1'
+
+    def method2(self):
+        return 'method2'
+
+class Child(Base):
+    def method3(self):
+        return 'method3'
+
+b = Base()
+c = Child()
+
+b.method1()
+b.method2()
+c.method1()
+c.method3()
+c.method3()
+
+print(Base.calls)
+print(Child.calls)
+
+# TEST_10:
+class Base(Profiler):
+    def method1(self):
+        return 'method1'
+
+    def method2(self):
+        return 'method2'
+
+class Child(Base):
+    def method3(self):
+        return 'method3'
+
+print(Base.calls)
+print(Child.calls)
+
+# TEST_11:
+class Base(Profiler):
+    def greet(self):
+        return 'Hello'
+
+class Child(Base):
+    def greet(self):
+        return 'Hi'
+
+b = Base()
+c = Child()
+
+b.greet()
+c.greet()
+c.greet()
+
+print(Base.calls)
+print(Child.calls)
+
+# TEST_12:
+print(type(Profiler))
+

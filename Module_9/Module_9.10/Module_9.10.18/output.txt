@@ -1,0 +1,69 @@
+# OUTPUT DATA:
+
+# TEST_1:
+Ernest Hemingway: NaN$
+George Clooney: NaN$
+Jon Stewart: NaN$
+Marie Curie: NaN$
+Paul Krugman: NaN$
+Roman Abramovich: NaN$
+Rupert Murdoch: NaN$
+Jimmy Wales: 5000$
+Sacha Baron: 5400$
+
+# TEST_2:
+Ernest Hemingway: NaN$
+George Clooney: NaN$
+Jon Stewart: NaN$
+Marie Curie: NaN$
+Paul Krugman: NaN$
+Roman Abramovich: NaN$
+Rupert Murdoch: NaN$
+Al Gore: 3200$
+Aung San: 3200$
+Lance Armstrong: 3200$
+Tom Cruise: 3800$
+Jimmy Wales: 5000$
+Sacha Baron: 5400$
+
+# TEST_3:
+Ernest Hemingway: NaN$
+George Clooney: NaN$
+Jon Stewart: NaN$
+Marie Curie: NaN$
+Paul Krugman: NaN$
+Roman Abramovich: NaN$
+Rupert Murdoch: NaN$
+
+# TEST_4:
+Ernest Hemingway: NaN$
+George Clooney: NaN$
+Jon Stewart: NaN$
+Marie Curie: NaN$
+Paul Krugman: NaN$
+Roman Abramovich: NaN$
+Rupert Murdoch: NaN$
+Julie Andrews: 1100$
+Wright BrothersOrville: 1200$
+Florence Nightingale: 1500$
+Lech Walesa: 1800$
+Shakira Curie: 1900$
+Stephen Hawking: 2400$
+Tim Berners: 3000$
+Al Gore: 3200$
+Aung San: 3200$
+Lance Armstrong: 3200$
+Tom Cruise: 3800$
+Jimmy Wales: 5000$
+Sacha Baron: 5400$
+
+# TEST_5:
+Ernest Hemingway: NaN$
+George Clooney: NaN$
+Jon Stewart: NaN$
+Marie Curie: NaN$
+Paul Krugman: NaN$
+Roman Abramovich: NaN$
+Rupert Murdoch: NaN$
+Sacha Baron: 5400$
+

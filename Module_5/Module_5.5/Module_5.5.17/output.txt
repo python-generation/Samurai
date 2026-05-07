@@ -1,0 +1,109 @@
+# OUTPUT DATA:
+
+# TEST_1:
+INFO:__main__:Событие №1
+INFO:__main__:Событие №2
+INFO:__main__:Событие №3
+INFO:__main__:Событие №4
+INFO:__main__:Событие №5
+
+# TEST_2:
+INFO:__main__:Событие №1
+INFO:__main__:Событие №2
+INFO:__main__:Событие №3
+INFO:__main__:Событие №4
+INFO:__main__:Событие №5
+INFO:__main__:Событие №6
+INFO:__main__:Событие №7
+INFO:__main__:Событие №8
+
+# TEST_3:
+INFO:__main__:Событие №1
+INFO:__main__:Событие №2
+INFO:__main__:Событие №3
+INFO:__main__:Событие №4
+INFO:__main__:Событие №5
+INFO:__main__:Событие №6
+INFO:__main__:Событие №7
+INFO:__main__:Событие №8
+INFO:__main__:Событие №9
+INFO:__main__:Событие №10
+INFO:__main__:Событие №11
+INFO:__main__:Событие №12
+INFO:__main__:Событие №13
+INFO:__main__:Событие №14
+INFO:__main__:Событие №15
+INFO:__main__:Событие №16
+INFO:__main__:Событие №17
+
+# TEST_4:
+INFO:__main__:Событие №1
+INFO:__main__:Событие №2
+INFO:__main__:Событие №3
+INFO:__main__:Событие №4
+INFO:__main__:Событие №5
+INFO:__main__:Событие №6
+INFO:__main__:Событие №7
+INFO:__main__:Событие №8
+INFO:__main__:Событие №9
+INFO:__main__:Событие №10
+INFO:__main__:Событие №11
+INFO:__main__:Событие №12
+INFO:__main__:Событие №13
+INFO:__main__:Событие №14
+INFO:__main__:Событие №15
+INFO:__main__:Событие №16
+INFO:__main__:Событие №17
+INFO:__main__:Событие №18
+INFO:__main__:Событие №19
+INFO:__main__:Событие №20
+INFO:__main__:Событие №21
+INFO:__main__:Событие №22
+INFO:__main__:Событие №23
+INFO:__main__:Событие №24
+INFO:__main__:Событие №25
+
+# TEST_5:
+INFO:__main__:Событие №90
+INFO:__main__:Событие №91
+INFO:__main__:Событие №92
+INFO:__main__:Событие №93
+INFO:__main__:Событие №94
+INFO:__main__:Событие №95
+INFO:__main__:Событие №96
+INFO:__main__:Событие №97
+INFO:__main__:Событие №98
+INFO:__main__:Событие №99
+INFO:__main__:Событие №100
+
+# TEST_6:
+INFO:__main__:Событие №101
+INFO:__main__:Событие №102
+INFO:__main__:Событие №103
+INFO:__main__:Событие №104
+INFO:__main__:Событие №105
+INFO:__main__:Событие №106
+INFO:__main__:Событие №107
+INFO:__main__:Событие №108
+INFO:__main__:Событие №109
+INFO:__main__:Событие №110
+
+# TEST_7:
+INFO:__main__:Событие №100
+INFO:__main__:Событие №101
+INFO:__main__:Событие №102
+INFO:__main__:Событие №103
+INFO:__main__:Событие №104
+
+# TEST_8:
+INFO:__main__:Событие №1
+INFO:__main__:Событие №2
+INFO:__main__:Событие №3
+INFO:__main__:Событие №4
+INFO:__main__:Событие №5
+DEBUG:__main__:Событие №6
+INFO:__main__:Событие №7
+WARNING:__main__:Событие №8
+ERROR:__main__:Событие №9
+CRITICAL:__main__:Событие №10
+

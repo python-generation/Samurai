@@ -1,0 +1,68 @@
+# OUTPUT DATA:
+
+# TEST_1:
+3
+-1
+2
+0.5
+
+# TEST_2:
+Деление на ноль невозможно
+
+# TEST_3:
+calculate() takes 2 positional arguments but 3 were given
+
+# TEST_4:
+calculate() got some positional-only arguments passed as keyword arguments: 'b'
+
+# TEST_5:
+calculate() got some positional-only arguments passed as keyword arguments: 'a, b'
+
+# TEST_6:
+100
+33
+12
+0
+
+# TEST_7:
+-110
+-651
+1000
+0
+
+# TEST_8:
+221
+0
+0
+0
+
+# TEST_9:
+0.0
+Деление на ноль невозможно
+Деление на ноль невозможно
+Деление на ноль невозможно
+
+# TEST_10:
+-15
+-5
+5
+15
+
+# TEST_11:
+-5
+-15
+15
+5
+
+# TEST_12:
+50
+-50
+-50
+50
+
+# TEST_13:
+2.0
+-2.0
+-2.0
+2.0
+

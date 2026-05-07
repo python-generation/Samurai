@@ -1,0 +1,29 @@
+# INPUT DATA:
+
+# TEST_1:
+teams = football_team()
+print(teams['Arsenal'])
+
+# TEST_2:
+teams = football_team()
+print(teams['Manchester United'])
+
+# TEST_3:
+teams = football_team()
+print(teams['Stoke'])
+
+# TEST_4:
+teams = football_team()
+print(teams['Chelsea'])
+
+# TEST_5:
+teams = football_team()
+print(teams['Leicester'])
+
+# TEST_6:
+teams = football_team()
+print(teams['Crystal Palace'])
+
+# TEST_7:
+print(football_team())
+

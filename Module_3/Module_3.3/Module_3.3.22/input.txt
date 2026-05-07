@@ -1,0 +1,115 @@
+# INPUT DATA:
+
+# TEST_1:
+data = [
+    {
+        "name": "Holly-Anne",
+        "city": "Abilene",
+        "age": 29,
+        "progress": 75,
+        "phone": "(802) 983-9126",
+    },
+    {
+        "name": "Caty",
+        "city": "NewOrleans",
+        "age": 24,
+        "progress": 21,
+        "phone": "(316) 786-4509",
+    },
+]
+
+with open('students.json', 'w', encoding='utf-8') as file:
+    json.dump(data, file)
+
+get_info('students.json')
+
+# TEST_2:
+data = [
+    {   
+        "name": "Dorelia", 
+        "city": "Pasadena", 
+        "age": 17, 
+        "progress": 31, 
+        "phone": "(627) 380-9925"
+    },
+    {   
+        "name": "Diannne", 
+        "city": "Nashville", 
+        "age": 16, 
+        "progress": 75, 
+        "phone": "(834) 602-8396"
+    },
+    {   
+        "name": "Dinah", 
+        "city": "Fremont", 
+        "age": 17, 
+        "progress": 93, 
+        "phone": "(550) 547-4594"
+    },
+]
+
+with open('students.json', 'w', encoding='utf-8') as file:
+    json.dump(data, file)
+
+get_info('students.json')
+
+# TEST_3:
+data = [
+    {
+        "name": "Dione", 
+        "city": "BoiseCity", 
+        "age": 18, 
+        "progress": 73, 
+        "phone": "(385) 917-6881"
+    },
+    {
+        "name": "Ibby", 
+        "city": "Warren", 
+        "age": 18, 
+        "progress": 75, 
+        "phone": "(768) 651-1606"
+    },
+    {
+        "name": "Dela", 
+        "city": "FortCollins", 
+        "age": 18, 
+        "progress": 88, 
+        "phone": "(610) 782-1997"
+    },
+]
+
+with open('students.json', 'w', encoding='utf-8') as file:
+    json.dump(data, file)
+
+get_info('students.json')
+
+# TEST_4:
+data = [
+    {
+        "name": "Ivy", 
+        "city": "Louisville", 
+        "age": 35, 
+        "progress": 16, 
+        "phone": "(450) 822-9827"
+    },
+    {
+        "name": "Freddi", 
+        "city": "SaltLakeCity", 
+        "age": 19, 
+        "progress": 75, 
+        "phone": "(674) 971-7305"
+    },
+    {
+        "name": "Dorian", 
+        "city": "Indianapolis", 
+        "age": 46, 
+        "progress": 99, 
+        "phone": "(453) 315-5456"
+    },
+]
+
+with open('students.json', 'w', encoding='utf-8') as file:
+    json.dump(data, file)
+
+get_info('students.json')
+

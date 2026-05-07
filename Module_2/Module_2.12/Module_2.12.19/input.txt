@@ -1,0 +1,31 @@
+# INPUT DATA:
+
+# TEST_1:
+with open('file.txt', 'w', encoding='utf-8') as file:
+    file.write('Поколение Python: курс для самураев')
+    
+read_data('file.txt')
+
+# TEST_2:
+from contextlib import redirect_stderr
+
+with open('errors.txt', 'w', encoding='utf-8') as file:
+    with redirect_stderr(file):
+        read_data('unknown_file.txt')
+        
+with open('errors.txt', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_3:
+from contextlib import redirect_stderr
+
+with open('file.txt', 'w', encoding='utf-8') as file:
+    file.write('🫣🐝😎')
+
+with open('errors.txt', 'w', encoding='utf-8') as file:
+    with redirect_stderr(file):
+        read_data('file.txt', 'ascii')
+        
+with open('errors.txt', encoding='utf-8') as file:
+    print(file.read())
+

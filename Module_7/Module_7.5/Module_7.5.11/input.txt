@@ -1,0 +1,22 @@
+# INPUT DATA:
+
+# TEST_1:
+files = get_files_by_extension('desktop/studying', ['.pdf', '.txt'])
+print(files)
+
+# TEST_2:
+files = get_files_by_extension('desktop/games', ['.exe'])
+print(files)
+
+# TEST_3:
+files = get_files_by_extension('desktop/studying/data_sets', ['.csv', '.json', '.xlsx'])
+print(files)
+
+# TEST_4:
+files = get_files_by_extension('desktop', ['.jpg', '.jpeg'])
+print(files)
+
+# TEST_5:
+files = get_files_by_extension('desktop', ['.py'])
+print(files)
+

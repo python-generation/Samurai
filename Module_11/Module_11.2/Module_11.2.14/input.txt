@@ -1,0 +1,102 @@
+# INPUT DATA:
+
+# TEST_1:
+class Bee(UpperAttr):
+    geek = 'pygen'
+
+    def method(self):
+        return 'pygen'
+
+bee = Bee()
+print(bee.GEEK)
+print(bee.method())
+
+# TEST_2:
+class Bee(UpperAttr):
+    geek = 'pygen'
+
+bee = Bee()
+
+try:
+    print(bee.geek)
+except AttributeError as e:
+    print(e)
+
+# TEST_3:
+class Bee(UpperAttr):
+    geek = 'pygen'                  # публичный атрибут, должен быть преобразован
+    _geek = 'pygen'                 # защищенный атрибут, должен быть преобразован
+    __geek = 'pygen'                # приватный атрибут, не должен быть преобразован
+
+    def get_private(self):
+        return self.__geek
+
+bee = Bee()
+print(bee.GEEK)
+print(bee._GEEK)
+print(bee.get_private())
+
+# TEST_4:
+class MyClass(UpperAttr):
+    x = 10
+    y = 20
+    
+    def hello(self):
+        return 'hi'
+
+obj = MyClass()
+print(obj.X)
+print(obj.Y)
+print(obj.hello())
+
+try:
+    print(obj.x)
+except AttributeError as e:
+    print(e)
+
+# TEST_5:
+class Secret(UpperAttr):
+    _code = 1234
+
+    def _reveal(self):
+        return self._code
+
+s = Secret()
+print(s._CODE)
+try:
+    print(s._reveal())
+except AttributeError as e:
+    print(e)
+
+# TEST_6:
+class Base(UpperAttr):
+    base_attr = 'base'
+
+    def base_method(self):
+        return 'from base'
+
+class Child(Base):
+    child_attr = 'child'
+
+obj = Child()
+print(obj.BASE_ATTR)
+print(obj.CHILD_ATTR)
+print(obj.base_method())
+
+# TEST_7:
+print(type(UpperAttr))
+
+# TEST_8:
+class Secret(UpperAttr):
+    __slots__ = ('code',)
+    __code = 1234
+
+print(Secret.__dict__)
+
+# TEST_9:
+class Bee(UpperAttr):
+    GEEK = 'pygen'
+
+bee = Bee()
+print(bee.GEEK)
+

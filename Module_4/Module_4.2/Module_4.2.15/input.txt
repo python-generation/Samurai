@@ -1,0 +1,17 @@
+# INPUT DATA:
+
+# TEST_1:
+print(log('INFO', 'Выполнено подключение к базе данных.'))
+
+# TEST_2:
+print(log('DEBUG', 'Выполняю много интересной работы +312 мс'))
+
+# TEST_3:
+print(log('WARNING', 'Верхняя панель BeeChamp > Списки BeeChamp не были выбраны'))
+
+# TEST_4:
+print(log('ERROR', 'Верхняя панель BeeChamp > ошибка API: необходимо указать first_name'))
+
+# TEST_5:
+print(log('CRITICAL', 'Критическая ошибка! Требуется вмешательство.'))
+

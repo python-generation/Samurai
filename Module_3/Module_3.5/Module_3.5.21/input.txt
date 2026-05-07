@@ -1,0 +1,18 @@
+# INPUT DATA:
+
+# TEST_1:
+s = b'Beegeek\x00Beegeek'
+print(read_string(s))
+
+# TEST_2:
+s = b'Pygen\x00'
+print(read_string(s))
+
+# TEST_3:
+s = b'\x00Pygen'
+print(read_string(s))
+
+# TEST_4:
+s = b'P\x00yg\x00en\x00'
+print(read_string(s))
+

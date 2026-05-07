@@ -1,0 +1,46 @@
+# INPUT DATA:
+
+# TEST_1:
+rhombus(5)
+
+# TEST_2:
+rhombus(1)
+
+# TEST_3:
+rhombus(3)
+
+# TEST_4:
+rhombus(7, '+')
+
+# TEST_5:
+rhombus(11, '-')
+
+# TEST_6:
+rhombus(15, '@')
+
+# TEST_7:
+rhombus(25, '%')
+
+# TEST_8:
+rhombus(25, ' ')
+
+# TEST_9:
+rhombus(13, '$')
+
+# TEST_10:
+rhombus(19, '6')
+
+# TEST_11:
+from itertools import cycle
+
+symbols = cycle('-~.,')
+for h, fill_value in zip(range(1, 26, 2), symbols):
+    rhombus(h, fill_value)
+
+# TEST_12:
+from itertools import cycle
+
+symbols = cycle('-~.,')
+for h, fill_value in zip(range(27, 50, 2), symbols):
+    rhombus(h, fill_value)
+

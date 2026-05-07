@@ -1,0 +1,20 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['01_exam.txt', '02_fipi_demo_2022.pdf', '03_homework.py', 'books', 'data_sets']
+
+# TEST_2:
+['01_stepik.png', '02_code.jpeg']
+
+# TEST_3:
+['01_data_sample.csv', '02_countries.json', '03_readme.txt', '04_task_results.xlsx', 'fonts']
+
+# TEST_4:
+['01_Alexandra Savior Crying All the Time.mp3']
+
+# TEST_5:
+['01_shopping_list.txt', '02_Python.pdf', '03_earth.jpg', '04_Test.py', 'fun', 'games', 'images', 'studying']
+
+# TEST_6:
+['01_earth.jpg', '02_Python.pdf', '03_shopping_list.txt', '04_Test.py', 'fun', 'games', 'images', 'studying']
+

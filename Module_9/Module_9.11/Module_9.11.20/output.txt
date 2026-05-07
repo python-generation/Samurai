@@ -1,0 +1,32 @@
+# OUTPUT DATA:
+
+# TEST_1:
+pygen
+
+# TEST_2:
+None
+
+# TEST_3:
+
+
+# TEST_4:
+None
+
+# TEST_5:
+None
+
+# TEST_6:
+a
+
+# TEST_7:
+banana
+
+# TEST_8:
+c!d!e
+
+# TEST_9:
+b
+
+# TEST_10:
+b#c
+

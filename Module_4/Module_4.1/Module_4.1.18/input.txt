@@ -1,0 +1,32 @@
+# INPUT DATA:
+
+# TEST_1:
+print(invert_dict({1: 'one', 2: 'two', 3: 'three'}))
+
+# TEST_2:
+print(invert_dict({}))
+
+# TEST_3:
+print(invert_dict({10: 'ten'}))
+
+# TEST_4:
+print(invert_dict({100: 'hundred', 200: 'two hundred'}))
+
+# TEST_5:
+print(invert_dict({-1: 'minus one', -2: 'minus two'}))
+
+# TEST_6:
+print(invert_dict({0: 'zero'}))
+
+# TEST_7:
+print(invert_dict({1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six'}))
+
+# TEST_8:
+print(invert_dict({-10: 'negative ten', 10: 'positive ten', 0: 'zero'}))
+
+# TEST_9:
+print(invert_dict({1000: 'thousand', 2000: 'two thousand', 3000: 'three thousand'}))
+
+# TEST_10:
+print(invert_dict({-2147483648: 'min int', 2147483647: 'max int'}))
+

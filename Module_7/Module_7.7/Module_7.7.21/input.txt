@@ -1,0 +1,22 @@
+# INPUT DATA:
+
+# TEST_1:
+path = Path('desktop/fun')
+print(get_files_with_import(path))
+
+# TEST_2:
+path = Path('desktop/games')
+print(get_files_with_import(path))
+
+# TEST_3:
+path = Path('desktop/studying/books')
+print(get_files_with_import(path))
+
+# TEST_4:
+path = Path('desktop/studying/data_sets')
+print(get_files_with_import(path))
+
+# TEST_5:
+path = Path('desktop')
+print(get_files_with_import(path))
+

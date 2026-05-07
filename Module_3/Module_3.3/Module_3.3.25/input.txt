@@ -1,0 +1,32 @@
+# INPUT DATA:
+
+# TEST_1:
+print(next_look_and_say('1'))
+
+# TEST_2:
+print(next_look_and_say('11'))
+
+# TEST_3:
+print(next_look_and_say('21'))
+
+# TEST_4:
+print(next_look_and_say('1211'))
+
+# TEST_5:
+print(next_look_and_say('111221'))
+
+# TEST_6:
+print(next_look_and_say('312211'))
+
+# TEST_7:
+print(next_look_and_say('13112221'))
+
+# TEST_8:
+print(next_look_and_say('1113213211'))
+
+# TEST_9:
+print(next_look_and_say('31131211131221'))
+
+# TEST_10:
+print(next_look_and_say('13211311123113112211'))
+

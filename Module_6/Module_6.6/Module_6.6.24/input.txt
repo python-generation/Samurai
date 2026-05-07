@@ -1,0 +1,194 @@
+# INPUT DATA:
+
+# TEST_1:
+import unittest
+
+
+class TestSortDictsByKey(SortedTestCase):
+    def test_sorted(self):
+        lst = sorted([4, 3, 5, 1, 2])
+        self.assertSorted(lst)
+
+    def test_sorted_reverse(self):
+        lst = sorted([4, 3, 5, 1, 2], reverse=True)
+        self.assertSorted(lst, reverse=True)
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestSortDictsByKey)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_2:
+import unittest
+
+
+class TestSortDictsByKey(SortedTestCase):
+    def test_sorted_by_key(self):
+        lst = sorted([4, -3, 5, -1, -2], key=abs)
+        self.assertSortedByKey(lst, abs)
+
+    def test_sorted_by_key_reverse(self):
+        lst = sorted([4, -3, 5, -1, -2], key=abs, reverse=True)
+        self.assertSortedByKey(lst, abs, reverse=True)
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestSortDictsByKey)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_3:
+import unittest
+
+
+class TestSortDictsByKey(SortedTestCase):
+    def test_sorted(self):
+        lst = sorted(["apple", "banana", "cherry"])
+        self.assertSorted(lst)
+
+    def test_sorted_reverse(self):
+        lst = sorted(["apple", "banana", "cherry"], reverse=True)
+        self.assertSorted(lst, reverse=True)
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestSortDictsByKey)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_4:
+import unittest
+
+
+class TestSortDictsByKey(SortedTestCase):
+    def test_sorted(self):
+        lst = sorted([])
+        self.assertSorted(lst)
+
+    def test_sorted_reverse(self):
+        lst = sorted([], reverse=True)
+        self.assertSorted(lst, reverse=True)
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestSortDictsByKey)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_5:
+import unittest
+
+
+class TestSortDictsByKey(SortedTestCase):
+    def test_sorted(self):
+        lst = sorted([42])
+        self.assertSorted(lst)
+
+    def test_sorted_reverse(self):
+        lst = sorted([42], reverse=True)
+        self.assertSorted(lst, reverse=True)
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestSortDictsByKey)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_6:
+import unittest
+
+
+class TestSortDictsByKey(SortedTestCase):
+    def test_sorted(self):
+        lst = sorted(["a", "abc", "ab"], key=len)
+        self.assertSortedByKey(lst, key=len)
+
+    def test_sorted_reverse(self):
+        lst = sorted(["a", "abc", "ab"], key=len, reverse=True)
+        self.assertSortedByKey(lst, key=len, reverse=True)
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestSortDictsByKey)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_7:
+import unittest
+
+
+class TestSortDictsByKey(SortedTestCase):
+    def test_sorted(self):
+        data = [{'score': 1}, {'score': 3}, {'score': 5}]
+        self.assertSortedByKey(data, key=lambda d: d['score'])
+
+    def test_sorted_reverse(self):
+        data = [{'score': 5}, {'score': 3}, {'score': 1}]
+        self.assertSortedByKey(data, key=lambda d: d['score'], reverse=True)
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestSortDictsByKey)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_8:
+import unittest
+
+
+class TestSortDictsByKey(SortedTestCase):
+    def test_sorted(self):
+        lst = sorted([2, 4, 3, 4, 5, 1, 2])
+        self.assertSorted(lst)
+
+    def test_sorted_reverse(self):
+        lst = sorted([2, 4, 3, 4, 5, 1, 2], reverse=True)
+        self.assertSorted(lst, reverse=True)
+
+    def test_sorted_by_key(self):
+        lst = sorted([2, 4, -3, -4, 5, -1, -2], key=abs)
+        self.assertSortedByKey(lst, abs)
+
+    def test_sorted_by_key_reverse(self):
+        lst = sorted([2, 4, -3, -4, 5, -1, -2], key=abs, reverse=True)
+        self.assertSortedByKey(lst, abs, reverse=True)
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestSortDictsByKey)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+

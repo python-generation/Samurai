@@ -1,0 +1,17 @@
+# INPUT DATA:
+
+# TEST_1:
+print(get_films(2005, 110))
+
+# TEST_2:
+print(get_films(2010, 100))
+
+# TEST_3:
+print(get_films(2020, 10))
+
+# TEST_4:
+print(get_films(1990, 81))
+
+# TEST_5:
+print(get_films(1995, 81))
+

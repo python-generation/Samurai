@@ -1,0 +1,164 @@
+# INPUT DATA:
+
+# TEST_1:
+def is_positive(x):
+    if x <= 0:
+        raise ValueError('Значение должно быть положительным')
+    return True
+
+def is_integer(x):
+    if not isinstance(x, int):
+        raise TypeError('Значение должно быть целым числом')
+    return True
+
+print(check_conditions([is_positive, is_integer], 10))     # is_positive(10) = True и 
+                                                           # is_integer(10) = True, ответ True
+
+# TEST_2:
+def is_positive(x):
+    if x <= 0:
+        raise ValueError('Значение должно быть положительным')
+    return True
+
+def is_integer(x):
+    if not isinstance(x, int):
+        raise TypeError('Значение должно быть целым числом')
+    return True
+
+try:
+    check_conditions([is_positive, is_integer], -10)       # is_positive(-10) приводит 
+except ExceptionGroup as e:                                # к возбуждению исключения, в результате
+    print(e)                                               # чего создана и возбуждена группа,
+    print(e.exceptions)                                    # состоящая из одного этого исключения
+
+# TEST_3:
+def is_positive(x):
+    if x <= 0:
+        raise ValueError('Значение должно быть положительным')
+    return True
+
+def is_integer(x):
+    if not isinstance(x, int):
+        raise TypeError('Значение должно быть целым числом')
+    return True
+
+try:
+    check_conditions([is_positive, is_integer], -2.718)    # is_positive(-2.718) и is_integer(-2.718) 
+except ExceptionGroup as e:                                # приводит к возбуждению исключения, в
+    print(e)                                               # результате чего создана и возбуждена 
+    print(e.exceptions)                                    # группа, состоящая из двух этих исключений
+
+# TEST_4:
+def is_positive(x):
+    if x <= 0:
+        raise ValueError('Значение должно быть положительным')
+    return True
+
+def is_integer(x):
+    if not isinstance(x, int):
+        raise TypeError('Значение должно быть целым числом')
+    return True
+
+try:
+    check_conditions([is_positive, is_integer], 3.14)
+except ExceptionGroup as e:
+    print(e)
+    print(e.exceptions)
+
+# TEST_5:
+def is_positive(x):
+    if x <= 0:
+        raise ValueError('Значение должно быть положительным')
+    return True
+
+def is_integer(x):
+    if not isinstance(x, int):
+        raise TypeError('Значение должно быть целым числом')
+    return True
+
+try:
+    check_conditions([is_positive, is_integer], -3.14)
+except ExceptionGroup as e:
+    print(e)
+    print(e.exceptions)
+
+# TEST_6:
+def is_string(value):
+    if not isinstance(value, str):
+        raise TypeError('Значение должно быть строкой')
+    return True
+
+def len_range(value):
+    min_length = 2
+    max_length = 8
+    
+    if not min_length  <= len(value) <= max_length :
+        raise ValueError(f"Длина строки должна быть в диапазоне от {min_length} до {max_length} символов")
+    return True
+
+
+print(check_conditions([is_string, len_range], 'Valera'))
+
+# TEST_7:
+def is_string(value):
+    if not isinstance(value, str):
+        raise TypeError('Значение должно быть строкой')
+    return True
+
+def len_range(value):
+    min_length = 2
+    max_length = 8
+    
+    if not min_length <= len(value) <= max_length :
+        raise ValueError(f"Длина строки должна быть в диапазоне от {min_length} до {max_length} символов")
+    return True
+
+
+try:
+    check_conditions([is_string, len_range], 'ValeraValeraValera')
+except ExceptionGroup as e:
+    print(e)
+    print(e.exceptions)
+
+# TEST_8:
+def is_string(value):
+    if not isinstance(value, str):
+        raise TypeError('Значение должно быть строкой')
+    return True
+
+def len_range(value):
+    min_length = 2
+    max_length = 8
+    
+    if not min_length <= len(value) <= max_length :
+        raise ValueError(f"Длина строки должна быть в диапазоне от {min_length} до {max_length} символов")
+    return True
+
+
+try:
+    check_conditions([is_string, len_range], 'P')
+except ExceptionGroup as e:
+    print(e)
+    print(e.exceptions)
+
+# TEST_9:
+def is_string(value):
+    if not isinstance(value, str):
+        raise TypeError('Значение должно быть строкой')
+    return True
+
+def len_range(value):
+    min_length = 2
+    max_length = 8
+    
+    if not min_length <= len(value) <= max_length :
+        raise ValueError(f"Длина строки должна быть в диапазоне от {min_length} до {max_length} символов")
+    return True
+
+
+try:
+    check_conditions([is_string, len_range], ['b'])
+except ExceptionGroup as e:
+    print(e)
+    print(e.exceptions)
+

@@ -1,0 +1,73 @@
+# INPUT DATA:
+
+# TEST_1:
+cache = Cache()
+cache.set('user1', 'Тимур')
+cache.set('user2', 'Валера')
+del cache
+
+# TEST_2:
+cache = Cache()
+cache.set('user1', 'Тимур')
+cache.set('user2', 'Валера')
+
+print(cache.cache)
+print(cache.get('user1'))
+print(cache.get('user2'))
+
+# TEST_3:
+cache = Cache()
+del cache
+
+# TEST_4:
+cache = Cache()
+print(weakref.getweakrefcount(cache))
+
+# TEST_5:
+cache = Cache()
+print(isinstance(cache.cache, dict))
+print(len(cache.cache) == 0)
+
+# TEST_6:
+cache = Cache()
+print(cache.get('missing') is None)
+print(cache.get('missing', 42) == 42)
+
+# TEST_7:
+cache = Cache()
+cache.set('key', 'first')
+cache.set('key', 'second')
+cache.set('key', 'third')
+print(cache.get('key') == 'third')
+
+# TEST_8:
+cache = Cache()
+cache.set('none_val', None)
+print(cache.get('none_val', 100) is None)
+
+# TEST_9:
+cache1 = Cache()
+cache2 = Cache()
+cache3 = Cache()
+
+cache1.set('a', 1)
+cache1.set('b', 2)
+cache2.set('c', 3)
+
+del cache2
+del cache1
+
+# TEST_10:
+cache1 = Cache()
+cache2 = Cache()
+cache3 = Cache()
+
+cache1.set('a', 1)
+cache1.set('b', 2)
+cache2.set('b', 3)
+
+print(cache1.get('a') == 1)
+print(cache1.get('b') == 2)
+print(cache2.get('b') == 3)
+print(cache3.get('c') is None)
+

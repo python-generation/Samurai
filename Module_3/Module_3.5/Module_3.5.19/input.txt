@@ -1,0 +1,11 @@
+# INPUT DATA:
+
+# TEST_1:
+print(invert_bytes(b'beegeek'))
+
+# TEST_2:
+print(invert_bytes(b'pygen'))
+
+# TEST_3:
+print(invert_bytes(b'I love Python =)'))
+

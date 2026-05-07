@@ -1,0 +1,62 @@
+# INPUT DATA:
+
+# TEST_1:
+print(evaluate(lambda a, b, c: a + b + c, 1, 2, 3))
+
+# TEST_2:
+print(evaluate(lambda a, b, c: a + b + c, 1, 2, '3'))
+
+# TEST_3:
+print(evaluate(sum, [15, 10]))
+
+# TEST_4:
+print(evaluate(sum, (15, 10)))
+
+# TEST_5:
+print(evaluate(sum, {15: 10, 10: 15}))
+
+# TEST_6:
+print(evaluate(sum, {'15': '10', '10': '15'}))
+
+# TEST_7:
+print(evaluate(abs, [101, 112, 135]))
+
+# TEST_8:
+def add(x):
+    return x[0] + x[1] + x[2]
+
+
+print(evaluate(add, [101, 112, 135]))
+
+# TEST_9:
+def add(x):
+    return x[0] + x[1] + x[2]
+
+
+print(evaluate(add, ['101', '112', '135']))
+
+# TEST_10:
+print(evaluate(sum, ['1', '112', '15'], 127))
+
+# TEST_11:
+print(evaluate(sum, (1, 112, 15, 18, 33), 127))
+
+# TEST_12:
+print(evaluate(sum, '1', '112', '15'))
+
+# TEST_13:
+def add(x, y):
+    return x + y
+
+
+print(evaluate(add, ['1', '112', '15'], ['18', '33', '127']))
+
+# TEST_14:
+print(evaluate(max, '1', '112', '15'))
+
+# TEST_15:
+print(evaluate(min, '1', [112], (15), 18.86, 33, '127'))
+
+# TEST_16:
+print(evaluate(min, '1', '134', '15', '35', '198'))
+

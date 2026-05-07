@@ -1,0 +1,25 @@
+# OUTPUT DATA:
+
+# TEST_1:
+<class '__main__.DataProcessor'>
+None
+100
+/tmp
+
+# TEST_2:
+Атрибут MAX_size содержит недопустимые символы.
+
+# TEST_3:
+Некорректное имя метода: processdata().
+
+# TEST_4:
+Некорректное имя метода: run().
+
+# TEST_5:
+Атрибут DefaultPath содержит недопустимые символы.
+
+# TEST_6:
+<class '__main__.DataProcessor'>
+ok
+42
+

@@ -1,0 +1,17 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['desktop/studying/books/how to prove.pdf', 'desktop/studying/data_sets/readme.txt', 'desktop/studying/exam.txt', 'desktop/studying/fipi_demo_2022.pdf']
+
+# TEST_2:
+['desktop/games/Psychonauts 2.exe', 'desktop/games/not released/Hollow Knight Silksong.exe']
+
+# TEST_3:
+['desktop/studying/data_sets/countries.json', 'desktop/studying/data_sets/data_sample.csv', 'desktop/studying/data_sets/fonts/fontlist-v330.json', 'desktop/studying/data_sets/task_results.xlsx']
+
+# TEST_4:
+['desktop/earth.jpg', 'desktop/images/code.jpeg']
+
+# TEST_5:
+['desktop/studying/homework.py', 'desktop/test.py']
+

@@ -1,0 +1,74 @@
+# INPUT DATA:
+
+# TEST_1:
+from pathlib import Path
+
+path1 = Path('desktop/studying/exam.txt')
+path2 = Path('desktop/studying/../studying/exam.txt')
+
+print(compare_paths(path1, path2))
+
+# TEST_2:
+from pathlib import Path
+
+path1 = Path('desktop/studying/exam.txt')
+path2 = Path('desktop/studying/../exam.txt')
+
+print(compare_paths(path1, path2))
+
+# TEST_3:
+from pathlib import Path
+
+path1 = Path('module_os/Разные файлы/Новая папка/../..')
+path2 = Path('module_os')
+
+print(compare_paths(path1, path2))
+
+# TEST_4:
+from pathlib import Path
+
+path1 = Path('fun/songs/track.mp3')
+path2 = Path('fun/./songs/track.mp3')
+
+print(compare_paths(path1, path2))
+
+# TEST_5:
+from pathlib import Path
+
+path1 = Path('games')
+path2 = Path('fun')
+
+print(compare_paths(path1, path2))
+
+# TEST_6:
+from pathlib import Path
+
+path1 = Path('shopping_list.txt')
+path2 = Path('studying')
+
+print(compare_paths(path1, path2))
+
+# TEST_7:
+from pathlib import Path
+
+path1 = Path('studying/data_sets/./fonts/../fonts')
+path2 = Path('studying/data_sets/fonts')
+
+print(compare_paths(path1, path2))
+
+# TEST_8:
+from pathlib import Path
+
+path1 = Path('fun/songs/track.mp3')
+path2 = Path('studying/../fun/songs/track.mp3')
+
+print(compare_paths(path1, path2))
+
+# TEST_9:
+from pathlib import Path
+
+path1 = Path('fun/songs/Alexandra Savior Crying All the Time.mp3')
+path2 = Path('studying/../games/.././fun/./songs/../songs/./Alexandra Savior Crying All the Time.mp3')
+
+print(compare_paths(path1, path2))
+

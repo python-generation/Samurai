@@ -1,0 +1,18 @@
+# OUTPUT DATA:
+
+# TEST_1:
+__main__.TestToUpper.test_upper
+
+# TEST_2:
+__main__.TestReverse.test_reverse
+
+# TEST_3:
+__main__.TestIsPalindrome.test_not_palindrome
+__main__.TestIsPalindrome.test_palindrome
+
+# TEST_4:
+True
+True
+True
+True
+

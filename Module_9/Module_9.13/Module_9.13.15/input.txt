@@ -1,0 +1,62 @@
+# INPUT DATA:
+
+# TEST_1:
+cursor = conn.cursor()
+cursor.execute('SELECT ?;', ({'bee': 'geek'},))
+print(cursor.fetchone())
+
+cursor.close()
+conn.close()
+
+# TEST_2:
+cursor = conn.cursor()
+cursor.executescript('''
+CREATE TABLE Beegeek (
+    value JSON
+);
+
+INSERT INTO Beegeek
+VALUES ('{"bee": "geek"}')
+''')
+conn.commit()
+
+cursor.execute('SELECT * FROM Beegeek;')
+print(cursor.fetchone())
+
+cursor.execute('''SELECT '{"bee": "geek"}' AS "[JSON]";''')
+print(cursor.fetchone())
+
+cursor.close()
+conn.close()
+
+# TEST_3:
+cursor = conn.cursor()
+countries = [({'Monaco': 'Monaco'},), ({'Iceland': 'Reykjavik'},), ({'Kenya': 'Nairobi'},),
+             ({'Kazakhstan': 'Nur-Sultan'},), ({'Mali': 'Bamako'},), ({'Colombia': 'Bogota'},),
+             ({'Finland': 'Helsinki'},), ({'Costa Rica': 'San Jose'},), ({'Cuba': 'Havana'},), ({'France': 'Paris'},),
+             ({'Gabon': 'Libreville'},), ({'Liberia': 'Monrovia'},), ({'Angola': 'Luanda'},), ({'India': 'New Delhi'},),
+             ({'Canada': 'Ottawa'},), ({'Australia': 'Canberra'},)]
+
+for country in countries:
+    cursor.execute('''SELECT ?;''', country)
+    print(cursor.fetchone())
+    
+print()
+
+cursor.execute('''
+CREATE TABLE Countries (
+    capital JSON
+);''')
+
+cursor.executemany('''
+INSERT INTO Countries (capital)
+VALUES (?)
+''', countries)
+conn.commit()
+
+cursor.execute('SELECT * FROM Countries;')
+print(cursor.fetchall())
+
+cursor.close()
+conn.close()
+

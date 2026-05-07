@@ -1,0 +1,20 @@
+# INPUT DATA:
+
+# TEST_1:
+print(count_dirs('desktop/studying'))
+
+# TEST_2:
+print(count_dirs('desktop/fun'))
+
+# TEST_3:
+print(count_dirs('desktop/studying/data_sets'))
+
+# TEST_4:
+print(count_dirs('desktop/images'))
+
+# TEST_5:
+print(count_dirs('desktop/games/not released'))
+
+# TEST_6:
+print(count_dirs('desktop'))
+

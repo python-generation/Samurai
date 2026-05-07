@@ -1,0 +1,32 @@
+# INPUT DATA:
+
+# TEST_1:
+code = '''def max_a_b(a, b):
+if a > b:
+    return a
+return b'''
+
+print(indent_code(code))
+
+# TEST_2:
+code = '''def foo():
+pass
+'''
+
+print(indent_code(code))
+
+# TEST_3:
+code = '''def bar(x):
+if x > 0:
+    return x'''
+
+print(indent_code(code))
+
+# TEST_4:
+code = '''def foo():
+def bar():
+    print('hello')
+return bar
+'''
+print(indent_code(code))
+

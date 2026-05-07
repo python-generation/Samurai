@@ -1,0 +1,24 @@
+# INPUT DATA:
+
+# TEST_1:
+logger.debug('Событие уровня DEBUG')
+logger.info('Событие уровня INFO')
+logger.warning('Событие уровня WARNING')
+logger.error('Событие уровня ERROR')
+logger.critical('Событие уровня CRITICAL')
+
+# TEST_2:
+logger.disabled = True
+
+logger.debug('Событие уровня DEBUG')
+logger.info('Событие уровня INFO')
+logger.warning('Событие уровня WARNING')
+logger.error('Событие уровня ERROR')
+logger.critical('Событие уровня CRITICAL')
+
+print('Логгер отключен')
+
+# TEST_3:
+print(logger.name)
+print(logger.level)
+

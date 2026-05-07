@@ -1,0 +1,17 @@
+# INPUT DATA:
+
+# TEST_1:
+print(get_files('desktop'))
+
+# TEST_2:
+print(get_files('desktop/fun'))
+
+# TEST_3:
+print(get_files('desktop/studying'))
+
+# TEST_4:
+print(get_files('desktop/studying/data_sets'))
+
+# TEST_5:
+print(get_files('desktop/images'))
+

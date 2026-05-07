@@ -1,0 +1,26 @@
+# INPUT DATA:
+
+# TEST_1:
+print(triangle_type(145, 145, 139))
+
+# TEST_2:
+print(triangle_type(59, 59, 59))
+
+# TEST_3:
+print(triangle_type(890, 199, 700))
+
+# TEST_4:
+print(triangle_type(578930, 694938, 499093))
+
+# TEST_5:
+print(triangle_type(38876, 38876, 10))
+
+# TEST_6:
+print(triangle_type(2002, 2002, 2002))
+
+# TEST_7:
+print(triangle_type(56, 50, 56))
+
+# TEST_8:
+print(triangle_type(4, 6, 6))
+

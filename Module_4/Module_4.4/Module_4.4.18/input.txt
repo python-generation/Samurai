@@ -1,0 +1,32 @@
+# INPUT DATA:
+
+# TEST_1:
+items = ['beegeek', 0, 100, '', [], (1, 2), None, False, True]
+new_items = remove_falsy(items)
+print(new_items)
+
+# TEST_2:
+binary_list = [1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1]
+new_binary_list = remove_falsy(binary_list)
+print(new_binary_list)
+
+# TEST_3:
+items = [1, 'hello', [1], (True,), {1: 1}]
+new_items = remove_falsy(items)
+print(new_items)
+
+# TEST_4:
+items = [0, '', [], (), {}, None, False]
+new_items = remove_falsy(items)
+print(new_items)
+
+# TEST_5:
+items: list[int] = []
+new_items = remove_falsy(items)
+print(new_items)
+
+# TEST_6:
+items = ['apple', '', 'banana', ' ', None]
+new_items = remove_falsy(items)
+print(new_items)
+

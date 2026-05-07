@@ -1,0 +1,31 @@
+# OUTPUT DATA:
+
+# TEST_1:
+be
+
+# TEST_2:
+bee
+
+# TEST_3:
+beegeek
+
+# TEST_4:
+None
+
+# TEST_5:
+python
+
+# TEST_6:
+h
+
+# TEST_7:
+None
+
+# TEST_8:
+None
+
+# TEST_9:
+be
+py
+None
+

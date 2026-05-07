@@ -1,0 +1,33 @@
+# OUTPUT DATA:
+
+# TEST_1:
++----+-------------+------------+-----+---------+
+| id | name        | surname    | age | city_id |
++----+-------------+------------+-----+---------+
+| 1  | Steven      | Randall    | 25  | 4       |
+| 2  | Mark        | Smith      | 17  | 2       |
+| 3  | Monica      | Clark      | 44  | 4       |
+| 4  | Michelle    | Barnett    | 83  | 1       |
+| 5  | Patrick     | Garcia     | 11  | 5       |
+| 6  | Christopher | Davis      | 39  | 5       |
+| 7  | Earl        | Collins    | 40  | 6       |
+| 8  | Eric        | Mclaughlin | 50  | 3       |
+| 9  | Rhonda      | Sanchez    | 18  | 1       |
+| 10 | Alexandria  | Brown      | 69  | 3       |
++----+-------------+------------+-----+---------+
+
+# TEST_2:
++----+---------------+
+| id | name          |
++----+---------------+
+| 1  | Dubai         |
+| 2  | London        |
+| 3  | Moscow        |
+| 4  | New York city |
+| 5  | Paris         |
+| 6  | Rome          |
++----+---------------+
+
+# TEST_3:
+no such table: RawData
+

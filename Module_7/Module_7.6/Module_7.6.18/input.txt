@@ -1,0 +1,50 @@
+# INPUT DATA:
+
+# TEST_1:
+from pathlib import Path
+
+path = Path('desktop/fun')
+print(get_path_type(path))
+
+# TEST_2:
+from pathlib import Path
+
+path = Path('desktop/images/code.jpeg')
+print(get_path_type(path))
+
+# TEST_3:
+from pathlib import Path
+
+path = Path('desktop/Pictures')
+print(get_path_type(path))
+
+# TEST_4:
+from pathlib import Path
+
+path = Path('desktop/studying/data_sets/fonts/fontlist-v330.json')
+print(get_path_type(path))
+
+# TEST_5:
+from pathlib import Path
+
+path = Path('desktop/studying/data_sets')
+print(get_path_type(path))
+
+# TEST_6:
+from pathlib import Path
+
+path = Path('desktop/games/Psychonauts 2.exe')
+print(get_path_type(path))
+
+# TEST_7:
+from pathlib import Path
+
+path = Path('desktop/fun/movies')
+print(get_path_type(path))
+
+# TEST_8:
+from pathlib import Path
+
+path = Path('desktop/images/non_existing.png')
+print(get_path_type(path))
+

@@ -1,0 +1,32 @@
+# INPUT DATA:
+
+# TEST_1:
+cursor = conn.cursor()
+cursor.execute("SELECT REVERSE('beegeek')")
+
+print(cursor.fetchone()[0])
+
+# TEST_2:
+cursor = conn.cursor()
+cursor.execute("SELECT REVERSE('')")
+
+print(cursor.fetchone()[0])
+
+# TEST_3:
+cursor = conn.cursor()
+cursor.execute("SELECT REVERSE('A')")
+
+print(cursor.fetchone()[0])
+
+# TEST_4:
+cursor = conn.cursor()
+cursor.execute("SELECT REVERSE('привет')")
+
+print(cursor.fetchone()[0])
+
+# TEST_5:
+cursor = conn.cursor()
+cursor.execute("SELECT REVERSE('123!@#')")
+
+print(cursor.fetchone()[0])
+

@@ -1,0 +1,56 @@
+# INPUT DATA:
+
+# TEST_1:
+cursor = conn.cursor()
+cursor.execute("SELECT REGEXP('beegeek', 'be{2}ge{2}k')")
+
+print(cursor.fetchone()[0])
+
+# TEST_2:
+cursor = conn.cursor()
+cursor.execute("SELECT REGEXP('beegeek', 'BE{2}GE{2}K')")
+
+print(cursor.fetchone()[0])
+
+# TEST_3:
+cursor = conn.cursor()
+cursor.execute("SELECT REGEXP('python', 'p.*n')")
+
+print(cursor.fetchone()[0])
+
+# TEST_4:
+cursor = conn.cursor()
+cursor.execute("SELECT REGEXP('hello', 'hello')")
+
+print(cursor.fetchone()[0])
+
+# TEST_5:
+cursor = conn.cursor()
+cursor.execute("SELECT REGEXP('hello', 'h.*a')")
+
+print(cursor.fetchone()[0])
+
+# TEST_6:
+cursor = conn.cursor()
+cursor.execute("SELECT REGEXP('', '')")
+
+print(cursor.fetchone()[0])
+
+# TEST_7:
+cursor = conn.cursor()
+cursor.execute("SELECT REGEXP('BeeGeek', 'beegeek')")
+
+print(cursor.fetchone()[0])
+
+# TEST_8:
+cursor = conn.cursor()
+cursor.execute("SELECT REGEXP('Order #54321 has been shipped', 'Order #[0-9]+ has been shipped')")
+
+print(cursor.fetchone()[0])
+
+# TEST_9:
+cursor = conn.cursor()
+cursor.execute("SELECT REGEXP('Today is a sunny day', '.*sunny.*')")
+
+print(cursor.fetchone()[0])
+

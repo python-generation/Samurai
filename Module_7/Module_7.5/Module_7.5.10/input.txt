@@ -1,0 +1,17 @@
+# INPUT DATA:
+
+# TEST_1:
+print(get_markdown('docs'))
+
+# TEST_2:
+print(get_markdown('docs/api/v2'))
+
+# TEST_3:
+print(get_markdown('docs/guide'))
+
+# TEST_4:
+print(get_markdown('docs/guide/advanced'))
+
+# TEST_5:
+print(get_markdown('docs/extras'))
+

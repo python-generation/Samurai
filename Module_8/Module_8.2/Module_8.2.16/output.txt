@@ -1,0 +1,233 @@
+# OUTPUT DATA:
+
+# TEST_1:
+[LOG_01] INFO:__main__:Получатель
+         'support@pygen.ru', тема
+         'Решение задач'. Сообщение 'Моя
+         программа не работает,
+         помогите' отправлено.
+
+[LOG_02] ERROR:__main__:Некорректный
+         email 'support@pygen'.
+         Сообщение 'Моя программа не
+         работает, помогите' не
+         отправлено.
+
+# TEST_2:
+[LOG_01] T
+         e
+         s
+         t
+
+# TEST_3:
+
+
+# TEST_4:
+[LOG_01] ⚠️ WARNING: Пользователь пытается войти с
+         незнакомого устройства 🖥️. Если это не
+         вы, смените пароль! 🔒
+
+[LOG_02] ERROR: Система не может обработать
+         запрос, потому что данные слишком
+         длинные: AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+# TEST_5:
+[LOG_01] Log message 1
+
+[LOG_02] Log message 2
+
+[LOG_03] Log message 3
+
+[LOG_04] Log message 4
+
+[LOG_05] Log message 5
+
+[LOG_06] Log message 6
+
+[LOG_07] Log message 7
+
+[LOG_08] Log message 8
+
+[LOG_09] Log message 9
+
+[LOG_10] Log message 10
+
+[LOG_11] Log message 11
+
+[LOG_12] Log message 12
+
+[LOG_13] Log message 13
+
+[LOG_14] Log message 14
+
+[LOG_15] Log message 15
+
+[LOG_16] Log message 16
+
+[LOG_17] Log message 17
+
+[LOG_18] Log message 18
+
+[LOG_19] Log message 19
+
+[LOG_20] Log message 20
+
+[LOG_21] Log message 21
+
+[LOG_22] Log message 22
+
+[LOG_23] Log message 23
+
+[LOG_24] Log message 24
+
+[LOG_25] Log message 25
+
+[LOG_26] Log message 26
+
+[LOG_27] Log message 27
+
+[LOG_28] Log message 28
+
+[LOG_29] Log message 29
+
+[LOG_30] Log message 30
+
+[LOG_31] Log message 31
+
+[LOG_32] Log message 32
+
+[LOG_33] Log message 33
+
+[LOG_34] Log message 34
+
+[LOG_35] Log message 35
+
+[LOG_36] Log message 36
+
+[LOG_37] Log message 37
+
+[LOG_38] Log message 38
+
+[LOG_39] Log message 39
+
+[LOG_40] Log message 40
+
+[LOG_41] Log message 41
+
+[LOG_42] Log message 42
+
+[LOG_43] Log message 43
+
+[LOG_44] Log message 44
+
+[LOG_45] Log message 45
+
+[LOG_46] Log message 46
+
+[LOG_47] Log message 47
+
+[LOG_48] Log message 48
+
+[LOG_49] Log message 49
+
+[LOG_50] Log message 50
+
+[LOG_51] Log message 51
+
+[LOG_52] Log message 52
+
+[LOG_53] Log message 53
+
+[LOG_54] Log message 54
+
+[LOG_55] Log message 55
+
+[LOG_56] Log message 56
+
+[LOG_57] Log message 57
+
+[LOG_58] Log message 58
+
+[LOG_59] Log message 59
+
+[LOG_60] Log message 60
+
+[LOG_61] Log message 61
+
+[LOG_62] Log message 62
+
+[LOG_63] Log message 63
+
+[LOG_64] Log message 64
+
+[LOG_65] Log message 65
+
+[LOG_66] Log message 66
+
+[LOG_67] Log message 67
+
+[LOG_68] Log message 68
+
+[LOG_69] Log message 69
+
+[LOG_70] Log message 70
+
+[LOG_71] Log message 71
+
+[LOG_72] Log message 72
+
+[LOG_73] Log message 73
+
+[LOG_74] Log message 74
+
+[LOG_75] Log message 75
+
+[LOG_76] Log message 76
+
+[LOG_77] Log message 77
+
+[LOG_78] Log message 78
+
+[LOG_79] Log message 79
+
+[LOG_80] Log message 80
+
+[LOG_81] Log message 81
+
+[LOG_82] Log message 82
+
+[LOG_83] Log message 83
+
+[LOG_84] Log message 84
+
+[LOG_85] Log message 85
+
+[LOG_86] Log message 86
+
+[LOG_87] Log message 87
+
+[LOG_88] Log message 88
+
+[LOG_89] Log message 89
+
+[LOG_90] Log message 90
+
+[LOG_91] Log message 91
+
+[LOG_92] Log message 92
+
+[LOG_93] Log message 93
+
+[LOG_94] Log message 94
+
+[LOG_95] Log message 95
+
+[LOG_96] Log message 96
+
+[LOG_97] Log message 97
+
+[LOG_98] Log message 98
+
+[LOG_99] Log message 99
+

@@ -1,0 +1,126 @@
+# OUTPUT DATA:
+
+# TEST_1:
+INFO: Текст заключен в тег по умолчанию.
+<h1>Pygen</h1>
+
+# TEST_2:
+INFO: Текст заключен в тег h2.
+<h2>Pygen</h2>
+
+# TEST_3:
+<h1>Pygen</h1>
+
+# TEST_4:
+INFO: Текст заключен в тег по умолчанию.
+INFO: Текст заключен в тег по умолчанию.
+
+# TEST_5:
+INFO: Текст заключен в тег по умолчанию.
+<h1>BeeGeek_r</h1>
+INFO: Текст заключен в тег по умолчанию.
+
+# TEST_6:
+<h1>BeeGeek_r</h1>
+
+# TEST_7:
+INFO: Текст заключен в тег по умолчанию.
+<h1>BeeGeek_w</h1>
+not readable
+
+# TEST_8:
+<h1>BeeGeek_w</h1>
+not readable
+
+# TEST_9:
+INFO: Текст заключен в тег по умолчанию.
+<h1>BeeGeek_a</h1>
+not readable
+
+# TEST_10:
+<h1>BeeGeek_a</h1>
+not readable
+
+# TEST_11:
+INFO: Текст заключен в тег по умолчанию.
+<h1>BeeGeek_r+</h1>
+INFO: Текст заключен в тег по умолчанию.
+
+
+# TEST_12:
+<h1>BeeGeek_r+</h1>
+
+
+# TEST_13:
+INFO: Текст заключен в тег по умолчанию.
+<h1>BeeGeek_w+</h1>
+
+
+# TEST_14:
+<h1>BeeGeek_w+</h1>
+
+
+# TEST_15:
+INFO: Текст заключен в тег по умолчанию.
+<h1>BeeGeek_a+</h1>
+
+
+# TEST_16:
+<h1>BeeGeek_a+</h1>
+
+
+# TEST_17:
+INFO: Текст заключен в тег a.
+<a>BeeGeek_a</a>
+not readable
+
+# TEST_18:
+<a>BeeGeek_a</a>
+not readable
+
+# TEST_19:
+INFO: Текст заключен в тег Pygen.
+<Pygen>BeeGeek</Pygen>
+not readable
+
+# TEST_20:
+<Pygen>BeeGeek</Pygen>
+not readable
+
+# TEST_21:
+INFO: Текст заключен в тег .
+<>BeeGeek</>
+not readable
+
+# TEST_22:
+<>BeeGeek</>
+not readable
+
+# TEST_23:
+INFO: Текст заключен в тег .
+<></>
+not readable
+
+# TEST_24:
+INFO: Текст заключен в тег по умолчанию.
+<h1></h1>
+not readable
+
+# TEST_25:
+INFO: Текст заключен в тег по умолчанию.
+<h1>BeeGeek_wr</h1>
+INFO: Текст заключен в тег по умолчанию.
+
+
+# TEST_26:
+INFO: Текст заключен в тег по умолчанию.
+<h1><div class="page-footer__row page-footer__row_order_second"><div class="page-footer__col page-footer__apps"><a class="page-footer__mobapp-link" target="_blank"el="n8888888888rrer" href="ht999999999999999.com/serve/1888888888888846">img alt="Get it on Apple Store" src="http999999999999999999/app-store-badge-ru.svg?1745400576">/a>a class="page-footer__mobapp-link" target="_blank" rel="no888888888888888rrer"/312999733398396995"></h1>
+
+# TEST_27:
+INFO: Текст заключен в тег <div style="position: absolute; left: -9999px; top: -9999px; margin: 0px; padding: 0px; border: 0px; width: 893.898px;">.
+<<div style="position: absolute; left: -9999px; top: -9999px; margin: 0px; padding: 0px; border: 0px; width: 893.898px;">><div class="page-footer__row page-footer__row_order_second"><div class="page-footer__col page-footer__apps"><a class="page-footer__mobapp-link" target="_blank"el="n8888888888rrer" href="ht999999999999999.com/serve/1888888888888846">img alt="Get it on Apple Store" src="http999999999999999999/app-store-badge-ru.svg?1745400576">/a>a class="page-footer__mobapp-link" target="_blank" rel="no888888888888888rrer"/312999733398396995"></<div style="position: absolute; left: -9999px; top: -9999px; margin: 0px; padding: 0px; border: 0px; width: 893.898px;">>
+
+# TEST_28:
+INFO: Текст заключен в тег по умолчанию.
+<h1>Pygen</h1>
+

@@ -1,0 +1,46 @@
+# INPUT DATA:
+
+# TEST_1:
+from prettytable import from_db_cursor
+
+make_db()
+
+conn = sqlite3.connect('Users.db')
+cursor = conn.cursor()
+
+cursor.execute('SELECT * FROM Users;')
+print(from_db_cursor(cursor, align='l'))
+
+cursor.close()
+conn.close()
+
+# TEST_2:
+from prettytable import from_db_cursor
+
+make_db()
+
+conn = sqlite3.connect('Users.db')
+cursor = conn.cursor()
+
+cursor.execute('SELECT * FROM Cities;')
+print(from_db_cursor(cursor, align='l'))
+
+cursor.close()
+conn.close()
+
+# TEST_3:
+from sqlite3 import OperationalError
+
+make_db()
+
+conn = sqlite3.connect('Raw.db')
+cursor = conn.cursor()
+
+try:
+    cursor.execute('SELECT * FROM RawData;')
+except OperationalError as e:
+    print(e)
+
+cursor.close()
+conn.close()
+

@@ -1,0 +1,21 @@
+# INPUT DATA:
+
+# TEST_1:
+paths = ['desktop/fun/movies', 'desktop/fun/songs', 'desktop/images']
+print(count_dirs_and_files(paths))
+
+# TEST_2:
+paths = ['desktop/fun/songs/Alexandra Savior Crying All the Time.mp3', 'desktop/images/code.jpeg']
+print(count_dirs_and_files(paths))
+
+# TEST_3:
+paths = ['desktop/fun/movies', 'desktop/images/code.jpeg']
+print(count_dirs_and_files(paths))
+
+# TEST_4:
+paths = ['desktop/studying', 'desktop/studying/books', 'desktop/studying/data_sets', 'desktop/studying/exam.txt', 'desktop/studying/fipi_demo_2022.pdf', 'desktop/studying/homework.py']
+print(count_dirs_and_files(paths))
+
+# TEST_5:
+print(count_dirs_and_files([]))
+

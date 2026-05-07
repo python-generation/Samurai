@@ -1,0 +1,72 @@
+# INPUT DATA:
+
+# TEST_1:
+order1 = Order(314159)
+order2 = Order(271828)
+
+order1.pay()
+
+print(order1.status)
+del order1
+
+print(order2.status)
+del order2
+
+# TEST_2:
+order = Order(314159)
+order.cancel()
+print(order.status)
+del order
+
+# TEST_3:
+order = Order(314159)
+print(weakref.getweakrefcount(order))
+
+# TEST_4:
+order = Order(1005)
+order.cancel()
+print(order.status)
+order.pay()
+print(order.status)
+del order
+
+# TEST_5:
+order = Order(43621)
+order.pay()
+
+# TEST_6:
+order = Order(777)
+order.pay()
+order.cancel()
+order.pay()
+print(order.status)
+del order
+
+# TEST_7:
+order1 = Order(111)
+order2 = Order(222)
+order3 = Order(333)
+
+order1.pay()
+order2.cancel()
+
+del order2
+del order1
+
+# TEST_8:
+order = Order(123)
+order.pay()
+print(order.status)
+order.cancel()
+print(order.status)
+
+# TEST_9:
+order = Order(99999)
+order.pay()
+del order
+
+try:
+    print(order.status)
+except NameError:
+    print('Заказ удален')
+

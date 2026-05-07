@@ -1,0 +1,77 @@
+# INPUT DATA:
+
+# TEST_1:
+print(next_prime(20))
+
+# TEST_2:
+print(next_prime(2))
+
+# TEST_3:
+logger.disabled = True
+print(next_prime(6))
+
+# TEST_4:
+next_prime(1)
+
+with open('primes.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_5:
+print(next_prime(6))
+
+# TEST_6:
+next_prime(47)
+
+with open('primes.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_7:
+next_prime(84)
+
+with open('primes.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_8:
+next_prime(53)
+
+# TEST_9:
+logger.disabled = True
+print(next_prime(53))
+
+# TEST_10:
+logger.disabled = True
+next_prime(100)
+
+# TEST_11:
+logger.disabled = True
+next_prime(75)
+
+with open('primes.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_12:
+print(next_prime(97))
+
+with open('primes.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_13:
+logger.disabled = True
+print(next_prime(97))
+
+with open('primes.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_14:
+logger.disabled = True
+print(next_prime(48))
+
+with open('primes.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_15:
+print(next_prime(48))
+
+with open('primes.log', encoding='utf-8') as file:
+    print(file.read())
+

@@ -1,0 +1,16 @@
+# OUTPUT DATA:
+
+# TEST_1:
+{'id': 1, 'trackname': 'Crazy on You', 'artist': 'Heart'}
+{'id': 2, 'trackname': 'My Lover', 'artist': 'The Sounds'}
+{'id': 3, 'trackname': 'Spent the Day in Bed', 'artist': 'Morrissey'}
+{'id': 4, 'trackname': 'Bigmouth Strikes Again', 'artist': 'The Smiths'}
+{'id': 5, 'trackname': 'Everyday is Like Sunday', 'artist': 'Morrissey'}
+
+# TEST_2:
+{'id': 1, 'title': 'The Shining', 'author_id': 1, 'price': 7.99, 'amount': 1}
+{'id': 2, 'title': 'Fight Club', 'author_id': 2, 'price': 9.99, 'amount': 19}
+{'id': 3, 'title': 'The Catcher in the Rye', 'author_id': 3, 'price': 3.49, 'amount': 11}
+{'id': 4, 'title': 'The Green Mile', 'author_id': 1, 'price': 15.99, 'amount': 6}
+{'id': 5, 'title': 'Haunted', 'author_id': 2, 'price': 13.99, 'amount': 1}
+

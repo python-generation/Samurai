@@ -1,0 +1,61 @@
+# OUTPUT DATA:
+
+# TEST_1:
+filesystem
+├── docs
+│   └── readme.md
+│   
+└── images
+    ├── cat.jpg
+    └── dog.jpg
+
+# TEST_2:
+filesystem
+├── empty
+└── main
+    ├── data
+    │   └── file.txt
+    │   
+    └── media
+        └── movie.mp4
+
+# TEST_3:
+filesystem
+└── desktop
+    ├── fun
+    │   ├── movies
+    │   └── songs
+    │       └── Alexandra Savior Crying All the Time.mp3
+    │   
+    ├── games
+    │   ├── not released
+    │   │   └── Hollow Knight Silksong.exe
+    │   │   
+    │   └── Psychonauts 2.exe
+    │   
+    ├── images
+    │   ├── code.jpeg
+    │   └── stepik.png
+    │   
+    ├── studying
+    │   ├── books
+    │   │   └── how to prove.pdf
+    │   │   
+    │   ├── data_sets
+    │   │   ├── fonts
+    │   │   │   └── fontlist-v330.json
+    │   │   │   
+    │   │   ├── countries.json
+    │   │   ├── data_sample.csv
+    │   │   ├── readme.txt
+    │   │   └── task_results.xlsx
+    │   │   
+    │   ├── exam.txt
+    │   ├── fipi_demo_2022.pdf
+    │   └── homework.py
+    │   
+    ├── earth.jpg
+    ├── python.pdf
+    ├── shopping_list.txt
+    └── test.py
+

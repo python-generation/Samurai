@@ -1,0 +1,74 @@
+# INPUT DATA:
+
+# TEST_1:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t1(val INTEGER)')
+cursor.executemany('INSERT INTO t1(val) VALUES (?)', [(1,), (2,), (3,)])
+cursor.execute('SELECT PERCENT_NULL(val) FROM t1')
+
+print(cursor.fetchone()[0])
+
+# TEST_2:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t2(val INTEGER)')
+cursor.executemany('INSERT INTO t2(val) VALUES (?)', [(1,), (2,), (None,), (None,)])
+cursor.execute('SELECT PERCENT_NULL(val) FROM t2')
+
+print(cursor.fetchone()[0])
+
+# TEST_3:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t3(val INTEGER)')
+cursor.executemany('INSERT INTO t3(val) VALUES (?)', [(None,), (None,), (None,)])
+cursor.execute('SELECT PERCENT_NULL(val) FROM t3')
+
+print(cursor.fetchone()[0])
+
+# TEST_4:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t4(val INTEGER)')
+cursor.executemany('INSERT INTO t4(val) VALUES (?)', [(1.1,), (None,), (2.2,)])
+cursor.execute('SELECT PERCENT_NULL(val) FROM t4')
+print(cursor.fetchone()[0])
+
+# TEST_5:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t5(val INTEGER)')
+cursor.executemany('INSERT INTO t5(val) VALUES (?)', [(None,)])
+cursor.execute('SELECT PERCENT_NULL(val) FROM t5')
+
+print(cursor.fetchone()[0])
+
+# TEST_6:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t6(val INTEGER)')
+cursor.executemany('INSERT INTO t6(val) VALUES (?)', [(10,)])
+cursor.execute('SELECT PERCENT_NULL(val) FROM t6')
+
+print(cursor.fetchone()[0])
+
+# TEST_7:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t7(val)')
+cursor.executemany('INSERT INTO t7(val) VALUES (?)', [(None,), ('bee',), (3,), (None,), ('x',)])
+cursor.execute('SELECT PERCENT_NULL(val) FROM t7')
+
+print(cursor.fetchone()[0])
+
+# TEST_8:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t8(val)')
+cursor.executemany('INSERT INTO t8(val) VALUES (?)', [(None,), (None,), ('a',), (None,), ('b',)])
+cursor.execute('SELECT PERCENT_NULL(val) FROM t8')
+
+print(cursor.fetchone()[0])
+
+# TEST_9:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t9(val)')
+cursor.executemany('INSERT INTO t9(val) VALUES (?)',
+                   [(i,) for i in range(1, 20)] + [(None,), (None,)])
+cursor.execute('SELECT PERCENT_NULL(val) FROM t9')
+
+print(cursor.fetchone()[0])
+

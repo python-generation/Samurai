@@ -1,0 +1,52 @@
+# INPUT DATA:
+
+# TEST_1:
+message = 'Привет! 😊 Хотел напомнить, что давно не виделись, и пора бы выбраться куда-нибудь вместе — можно сходить в кино, прогуляться по парку или просто посидеть за чашкой кофе и поболтать о всяких мелочах. Как ты смотришь на это?'
+
+print(make_sms_list(message))
+
+# TEST_2:
+message = 'Привет!'
+
+print(make_sms_list(message))
+
+# TEST_3:
+message = 'Hi! I wanted to remind you that we have not seen each other for a long time, and it is time to get out somewhere together - you can go to the movies, take a walk in the park, or just sit over a cup of coffee and chat about all sorts of little things. How would you like that?'
+
+print(make_sms_list(message))
+
+# TEST_4:
+message = 'Hi! 😊 I wanted to remind you that we have not seen each other for a long time, and it is time to get out somewhere together - you can go to the movies, take a walk in the park, or just sit over a cup of coffee and chat about all sorts of little things. How would you like that?'
+
+print(make_sms_list(message))
+
+# TEST_5:
+message = 'б' * 70
+
+print(make_sms_list(message))
+
+# TEST_6:
+message = ''
+
+print(make_sms_list(message))
+
+# TEST_7:
+message = 'f' * 160
+
+print(make_sms_list(message))
+
+# TEST_8:
+message = 'f' * 161
+
+print(make_sms_list(message))
+
+# TEST_9:
+message = 'f' * 170 + 'uuuuuuuuuuuuuuu'
+
+print(make_sms_list(message))
+
+# TEST_10:
+message = 'б' * 71
+
+print(make_sms_list(message))
+

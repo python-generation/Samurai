@@ -1,0 +1,56 @@
+# INPUT DATA:
+
+# TEST_1:
+cursor = conn.cursor()
+cursor.execute("SELECT QUARTER('2025-11-12 12:30:00')")
+
+print(cursor.fetchone()[0])
+
+# TEST_2:
+cursor = conn.cursor()
+cursor.execute("SELECT QUARTER('2007-01-01 07:00:00')")
+
+print(cursor.fetchone()[0])
+
+# TEST_3:
+cursor = conn.cursor()
+cursor.execute("SELECT QUARTER('1983-07-10 22:11:13')")
+
+print(cursor.fetchone()[0])
+
+# TEST_4:
+cursor = conn.cursor()
+cursor.execute("SELECT QUARTER('2024-04-01 10:01:22')")
+
+print(cursor.fetchone()[0])
+
+# TEST_5:
+cursor = conn.cursor()
+cursor.execute("SELECT QUARTER('2024-06-30 12:11:13')")
+
+print(cursor.fetchone()[0])
+
+# TEST_6:
+cursor = conn.cursor()
+cursor.execute("SELECT QUARTER('2021-03-31 11:10:10')")
+
+print(cursor.fetchone()[0])
+
+# TEST_7:
+cursor = conn.cursor()
+cursor.execute("SELECT QUARTER('2023-07-01 04:22:15')")
+
+print(cursor.fetchone()[0])
+
+# TEST_8:
+cursor = conn.cursor()
+cursor.execute("SELECT QUARTER('2025-09-30 17:11:12')")
+
+print(cursor.fetchone()[0])
+
+# TEST_9:
+cursor = conn.cursor()
+cursor.execute("SELECT QUARTER('2025-12-31 13:10:01')")
+
+print(cursor.fetchone()[0])
+

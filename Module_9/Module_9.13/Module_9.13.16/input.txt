@@ -1,0 +1,69 @@
+# INPUT DATA:
+
+# TEST_1:
+from uuid import uuid3, NAMESPACE_X500
+
+cursor = conn.cursor()
+cursor.execute('SELECT ?, ?;', (uuid3(NAMESPACE_X500, 'pygen'), uuid3(NAMESPACE_X500, 'beegeek')))
+print(cursor.fetchone())
+
+cursor.close()
+conn.close()
+
+# TEST_2:
+from uuid import uuid3, NAMESPACE_DNS
+
+cursor = conn.cursor()
+cursor.execute('''
+CREATE TABLE Temp (
+    id UUID
+);''')
+
+identifiers = [
+    (uuid3(NAMESPACE_DNS, 'beegeek'),),
+    (uuid3(NAMESPACE_DNS, 'stepik'),),
+    (uuid3(NAMESPACE_DNS, 'pygen'),)
+]
+
+cursor.executemany('INSERT INTO Temp VALUES (?);', identifiers)
+conn.commit()
+
+cursor.execute('SELECT * FROM Temp;')
+print(cursor.fetchall())
+
+cursor.execute('''SELECT '5e8bac95-1e99-11f1-b367-30689317d5e4' AS "[UUID]";''')
+print(cursor.fetchone())
+
+cursor.close()
+conn.close()
+
+# TEST_3:
+from uuid import uuid3, NAMESPACE_OID
+
+cursor = conn.cursor()
+names = ['pygen', 'beegeek', 'sterpik', 'tilda', 'python', 'sql', 'pytest', 'os']
+data = []
+
+for name in names:
+    data.append((uuid3(NAMESPACE_OID, name),))
+    cursor.execute('''SELECT ?;''', (uuid3(NAMESPACE_OID, name),))
+    print(cursor.fetchone())
+
+print()
+cursor.execute('''
+CREATE TABLE Temp (
+    id UUID
+);''')
+
+cursor.executemany('''
+INSERT INTO Temp
+VALUES (?)
+''', data)
+conn.commit()
+
+cursor.execute('SELECT * FROM Temp;')
+print(cursor.fetchall())
+
+cursor.close()
+conn.close()
+

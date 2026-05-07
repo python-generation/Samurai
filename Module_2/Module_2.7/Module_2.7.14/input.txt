@@ -1,0 +1,104 @@
+# INPUT DATA:
+
+# TEST_1:
+password = generate_password(20, upper=8, lower=8, numeric=2)
+print(password)
+
+# TEST_2:
+password = generate_password(12, upper=5, lower=3, numeric=4)
+print(password)
+
+# TEST_3:
+password = generate_password(10, upper=0, lower=0, numeric=0)
+print(password)
+
+# TEST_4:
+try:
+    generate_password(length=20, upper=8, lower=8, numeric=2)
+except Exception as e:
+    print(e)
+
+# TEST_5:
+try:
+    generate_password(20, 8, lower=8, numeric=2)
+except Exception as e:
+    print(e)
+
+# TEST_6:
+try:
+    generate_password(8, 20, upper=8, numeric=2)
+except Exception as e:
+    print(e)
+
+# TEST_7:
+try:
+    generate_password(2, 20, upper=8, lower=8)
+except Exception as e:
+    print(e)
+
+# TEST_8:
+password = generate_password(10, upper=10, lower=0, numeric=0)
+print(password)
+
+# TEST_9:
+password = generate_password(10, upper=0, lower=10, numeric=0)
+print(password)
+
+# TEST_10:
+password = generate_password(10, upper=0, lower=0, numeric=10)
+print(password)
+
+# TEST_11:
+password = generate_password(21, upper=10, lower=10, numeric=0)
+print(password)
+
+# TEST_12:
+password = generate_password(20, upper=10, lower=0, numeric=10)
+print(password)
+
+# TEST_13:
+password = generate_password(22, upper=0, lower=10, numeric=10)
+print(password)
+
+# TEST_14:
+password = generate_password(30, upper=0, lower=0, numeric=0)
+print(password)
+
+# TEST_15:
+password = generate_password(30, upper=10, lower=10, numeric=10)
+print(password)
+
+# TEST_16:
+try:
+    generate_password(upper=8, lower=8, numeric=2)
+except Exception as e:
+    print(e)
+
+# TEST_17:
+try:
+    generate_password(20, lower=8, numeric=2)
+except Exception as e:
+    print(e)
+
+# TEST_18:
+try:
+    generate_password(20, upper=8, numeric=2)
+except Exception as e:
+    print(e)
+
+# TEST_19:
+try:
+    generate_password(20, upper=8, lower=8)
+except Exception as e:
+    print(e)
+
+# TEST_20:
+try:
+    generate_password()
+except Exception as e:
+    print(e)
+
+# TEST_21:
+password = generate_password(90, upper=30, lower=30, numeric=30)
+print(password)
+

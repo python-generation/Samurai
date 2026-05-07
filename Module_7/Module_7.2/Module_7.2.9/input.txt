@@ -1,0 +1,23 @@
+# INPUT DATA:
+
+# TEST_1:
+print(biggest_dir('desktop/fun'))
+
+# TEST_2:
+print(biggest_dir('desktop/games'))
+
+# TEST_3:
+print(biggest_dir('desktop/images'))
+
+# TEST_4:
+print(biggest_dir('desktop/studying/data_sets'))
+
+# TEST_5:
+print(biggest_dir('desktop'))
+
+# TEST_6:
+print(biggest_dir('desktop/fun/movies'))
+
+# TEST_7:
+print(biggest_dir('desktop/studying'))
+

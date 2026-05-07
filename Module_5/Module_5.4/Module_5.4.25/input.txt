@@ -1,0 +1,150 @@
+# INPUT DATA:
+
+# TEST_1:
+delivery = Delivery()
+
+order_id1 = delivery.create_order(43654, 'Timur', 'Moscow')
+order_id2 = delivery.create_order(43674, 'Valera', 'Chelyabinsk')
+
+print(delivery.get_order(order_id1))
+print(delivery.get_order(order_id2))
+
+# TEST_2:
+logger.disabled = True
+delivery = Delivery()
+
+order_id1 = delivery.create_order(43654, 'Timur', 'Moscow')
+order_id2 = delivery.create_order(43674, 'Valera', 'Chelyabinsk')
+
+print(delivery.get_order(order_id1))
+print(delivery.get_order(order_id2))
+
+# TEST_3:
+delivery = Delivery()
+
+order_id1 = delivery.create_order(43654, 'Timur', 'Moscow')
+order_id2 = delivery.create_order(43674, 'Valera', 'Chelyabinsk')
+
+delivery.deliver(order_id1)
+print(delivery.get_order(order_id1)['delivered'])
+print(delivery.get_order(order_id2)['delivered'])
+
+# TEST_4:
+delivery = Delivery()
+
+order_id = delivery.create_order(43654, 'Timur', 'Moscow')
+
+delivery.deliver(order_id)
+try:
+    delivery.deliver(order_id)
+except DeliveryError as e:
+    print(e)
+
+# TEST_5:
+delivery = Delivery()
+
+try:
+    delivery.get_order(87424)
+except OrderError as e:
+    print(e)
+
+# TEST_6:
+delivery = Delivery()
+
+try:
+    delivery.deliver(87424)
+except OrderError as e:
+    print(e)
+
+# TEST_7:
+delivery = Delivery()
+
+order_id1 = delivery.create_order(1, 'Alice', 'Wonderland')
+order_id2 = delivery.create_order(2, 'Alex', 'London')
+
+delivery.deliver(order_id2)
+
+try:
+    delivery.deliver(order_id2)
+except DeliveryError as e:
+    print(e)
+
+try:
+    delivery.get_order(3)
+except OrderError as e:
+    print(e)
+
+try:
+    delivery.deliver(3)
+except OrderError as e:
+    print(e)
+
+# TEST_8:
+logger.disabled = True
+delivery = Delivery()
+
+order_id1 = delivery.create_order(1, 'Alice', 'Wonderland')
+order_id2 = delivery.create_order(2, 'Alex', 'London')
+
+delivery.deliver(order_id2)
+
+try:
+    delivery.deliver(order_id2)
+except DeliveryError as e:
+    print(e)
+
+try:
+    delivery.get_order(3)
+except OrderError as e:
+    print(e)
+
+try:
+    delivery.deliver(3)
+except OrderError as e:
+    print(e)
+
+# TEST_9:
+delivery = Delivery()
+
+order_id1 = delivery.create_order(13, 'Rustam', 'Washington')
+order_id2 = delivery.create_order(22, 'Sveta', 'Berlin')
+
+with open('delivery.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_10:
+logger.disabled = True
+delivery = Delivery()
+
+order_id1 = delivery.create_order(13, 'Rustam', 'Washington')
+order_id2 = delivery.create_order(22, 'Sveta', 'Berlin')
+
+with open('delivery.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_11:
+delivery = Delivery()
+
+order_id1 = delivery.create_order(1, 'Alice', 'Wonderland')
+order_id2 = delivery.create_order(2, 'Alex', 'London')
+
+delivery.deliver(order_id2)
+
+try:
+    delivery.deliver(order_id2)
+except DeliveryError as e:
+    print(e)
+
+try:
+    delivery.get_order(3)
+except OrderError as e:
+    print(e)
+
+try:
+    delivery.deliver(3)
+except OrderError as e:
+    print(e)
+    
+with open('delivery.log', encoding='utf-8') as file:
+    print(file.read())
+

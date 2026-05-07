@@ -1,0 +1,81 @@
+# INPUT DATA:
+
+# TEST_1:
+log_temperature(-5)
+log_temperature(12)
+log_temperature(30)
+
+# TEST_2:
+log_temperature(45)
+log_temperature(50)
+
+# TEST_3:
+logger.disabled = True
+log_temperature(27)
+log_temperature(38)
+
+# TEST_4:
+log_temperature(-12)
+log_temperature(27)
+log_temperature(33)
+log_temperature(47)
+log_temperature(100007)
+
+# TEST_5:
+log_temperature(-1)
+
+# TEST_6:
+log_temperature(29)
+
+# TEST_7:
+log_temperature(39)
+
+# TEST_8:
+log_temperature(49)
+
+# TEST_9:
+log_temperature(100)
+
+# TEST_10:
+log_temperature(-1)
+log_temperature(0)
+log_temperature(1)
+
+# TEST_11:
+log_temperature(29)
+log_temperature(30)
+log_temperature(31)
+
+# TEST_12:
+log_temperature(39)
+log_temperature(40)
+log_temperature(41)
+
+# TEST_13:
+log_temperature(49)
+log_temperature(50)
+log_temperature(51)
+
+# TEST_14:
+for i in range(-20, 70, 3):
+    log_temperature(i)
+
+# TEST_15:
+logger.disabled = True
+
+log_temperature(-1)
+log_temperature(0)
+log_temperature(1)
+
+log_temperature(29)
+log_temperature(30)
+log_temperature(31)
+
+log_temperature(39)
+log_temperature(40)
+log_temperature(41)
+
+log_temperature(49)
+log_temperature(50)
+log_temperature(51)
+

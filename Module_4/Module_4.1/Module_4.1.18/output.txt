@@ -1,0 +1,32 @@
+# OUTPUT DATA:
+
+# TEST_1:
+{'one': 1, 'two': 2, 'three': 3}
+
+# TEST_2:
+{}
+
+# TEST_3:
+{'ten': 10}
+
+# TEST_4:
+{'hundred': 100, 'two hundred': 200}
+
+# TEST_5:
+{'minus one': -1, 'minus two': -2}
+
+# TEST_6:
+{'zero': 0}
+
+# TEST_7:
+{'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5, 'six': 6}
+
+# TEST_8:
+{'negative ten': -10, 'positive ten': 10, 'zero': 0}
+
+# TEST_9:
+{'thousand': 1000, 'two thousand': 2000, 'three thousand': 3000}
+
+# TEST_10:
+{'min int': -2147483648, 'max int': 2147483647}
+

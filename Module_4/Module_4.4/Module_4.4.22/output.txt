@@ -1,0 +1,31 @@
+# OUTPUT DATA:
+
+# TEST_1:
+1
+2
+3
+
+# TEST_2:
+Итератор пуст
+
+# TEST_3:
+[10, 20, 30, 40]
+
+# TEST_4:
+Итератор пуст
+
+# TEST_5:
+True
+Итератор пуст
+
+# TEST_6:
+True
+True
+True
+True
+True
+Итератор пуст
+True
+True
+Итератор пуст
+

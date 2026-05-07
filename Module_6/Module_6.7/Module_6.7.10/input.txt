@@ -1,0 +1,24 @@
+# INPUT DATA:
+
+# TEST_1:
+for test in suite_to_upper:
+    print(test.id())
+
+# TEST_2:
+for test in suite_reverse:
+    print(test.id())
+
+# TEST_3:
+for test in suite_palindrome:
+    print(test.id())
+
+# TEST_4:
+from itertools import chain
+from unittest import TextTestRunner
+
+runner = TextTestRunner()
+
+for test in chain(suite_to_upper, suite_reverse, suite_palindrome):
+    result = test.run()
+    print(result.wasSuccessful())
+

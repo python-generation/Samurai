@@ -1,0 +1,50 @@
+# OUTPUT DATA:
+
+# TEST_1:
++----+---------------------+----------------+--------------+--------------+
+| id |        title        |    director    | release_year | running_time |
++----+---------------------+----------------+--------------+--------------+
+| 2  |        WALL-E       | Andrew Stanton |     2008     |     104      |
+| 3  |     Ratatouille     |   Brad Bird    |     2007     |     115      |
+| 4  |          Up         |  Pete Docter   |     2009     |     101      |
+| 5  |        Brave        | Brenda Chapman |     2012     |     102      |
+| 6  | Monsters University |  Dan Scanlon   |     2013     |     110      |
+| 7  |        Cars 2       | John Lasseter  |     2011     |     120      |
+| 8  |     Finding Nemo    | Andrew Stanton |     2003     |     107      |
+| 10 |   The Incredibles   |   Brad Bird    |     2004     |     116      |
++----+---------------------+----------------+--------------+--------------+
+
+# TEST_2:
++----+---------------------+----------------+--------------+--------------+
+| id |        title        |    director    | release_year | running_time |
++----+---------------------+----------------+--------------+--------------+
+| 2  |        WALL-E       | Andrew Stanton |     2008     |     104      |
+| 3  |     Ratatouille     |   Brad Bird    |     2007     |     115      |
+| 4  |          Up         |  Pete Docter   |     2009     |     101      |
+| 5  |        Brave        | Brenda Chapman |     2012     |     102      |
+| 6  | Monsters University |  Dan Scanlon   |     2013     |     110      |
+| 7  |        Cars 2       | John Lasseter  |     2011     |     120      |
++----+---------------------+----------------+--------------+--------------+
+
+# TEST_3:
++----+-------+----------+--------------+--------------+
+| id | title | director | release_year | running_time |
++----+-------+----------+--------------+--------------+
++----+-------+----------+--------------+--------------+
+
+# TEST_4:
++----+---------------------+----------------+--------------+--------------+
+| id |        title        |    director    | release_year | running_time |
++----+---------------------+----------------+--------------+--------------+
+| 1  |     Toy Story 2     | John Lasseter  |     1999     |      93      |
+| 2  |        WALL-E       | Andrew Stanton |     2008     |     104      |
+| 3  |     Ratatouille     |   Brad Bird    |     2007     |     115      |
+| 4  |          Up         |  Pete Docter   |     2009     |     101      |
+| 5  |        Brave        | Brenda Chapman |     2012     |     102      |
+| 6  | Monsters University |  Dan Scanlon   |     2013     |     110      |
+| 7  |        Cars 2       | John Lasseter  |     2011     |     120      |
+| 8  |     Finding Nemo    | Andrew Stanton |     2003     |     107      |
+| 9  |      Toy Story      | John Lasseter  |     1995     |      81      |
+| 10 |   The Incredibles   |   Brad Bird    |     2004     |     116      |
++----+---------------------+----------------+--------------+--------------+
+

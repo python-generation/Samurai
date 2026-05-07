@@ -1,0 +1,93 @@
+# INPUT DATA:
+
+# TEST_1:
+d = parse_date('11.01.1999')
+print(d)
+print(type(d))
+
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_2:
+try:
+    print(parse_date('33.03.2007'))
+except InvalidDateError as e:
+    print(e)
+    
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_3:
+try:
+    print(parse_date('22/01/1985'))
+except InvalidDateError as e:
+    print(e)
+    
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_4:
+try:
+    print(parse_date('21-08-1997'))
+except InvalidDateError as e:
+    print(e)
+    
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_5:
+try:
+    print(parse_date('13%10%1979'))
+except InvalidDateError as e:
+    print(e)
+    
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_6:
+logger.disabled = True
+
+try:
+    print(parse_date('April 12 2023'))
+except InvalidDateError as e:
+    print(e)
+    
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_7:
+try:
+    print(parse_date('28_12_2077'))
+except InvalidDateError as e:
+    print(e)
+    
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_8:
+try:
+    print(parse_date('08 01 2020'))
+except InvalidDateError as e:
+    print(e)
+    
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_9:
+try:
+    print(parse_date('04.21.2002'))
+except InvalidDateError as e:
+    print(e)
+    
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_10:
+logger.disabled = True
+d = parse_date('04.01.2002')
+print(d)
+print(type(d))
+    
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+

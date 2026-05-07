@@ -1,0 +1,23 @@
+# OUTPUT DATA:
+
+# TEST_1:
+('module_os/Картинки', '1.jpg')
+
+# TEST_2:
+('module_os', 'Картинки/1.jpg')
+
+# TEST_3:
+('', 'module_os/Картинки/1.jpg')
+
+# TEST_4:
+('module_os/Разные файлы', 'Новая папка/Личное')
+
+# TEST_5:
+('module_os', 'Разные файлы/Новая папка/Личное')
+
+# TEST_6:
+('', 'desktop/studying/data_sets/fonts/fontlist-v330.json')
+
+# TEST_7:
+('desktop/studying', 'data_sets/fonts/fontlist-v330.json')
+

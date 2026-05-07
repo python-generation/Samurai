@@ -1,0 +1,61 @@
+# INPUT DATA:
+
+# TEST_1:
+person = {'name': 'Timur', 'age': 32}
+print(person_info(person))
+
+# TEST_2:
+person = {'name': 'Nastya', 'age': None}
+print(person_info(person))
+
+# TEST_3:
+person = {'name': None, 'age': 34}
+print(person_info(person))
+
+# TEST_4:
+person = {'name': None, 'age': None}
+print(person_info(person))
+
+# TEST_5:
+person = {'name': 'Timur', 'age': 32}
+print(person_info(person))
+
+person = {'name': None, 'age': 32}
+print(person_info(person))
+
+person = {'name': 'Timur', 'age': None}
+print(person_info(person))
+
+person = {'name': None, 'age': None}
+print(person_info(person))
+
+# TEST_6:
+person = {'name': 'Valera', 'age': 32}
+print(person_info(person))
+
+person = {'name': None, 'age': 32}
+print(person_info(person))
+
+person = {'name': 'Valera', 'age': None}
+print(person_info(person))
+
+# TEST_7:
+person = {'name': 'Nastya', 'age': 32}
+print(person_info(person))
+
+person = {'name': None, 'age': 32}
+print(person_info(person))
+
+person = {'name': 'Nastya', 'age': None}
+print(person_info(person))
+
+# TEST_8:
+person = {'name': 'Rustam', 'age': 32}
+print(person_info(person))
+
+person = {'name': None, 'age': 32}
+print(person_info(person))
+
+person = {'name': 'Rustam', 'age': None}
+print(person_info(person))
+

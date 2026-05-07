@@ -1,0 +1,150 @@
+# INPUT DATA:
+
+# TEST_1:
+persons = [
+    {'name': 'Timur', 'age': 32},
+    {'name': 'Valera', 'age': 34},
+    {'name': 'Nastya', 'age': 29},
+    {'name': 'Rustam', 'age': 23}
+]
+
+print(validate_many(persons))    # имя и возраст всех людей списка persons являются корректными
+
+# TEST_2:
+persons = [
+    {'name': 'Timur', 'age': -50},
+    {'name': 123, 'age': 34},
+    {'name': '', 'age': 29},
+    {'name': 'Rustam', 'age': 180}
+]
+
+try:
+    print(validate_many(persons))        # проверка некоторых имен и возрастов
+except ExceptionGroup as e:              # привела к возбуждению исключения,
+    print(e)                             # в результате чего была создана и возбуждена
+    print(e.exceptions)                  # группа со всеми этими исключениями
+
+# TEST_3:
+persons = [
+    {'name': 'Timur', 'age': 27},
+    {'name': 'Rustam', 'age': 180}, # некорректный возраст
+    {'name': 'Rustam', 'age': 18}
+]
+
+try:
+    print(validate_many(persons))
+except ExceptionGroup as e:
+    print(e)
+    print(e.exceptions)
+
+# TEST_4:
+persons = [
+    {'name': 'Valera', 'age': 34},
+    {'name': 12, 'age': 26},        # некорректное имя
+    {'name': 'Nastya', 'age': 29},
+    {'name': 'Rustam', 'age': 110}
+]
+
+try:
+    print(validate_many(persons))
+except ExceptionGroup as e:
+    print(e)
+    print(e.exceptions)
+
+# TEST_5:
+persons = [
+    {'name': 'Rustam', 'age': 34},
+    {'name': '', 'age': -26},        # некорректное имя и возраст
+    {'name': 'Valera', 'age': 29}
+]
+
+try:
+    print(validate_many(persons))
+except ExceptionGroup as e:
+    print(e)
+    print(e.exceptions)
+
+# TEST_6:
+persons = [
+    {'name': '', 'age': -26}  # некорректное имя и возраст
+]
+
+try:
+    print(validate_many(persons))
+except ExceptionGroup as e:
+    print(e)
+    print(e.exceptions)
+
+# TEST_7:
+persons = [
+    {'name': '', 'age': 26},       # некорректное имя
+    {'name': 'Timur', 'age': 111}  # некорректный возраст
+]
+
+try:
+    print(validate_many(persons))
+except ExceptionGroup as e:
+    print(e)
+    print(e.exceptions)
+
+# TEST_8:
+persons = [
+    {'name': '', 'age': 26},        # некорректное имя
+    {'name': 'Timur', 'age': 111},  # некорректный возраст
+    {'name': 8138378, 'age': 18}    # некорректное имя
+]
+
+try:
+    print(validate_many(persons))
+except ExceptionGroup as e:
+    print(e)
+    print(e.exceptions)
+
+# TEST_9:
+logger.disabled = True
+
+persons = [
+    {'name': 'Timur', 'age': -50},
+    {'name': 123, 'age': 34},
+    {'name': '', 'age': 29},
+    {'name': 'Rustam', 'age': 180},
+    {'name': 'Timur', 'age': 27},
+    {'name': 'Rustam', 'age': 180},
+    {'name': 'Rustam', 'age': 18},
+    {'name': 'Valera', 'age': 34},
+    {'name': 12, 'age': 26},
+    {'name': 'Nastya', 'age': 29},
+    {'name': 'Rustam', 'age': 110},
+    {'name': 'Rustam', 'age': 34},
+    {'name': '', 'age': -26},
+    {'name': 'Valera', 'age': 29},
+    {'name': '', 'age': -26},
+    {'name': '', 'age': 26},
+    {'name': 'Timur', 'age': 111},
+    {'name': '', 'age': 26},
+    {'name': 'Timur', 'age': 111},
+    {'name': 8138378, 'age': 18}
+]
+
+try:
+    print(validate_many(persons))
+except ExceptionGroup as e:
+    print(e)
+    print(e.exceptions)
+
+# TEST_10:
+logger.disabled = True
+
+persons = [
+    {'name': 'Timur', 'age': 32},
+    {'name': 'Valera', 'age': 34},
+    {'name': 'Nastya', 'age': 29},
+    {'name': 'Rustam', 'age': 23}
+]
+
+try:
+    print(validate_many(persons))
+except ExceptionGroup as e:
+    print(e)
+    print(e.exceptions)
+

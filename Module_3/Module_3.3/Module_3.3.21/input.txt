@@ -1,0 +1,20 @@
+# INPUT DATA:
+
+# TEST_1:
+print(get_weight_category(55))
+
+# TEST_2:
+print(get_weight_category(68))
+
+# TEST_3:
+print(get_weight_category(60))
+
+# TEST_4:
+print(get_weight_category(64))
+
+# TEST_5:
+print(get_weight_category(59))
+
+# TEST_6:
+print(get_weight_category(63))
+

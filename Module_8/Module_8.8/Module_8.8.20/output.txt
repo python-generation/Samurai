@@ -1,0 +1,26 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['a', 'b']
+
+# TEST_2:
+[]
+
+# TEST_3:
+['decorator', 'wrapper']
+
+# TEST_4:
+['a', 'b', 'c']
+
+# TEST_5:
+['alpha', 'beta']
+
+# TEST_6:
+['yes', 'no']
+
+# TEST_7:
+['f1', 'f2', 'f3', 'g1', 'g2']
+
+# TEST_8:
+['level1', 'level2']
+

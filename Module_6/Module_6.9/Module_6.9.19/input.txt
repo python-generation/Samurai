@@ -1,0 +1,16 @@
+# INPUT DATA:
+
+# TEST_1:
+print(mock(1, 2, 3))
+
+# TEST_2:
+print(mock(s1='bee', s2='geek'))
+
+# TEST_3:
+print(mock(1, 2, 3, s1='bee', s2='geek'))
+
+# TEST_4:
+args = list(range(10))
+kwargs = dict.fromkeys('abcde', 0)
+print(mock(*args, **kwargs))
+

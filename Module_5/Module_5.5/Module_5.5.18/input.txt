@@ -1,0 +1,83 @@
+# INPUT DATA:
+
+# TEST_1:
+filter = UserFilter()
+logger.addFilter(filter)
+
+logger.info('Что-то произошло', extra={'user_id': 343645})
+
+# TEST_2:
+filter = UserFilter()
+logger.addFilter(filter)
+
+logger.warning('Что-то пошло не так')    # user_id не передан, событие не фиксируется
+
+# TEST_3:
+filter = UserFilter()
+logger.addFilter(filter)
+
+try:
+    logger.info('Заполнено неверное поле', extra={'username': 'Timur'})
+except Exception as e:
+    print(e)
+
+# TEST_4:
+filter = UserFilter()
+logger.addFilter(filter)
+
+logger.info('ID пользователя получен!', extra={'user_id': 100})
+
+# TEST_5:
+filter = UserFilter()
+logger.addFilter(filter)
+
+logger.info('ID пользователя получен!(2)', extra={'user_id': -150})
+
+# TEST_6:
+filter = UserFilter()
+logger.addFilter(filter)
+
+logger.info('ID пользователя получен!(3)', extra={'user_id': 0.75})
+
+# TEST_7:
+filter = UserFilter()
+logger.addFilter(filter)
+
+logger.info('ID пользователя получен!(4)', extra={'user_id': -1887.5})
+
+# TEST_8:
+filter = UserFilter()
+logger.addFilter(filter)
+
+logger.info('ID пользователя получен!', extra={'user_id': 77})
+
+logger.info('ID пользователя получен!', extra={'user_id': 77})
+
+# TEST_9:
+filter = UserFilter()
+logger.addFilter(filter)
+
+logger.info('ID пользователя получен!', extra={'user_id': 1672})
+
+logger.info('ID пользователя получен!', extra={'user_id': 1673})
+
+# TEST_10:
+filter = UserFilter()
+logger.addFilter(filter)
+
+logger.debug('Что-то произошло', extra={'user_id': 1})
+logger.info('Что-то произошло', extra={'user_id': 2})
+logger.warning('Что-то пошло не так', extra={'user_id': 3})
+logger.error('Что-то пошло не так', extra={'user_id': 4})
+logger.critical('Все пошло не так', extra={'user_id': 5})
+
+# TEST_11:
+filter = UserFilter()
+logger.addFilter(filter)
+
+logger.debug('Что-то произошло', extra={'user_id': 1})
+logger.info('Что-то произошло', extra={'user_id': 2})
+logger.warning('Что-то пошло не так', extra={'user_id': 3})
+logger.error('Что-то пошло не так', extra={'user_id': 4})
+logger.critical('Все пошло не так')
+

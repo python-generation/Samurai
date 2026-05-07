@@ -1,0 +1,37 @@
+# INPUT DATA:
+
+# TEST_1:
+skipiterator = SkipIterator([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 1)   # пропускаем по одному элементу
+
+print(*skipiterator)
+
+# TEST_2:
+skipiterator = SkipIterator([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 2)   # пропускаем по два элемента
+
+print(*skipiterator)
+
+# TEST_3:
+skipiterator = SkipIterator([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 0)   # не пропускаем элементы
+
+print(*skipiterator)
+
+# TEST_4:
+skipiterator = SkipIterator([1.0, 2.1, 3.2, 4.3, 5.4, 6.5, 7.6, 8.7, 9.8, 10.9], 4)
+
+print(*skipiterator)
+
+# TEST_5:
+skipiterator = SkipIterator([1, 2, 3, 4, 5], 0)
+
+print(*skipiterator)
+
+# TEST_6:
+skipiterator = SkipIterator([1, 2, 3], 4)
+
+print(*skipiterator)
+
+# TEST_7:
+skipiterator = SkipIterator([], 2)
+
+print(*skipiterator)
+

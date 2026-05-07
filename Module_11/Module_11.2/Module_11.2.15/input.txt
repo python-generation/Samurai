@@ -1,0 +1,164 @@
+# INPUT DATA:
+
+# TEST_1:
+class Base(FinalMethods):
+    __final_methods__ = ('get_name',)
+
+    def get_name(self):
+        pass
+
+try:
+    class Child(Base):
+        def get_name(self):
+            pass
+except AttributeError as e:
+    print(e)
+
+# TEST_2:
+class Base(FinalMethods):
+    __final_methods__ = ('hello',)
+
+    def hello(self):
+        return 'Hello from Base'
+
+    def greet(self):
+        return 'Greetings'
+
+
+class Child(Base):
+    def greet(self):
+        return 'Hello from Child'
+
+
+obj = Child()
+print(obj.greet())
+print(obj.hello())
+
+# TEST_3:
+class Base(FinalMethods):
+    def get_name(self):
+        return 'Base'
+
+
+class Child(Base):
+    def get_name(self):
+        return 'Child'
+
+
+obj = Child()
+print(obj.get_name())
+
+# TEST_4:
+class Base(FinalMethods):
+    __final_methods__ = ('m1', 'm2')
+
+    def m1(self):
+        return 'm1'
+
+    def m2(self):
+        return 'm2'
+
+    def m3(self):
+        return 'm3'
+
+
+class Child(Base):
+    def m3(self):
+        return 'child m3'
+
+
+obj = Child()
+print(obj.m1())
+print(obj.m2())
+print(obj.m3())
+
+# TEST_5:
+class Base(FinalMethods):
+    __final_methods__ = ('m1', 'm2')
+
+    def m1(self):
+        return 'base m1'
+
+    def m2(self):
+        return 'base m2'
+
+
+class Child(Base):
+    pass
+
+try:
+    class GrandChild(Child):
+        def m1(self):
+            return 'grandchild m1'
+except AttributeError as e:
+    print(e)
+
+# TEST_6:
+class Base(FinalMethods):
+    def m1(self):
+        return 'base m1'
+
+
+class Child(Base):
+    __final_methods__ = ('m1',)
+
+    def m1(self):
+        return 'child m1'
+
+
+class GrandChild1(Child):
+    pass
+
+
+obj = GrandChild1()
+print(obj.m1())
+
+try:
+    class GrandChild2(Child):
+        def m1(self):
+            pass
+except AttributeError as e:
+    print(e)
+
+# TEST_7:
+class Base1(FinalMethods):
+    __final_methods__ = ('m1',)
+
+    def m1(self):
+        return 'Base1 m1'
+
+
+class Base2(FinalMethods):
+    __final_methods__ = ('m2',)
+
+    def m2(self):
+        return 'Base2 m2'
+
+
+class Child(Base1, Base2):
+    pass
+
+
+obj = Child()
+print(obj.m1())
+print(obj.m2())
+
+
+try:
+    class BadChild(Base1, Base2):
+        def m1(self):
+            return 'override'
+except AttributeError as e:
+    print(e)
+
+
+try:
+    class BadChild2(Base1, Base2):
+        def m2(self):
+            return 'override'
+except AttributeError as e:
+    print(e)
+
+# TEST_8:
+print(type(FinalMethods))
+

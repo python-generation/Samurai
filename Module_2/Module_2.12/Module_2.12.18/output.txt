@@ -1,0 +1,23 @@
+# OUTPUT DATA:
+
+# TEST_1:
+Произошла ошибка.
+Произошла еще одна ошибка.
+
+# TEST_2:
+Traceback (most recent call last):
+  File "<string>", line 7, in <module>
+ValueError
+
+Traceback (most recent call last):
+  File "<string>", line 7, in <module>
+TypeError
+
+Traceback (most recent call last):
+  File "<string>", line 7, in <module>
+TimeoutError
+
+# TEST_3:
+WARNING:root:Предупреждение
+ERROR:root:Ошибка
+

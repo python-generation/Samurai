@@ -1,0 +1,29 @@
+# INPUT DATA:
+
+# TEST_1:
+students = [('Timur', 5), ('Valera', 4), ('Nastya', 4)]
+print(group(students))
+
+# TEST_2:
+students = [('Nastya', 1), ('Nastya', 2)]
+print(group(students))
+
+# TEST_3:
+students = [('Rustam', 1)]
+print(group(students))
+
+# TEST_4:
+students = [('Valera', 3), ('Artur', 3), ('Anton', 3)]
+print(group(students))
+
+# TEST_5:
+print(group([]))
+
+# TEST_6:
+students = [('Timur', 1), ('Valera', 2), ('Sveta', 3), ('Soslan', 4), ('Anri', 5)]
+print(group(students))
+
+# TEST_7:
+students = [('Timur', 5), ('Valera', 4), ('Nastya', 4), ('Rustam', 5)]
+print(group(students))
+

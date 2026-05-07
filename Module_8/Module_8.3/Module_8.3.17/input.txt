@@ -1,0 +1,77 @@
+# INPUT DATA:
+
+# TEST_1:
+print(is_valid('15a8db5e-9382-11f0-aaa5-9c6b00202b52'))
+print(is_valid('47861033-b31b-495c-8d71-c8ec2249d940'))
+print(is_valid('29931094-47b1-3fca-81ec-4870d8eb0eb2'))
+print(is_valid('c48b0981-0f01-55be-b841-2c8f2241ae03'))
+
+# TEST_2:
+print(is_valid('65da6ed6-9382-1f0-b313-9c6b00202b52'))   # недостаточно символов
+print(is_valid('0bc8931b-44914-3f5-b510-dc965ae8dadf'))  # неправильный формат
+print(is_valid('21u19253-26a5-3869-b11e-74e58471869c'))  # некорректный символ u
+print(is_valid('85708951-8578-9b87-90e5-f1bd823a89fb'))  # неправильная версия
+
+# TEST_3:
+print(is_valid('g5a8db5e-9382-11f0-aaa5-9c6b00202b52'))
+print(is_valid('1ha8db5e-9382-11f0-aaa5-9c6b00202b52'))
+print(is_valid('15i8db5e-9382-11f0-aaa5-9c6b00202b52'))
+print(is_valid('15a8jb5e-9382-11f0-aaa5-9c6b00202b52'))
+
+# TEST_4:
+print(is_valid('15a8db5e-9k82-11f0-aaa5-9c6b00202b52'))
+print(is_valid('15a8db5e-93l2-11f0-aaa5-9c6b00202b52'))
+print(is_valid('15a8db5e-938m-11f0-aaa5-9c6b00202b52'))
+print(is_valid('15a8db5e-9382-11f0-aaa5-9c6b00202b52'))
+
+# TEST_5:
+print(is_valid('15a8db5e-9382-1xf0-aaa5-9c6b00202b52'))
+print(is_valid('15a8db5e-9382-16f0-aaa5-9c6b00202b52'))
+print(is_valid('15a8db5e-9382-11y0-aaa5-9c6b00202b52'))
+print(is_valid('15a8db5e-9382-11fz-aaa5-9c6b00202b52'))
+print(is_valid('15a8db5e938211fzaaa59c6b00202b52'))
+
+# TEST_6:
+print(is_valid('15a8db5e-9382-11f0-aaay-9c6b00202b52'))
+print(is_valid('15a8db5e-9382-11f0-aaaq-9c6b00202b52'))
+print(is_valid('15a8db5e-9382-11f0-aaa5-9c6b00202bg'))
+print(is_valid('15a8db5e-9382-11f0-aaa5-9c6b00202b!'))
+print(is_valid('15a8db5e-9382-16f0-aaa5-9c6b0202b52'))
+
+# TEST_7:
+print(is_valid('15a8db5e9382-11f0-aaa5-9c6b00202b52'))
+print(is_valid('15a8db5e-938211f0-aaa5-9c6b00202b52'))
+print(is_valid('15a8db5e-9382-11f0aaa5-9c6b00202b52'))
+print(is_valid('15a8db5e-9382-11f0-aaa5-9c6b00202b5'))
+print(is_valid('15a8db5e-9382-11f0-aaa5-9c6b00202b522'))
+
+# TEST_8:
+print(is_valid('15a8db5e-93821-1f0-aaa5-9c6b00202b52'))
+print(is_valid('4861033-b31b-495c-8d71-c8ec2249d940'))
+print(is_valid('29931094-47b1-3fca-81ec-4870d8eb0eb2-'))
+print(is_valid('c48b0981-0f.1-55be-b841-2c8f2241ae03'))
+print(is_valid('15a8db5e-9382-01f0-aaa5-9c6b00202b52'))
+
+# TEST_9:
+print(is_valid('00000000-0000-0000-0000-000000000000'))
+print(is_valid('15a8db5e-9382-21f0-aaa5-9c6b00202b52'))
+print(is_valid('15a8db5e - 9382 - 11f0 - aaa5 - 9c6b00202b52'))
+print(is_valid('15adb5e-9382-11f0-aaa5-9c6b00b202b52'))
+print(is_valid('c48b0981-0f01-55be--b841-2c8f2241ae03'))
+
+# TEST_10:
+print(is_valid('ffffffff-ffff-ffff-ffff-ffffffffffff'))
+print(is_valid('1f0aa6ff-346c-6b47-8eb4-8c688b819e0b'))
+print(is_valid('0199ec48-e729-7774-9a76-e4f7f807d8c4'))
+print(is_valid('4b022c85-4382-8fde-9083-d33e5ac1e6d6'))
+print(is_valid('c48b0981-0f01-95be-b841-2c8f2241ae03'))
+
+# TEST_11:
+print(is_valid('15a8db5e9382-11f0-aaa5-9c6b00202b52'))
+print(is_valid('47861033-b31b495c-8d71-c8ec2249d940'))
+print(is_valid('29931094-47b1-3fca81ec-4870d8eb0eb2'))
+print(is_valid('c48b0981-0f01-55be-b8412c8f2241ae03'))
+print(is_valid('1f0aa6ff-346c6b-47-8eb4-8c688b819e0b'))
+print(is_valid('0199ec48-e729-7774-9a76e4f7f807d8c-4'))
+print(is_valid('4b022c85-438-28fde-9083-d33e5ac1e6d6'))
+

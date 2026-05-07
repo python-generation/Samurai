@@ -1,0 +1,27 @@
+# INPUT DATA:
+
+# TEST_1:
+path = 'desktop/fun'
+removed_path = rm_tree(path)
+print(removed_path)
+
+# TEST_2:
+path = 'desktop/games'
+removed_path = rm_tree(path)
+print(removed_path)
+
+# TEST_3:
+path = 'desktop/studying/data_sets'
+removed_path = rm_tree(path)
+print(removed_path)
+
+# TEST_4:
+path = 'desktop'
+removed_path = rm_tree(path)
+print(removed_path)
+
+# TEST_5:
+path = 'desktop/images'
+removed_path = rm_tree(path)
+print(removed_path)
+

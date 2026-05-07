@@ -1,0 +1,119 @@
+# INPUT DATA:
+
+# TEST_1:
+class Logger(Required, required=['log']):
+    def log(self):
+        """Логирование событий"""
+        
+print('Создание класса прошло успешно')
+
+# TEST_2:
+class Logger(Required, required_docstring=True):
+    def log(self):
+        """Логирование событий"""
+        
+print('Создание класса прошло успешно')
+
+# TEST_3:
+try:
+    class Logger(metaclass=RequiredMeta, required=['log']):
+        pass
+except AttributeError as e:
+    print(e)
+
+# TEST_4:
+try:
+    class Logger(Required, required_docstring=True):
+        def log(self):
+            pass
+except DocstringError as e:
+    print(e)
+
+# TEST_5:
+try:
+    class Config(Required, required=['host', 'port']):
+        host = 'localhost'
+except AttributeError as e:
+    print(e)
+
+# TEST_6:
+class Repository(Required, required=['url', 'connect']):
+    url = 'example.com'
+
+    def connect(self):
+        return f'Connecting to {self.url}'
+
+obj = Repository()
+print(obj.connect())
+
+# TEST_7:
+try:
+    class Processor(Required, required_docstring=True):
+        def run(self):
+            """Запуск"""
+            pass
+
+        def stop(self):
+            pass
+except DocstringError as e:
+    print(e)
+
+# TEST_8:
+class Controller(Required, required_docstring=True):
+    def start(self):
+        """Start controller"""
+        return 'started'
+
+    def stop(self):
+        """Stop controller"""
+        return 'stopped'
+
+c = Controller()
+print(c.start())
+print(c.stop())
+
+# TEST_9:
+class MyClass(
+    Required,
+    required=['method'],
+    required_docstring=True
+):
+    def method(self):
+        '''docstring'''
+        pass
+
+print('Создание класса прошло успешно')
+
+# TEST_10:
+try:
+    class Manager(
+        Required,
+        required=['name'],
+        required_docstring=True
+    ):
+        def process(self):
+            pass
+except AttributeError as e:
+    print(e)
+
+# TEST_11:
+try:
+    class Settings(Required, required=['a', 'b', 'c']):
+        b = 2
+except AttributeError as e:
+    print(e)
+
+# TEST_12:
+try:
+    class Worker(Required, required_docstring=True):
+        def build(self):
+            pass
+
+        def deploy(self):
+            pass
+except DocstringError as e:
+    print(e)
+
+# TEST_13:
+print(type(Required))
+

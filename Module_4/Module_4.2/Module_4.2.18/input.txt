@@ -1,0 +1,62 @@
+# INPUT DATA:
+
+# TEST_1:
+user = User(4658712367, 'Timur', 'Active')
+print(user.get_user_info())
+
+# TEST_2:
+user = User(5458413, 'Nastya', 'Suspended')
+
+try:
+    user.set_status('Suspended')
+except ValueError as e:
+    print(e)
+
+# TEST_3:
+user = User(123, 'Alice', 'Active')
+print(user.get_user_info())
+
+# TEST_4:
+user = User(456, 'Bob', 'Suspended')
+user.set_status('Active')
+print(user.get_user_info())
+
+# TEST_5:
+user = User(87512, 'Julia', 'Suspended')
+print(user.get_user_info())
+
+# TEST_6:
+user = User(1999283, 'Kellian', 'Banned')
+print(user.get_user_info())
+
+# TEST_7:
+user = User(34714193, 'Rustam', 'Banned')
+
+try:
+    user.set_status('Banned')
+except ValueError as e:
+    print(e)
+
+# TEST_8:
+user = User(1273912, 'Fill', 'Active')
+
+try:
+    user.set_status('Active')
+except ValueError as e:
+    print(e)
+
+# TEST_9:
+user = User(444, 'Heidi', 'Active')
+user.set_status('Suspended')
+user.set_status('Banned')
+user.set_status('Active')
+print(user.get_user_info())
+
+# TEST_10:
+user = User(444, 'Heidi', 'Active')
+
+try:
+    user.id = 445
+except AttributeError as e:
+    print(e)
+

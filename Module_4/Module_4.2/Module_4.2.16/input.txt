@@ -1,0 +1,44 @@
+# INPUT DATA:
+
+# TEST_1:
+print(parse(42))
+print(type(parse(42)))
+
+# TEST_2:
+print(parse('42'))
+print(type(parse('42')))
+
+# TEST_3:
+print(parse('42.42'))
+print(parse('python'))
+print(parse('.11'))
+
+# TEST_4:
+print(parse("0"))
+print(parse("9"))
+print(parse("42"))
+print(parse("12345"))
+print(parse("-0"))
+print(type(parse("-0")))
+
+# TEST_5:
+print(parse(""))
+print(parse(" "))
+print(parse("abc"))
+print(parse("12a"))
+print(parse("a12"))
+print(parse("1.23"))
+print(parse(".12"))
+print(parse("12."))
+print(parse("-12"))
+print(parse("+12"))
+
+# TEST_6:
+print(parse(None))
+
+# TEST_7:
+print(parse(0))
+print(parse(123))
+print(parse(-5))
+print(parse(1_000_000))
+

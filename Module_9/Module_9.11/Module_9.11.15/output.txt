@@ -1,0 +1,17 @@
+# OUTPUT DATA:
+
+# TEST_1:
+keegeeb
+
+# TEST_2:
+
+
+# TEST_3:
+A
+
+# TEST_4:
+тевирп
+
+# TEST_5:
+#@!321
+

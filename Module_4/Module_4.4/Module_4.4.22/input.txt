@@ -1,0 +1,78 @@
+# INPUT DATA:
+
+# TEST_1:
+iterator = CustomIterator([1, 2, 3])
+
+for elem in iterator:
+    print(elem)
+
+# TEST_2:
+iterator = CustomIterator([1, 2, 3])
+
+next(iterator)
+next(iterator)
+next(iterator)
+
+try:
+    next(iterator)
+except StopIteration:
+    print('Итератор пуст')
+
+# TEST_3:
+items = [10, 20, 30, 40]
+iterator = CustomIterator(items)
+result = list()
+
+for item in iterator:
+    result.append(item)
+    
+print(result)
+
+# TEST_4:
+items: list[int] = []
+iterator = CustomIterator(items)
+
+try:
+    next(iterator)
+except StopIteration:
+    print('Итератор пуст')
+
+result = list(iterator)
+
+# TEST_5:
+items = [True]
+iterator = CustomIterator(items)
+
+print(next(iterator))
+
+try:
+    next(iterator)
+except StopIteration:
+    print('Итератор пуст')
+
+# TEST_6:
+int_list = [1, 2, 3]
+str_list = ['apple', 'banana']
+
+int_iterator = CustomIterator(int_list)
+str_iterator = CustomIterator(str_list)
+
+print(isinstance(int_iterator, CustomIterator))
+print(isinstance(str_iterator, CustomIterator))
+
+for item in int_iterator:
+    print(isinstance(item, int))
+
+try:
+    next(int_iterator)
+except StopIteration:
+    print('Итератор пуст')
+
+for item in str_iterator:
+    print(isinstance(item, str))
+
+try:
+    next(int_iterator)
+except StopIteration:
+    print('Итератор пуст')
+

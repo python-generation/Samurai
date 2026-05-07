@@ -1,0 +1,17 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['Cars 2', 'Monsters University', 'Ratatouille']
+
+# TEST_2:
+['Brave', 'Cars 2', 'Monsters University']
+
+# TEST_3:
+[]
+
+# TEST_4:
+['Brave', 'Cars 2', 'Finding Nemo', 'Monsters University', 'Ratatouille', 'The Incredibles', 'Toy Story', 'Toy Story 2', 'Up', 'WALL-E']
+
+# TEST_5:
+['Brave', 'Cars 2', 'Finding Nemo', 'Monsters University', 'Ratatouille', 'The Incredibles', 'Toy Story 2', 'Up', 'WALL-E']
+

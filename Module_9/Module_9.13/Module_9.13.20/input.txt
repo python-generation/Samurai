@@ -1,0 +1,61 @@
+# INPUT DATA:
+
+# TEST_1:
+cursor = conn.cursor()
+
+cursor.execute('SELECT ?;', (Color(234, 11, 122),))
+print(cursor.fetchone())
+
+cursor.close()
+conn.close()
+
+# TEST_2:
+cursor = conn.cursor()
+cursor.execute('''
+CREATE TABLE Colors (
+    color COLOR
+);''')
+
+colors = [(Color(0, 0, 0),), (Color(12, 65, 189),), (Color(255, 255, 255),)]
+cursor.executemany('INSERT INTO Colors VALUES (?);', colors)
+conn.commit()
+
+cursor.execute('SELECT * FROM Colors;')
+print(cursor.fetchall())
+
+cursor.execute('''SELECT '#05EEFA' AS "[COLOR]";''')
+print(cursor.fetchone())
+
+cursor.close()
+conn.close()
+
+# TEST_3:
+cursor = conn.cursor()
+
+colors = [(Color(66, 220, 43),), (Color(211, 224, 30),), (Color(185, 246, 87),), (Color(77, 62, 70),),
+          (Color(99, 156, 98),), (Color(96, 13, 190),), (Color(151, 138, 229),), (Color(231, 181, 4),),
+          (Color(220, 72, 203),), (Color(97, 133, 96),), (Color(22, 241, 205),), (Color(2, 151, 103),),
+          (Color(124, 209, 201),), (Color(238, 152, 194),), (Color(165, 112, 172),), (Color(212, 90, 149),),
+          (Color(103, 22, 211),), (Color(192, 180, 173),), (Color(129, 186, 162),), (Color(71, 60, 129),)]
+
+for color in colors:
+    cursor.execute('SELECT ?;', color)
+    print(cursor.fetchone())
+
+cursor.execute('''
+CREATE TABLE Colors (
+    color COLOR
+);''')
+
+cursor.executemany('''
+INSERT INTO Colors
+VALUES (?)
+''', colors)
+conn.commit()
+
+cursor.execute('SELECT * FROM Colors;')
+print(cursor.fetchall())
+
+cursor.close()
+conn.close()
+

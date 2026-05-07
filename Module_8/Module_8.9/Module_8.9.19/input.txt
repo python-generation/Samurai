@@ -1,0 +1,161 @@
+# INPUT DATA:
+
+# TEST_1:
+@validate
+def add(a, b):
+    return a + b
+    
+print(add(1, 2))
+
+# TEST_2:
+@validate
+def add(a, b):
+    return a + b
+    
+try:
+    add()
+except TypeError as e:
+    print(e)
+
+# TEST_3:
+@validate
+def foo(a, /, b, c=3, d=4):
+    pass
+
+try:
+    foo()
+except TypeError as e:
+    print(e)
+
+# TEST_4:
+@validate
+def foo(*args, **kwargs):
+    print('beegeek')
+
+foo()
+
+# TEST_5:
+@validate
+def foo(a, b=10, c=20):
+    return a + b * c
+
+print(foo(b=1, a=2))
+
+# TEST_6:
+@validate
+def foo(a=1, b=2, c=3):
+    print(a, b, c)
+
+foo(0)
+
+# TEST_7:
+@validate
+def foo(*, a):
+    return a
+
+try:
+    foo()
+except TypeError as e:
+    print(e)
+
+# TEST_8:
+@validate
+def foo(x, y, z=20):
+    pass
+
+try:
+    foo(10)
+except TypeError as e:
+    print(e)
+
+# TEST_9:
+@validate
+def foo(*args):
+    return sum(args)
+
+print(foo(1, 2, 3))
+
+# TEST_10:
+@validate
+def foo(**kwargs):
+    return kwargs.get('x', 0) + kwargs.get('y', 0)
+
+print(foo(x=1, y=2))
+
+# TEST_11:
+@validate
+def foo(a, *, b):
+    pass
+
+try:
+    foo(10)
+except TypeError as e:
+    print(e)
+
+# TEST_12:
+@validate
+def foo(a, *, b=None):
+    pass
+
+try:
+    foo(b=2.5)
+except TypeError as e:
+    print(e)
+
+# TEST_13:
+@validate
+def foo(a, b, /, *, c, d):
+    pass
+
+try:
+    foo(5, d=10)
+except TypeError as e:
+    print(e)
+
+# TEST_14:
+@validate
+def foo(a, /, b):
+    return a + b
+
+try:
+    foo()
+except TypeError as e:
+    print(e)
+
+# TEST_15:
+@validate
+def foo(a, /, b, *, c, d=None):
+    pass
+
+try:
+    foo(b=10, c=100)
+except TypeError as e:
+    print(e)
+
+# TEST_16:
+@validate
+def foo(a, /, b, c, *, d):
+    pass
+
+try:
+    foo(1, 2)
+except TypeError as e:
+    print(e)
+
+# TEST_17:
+@validate
+def foo(a, /, b, *, c, d=0):
+    return a + b - c ** d
+
+print(foo(1, c=2, b=3))
+
+# TEST_18:
+@validate
+def foo(a, b, /, *, c, d):
+    pass
+
+try:
+    foo()
+except TypeError as e:
+    print(e)
+

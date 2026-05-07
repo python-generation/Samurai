@@ -1,0 +1,16 @@
+# OUTPUT DATA:
+
+# TEST_1:
+{'artist': 'HEART', 'trackname': 'CRAZY ON YOU'}
+{'artist': 'THE SOUNDS', 'trackname': 'MY LOVER'}
+{'artist': 'MORRISSEY', 'trackname': 'SPENT THE DAY IN BED'}
+{'artist': 'THE SMITHS', 'trackname': 'BIGMOUTH STRIKES AGAIN'}
+{'artist': 'MORRISSEY', 'trackname': 'EVERYDAY IS LIKE SUNDAY'}
+
+# TEST_2:
+THE SHINING — Amount: 1, Price: 7.99, Total: 7.99, Discounted: 7.19
+FIGHT CLUB — Amount: 19, Price: 9.99, Total: 189.81, Discounted: 8.99
+THE CATCHER IN THE RYE — Amount: 11, Price: 3.49, Total: 38.39, Discounted: 3.14
+THE GREEN MILE — Amount: 6, Price: 15.99, Total: 95.94, Discounted: 14.39
+HAUNTED — Amount: 1, Price: 13.99, Total: 13.99, Discounted: 12.59
+

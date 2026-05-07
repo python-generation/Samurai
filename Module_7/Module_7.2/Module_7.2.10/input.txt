@@ -1,0 +1,32 @@
+# INPUT DATA:
+
+# TEST_1:
+path = 'desktop/studying'
+sort_and_rename(path)
+print(sorted(os.listdir(path)))
+
+# TEST_2:
+path = 'desktop/images'
+sort_and_rename(path, reverse=True)
+print(sorted(os.listdir(path)))
+
+# TEST_3:
+path = 'desktop/studying/data_sets'
+sort_and_rename(path, key=lambda x: x.split('.')[-1])
+print(sorted(os.listdir(path)))
+
+# TEST_4:
+path = 'desktop/fun/songs'
+sort_and_rename(path)
+print(sorted(os.listdir(path)))
+
+# TEST_5:
+path = 'desktop'
+sort_and_rename(path, key=len, reverse=True)
+print(sorted(os.listdir(path)))
+
+# TEST_6:
+path = 'desktop'
+sort_and_rename(path)
+print(sorted(os.listdir(path)))
+

@@ -1,0 +1,55 @@
+# INPUT DATA:
+
+# TEST_1:
+pattern = formatter('Gordon', 'Freeman', age=32, location='City 17')
+print(pattern)
+
+# TEST_2:
+args = ('Gordon', 'Freeman')
+kwargs = {'age': 32, 'location': 'City 17'}
+
+pattern = formatter(*args, value='PersonInfo', **kwargs)
+print(pattern.format(*args, **kwargs))
+
+# TEST_3:
+pattern = formatter()
+print(pattern)
+
+# TEST_4:
+pattern = formatter('Beegeek', 'Pygen')
+print(pattern)
+
+# TEST_5:
+pattern = formatter(value='Info', name='James', surname='Bond')
+print(pattern)
+
+# TEST_6:
+pattern = formatter('Bond', value='Info', name='James', surname='Bond')
+print(pattern)
+
+# TEST_7:
+pattern = formatter('A')
+print(pattern)
+
+# TEST_8:
+pattern = formatter(value='***')
+print(pattern)
+
+# TEST_9:
+pattern = formatter('x', x=10)
+print(pattern)
+
+# TEST_10:
+pattern = formatter(
+        'Alpha', 'Beta', 'Gamma', 'Delta', 'Epsilon',
+        value='Item',
+        x=10, y=20, z=30, w=40
+    )
+
+filled = pattern.format(
+        'A', 'B', 'G', 'D', 'E',
+        x=40, y=30, z=20, w=10
+    )
+
+print(filled)
+

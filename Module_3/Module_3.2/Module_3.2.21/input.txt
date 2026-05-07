@@ -1,0 +1,38 @@
+# INPUT DATA:
+
+# TEST_1:
+print(days_count(12))
+
+# TEST_2:
+print(days_count(5))
+
+# TEST_3:
+print(days_count(2))
+
+# TEST_4:
+print(days_count(6))
+
+# TEST_5:
+print(days_count(1))
+
+# TEST_6:
+print(days_count(9))
+
+# TEST_7:
+print(days_count(4))
+
+# TEST_8:
+print(days_count(3))
+
+# TEST_9:
+print(days_count(11))
+
+# TEST_10:
+print(days_count(7))
+
+# TEST_11:
+print(days_count(8))
+
+# TEST_12:
+print(days_count(10))
+

@@ -1,0 +1,59 @@
+# INPUT DATA:
+
+# TEST_1:
+user = User(314159)
+del user
+
+# TEST_2:
+user = User(314159)
+print(weakref.getweakrefcount(user))
+
+# TEST_3:
+user1 = User(10)
+user2 = User(20)
+del user2
+
+# TEST_4:
+user1 = User(100)
+alias = user1
+del user1
+print('Delete')
+del alias
+
+# TEST_5:
+users = [User(34534), User(3452), User(6225)]
+del users
+
+# TEST_6:
+user = User(1)
+user = User(1)
+user = User(1)
+
+# TEST_7:
+for i in range(5):
+    User(i + 1)
+
+# TEST_8:
+def func():
+    user = User(888)
+    raise Exception("Test exception")
+
+try:
+    func()
+except:
+    pass
+
+# TEST_9:
+user = User(12345)
+users_dict = {'user': user}
+users_list = [user]
+users_set = {user}
+del user
+print('Delete')
+users_dict.clear()
+print('Delete')
+users_list.clear()
+print('Delete')
+users_set.clear()
+print('Delete')
+

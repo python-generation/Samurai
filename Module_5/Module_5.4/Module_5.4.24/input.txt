@@ -1,0 +1,213 @@
+# INPUT DATA:
+
+# TEST_1:
+tag = 'BB24042941'
+print(decode_rfid(tag))
+
+# TEST_2:
+tag = 'BB24042945'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e)
+
+# TEST_3:
+logger.disabled = True
+tag = 'BB24042941'
+print(decode_rfid(tag))
+
+# TEST_4:
+tag = 'BB24042941'
+decode_rfid(tag)
+
+with open('rfid.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_5:
+tag = 'BB24042941'
+print(decode_rfid(tag))
+
+with open('rfid.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_6:
+logger.disabled = True
+tag = 'BB24042941'
+print(decode_rfid(tag))
+
+with open('rfid.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_7:
+logger.disabled = True
+tag = 'BB24042941'
+decode_rfid(tag)
+
+with open('rfid.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_8:
+tag = 'AA23103065'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e) 
+
+# TEST_9:
+tag = 'A23103065'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e) 
+
+# TEST_10:
+tag = '1B23103066'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e)  
+
+# TEST_11:
+tag = 'aB23103067'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e)
+
+# TEST_12:
+tag = 'CC23-103068'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e)
+
+# TEST_13:
+tag = 'DD23133069'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e)
+
+# TEST_14:
+tag = 'FF23103070'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e)
+
+# TEST_15:
+try:
+    decode_rfid('GG24051381')
+    decode_rfid('HH12345678')
+except ValueError as e:
+    print(e)
+
+# TEST_16:
+logger.disabled = True
+try:
+    decode_rfid('GG24051381')
+    decode_rfid('HH12345678')
+except ValueError as e:
+    print(e)
+
+# TEST_17:
+logger.disabled = True
+tag = 'DD23133069'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e)
+
+# TEST_18:
+logger.disabled = True
+tag = 'CC23-103068'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e)
+
+# TEST_19:
+logger.disabled = True
+tag = 'aB23103067'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e)
+
+# TEST_20:
+try:
+    decode_rfid('GG24051381')
+    decode_rfid('HH12345678')
+except ValueError as e:
+    print(e)
+
+with open('rfid.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_21:
+tag = 'DD23133069'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e)
+
+with open('rfid.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_22:
+tag = 'CC23-103068'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e)
+
+with open('rfid.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_23:
+tag = 'aB23103067'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e)
+
+with open('rfid.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_24:
+tag = 'GG41010945'
+print(decode_rfid(tag))
+
+# TEST_25:
+tag = 'ZZ99123193'
+
+decode_rfid(tag)
+
+with open('rfid.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_26:
+tag = 'BB24023031'
+
+try:
+    print(decode_rfid(tag))
+except ValueError as e:
+    print(e)
+
+with open('rfid.log', encoding='utf-8') as file:
+    print(file.read())
+

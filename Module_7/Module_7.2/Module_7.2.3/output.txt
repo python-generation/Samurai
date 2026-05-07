@@ -1,0 +1,20 @@
+# OUTPUT DATA:
+
+# TEST_1:
+3
+
+# TEST_2:
+2
+
+# TEST_3:
+1
+
+# TEST_4:
+0
+
+# TEST_5:
+0
+
+# TEST_6:
+10
+

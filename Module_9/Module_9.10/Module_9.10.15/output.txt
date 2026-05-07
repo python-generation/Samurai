@@ -1,0 +1,42 @@
+# OUTPUT DATA:
+
+# TEST_1:
++----+---------------------+----------------+--------------+--------------+
+| id |        title        |    director    | release_year | running_time |
++----+---------------------+----------------+--------------+--------------+
+| 1  |     Toy Story 2     | John Lasseter  |     1999     |      93      |
+| 2  |        WALL-E       | Andrew Stanton |     2008     |     104      |
+| 3  |     Ratatouille     |   Brad Bird    |     2007     |     115      |
+| 4  |          Up         |  Pete Docter   |     2009     |     101      |
+| 5  |        Brave        | Brenda Chapman |     2012     |     102      |
+| 6  | Monsters University |  Dan Scanlon   |     2013     |     110      |
+| 7  |        Cars 2       | John Lasseter  |     2011     |     120      |
+| 8  |     Finding Nemo    | Andrew Stanton |     2003     |     107      |
+| 9  |      Toy Story      | John Lasseter  |     1995     |      81      |
+| 10 |   The Incredibles   |   Brad Bird    |     2004     |     116      |
+| 11 |      Inside Out     |  Pete Docter   |     2015     |      95      |
++----+---------------------+----------------+--------------+--------------+
+
+# TEST_2:
++----+-------------------+--------------+--------------+--------------+
+| id |       title       |   director   | release_year | running_time |
++----+-------------------+--------------+--------------+--------------+
+| 13 |    Finding Dory   | Finding Dory |     2016     |      97      |
+| 12 | The Good Dinosaur |  Peter Sohn  |     2015     |      94      |
+| 11 |     Inside Out    | Pete Docter  |     2015     |      95      |
++----+-------------------+--------------+--------------+--------------+
+
+# TEST_3:
++----------+
+| COUNT(*) |
++----------+
+|    10    |
++----------+
+
+# TEST_4:
++-------+----------+
+| title | COUNT(*) |
++-------+----------+
+|  Soul |    2     |
++-------+----------+
+

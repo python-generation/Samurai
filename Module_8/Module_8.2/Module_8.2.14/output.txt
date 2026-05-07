@@ -1,0 +1,32 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['Привет! 😊 Хотел напомнить, что давно не виделись, и пора бы выбраться', 'куда-нибудь вместе — можно сходить в кино, прогуляться по парку или', 'просто посидеть за чашкой кофе и поболтать о всяких мелочах. Как ты', 'смотришь на это?']
+
+# TEST_2:
+['Привет!']
+
+# TEST_3:
+['Hi! I wanted to remind you that we have not seen each other for a long time, and it is time to get out somewhere together - you can go to the movies, take a', 'walk in the park, or just sit over a cup of coffee and chat about all sorts of little things. How would you like that?']
+
+# TEST_4:
+['Hi! 😊 I wanted to remind you that we have not seen each other for a', 'long time, and it is time to get out somewhere together - you can go', 'to the movies, take a walk in the park, or just sit over a cup of', 'coffee and chat about all sorts of little things. How would you like', 'that?']
+
+# TEST_5:
+['бббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббб']
+
+# TEST_6:
+[]
+
+# TEST_7:
+['ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff']
+
+# TEST_8:
+['ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff', 'f']
+
+# TEST_9:
+['ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff', 'ffffffffffuuuuuuuuuuuuuuu']
+
+# TEST_10:
+['бббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббббб', 'б']
+

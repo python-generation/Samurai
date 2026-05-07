@@ -1,0 +1,17 @@
+# OUTPUT DATA:
+
+# TEST_1:
+{'Alexandra Savior Crying All the Time.mp3': ['desktop/fun', 'desktop/fun/songs']}
+
+# TEST_2:
+{}
+
+# TEST_3:
+{'exam.txt': ['desktop/studying', 'desktop/studying/books', 'desktop/studying/data_sets', 'desktop/studying/data_sets/fonts']}
+
+# TEST_4:
+{}
+
+# TEST_5:
+{'test.py': ['desktop', 'desktop/fun', 'desktop/images'], 'Alexandra Savior Crying All the Time.mp3': ['desktop/fun', 'desktop/fun/songs'], 'exam.txt': ['desktop/studying', 'desktop/studying/data_sets', 'desktop/studying/data_sets/fonts', 'desktop/studying/books']}
+

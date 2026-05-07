@@ -1,0 +1,162 @@
+# INPUT DATA:
+
+# TEST_1:
+class TestValidConfig(ValidateTestCase):
+    def test_sort_by_age(self):
+        data = {'name': 'Timur', 'age': 32}
+        self.assertValidateConfig(data, {'name', 'age'})
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestValidConfig)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_2:
+class TestValidConfig(ValidateTestCase):
+    def test_sort_by_age(self):
+        data = {'name': 'Timur'}
+        self.assertValidateConfig(data, {'name', 'age'})
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestValidConfig)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_3:
+class TestValidConfig(ValidateTestCase):
+    def test_empty_required_keys(self):
+        data = {'name': 'Timur'}
+        self.assertValidateConfig(data, set())
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestValidConfig)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_4:
+class TestValidConfig(ValidateTestCase):
+    def test_empty_config(self):
+        data = {}
+        self.assertValidateConfig(data, {'name', 'city'})
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestValidConfig)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_5:
+class TestValidConfig(ValidateTestCase):
+    def test_extra_keys_present(self):
+        data = {'name': 'Timur', 'age': 30, 'country': 'Russia'}
+        self.assertValidateConfig(data, {'name', 'age'})
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestValidConfig)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_6:
+class TestValidConfig(ValidateTestCase):
+    def test_exact_match(self):
+        data = {'x': 1, 'y': 2}
+        self.assertValidateConfig(data, {'x', 'y'})
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestValidConfig)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_7:
+class TestValidConfig(ValidateTestCase):
+    def test_order_does_not_matter(self):
+        data = {'y': 2, 'x': 1}
+        self.assertValidateConfig(data, {'x', 'y'})
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestValidConfig)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_8:
+class TestValidConfig(ValidateTestCase):
+    def test_order_does_not_matter(self):
+        data = {'x': 1, 'y': 2, 'u': 3, 'z': 4, 'q': 5, 'w': 6, 'p': 7, 'g': 8}
+        self.assertValidateConfig(data, {})
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestValidConfig)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_9:
+class TestValidConfig(ValidateTestCase):
+    def test_order_does_not_matter(self):
+        data = {'x': 1, 'y': 2, 'u': 3, 'z': 4, 'q': 5, 'w': 6, 'p': 7, 'g': 8}
+        self.assertValidateConfig(data, {'x', 'y', 'u', 'z', 'q', 'w', 'p', 'g'})
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestValidConfig)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+
+# TEST_10:
+class TestValidConfig(ValidateTestCase):
+    def test_order_does_not_matter(self):
+        data = {'x': 1, 'y': 2, 'u': 3, 'z': 4, 'q': 5, 'w': 6, 'p': 7, 'g': 8}
+        self.assertValidateConfig(data, {'x', 'y', 'u', 'z', 'q', 'w', 'p', 'g', 'b'})
+
+'''Код ниже используется для загрузки и выполнения наборов тестовых данных.
+Это будет подробно рассмотрено в следующем уроке.'''
+
+loader = unittest.defaultTestLoader
+suite = loader.loadTestsFromTestCase(TestValidConfig)
+
+for test in suite:
+    result = test.run()
+    print(result.wasSuccessful())
+

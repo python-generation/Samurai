@@ -1,0 +1,17 @@
+# OUTPUT DATA:
+
+# TEST_1:
+desktop/fun/movies
+
+# TEST_2:
+desktop/studying/books
+
+# TEST_3:
+desktop
+
+# TEST_4:
+data/FOLDER_HERE
+
+# TEST_5:
+module_os/Программы
+

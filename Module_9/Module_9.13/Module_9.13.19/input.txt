@@ -1,0 +1,59 @@
+# INPUT DATA:
+
+# TEST_1:
+cursor = conn.cursor()
+cursor.execute('SELECT ?;', (Point(1, -2),))
+print(cursor.fetchone())
+
+cursor.close()
+conn.close()
+
+# TEST_2:
+cursor = conn.cursor()
+cursor.execute('''
+CREATE TABLE Points (
+    point POINT
+);''')
+
+points = [(Point(1, -2),), (Point(-1, 12),), (Point(11, 22),)]
+cursor.executemany('INSERT INTO Points VALUES (?);', points)
+conn.commit()
+
+cursor.execute('SELECT * FROM Points;')
+print(cursor.fetchall())
+
+cursor.execute('''SELECT '1; -2' AS "[POINT]";''')
+print(cursor.fetchone())
+
+cursor.close()
+conn.close()
+
+# TEST_3:
+cursor = conn.cursor()
+
+points = [(Point(62, 169),), (Point(-113, -105),), (Point(-86, 124),), (Point(-62, 163),), (Point(-153, -105),),
+          (Point(6, -52),), (Point(98, 35),), (Point(145, 179),), (Point(130, 46),), (Point(123, -30),),
+          (Point(-46, -117),), (Point(-35, 191),), (Point(-63, -125),), (Point(149, -16),), (Point(-53, 94),),
+          (Point(-173, -135),), (Point(69, -126),), (Point(-81, -126),), (Point(133, 163),), (Point(40, -23),)]
+
+for point in points:
+    cursor.execute('''SELECT ?;''', point)
+    print(cursor.fetchone())
+
+cursor.execute('''
+CREATE TABLE Points (
+    point POINT
+);''')
+
+cursor.executemany('''
+INSERT INTO Points
+VALUES (?)
+''', points)
+conn.commit()
+
+cursor.execute('SELECT * FROM Points;')
+print(cursor.fetchall())
+
+cursor.close()
+conn.close()
+

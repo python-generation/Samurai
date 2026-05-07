@@ -1,0 +1,23 @@
+# INPUT DATA:
+
+# TEST_1:
+2
+3
+5
+7
+11
+13
+
+# TEST_2:
+2
+3
+5
+seven
+11
+thirteen
+
+# TEST_3:
+one
+two
+three
+

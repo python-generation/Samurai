@@ -1,0 +1,55 @@
+# INPUT DATA:
+
+# TEST_1:
+file_handler = FileHandler('file.txt')
+file = file_handler.file
+del file_handler
+print(file.closed)
+
+# TEST_2:
+file_handler = FileHandler('file.txt')
+print(weakref.getweakrefcount(file_handler))
+
+# TEST_3:
+file_handler = FileHandler('file.txt')
+file = file_handler.file
+file.write('Hello')
+del file_handler
+print(file.closed)
+
+# TEST_4:
+handlers = [FileHandler(f'file{i}.txt') for i in range(3)]
+files = [h.file for h in handlers]
+
+# TEST_5:
+file_handler = FileHandler('file.txt')
+file = file_handler.file
+print(file.closed)
+
+# TEST_6:
+fh1 = FileHandler('file1.txt')
+fh2 = FileHandler('file2.txt')
+f1, f2 = fh1.file, fh2.file
+del fh2
+print(f2.closed)
+del fh1
+print(f1.closed)
+
+# TEST_7:
+fh = FileHandler('file.txt')
+f = fh.file
+del fh
+try:
+    f.write('oops')
+except ValueError as e:
+    print(e)
+
+# TEST_8:
+fh = FileHandler('file.txt')
+f = fh.file
+f.write('beegeek')
+del fh
+
+with open('file.txt', encoding='utf-8') as file:
+    print(file.read())
+

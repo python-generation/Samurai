@@ -1,0 +1,14 @@
+# OUTPUT DATA:
+
+# TEST_1:
+b'Beegeek'
+
+# TEST_2:
+b'Pygen'
+
+# TEST_3:
+b''
+
+# TEST_4:
+b'P'
+

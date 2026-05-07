@@ -1,0 +1,142 @@
+# INPUT DATA:
+
+# TEST_1:
+password = 'xsvxnDrHfA0IdnXcHU0E'
+print(is_correct_password(password, length=20, upper=8, lower=8, numeric=2))
+
+# TEST_2:
+password = 'xsvxnDrHfA0IdnXcHU0'
+
+try:
+    print(is_correct_password(password, length=20, upper=8, lower=8, numeric=2))
+except PasswordTooShortError as e:
+    print(e)
+
+# TEST_3:
+password = 'xsvxndrhfa0idnxchu0e'
+
+try:
+    print(is_correct_password(password, length=20, upper=8, lower=8, numeric=2))
+except NotEnoughUppercaseError as e:
+    print(e)
+
+# TEST_4:
+password = 'XSVXNDRHFA0IDNXCHU0E'
+
+try:
+    print(is_correct_password(password, length=20, upper=8, lower=8, numeric=2))
+except NotEnoughLowercaseError as e:
+    print(e)
+
+# TEST_5:
+password = 'xsvxnDrHfAeIdnXcHU0E'
+
+try:
+    print(is_correct_password(password, length=20, upper=8, lower=8, numeric=2))
+except NotEnoughDigitsError as e:
+    print(e)
+
+# TEST_6:
+password = 'ZEu403e16VSz3ZPdSkuigC6u0RPu49'
+print(is_correct_password(password, length=30, upper=10, lower=10, numeric=10))
+
+# TEST_7:
+password = 'ZEu403e16VSz3ZPdSkuigC6u0RPu49'
+print(is_correct_password('ZEu403e16VSz3ZPdSkuigC6u0RPu49', length=30, upper=10, lower=10, numeric=10))
+
+# TEST_8:
+password = 'ZEu403e16VSz3ZPdSkuigC6u0RPu49'
+print(is_correct_password(password, length=30, upper=0, lower=0, numeric=0))
+
+# TEST_9:
+password = 'ZEu403e1'
+print(is_correct_password(password, length=8, upper=0, lower=0, numeric=0))
+
+# TEST_10:
+try:
+    print(is_correct_password(password='ZEu403e1', length=8, upper=2, lower=2, numeric=4))
+except TypeError as e:
+    print(e)
+
+# TEST_11:
+password = 'ZEu403e1'
+
+try:
+    print(is_correct_password(password, 8, upper=2, lower=2, numeric=4))
+except TypeError as e:
+    print(e)
+
+# TEST_12:
+password = 'ZEu403e1'
+
+try:
+    print(is_correct_password(password, length=8, upper=3, lower=0, numeric=0))
+except NotEnoughUppercaseError as e:
+    print(e)
+
+# TEST_13:
+password = 'ZEu403e1'
+
+try:
+    print(is_correct_password(password, length=8, upper=0, lower=3, numeric=0))
+except NotEnoughLowercaseError as e:
+    print(e)
+
+# TEST_14:
+password = 'ZEu403e1'
+
+try:
+    print(is_correct_password(password, length=8, upper=0, lower=0, numeric=5))
+except NotEnoughDigitsError as e:
+    print(e)
+
+# TEST_15:
+password = ''
+print(is_correct_password(password, length=0, upper=0, lower=0, numeric=0))
+
+# TEST_16:
+password = 'ZEu403e1'
+
+try:
+    print(is_correct_password(password, 8, 2, lower=2, numeric=4))
+except TypeError as e:
+    print(e)
+
+# TEST_17:
+password = 'ZEu403e1'
+
+try:
+    print(is_correct_password(password, 8, 2, 2, numeric=4))
+except TypeError as e:
+    print(e)
+
+# TEST_18:
+password = 'ZEu403e1'
+
+try:
+    print(is_correct_password(password, 8, 2, 2, 4))
+except TypeError as e:
+    print(e)
+
+# TEST_19:
+try:
+    print(is_correct_password(8, 2, 2, 4, password='ZEu403e1'))
+except TypeError as e:
+    print(e)
+
+# TEST_20:
+password = 'это_мой_секретный_ПАРОЛЬ'
+
+try:
+    print(is_correct_password(password, length=10, upper=5, lower=0, numeric=0))
+except NotEnoughUppercaseError as e:
+    print(e)
+
+# TEST_21:
+password = 'это_мой_секретный_ПАРОЛЬ'
+
+try:
+    print(is_correct_password(password, length=10, upper=0, lower=5, numeric=0))
+except NotEnoughLowercaseError as e:
+    print(e)
+

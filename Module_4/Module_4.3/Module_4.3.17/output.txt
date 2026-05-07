@@ -1,0 +1,43 @@
+# OUTPUT DATA:
+
+# TEST_1:
+[1]
+
+# TEST_2:
+True
+True
+
+# TEST_3:
+numbers: [1, 1.5], popped: 2
+True
+
+# TEST_4:
+True
+True
+
+# TEST_5:
+CustomList(['b']), popped: a
+True
+True
+True
+
+# TEST_6:
+False
+False
+
+# TEST_7:
+False
+False
+
+# TEST_8:
+False
+False
+
+# TEST_9:
+False
+False
+
+# TEST_10:
+False
+False
+

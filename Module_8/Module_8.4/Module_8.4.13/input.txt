@@ -1,0 +1,35 @@
+# INPUT DATA:
+
+# TEST_1:
+rand = HistoryRandom()
+print(len(rand.history))
+
+rand.randint(1, 10)
+rand.randint(1, 10)
+rand.randint(1, 10)
+
+print(len(rand.history))
+
+# TEST_2:
+rand = HistoryRandom(100)
+
+for _ in range(3):
+    rand.randint(1, 10)
+
+print(rand.history)
+
+rand.reset()            # сбрасываем отслеживание
+
+for _ in range(3):
+    rand.randint(1, 10)
+
+print(rand.history)
+
+# TEST_3:
+rand = HistoryRandom('beegeek')
+
+for _ in range(10):
+    rand.randint(18, 99)
+
+print(rand.history)
+

@@ -1,0 +1,33 @@
+# INPUT DATA:
+
+# TEST_1:
+print(random_date('01.01.2025', '01.05.2025'))
+
+# TEST_2:
+try:
+    print(random_date('01.05.2025', '01.01.2025'))
+except ValueError as e:
+    print(e)
+
+# TEST_3:
+print(random_date('01.01.2025', '01.01.2025'))
+
+# TEST_4:
+print(random_date('01.10.2000', '10.10.2025'))
+
+# TEST_5:
+print(random_date('01.01.1911', '10.10.1987'))
+
+# TEST_6:
+print(random_date('31.12.1210', '31.12.1389'))
+
+# TEST_7:
+try:
+    random_date('01.05.1419', '11.07.1327')
+except ValueError as e:
+    print(e)
+
+# TEST_8:
+for _ in range(10):
+    print(random_date('01.01.2025', '01.05.2025'))
+

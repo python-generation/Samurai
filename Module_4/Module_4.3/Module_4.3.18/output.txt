@@ -1,0 +1,57 @@
+# OUTPUT DATA:
+
+# TEST_1:
+True
+True
+
+# TEST_2:
+True
+True
+
+# TEST_3:
+file1.closed -> True
+file2.closed -> True
+True
+
+# TEST_4:
+True
+True
+
+# TEST_5:
+Connected to localhost:8080
+Connected to example.com:443
+Closing connection to localhost:8080
+Closing connection to example.com:443
+NetworkConnection(host="localhost", port=8080, connected=False)
+NetworkConnection(host="example.com", port=443, connected=False)
+True
+True
+True
+
+# TEST_6:
+Connected to localhost:8080
+Connected to example.com:443
+Closing connection to localhost:8080
+Closing connection to example.com:443
+NetworkConnection(host="localhost", port=8080, connected=False)
+NetworkConnection(host="example.com", port=443, connected=False)
+True
+True
+True
+
+# TEST_7:
+AnotherResource closed.
+True
+AnotherResource(closed=True)
+True
+True
+True
+
+# TEST_8:
+close_all([]) без ошибок.
+close_all(()) без ошибок.
+
+# TEST_9:
+'DoesNotSupportClose' object has no attribute 'close'
+True
+

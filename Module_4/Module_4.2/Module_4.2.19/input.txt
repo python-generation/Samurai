@@ -1,0 +1,123 @@
+# INPUT DATA:
+
+# TEST_1:
+task1 = Task('Сделать домашнее задание')
+task2 = Task('Почитать книгу')
+task3 = Task('Погулять')
+
+print(task1.status)
+print(task2.status)
+print(task3.status)
+
+# TEST_2:
+task1 = Task('Купить билеты в аквапарк')
+task2 = Task('Покататься на аттракционах')
+task3 = Task('Перекусить в кафе')
+
+print(Task.total_tasks)
+print(Task.get_total_tasks())
+
+# TEST_3:
+task = Task('Купить продукты')
+task.start()
+print(task.status)
+
+# TEST_4:
+task = Task('Запустить ракетный двигатель!')
+task.start()
+
+try:
+    task.start()
+except StartError as e:
+    print(e)
+
+# TEST_5:
+task = Task('Съездить отдохнуть')
+task.start()
+task.complete()
+print(task.status)
+
+# TEST_6:
+task = Task('Съездить отдохнуть')
+
+try:
+    task.complete()
+except CompleteError as e:
+    print(e)
+
+# TEST_7:
+task1 = Task('Подготовить презентацию')
+task2 = Task('Выступить с презентацией')
+
+print(task1.id)
+print(task2.id)
+print(task1.id != task2.id)
+
+# TEST_8:
+task = Task('Съездить отдохнуть')
+
+task.start()
+task.complete()
+
+try:
+    task.start()
+except StartError as e:
+    print(e)
+
+print(task.status)
+
+# TEST_9:
+task1 = Task('Проверка New')
+task2 = Task('Проверка In progress')
+task3 = Task('Проверка Completed')
+
+task2.start()
+task3.start()
+task3.complete()
+
+print(task1.status)
+print(task2.status)
+print(task3.status)
+
+# TEST_10:
+task1 = Task('Задача 1')
+task2 = Task('Задача 2')
+task3 = Task('Задача 3')
+task4 = Task('Задача 4')
+
+task2.start()
+
+task4.start()
+task4.complete()
+
+print(task1.id)
+print(task1.status)
+
+print(task2.id)
+print(task2.status)
+
+print(task3.id)
+print(task4.id)
+
+print(task3.status)
+print(task4.status)
+
+print(Task.total_tasks)
+print(Task.get_total_tasks())
+
+# TEST_11:
+task = Task('Сделать домашнее задание')
+
+try:
+    task.id = 5
+except AttributeError as e:
+    print(e)
+
+# TEST_12:
+task = Task('Сделать домашнее задание')
+
+try:
+    task.total_tasks = 10
+except AttributeError as e:
+    print(e)
+

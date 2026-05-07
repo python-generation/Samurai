@@ -1,0 +1,26 @@
+# INPUT DATA:
+
+# TEST_1:
+print(A.id)
+print(B.id)
+print(C.id)
+
+# TEST_2:
+print(CounterType.registry)
+
+# TEST_3:
+X = CounterType('X', (), {})
+Y = CounterType('Y', (), {})
+Z = CounterType('Z', (), {})
+
+print(X.id)
+print(Y.id)
+print(Z.id)
+
+# TEST_4:
+X = CounterType('X', (), {})
+Y = CounterType('Y', (), {})
+Z = CounterType('Z', (), {})
+
+print(CounterType.registry)
+

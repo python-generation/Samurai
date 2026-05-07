@@ -1,0 +1,92 @@
+# INPUT DATA:
+
+# TEST_1:
+account = BankAccount('Timur', 500)
+amount = 300
+
+match account:
+    case BankAccount(_, _):
+        print(account.withdraw(amount))
+    case CreditAccount(_, _, _):
+        print(account.withdraw(amount))
+
+# TEST_2:
+account = CreditAccount('Nastya', 1000, -500)
+amount = 700
+
+match account:
+    case BankAccount(_, _):
+        print(account.withdraw(amount))
+    case CreditAccount(_, _, _):
+        print(account.withdraw(amount))
+
+# TEST_3:
+account = BankAccount('Valera', 1000)
+amount = 2000
+
+match account:
+    case BankAccount(_, _):
+        print(account.withdraw(amount))
+    case CreditAccount(_, _, _):
+        print(account.withdraw(amount))
+
+# TEST_4:
+account = CreditAccount('Rustam', 1000, -500)
+amount = 2000
+
+match account:
+    case CreditAccount(_, _, _):
+        print(account.withdraw(amount))
+    case BankAccount(_, _):
+        print(account.withdraw(amount))
+
+# TEST_5:
+account = BankAccount('Anna', 100)
+amount = 100
+
+match account:
+    case BankAccount(_, _):
+        print(account.withdraw(amount))
+    case CreditAccount(_, _, _):
+        print(account.withdraw(amount))
+
+# TEST_6:
+account = BankAccount('Boris', 200)
+amount = 0
+
+match account:
+    case BankAccount(_, _):
+        print(account.withdraw(amount))
+    case CreditAccount(_, _, _):
+        print(account.withdraw(amount))
+
+# TEST_7:
+account = CreditAccount('Igor', 100, -100)
+amount = 200
+
+match account:
+    case CreditAccount(_, _, _):
+        print(account.withdraw(amount))
+    case BankAccount(_, _):
+        print(account.withdraw(amount))
+
+# TEST_8:
+account = CreditAccount('Dasha', 500, 0)
+amount = 500
+
+match account:
+    case CreditAccount(_, _, _):
+        print(account.withdraw(amount))
+    case BankAccount(_, _):
+        print(account.withdraw(amount))
+
+# TEST_9:
+account = CreditAccount('Kiril', 500, -500)
+amount = 200
+
+match account:
+    case CreditAccount(_, _, _):
+        print(account.withdraw(amount))
+    case BankAccount(_, _):
+        print(account.withdraw(amount))
+

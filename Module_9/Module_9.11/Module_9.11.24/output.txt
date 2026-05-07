@@ -1,0 +1,29 @@
+# OUTPUT DATA:
+
+# TEST_1:
+4
+
+# TEST_2:
+5
+
+# TEST_3:
+8
+
+# TEST_4:
+a
+
+# TEST_5:
+None
+
+# TEST_6:
+1
+
+# TEST_7:
+42
+
+# TEST_8:
+None
+
+# TEST_9:
+0
+

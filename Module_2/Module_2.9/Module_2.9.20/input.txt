@@ -1,0 +1,79 @@
+# INPUT DATA:
+
+# TEST_1:
+library = Library()
+library.add_book("Грокаем алгоритмы")
+library.add_book("Мастер и Маргарита")
+
+library.borrow_book("Грокаем алгоритмы")
+try:
+    library.borrow_book("Грокаем алгоритмы")
+except BookNotAvailableError as e:
+    print(e)
+
+# TEST_2:
+library = Library()
+library.add_book("Мастер и Маргарита")
+
+try:
+    library.return_book("Мастер и Маргарита")
+except BookNotBorrowedError as e:
+    print(e)
+
+# TEST_3:
+library = Library()
+library.add_book("Мастер и Маргарита")
+
+try:
+    library.return_book("Война и мир")
+except (ValueError, BookNotBorrowedError) as e:
+    print(e)
+
+# TEST_4:
+library = Library()
+library.add_book("Гамлет")
+library.add_book("Война и мир")
+
+try:
+    library.borrow_book("Грокаем алгоритмы")
+except (ValueError, BookNotAvailableError) as e:
+    print(e)
+
+# TEST_5:
+library = Library()
+library.add_book("Мастер и Маргарита")
+library.add_book("Гамлет")
+library.add_book("Война и мир")
+library.add_book("Грокаем алгоритмы")
+library.add_book("Улисс")
+
+library.borrow_book("Грокаем алгоритмы")
+try:
+    library.borrow_book("Грокаем алгоритмы")
+except BookNotAvailableError as e:
+    print(e)
+    
+try:
+    library.return_book("Мастер и Маргарита")
+except BookNotBorrowedError as e:
+    print(e)
+
+try:
+    library.return_book("Война и мир")
+except (ValueError, BookNotBorrowedError) as e:
+    print(e)
+    
+try:
+    library.borrow_book("Дон Кихот")
+except (ValueError, BookNotAvailableError) as e:
+    print(e)
+    
+library.add_book("Одиссея")
+library.borrow_book("Одиссея")
+try:
+    library.return_book("Одиссея")
+except BookNotBorrowedError as e:
+    print(e)
+
+library.add_book("В поисках утраченного времени")
+

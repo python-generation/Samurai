@@ -1,0 +1,95 @@
+# INPUT DATA:
+
+# TEST_1:
+def __init__(self, x, y):
+    self.x = x
+    self.y = y
+
+Point = ComparableType('Point', (), {
+    'compare_fields': ['x', 'y'],
+    '__init__': __init__
+})
+
+p1 = Point(1, 2)
+p2 = Point(1, 3)
+print(p1 < p2)
+
+# TEST_2:
+def __init__(self, x, y):
+    self.x = x
+    self.y = y
+
+Point = ComparableType('Point', (), {
+    '__init__': __init__
+})
+
+p1 = Point(1, 2)
+p2 = Point(1, 3)
+
+try:
+    print(p1 < p2)
+except TypeError:
+    print('Невозможно сравнить экземпляры.')
+
+# TEST_3:
+Person = ComparableType('Person', (), {
+    'compare_fields': ['age'],
+    '__init__': lambda self, name, age: setattr(self, 'name', name) or setattr(self, 'age', age)
+})
+
+p1 = Person('Alice', 30)
+p2 = Person('Bob', 25)
+p3 = Person('Charlie', 30)
+
+print(p1 == p2)
+print(p1 != p2)
+print(p1 > p2)
+print(p2 < p3)
+print(p1 >= p3)
+print(p2 <= p1)
+
+# TEST_4:
+Product = ComparableType('Product', (), {
+    'compare_fields': ['price', 'rating'],
+    '__init__': lambda self, name, price, rating: setattr(self, 'name', name) or setattr(self, 'price', price) or setattr(self, 'rating', rating)
+})
+
+prod1 = Product('A', 100, 4.5)
+prod2 = Product('B', 100, 4.7)
+prod3 = Product('C', 90, 5.0)
+
+print(prod1 < prod2)
+print(prod2 > prod3)
+print(prod1 == prod3)
+print(prod1 != prod2)
+
+# TEST_5:
+Sample = ComparableType('Sample', (), {
+    '__init__': lambda self, x: setattr(self, 'x', x)
+})
+
+s1 = Sample(5)
+s2 = Sample(5)
+s3 = Sample(10)
+
+print(s1 == s2)
+print(s1 != s3)
+
+try:
+    print(s1 > s3)
+except TypeError:
+    print('Невозможно сравнить экземпляры.')
+
+# TEST_6:
+Item = ComparableType('Item', (), {
+    'compare_fields': ['weight', 'price'],
+    '__init__': lambda self, name, weight, price: setattr(self, 'name', name) or setattr(self, 'weight', weight) or setattr(self, 'price', price)
+})
+
+i1 = Item('X', 10, 100)
+i2 = Item('Y', 10, 90)
+i3 = Item('Z', 12, 80)
+
+print(i1 > i2)
+print(i1 < i3)
+

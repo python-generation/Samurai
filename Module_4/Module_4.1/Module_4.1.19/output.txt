@@ -1,0 +1,23 @@
+# OUTPUT DATA:
+
+# TEST_1:
+{5: ['Timur'], 4: ['Valera', 'Nastya']}
+
+# TEST_2:
+{1: ['Nastya'], 2: ['Nastya']}
+
+# TEST_3:
+{1: ['Rustam']}
+
+# TEST_4:
+{3: ['Valera', 'Artur', 'Anton']}
+
+# TEST_5:
+{}
+
+# TEST_6:
+{1: ['Timur'], 2: ['Valera'], 3: ['Sveta'], 4: ['Soslan'], 5: ['Anri']}
+
+# TEST_7:
+{5: ['Timur', 'Rustam'], 4: ['Valera', 'Nastya']}
+

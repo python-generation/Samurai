@@ -1,0 +1,32 @@
+# INPUT DATA:
+
+# TEST_1:
+logs = ["INFO:__main__:Получатель 'support@pygen.ru', тема 'Решение задач'. Сообщение 'Моя программа не работает, помогите' отправлено.",
+        "ERROR:__main__:Некорректный email 'support@pygen'. Сообщение 'Моя программа не работает, помогите' не отправлено."]
+
+print_logs(logs, width=40)
+
+# TEST_2:
+logs = ['Test']
+
+print_logs(logs, width=10)
+
+# TEST_3:
+logs = []
+
+print_logs(logs, width=1)
+
+# TEST_4:
+logs = [
+        '⚠️ WARNING: Пользователь пытается войти с незнакомого устройства 🖥️. '
+        'Если это не вы, смените пароль! 🔒',
+        'ERROR: Система не может обработать запрос, потому что данные слишком длинные: '
+        'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'
+    ]
+
+print_logs(logs, width=50)
+
+# TEST_5:
+logs = [f'Log message {i}' for i in range(1, 100)]
+print_logs(logs, width=100)
+

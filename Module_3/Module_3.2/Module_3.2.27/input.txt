@@ -1,0 +1,96 @@
+# INPUT DATA:
+
+# TEST_1:
+basket = ['banana', 'pear', 'apple']
+print(goods(basket))
+
+basket = ['apple', 'pear', 'banana']
+print(goods(basket))
+
+basket = ['banana', 'banana', 'banana']
+print(goods(basket))
+
+# TEST_2:
+basket = ['chocolate', 'strawberry']
+print(goods(basket))
+
+basket = ['banana', 'chocolate']
+print(goods(basket))
+
+# TEST_3:
+basket = ['chocolate']
+print(goods(basket))
+
+# TEST_4:
+basket = ['mango']
+print(goods(basket))
+
+basket = ['tomato', 'cucumber']
+print(goods(basket))
+
+basket = ['milk', 'strawberry', 'bread', 'meat', 'sugar']
+print(goods(basket))
+
+# TEST_5:
+basket = ['apple', 'banana', 'pear', 'apple'] # Больше 3 фруктов
+print(goods(basket))
+
+# TEST_6:
+basket = ['apple', 'banana'] # Меньше 3 фруктов
+print(goods(basket))
+
+# TEST_7:
+basket = ['chocolate', 'apple'] # Шоколад и что-то еще
+print(goods(basket))
+
+# TEST_8:
+basket = ['apple', 'pear', 'banana', 'chocolate'] # Фрукты и шоколад
+print(goods(basket))
+
+# TEST_9:
+basket = ['pear', 'pear', 'pear']
+print(goods(basket))
+
+# TEST_10:
+basket = ['apple', 'apple', 'apple']
+print(goods(basket))
+
+# TEST_11:
+# Тесты для "Сегодня у нас фруктовая корзина" (27 вариантов)
+fruit_combinations = [
+    ['apple', 'apple', 'apple'], ['apple', 'apple', 'pear'], ['apple', 'apple', 'banana'],
+    ['apple', 'pear', 'apple'], ['apple', 'pear', 'pear'], ['apple', 'pear', 'banana'],
+    ['apple', 'banana', 'apple'], ['apple', 'banana', 'pear'], ['apple', 'banana', 'banana'],
+    ['pear', 'apple', 'apple'], ['pear', 'apple', 'pear'], ['pear', 'apple', 'banana'],
+    ['pear', 'pear', 'apple'], ['pear', 'pear', 'pear'], ['pear', 'pear', 'banana'],
+    ['pear', 'banana', 'apple'], ['pear', 'banana', 'pear'], ['pear', 'banana', 'banana'],
+    ['banana', 'apple', 'apple'], ['banana', 'apple', 'pear'], ['banana', 'apple', 'banana'],
+    ['banana', 'pear', 'apple'], ['banana', 'pear', 'pear'], ['banana', 'pear', 'banana'],
+    ['banana', 'banana', 'apple'], ['banana', 'banana', 'pear'], ['banana', 'banana', 'banana']
+]
+
+for basket in fruit_combinations:
+    print(goods(basket))
+
+# TEST_12:
+# Тесты для "Классный десерт намечается" (4 варианта)
+dessert_combinations = [
+    ['chocolate', 'strawberry'],
+    ['chocolate', 'banana'],
+    ['strawberry', 'chocolate'],
+    ['banana', 'chocolate']
+]
+
+for basket in dessert_combinations:
+    print(goods(basket))
+
+# TEST_13:
+from itertools import combinations_with_replacement
+
+items = ['chocolate', 'apple', 'pear', 'banana', 'strawberry']
+
+for r in range(2, 5):
+    for basket in combinations_with_replacement(items, r=r):
+        basket = list(basket)
+        print(goods(basket))
+

@@ -1,0 +1,52 @@
+# INPUT DATA:
+
+# TEST_1:
+result = calculate_size_cube(1.0)
+
+print(result)
+
+# TEST_2:
+result = calculate_size_cube(3.56)
+
+print(result)
+
+# TEST_3:
+result = calculate_size_cube(101.6)
+
+print(result)
+
+# TEST_4:
+result = calculate_size_cube(0.001)
+
+print(result)
+
+# TEST_5:
+result = calculate_size_cube(1000000.196357)
+
+print(result)
+
+# TEST_6:
+result = calculate_size_cube(0.01)
+
+print(result)
+
+# TEST_7:
+result = calculate_size_cube(0.1)
+
+print(result)
+
+# TEST_8:
+result = calculate_size_cube(3.1415926535)
+
+print(result)
+
+# TEST_9:
+result = calculate_size_cube(24.6)
+
+print(result)
+
+# TEST_10:
+result = calculate_size_cube(3)
+
+print(result)
+

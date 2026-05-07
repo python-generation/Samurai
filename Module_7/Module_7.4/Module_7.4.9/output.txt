@@ -1,0 +1,25 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['.tar', '.gz']
+
+# TEST_2:
+['.final', '.docx']
+
+# TEST_3:
+['.png']
+
+# TEST_4:
+['.log', '.1']
+['.sql', '.gz']
+['.tar', '.gz']
+['.json', '.bak']
+['.csv', '.zip']
+['.mp3', '.part']
+['.png', '.gz']
+['.png', '.png', '.xz', '.gz']
+['.txt', '.old']
+['.sh', '.save']
+['.log', '.3', '.gz']
+['.tar', '.xz']
+

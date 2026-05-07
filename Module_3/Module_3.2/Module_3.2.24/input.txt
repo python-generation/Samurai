@@ -1,0 +1,51 @@
+# INPUT DATA:
+
+# TEST_1:
+print(http_status(200))
+
+# TEST_2:
+print(http_status(404))
+
+# TEST_3:
+print(http_status(502))
+
+# TEST_4:
+print(http_status(407))
+
+# TEST_5:
+print(http_status(200))
+print(http_status(201))
+print(http_status(202))
+print(http_status(203))
+print(http_status(204))
+
+# TEST_6:
+print(http_status(400))
+print(http_status(401))
+print(http_status(402))
+print(http_status(403))
+print(http_status(404))
+
+# TEST_7:
+print(http_status(500))
+print(http_status(501))
+print(http_status(502))
+print(http_status(503))
+print(http_status(504))
+
+# TEST_8:
+print(http_status(-200))
+print(http_status(-201))
+print(http_status(202))
+print(http_status(203))
+print(http_status(-204))
+
+# TEST_9:
+print(http_status(1000))
+
+# TEST_10:
+print(http_status(-1))
+
+# TEST_11:
+print(http_status(0))
+

@@ -1,0 +1,42 @@
+# INPUT DATA:
+
+# TEST_1:
+from prettytable import from_db_cursor
+
+del_films(2000)
+
+conn = sqlite3.connect('Pixar.db')
+cursor = conn.cursor()
+cursor.execute('SELECT * FROM Films;')
+print(from_db_cursor(cursor))
+
+# TEST_2:
+from prettytable import from_db_cursor
+
+del_films(2005)
+
+conn = sqlite3.connect('Pixar.db')
+cursor = conn.cursor()
+cursor.execute('SELECT * FROM Films;')
+print(from_db_cursor(cursor))
+
+# TEST_3:
+from prettytable import from_db_cursor
+
+del_films(2025)
+
+conn = sqlite3.connect('Pixar.db')
+cursor = conn.cursor()
+cursor.execute('SELECT * FROM Films;')
+print(from_db_cursor(cursor))
+
+# TEST_4:
+from prettytable import from_db_cursor
+
+del_films(1990)
+
+conn = sqlite3.connect('Pixar.db')
+cursor = conn.cursor()
+cursor.execute('SELECT * FROM Films;')
+print(from_db_cursor(cursor))
+

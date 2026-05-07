@@ -1,0 +1,32 @@
+# OUTPUT DATA:
+
+# TEST_1:
+User Timur, ID: 4658712367, Status: Active
+
+# TEST_2:
+У пользователя уже установлен данный статус.
+
+# TEST_3:
+User Alice, ID: 123, Status: Active
+
+# TEST_4:
+User Bob, ID: 456, Status: Active
+
+# TEST_5:
+User Julia, ID: 87512, Status: Suspended
+
+# TEST_6:
+User Kellian, ID: 1999283, Status: Banned
+
+# TEST_7:
+У пользователя уже установлен данный статус.
+
+# TEST_8:
+У пользователя уже установлен данный статус.
+
+# TEST_9:
+User Heidi, ID: 444, Status: Active
+
+# TEST_10:
+Изменение идентификатора невозможно.
+

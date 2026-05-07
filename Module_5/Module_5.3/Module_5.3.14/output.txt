@@ -1,0 +1,97 @@
+# OUTPUT DATA:
+
+# TEST_1:
+[INFO] | 2026.03.04 | Началась валидация пароля
+[INFO] | 2026.03.04 | Валидация пароля прошла успешно
+True
+
+# TEST_2:
+[INFO] | 2026.03.04 | Началась валидация пароля
+[ERROR] | 2026.03.04 | Пароль короче допустимой длины
+Пароль короче допустимой длины
+
+# TEST_3:
+[INFO] | 2026.03.04 | Началась валидация пароля
+[ERROR] | 2026.03.04 | Пароль содержит недостаточно заглавных букв
+Пароль содержит недостаточно заглавных букв
+
+# TEST_4:
+[INFO] | 2026.03.04 | Началась валидация пароля
+[ERROR] | 2026.03.04 | Пароль содержит недостаточно строчных букв
+Пароль содержит недостаточно строчных букв
+
+# TEST_5:
+[INFO] | 2026.03.04 | Началась валидация пароля
+[ERROR] | 2026.03.04 | Пароль содержит недостаточно цифр
+Пароль содержит недостаточно цифр
+
+# TEST_6:
+[INFO] | 2026.03.04 | Началась валидация пароля
+[INFO] | 2026.03.04 | Валидация пароля прошла успешно
+True
+
+# TEST_7:
+True
+
+# TEST_8:
+[INFO] | 2026.03.04 | Началась валидация пароля
+[INFO] | 2026.03.04 | Валидация пароля прошла успешно
+True
+
+# TEST_9:
+[INFO] | 2026.03.04 | Началась валидация пароля
+[INFO] | 2026.03.04 | Валидация пароля прошла успешно
+True
+
+# TEST_10:
+is_correct_password() got some positional-only arguments passed as keyword arguments: 'password'
+
+# TEST_11:
+is_correct_password() takes 1 positional argument but 2 positional arguments (and 3 keyword-only arguments) were given
+
+# TEST_12:
+Пароль содержит недостаточно заглавных букв
+
+# TEST_13:
+[INFO] | 2026.03.04 | Началась валидация пароля
+[ERROR] | 2026.03.04 | Пароль содержит недостаточно строчных букв
+Пароль содержит недостаточно строчных букв
+
+# TEST_14:
+[INFO] | 2026.03.04 | Началась валидация пароля
+[ERROR] | 2026.03.04 | Пароль содержит недостаточно цифр
+Пароль содержит недостаточно цифр
+
+# TEST_15:
+[INFO] | 2026.03.04 | Началась валидация пароля
+[INFO] | 2026.03.04 | Валидация пароля прошла успешно
+True
+
+# TEST_16:
+is_correct_password() takes 1 positional argument but 3 positional arguments (and 2 keyword-only arguments) were given
+
+# TEST_17:
+is_correct_password() takes 1 positional argument but 4 positional arguments (and 1 keyword-only argument) were given
+
+# TEST_18:
+is_correct_password() takes 1 positional argument but 5 were given
+
+# TEST_19:
+is_correct_password() got some positional-only arguments passed as keyword arguments: 'password'
+
+# TEST_20:
+[INFO] | 2026.03.04 | Началась валидация пароля
+[ERROR] | 2026.03.04 | Пароль содержит недостаточно заглавных букв
+Пароль содержит недостаточно заглавных букв
+
+# TEST_21:
+[INFO] | 2026.03.04 | Началась валидация пароля
+[ERROR] | 2026.03.04 | Пароль содержит недостаточно строчных букв
+Пароль содержит недостаточно строчных букв
+
+# TEST_22:
+<class '__main__.PasswordTooShortError'> Пароль короче допустимой длины
+<class '__main__.NotEnoughUppercaseError'> Пароль содержит недостаточно заглавных букв
+<class '__main__.NotEnoughLowercaseError'> Пароль содержит недостаточно строчных букв
+<class '__main__.NotEnoughDigitsError'> Пароль содержит недостаточно цифр
+

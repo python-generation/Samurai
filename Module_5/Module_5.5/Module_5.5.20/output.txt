@@ -1,0 +1,44 @@
+# OUTPUT DATA:
+
+# TEST_1:
+INFO:__main__:Что-то произошло
+
+# TEST_2:
+INFO:__main__:Что-то произошло
+WARNING:__main__:Что-то произошло
+
+# TEST_3:
+INFO:__main__:Что-то произошло
+WARNING:__main__:Что-то произошло
+INFO:__main__:Что-то произошло
+WARNING:__main__:Что-то произошло
+
+# TEST_4:
+DEBUG:__main__:Что-то произошло
+INFO:__main__:Что-то произошло
+WARNING:__main__:Что-то пошло не так
+ERROR:__main__:Все пошло не так
+CRITICAL:__main__:Все очень плохо
+
+# TEST_5:
+DEBUG:__main__:Что-то произошло
+INFO:__main__:Что-то произошло
+WARNING:__main__:Что-то пошло не так
+ERROR:__main__:Все пошло не так
+CRITICAL:__main__:Все очень плохо
+
+# TEST_6:
+DEBUG:__main__:Что-то произошло
+INFO:__main__:Что-то произошло
+WARNING:__main__:Что-то пошло не так
+ERROR:__main__:Все пошло не так
+CRITICAL:__main__:Все очень плохо
+CRITICAL:__main__:Все очень плохо
+ERROR:__main__:Все пошло не так
+WARNING:__main__:Что-то пошло не так
+INFO:__main__:Что-то произошло
+DEBUG:__main__:Что-то произошло
+
+# TEST_7:
+INFO:__main__:Что-то произошло
+

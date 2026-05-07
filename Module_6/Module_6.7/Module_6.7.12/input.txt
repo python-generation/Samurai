@@ -1,0 +1,24 @@
+# INPUT DATA:
+
+# TEST_1:
+for test in suite_is_even:
+    print(test.id())
+
+# TEST_2:
+for test in suite_is_positive:
+    print(test.id())
+
+# TEST_3:
+for test in suite_is_prime:
+    print(test.id())
+
+# TEST_4:
+from itertools import chain
+from unittest import TextTestRunner
+
+runner = TextTestRunner()
+
+for test in chain(suite_is_even, suite_is_positive, suite_is_prime):
+    result = test.run()
+    print(result.wasSuccessful())
+

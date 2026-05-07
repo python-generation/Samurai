@@ -1,0 +1,90 @@
+# INPUT DATA:
+
+# TEST_1:
+filter = IPAddressFilter(['154.14.48.21', '46.17.11.82'])
+logger.addFilter(filter)
+
+logger.info('Что-то произошло', extra={'ip_address': '187.147.21.17'})
+logger.warning('Что-то пошло не так', extra={'ip_address': '46.17.11.82'}) # адрес в черном списке
+
+# TEST_2:
+filter = IPAddressFilter()
+logger.addFilter(filter)
+
+logger.info('Что-то произошло', extra={'ip_address': '84.242.17.111'})
+logger.warning('Что-то пошло не так', extra={'ip_address': '255.255.255.0'})
+
+# TEST_3:
+filter = IPAddressFilter(['10.0.0.1', '192.168.1.100'])
+logger.addFilter(filter)
+
+logger.info('IP адрес удовлетворительный', extra={'ip_address': '172.16.0.5'})
+logger.warning('Неправильный IP?', extra={'ip_address': '56.17.81.102'})
+
+# TEST_4:
+filter = IPAddressFilter(['10.0.0.1', '192.168.1.100'])
+logger.addFilter(filter)
+
+logger.warning('Неправильный IP?', extra={'ip_address': '10.0.0.1'})
+
+# TEST_5:
+filter = IPAddressFilter()
+logger.addFilter(filter)
+
+logger.warning('Что-то пошло не так', extra={'ip_address': '223.17.188.46'})
+logger.info('Что-то произошло', extra={'ip_address': '203.0.113.45'})
+
+# TEST_6:
+filter = IPAddressFilter(['126.20.20.1', '182.196.116.0', '5.5.5.6', '6.5.5.5', '5.6.5.5', '5.5.6.5'])
+logger.addFilter(filter)
+
+logger.warning('Что-то пошло не так', extra={'ip_address': '10.0.0.1'})
+
+# TEST_7:
+filter = IPAddressFilter(['126.20.20.1', '182.196.116.0', '5.5.5.6', '6.5.5.5', '5.6.5.5', '5.5.6.5'])
+logger.addFilter(filter)
+
+logger.info('Что-то произошло', extra={'ip_address': '126.20.20.1'})
+logger.info('Что-то произошло', extra={'ip_address': '182.196.116.0'})
+logger.info('Что-то произошло', extra={'ip_address': '5.5.5.6'})
+logger.info('Что-то произошло', extra={'ip_address': '6.5.5.5'})
+logger.info('Что-то произошло', extra={'ip_address': '5.6.5.5'})
+logger.info('Что-то произошло', extra={'ip_address': '5.5.6.5'})
+
+logger.warning('Что-то произошло', extra={'ip_address': '126.20.20.1'})
+logger.warning('Что-то произошло', extra={'ip_address': '182.196.116.0'})
+logger.warning('Что-то произошло', extra={'ip_address': '5.5.5.6'})
+logger.warning('Что-то произошло', extra={'ip_address': '6.5.5.5'})
+logger.warning('Что-то произошло', extra={'ip_address': '5.6.5.5'})
+logger.warning('Что-то произошло', extra={'ip_address': '5.5.6.5'})
+
+# TEST_8:
+filter = IPAddressFilter(['126.20.20.1', '182.196.116.0', '5.5.5.6', '6.5.5.5', '5.6.5.5', '5.5.6.5'])
+logger.addFilter(filter)
+
+logger.debug('Что-то произошло', extra={'ip_address': '126.20.20.1'})
+logger.info('Что-то произошло', extra={'ip_address': '182.196.116.0'})
+logger.warning('Что-то пошло не так', extra={'ip_address': '5.5.5.6'})
+logger.error('Что-то пошло не так', extra={'ip_address': '6.5.5.5'})
+logger.critical('Все пошло не так', extra={'ip_address': '5.6.5.5'})
+
+# TEST_9:
+filter = IPAddressFilter(['5.5.6.5'])
+logger.addFilter(filter)
+
+logger.debug('Что-то произошло', extra={'ip_address': '126.20.20.1'})
+logger.info('Что-то произошло', extra={'ip_address': '182.196.116.0'})
+logger.warning('Что-то пошло не так', extra={'ip_address': '5.5.5.6'})
+logger.error('Что-то пошло не так', extra={'ip_address': '6.5.5.5'})
+logger.critical('Все пошло не так', extra={'ip_address': '5.6.5.5'})
+
+# TEST_10:
+filter = IPAddressFilter(['5.6.5.5'])
+logger.addFilter(filter)
+
+logger.debug('Что-то произошло', extra={'ip_address': '126.20.20.1'})
+logger.info('Что-то произошло', extra={'ip_address': '182.196.116.0'})
+logger.warning('Что-то пошло не так', extra={'ip_address': '5.5.5.6'})
+logger.error('Что-то пошло не так', extra={'ip_address': '6.5.5.5'})
+logger.critical('Все пошло не так', extra={'ip_address': '5.6.5.5'})
+

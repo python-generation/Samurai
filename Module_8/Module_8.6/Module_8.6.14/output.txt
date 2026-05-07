@@ -1,0 +1,37 @@
+# OUTPUT DATA:
+
+# TEST_1:
+Файл file.txt успешно закрыт.
+True
+
+# TEST_2:
+1
+Файл file.txt успешно закрыт.
+
+# TEST_3:
+Файл file.txt успешно закрыт.
+True
+
+# TEST_4:
+Файл file2.txt успешно закрыт.
+Файл file1.txt успешно закрыт.
+Файл file0.txt успешно закрыт.
+
+# TEST_5:
+False
+Файл file.txt успешно закрыт.
+
+# TEST_6:
+Файл file2.txt успешно закрыт.
+True
+Файл file1.txt успешно закрыт.
+True
+
+# TEST_7:
+Файл file.txt успешно закрыт.
+I/O operation on closed file.
+
+# TEST_8:
+Файл file.txt успешно закрыт.
+beegeek
+

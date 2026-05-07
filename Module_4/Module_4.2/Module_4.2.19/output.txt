@@ -1,0 +1,55 @@
+# OUTPUT DATA:
+
+# TEST_1:
+New
+New
+New
+
+# TEST_2:
+3
+3
+
+# TEST_3:
+In progress
+
+# TEST_4:
+Задачу 'Запустить ракетный двигатель!' нельзя начать: текущий статус 'In progress'.
+
+# TEST_5:
+Completed
+
+# TEST_6:
+Задачу 'Съездить отдохнуть' нельзя завершить: текущий статус 'New'.
+
+# TEST_7:
+1
+2
+True
+
+# TEST_8:
+Задачу 'Съездить отдохнуть' нельзя начать: текущий статус 'Completed'.
+Completed
+
+# TEST_9:
+New
+In progress
+Completed
+
+# TEST_10:
+1
+New
+2
+In progress
+3
+4
+New
+Completed
+4
+4
+
+# TEST_11:
+Изменение идентификатора невозможно.
+
+# TEST_12:
+Невозможно создать атрибут total_tasks.
+

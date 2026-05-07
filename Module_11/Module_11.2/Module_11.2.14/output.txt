@@ -1,0 +1,38 @@
+# OUTPUT DATA:
+
+# TEST_1:
+pygen
+pygen
+
+# TEST_2:
+'Bee' object has no attribute 'geek'
+
+# TEST_3:
+pygen
+pygen
+pygen
+
+# TEST_4:
+10
+20
+hi
+'MyClass' object has no attribute 'x'
+
+# TEST_5:
+1234
+'Secret' object has no attribute '_code'
+
+# TEST_6:
+base
+child
+from base
+
+# TEST_7:
+<class '__main__.UpperAttrMeta'>
+
+# TEST_8:
+{'__module__': '__main__', '__slots__': ('code',), '_Secret__code': 1234, 'code': <member 'code' of 'Secret' objects>, '__doc__': None}
+
+# TEST_9:
+pygen
+

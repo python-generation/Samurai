@@ -1,0 +1,22 @@
+# OUTPUT DATA:
+
+# TEST_1:
+__main__.TestIsEven.test_exception_not_int
+__main__.TestIsEven.test_float_exception
+
+# TEST_2:
+__main__.TestIsPositive.test_any_types_typeerror
+__main__.TestIsPositive.test_typeerror_str
+
+# TEST_3:
+__main__.TestIsPrime.test_exception
+__main__.TestIsPrime.test_typeerror
+
+# TEST_4:
+True
+True
+True
+True
+True
+True
+

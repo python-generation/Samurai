@@ -1,0 +1,70 @@
+# INPUT DATA:
+
+# TEST_1:
+print(send_email('support@pygen.ru', 'Решение задач', 'Моя программа не работает, помогите'))
+
+# TEST_2:
+print(send_email('support@pygen', 'Решение задач', 'Моя программа не работает, помогите'))
+
+# TEST_3:
+logger.disabled = True
+print(send_email('support@pygen.ru', 'Решение задач', 'Моя программа не работает, помогите'))
+
+# TEST_4:
+print(send_email('R@c.e', '', ''))
+
+# TEST_5:
+print(send_email('R1@c@.e1', '', ''))
+
+# TEST_6:
+print(send_email('R1@c1.e.1', '', ''))
+
+# TEST_7:
+print(send_email('R1@c1,e1', '', ''))
+
+# TEST_8:
+print(send_email('Rc.e', '', ''))
+
+# TEST_9:
+print(send_email('R@ce', '', ''))
+
+# TEST_10:
+print(send_email('1@2.3', '', ''))
+
+# TEST_11:
+logging.basicConfig(level=logging.ERROR, force=True)
+
+print(send_email('support@pygen.ru', 'Проблема с решением задачи', 'Моя программа не работает, что делать?'))
+
+# TEST_12:
+logger.disabled = True
+print(send_email('R1@c@.e1', '', ''))
+
+# TEST_13:
+print(send_email('support@stepik.org', 'Проблема с решением задачи', 'Моя программа не работает, что делать?'))
+
+# TEST_14:
+print(send_email('anan,i86@example.org', 'Нужна помощь', 'Что делать?'))
+
+# TEST_15:
+email_list = ['anan,i86@example.org', 'konovalovkondrat@@example.net', 'efimmaksimov@example..net', 'marfa_.04@example.com', 'vlasovstanimir@example.org.', '.anikita_04@example.net', '@loginovroman@example.org', 'abc@@mail.ru', 'novikovasinklitikija@example.net@', 'elizar_1978@example@.com', 'kasjan_1972@example.org', '@a.ru', 'abc@.ru']
+
+print([send_email(email, 'Текст 1!', 'Текст 2?') for email in email_list])
+
+# TEST_16:
+logger.disabled = True
+email_list = ['anan,i86@example.org', 'konovalovkondrat@@example.net', 'efimmaksimov@example..net', 'marfa_.04@example.com', 'vlasovstanimir@example.org.', '.anikita_04@example.net', '@loginovroman@example.org', 'abc@@mail.ru', 'novikovasinklitikija@example.net@', 'elizar_1978@example@.com', 'kasjan_1972@example.org', '@a.ru', 'abc@.ru']
+
+print([send_email(email, 'Текст 1!', 'Текст 2?') for email in email_list])
+
+# TEST_17:
+email_list = ['maksim@hotmail.com', 'pavel@hotmail.com', 'taisija@hotmail.com', 'elizar@mail.ru', 'olimpiada@mail.ru', 'alla@hotmail.com', 'fomichevagap@gmail.com', 'evseevagalina@rambler.ru', 'sigizmund@hotmail.com', 'maslovepifan@hotmail.com', 'vikentivasilev@hotmail.com', 'ermiltrofimov@hotmail.com', 'subbotinnikon@hotmail.com', 'polikarpshirjaev@yahoo.com', 'lukinjakov@mail.ru', 'czatsev@yandex.ru', 'termakov@rambler.ru', 'valeri@yahoo.com', 'filimon@yandex.ru', 'kkuznetsova@mail.ru']
+
+print([send_email(email, 'Текст 1!', 'Текст 2?') for email in email_list])
+
+# TEST_18:
+logger.disabled = True
+email_list = ['maksim@hotmail.com', 'pavel@hotmail.com', 'taisija@hotmail.com', 'elizar@mail.ru', 'olimpiada@mail.ru', 'alla@hotmail.com', 'fomichevagap@gmail.com', 'evseevagalina@rambler.ru', 'sigizmund@hotmail.com', 'maslovepifan@hotmail.com', 'vikentivasilev@hotmail.com', 'ermiltrofimov@hotmail.com', 'subbotinnikon@hotmail.com', 'polikarpshirjaev@yahoo.com', 'lukinjakov@mail.ru', 'czatsev@yandex.ru', 'termakov@rambler.ru', 'valeri@yahoo.com', 'filimon@yandex.ru', 'kkuznetsova@mail.ru']
+
+print([send_email(email, 'Текст 1!', 'Текст 2?') for email in email_list])
+

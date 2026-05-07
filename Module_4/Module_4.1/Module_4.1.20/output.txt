@@ -1,0 +1,30 @@
+# OUTPUT DATA:
+
+# TEST_1:
+True
+
+# TEST_2:
+False
+
+# TEST_3:
+True
+True
+
+# TEST_4:
+False
+False
+
+# TEST_5:
+True
+True
+
+# TEST_6:
+True
+
+# TEST_7:
+True
+True
+
+# TEST_8:
+True
+

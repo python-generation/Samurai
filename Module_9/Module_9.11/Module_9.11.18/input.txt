@@ -1,0 +1,44 @@
+# INPUT DATA:
+
+# TEST_1:
+cursor = conn.cursor()
+cursor.execute("SELECT RIGHTSTR('beegeek', 4)")
+
+print(cursor.fetchone()[0])
+
+# TEST_2:
+cursor = conn.cursor()
+cursor.execute("SELECT RIGHTSTR('beegeek', 10)")
+
+print(cursor.fetchone()[0])
+
+# TEST_3:
+cursor = conn.cursor()
+cursor.execute("SELECT RIGHTSTR('', 2)")
+
+print(cursor.fetchone()[0])
+
+# TEST_4:
+cursor = conn.cursor()
+cursor.execute("SELECT RIGHTSTR('Python', 1)")
+
+print(cursor.fetchone()[0])
+
+# TEST_5:
+cursor = conn.cursor()
+cursor.execute("SELECT RIGHTSTR('I Love SQL', 4)")
+
+print(cursor.fetchone()[0])
+
+# TEST_6:
+cursor = conn.cursor()
+cursor.execute("SELECT RIGHTSTR('beegeek', 0)")
+
+print(cursor.fetchone()[0])
+
+# TEST_7:
+cursor = conn.cursor()
+cursor.execute("SELECT RIGHTSTR('beegeek', 7)")
+
+print(cursor.fetchone()[0])
+

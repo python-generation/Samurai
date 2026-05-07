@@ -1,0 +1,20 @@
+# OUTPUT DATA:
+
+# TEST_1:
+Beegeek
+
+# TEST_2:
+A
+
+# TEST_3:
+
+
+# TEST_4:
+!python!
+
+# TEST_5:
+Python
+
+# TEST_6:
+Hello world
+

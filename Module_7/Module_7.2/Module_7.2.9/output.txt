@@ -1,0 +1,23 @@
+# OUTPUT DATA:
+
+# TEST_1:
+desktop/fun/songs/old
+
+# TEST_2:
+desktop/games/not released
+
+# TEST_3:
+None
+
+# TEST_4:
+desktop/studying/data_sets/fonts
+
+# TEST_5:
+desktop/studying/data_sets
+
+# TEST_6:
+None
+
+# TEST_7:
+desktop/studying/data_sets
+

@@ -1,0 +1,52 @@
+# INPUT DATA:
+
+# TEST_1:
+s1 = 'bee'
+s2 = 'geek'
+print(concat(s1, s2))
+
+# TEST_2:
+s1 = b'py'
+s2 = b'gen'
+print(concat(s1, s2))
+
+# TEST_3:
+s1 = 'Hello '
+s2 = 'World!'
+print(concat(s1, s2))
+
+# TEST_4:
+s1 = ''
+s2 = ''
+print(concat(s1, s2))
+
+# TEST_5:
+s1 = 'test'
+s2 = ''
+print(concat(s1, s2))
+
+# TEST_6:
+s1 = b'old'
+s2 = b'school'
+print(concat(s1, s2))
+
+# TEST_7:
+s1 = b''
+s2 = b''
+print(concat(s1, s2))
+
+# TEST_8:
+s1 = b'data'
+s2 = b''
+print(concat(s1, s2))
+
+# TEST_9:
+s1 = ''
+s2 = 'test2'
+print(concat(s1, s2))
+
+# TEST_10:
+s1 = b''
+s2 = b'data2'
+print(concat(s1, s2))
+

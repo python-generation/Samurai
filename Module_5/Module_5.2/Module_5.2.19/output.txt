@@ -1,0 +1,91 @@
+# OUTPUT DATA:
+
+# TEST_1:
+DEBUG:__main__:Температура: -5°C
+INFO:__main__:Температура: 12°C
+WARNING:__main__:Температура: 30°C
+
+# TEST_2:
+ERROR:__main__:Температура: 45°C
+CRITICAL:__main__:Температура: 50°C
+
+# TEST_3:
+
+
+# TEST_4:
+DEBUG:__main__:Температура: -12°C
+INFO:__main__:Температура: 27°C
+WARNING:__main__:Температура: 33°C
+ERROR:__main__:Температура: 47°C
+CRITICAL:__main__:Температура: 100007°C
+
+# TEST_5:
+DEBUG:__main__:Температура: -1°C
+
+# TEST_6:
+INFO:__main__:Температура: 29°C
+
+# TEST_7:
+WARNING:__main__:Температура: 39°C
+
+# TEST_8:
+ERROR:__main__:Температура: 49°C
+
+# TEST_9:
+CRITICAL:__main__:Температура: 100°C
+
+# TEST_10:
+DEBUG:__main__:Температура: -1°C
+INFO:__main__:Температура: 0°C
+INFO:__main__:Температура: 1°C
+
+# TEST_11:
+INFO:__main__:Температура: 29°C
+WARNING:__main__:Температура: 30°C
+WARNING:__main__:Температура: 31°C
+
+# TEST_12:
+WARNING:__main__:Температура: 39°C
+ERROR:__main__:Температура: 40°C
+ERROR:__main__:Температура: 41°C
+
+# TEST_13:
+ERROR:__main__:Температура: 49°C
+CRITICAL:__main__:Температура: 50°C
+CRITICAL:__main__:Температура: 51°C
+
+# TEST_14:
+DEBUG:__main__:Температура: -20°C
+DEBUG:__main__:Температура: -17°C
+DEBUG:__main__:Температура: -14°C
+DEBUG:__main__:Температура: -11°C
+DEBUG:__main__:Температура: -8°C
+DEBUG:__main__:Температура: -5°C
+DEBUG:__main__:Температура: -2°C
+INFO:__main__:Температура: 1°C
+INFO:__main__:Температура: 4°C
+INFO:__main__:Температура: 7°C
+INFO:__main__:Температура: 10°C
+INFO:__main__:Температура: 13°C
+INFO:__main__:Температура: 16°C
+INFO:__main__:Температура: 19°C
+INFO:__main__:Температура: 22°C
+INFO:__main__:Температура: 25°C
+INFO:__main__:Температура: 28°C
+WARNING:__main__:Температура: 31°C
+WARNING:__main__:Температура: 34°C
+WARNING:__main__:Температура: 37°C
+ERROR:__main__:Температура: 40°C
+ERROR:__main__:Температура: 43°C
+ERROR:__main__:Температура: 46°C
+ERROR:__main__:Температура: 49°C
+CRITICAL:__main__:Температура: 52°C
+CRITICAL:__main__:Температура: 55°C
+CRITICAL:__main__:Температура: 58°C
+CRITICAL:__main__:Температура: 61°C
+CRITICAL:__main__:Температура: 64°C
+CRITICAL:__main__:Температура: 67°C
+
+# TEST_15:
+
+

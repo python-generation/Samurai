@@ -1,0 +1,17 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['earth.jpg', 'python.pdf', 'shopping_list.txt', 'test.py']
+
+# TEST_2:
+[]
+
+# TEST_3:
+['exam.txt', 'fipi_demo_2022.pdf', 'homework.py']
+
+# TEST_4:
+['countries.json', 'data_sample.csv', 'readme.txt', 'task_results.xlsx']
+
+# TEST_5:
+['code.jpeg', 'stepik.png']
+

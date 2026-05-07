@@ -1,0 +1,11 @@
+# INPUT DATA:
+
+# TEST_1:
+print(three_biggest_files('data/another_folder'))
+
+# TEST_2:
+print(three_biggest_files('data/folder'))
+
+# TEST_3:
+print(three_biggest_files('data'))
+

@@ -1,0 +1,57 @@
+# INPUT DATA:
+
+# TEST_1:
+raise ValueError('Ошибка')
+
+# TEST_2:
+class MyClass:
+    def __del__(self):
+        raise ValueError('Ошибка')
+
+
+obj = MyClass()
+del obj
+
+# TEST_3:
+class Cat:
+    def __init__(self, name):
+        print(f'Создаем кота по имени {name}')
+        self.name = name
+
+    def __del__(self):
+        print(f'Кот по имени {self.name} удален.')
+
+cat1 = Cat('Кемаль')
+cat2 = Cat('Роджер')
+
+del cat1
+del cat2
+del cat2
+
+# TEST_4:
+import weakref
+
+
+class Cat:
+    def __init__(self, name):
+        self.name = name
+        self.weak = weakref.finalize(self, self.finalizer, self.name)
+
+    @staticmethod
+    def finalizer(name):
+        print(f'Кот по имени {nam} удален.')
+
+
+cat1 = Cat('Кемаль')
+cat2 = Cat('Роджер')
+
+del cat1
+del cat2
+
+# TEST_5:
+from math import sqrt
+
+numbers = [4, 9, 16, -25, 36]
+for number in numbers:
+    print(sqrt(number))
+

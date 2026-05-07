@@ -1,0 +1,79 @@
+# INPUT DATA:
+
+# TEST_1:
+filter = SameFilter()
+logger.addFilter(filter)
+
+logger.info('Что-то произошло')
+logger.info('Что-то произошло')
+
+# TEST_2:
+filter = SameFilter()
+logger.addFilter(filter)
+
+logger.info('Что-то произошло')
+logger.warning('Что-то произошло')
+
+# TEST_3:
+filter = SameFilter()
+logger.addFilter(filter)
+
+logger.info('Что-то произошло')
+logger.warning('Что-то произошло')
+
+filter.clear()
+
+logger.info('Что-то произошло')
+logger.warning('Что-то произошло')
+
+# TEST_4:
+filter = SameFilter()
+logger.addFilter(filter)
+
+logger.debug('Что-то произошло')
+logger.info('Что-то произошло')
+logger.warning('Что-то пошло не так')
+logger.error('Все пошло не так')
+logger.critical('Все очень плохо')
+
+# TEST_5:
+filter = SameFilter()
+logger.addFilter(filter)
+
+logger.debug('Что-то произошло')
+logger.info('Что-то произошло')
+logger.warning('Что-то пошло не так')
+logger.error('Все пошло не так')
+logger.critical('Все очень плохо')
+
+logger.error('Все пошло не так')
+logger.critical('Все очень плохо')
+logger.debug('Что-то произошло')
+logger.info('Что-то произошло')
+logger.warning('Что-то пошло не так')
+
+# TEST_6:
+filter = SameFilter()
+logger.addFilter(filter)
+
+logger.debug('Что-то произошло')
+logger.info('Что-то произошло')
+logger.warning('Что-то пошло не так')
+logger.error('Все пошло не так')
+logger.critical('Все очень плохо')
+
+filter.clear()
+
+logger.critical('Все очень плохо')
+logger.error('Все пошло не так')
+logger.warning('Что-то пошло не так')
+logger.info('Что-то произошло')
+logger.debug('Что-то произошло')
+
+# TEST_7:
+filter = SameFilter()
+logger.addFilter(filter)
+
+logger.info('Что-то произошло')
+logger.info('%s', 'Что-то произошло')
+

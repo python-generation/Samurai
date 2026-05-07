@@ -1,0 +1,17 @@
+# OUTPUT DATA:
+
+# TEST_1:
+desktop/fun
+
+# TEST_2:
+desktop/games
+
+# TEST_3:
+desktop/studying/data_sets
+
+# TEST_4:
+desktop
+
+# TEST_5:
+desktop/images
+

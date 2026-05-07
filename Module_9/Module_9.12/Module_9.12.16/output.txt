@@ -1,0 +1,46 @@
+# OUTPUT DATA:
+
+# TEST_1:
+(1, 'Crazy on You', 'Heart')
+(2, '', 'The Sounds')
+(3, 'Spent the Day in Bed', None)
+(4, 'Bigmouth Strikes Again', 'The Smiths')
+(5, 'Everyday is Like Sunday', 'Morrissey')
+(1, 'Crazy on You', 'Heart')
+(4, 'Bigmouth Strikes Again', 'The Smiths')
+(5, 'Everyday is Like Sunday', 'Morrissey')
+
+# TEST_2:
+(1, 'Crazy on You', 'Heart')
+(2, '', 'The Sounds')
+(3, 'Spent the Day in Bed', None)
+(4, 'Bigmouth Strikes Again', 'The Smiths')
+(5, 'Everyday is Like Sunday', 'Morrissey')
+(1, 'Crazy on You', 'Heart')
+(2, '', 'The Sounds')
+(3, 'Spent the Day in Bed', None)
+(4, 'Bigmouth Strikes Again', 'The Smiths')
+(5, 'Everyday is Like Sunday', 'Morrissey')
+
+# TEST_3:
+(1, 'The Shining', 1, 7.99, 0)
+(2, 'Fight Club', 2, 9.99, 19)
+(3, 'The Catcher in the Rye', 3, 0, 11)
+(4, 'The Green Mile', 1, 15.99, 6)
+(5, 'Haunted', 2, 13.99, 1)
+(2, 'Fight Club', 2, 9.99, 19)
+(4, 'The Green Mile', 1, 15.99, 6)
+(5, 'Haunted', 2, 13.99, 1)
+
+# TEST_4:
+(1, 'The Shining', 1, 7.99, 0)
+(2, 'Fight Club', 2, 9.99, 19)
+(3, 'The Catcher in the Rye', 3, 0, 11)
+(4, 'The Green Mile', 1, 15.99, 6)
+(5, 'Haunted', 2, 13.99, 1)
+(1, 'The Shining', 1, 7.99, 0)
+(2, 'Fight Club', 2, 9.99, 19)
+(3, 'The Catcher in the Rye', 3, 0, 11)
+(4, 'The Green Mile', 1, 15.99, 6)
+(5, 'Haunted', 2, 13.99, 1)
+

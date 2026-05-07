@@ -1,0 +1,62 @@
+# INPUT DATA:
+
+# TEST_1:
+user = User('Valera', '1234')
+user.login('1234')
+user.logout()
+
+# TEST_2:
+user = User('Timur', 'secure123')
+user.login('secure123')
+
+try:
+    user.login('secure123')
+except AlreadyLoggedInError as e:
+    print(e)
+
+# TEST_3:
+user = User('Rustam', 'zaycev_net')
+
+try:
+    user.login('1234')
+except IncorrectPasswordError as e:
+    print(e)
+
+# TEST_4:
+user = User('Rustam', 'zaycev_net')
+user.login('zaycev_net')
+
+try:
+    user.login('1234')
+except AlreadyLoggedInError as e:
+    print(e)
+
+# TEST_5:
+user = User('Nastya', 'raise_raise_raise')
+
+try:
+    user.login('raise_raise')
+except IncorrectPasswordError as e:
+    print(e)
+
+user.login('raise_raise_raise')
+
+# TEST_6:
+user = User('Valera', '1234')
+
+try:
+    user.logout()
+except NotLoggedInError as e:
+    print(e)
+
+# TEST_7:
+user = User('Timur', 'secure123')
+user.login('secure123')
+
+try:
+    user.login('secure123')
+except AlreadyLoggedInError as e:
+    print(e)
+
+user.logout()
+

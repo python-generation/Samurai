@@ -1,0 +1,34 @@
+# INPUT DATA:
+
+# TEST_1:
+rnd1 = FixedRandom()
+rnd2 = FixedRandom()
+
+numbers1 = [rnd1.randint(1, 10) for _ in range(10)]
+numbers2 = [rnd2.randint(1, 10) for _ in range(10)]
+
+print(numbers1 == numbers2)
+
+# TEST_2:
+rnd1 = FixedRandom()
+rnd2 = FixedRandom()
+numbers = [1, 2, 3, 4, 5]
+
+rand_numbers1 = rnd1.choices(numbers, k=10)
+rand_numbers2 = rnd2.choices(numbers, k=10)
+
+print(rand_numbers1 == rand_numbers2)
+
+# TEST_3:
+rnd1 = FixedRandom()
+rnd2 = FixedRandom()
+
+numbers1 = [1, 2, 3, 4, 5]
+numbers2 = [1, 2, 3, 4, 5]
+
+rnd1.shuffle(numbers1)
+rnd2.shuffle(numbers2)
+
+for a, b in zip(numbers1, numbers2):
+    print(a == b)
+

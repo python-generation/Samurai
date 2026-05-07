@@ -1,0 +1,16 @@
+# OUTPUT DATA:
+
+# TEST_1:
+Heart - Crazy on You
+The Sounds - My Lover
+Morrissey - Spent the Day in Bed
+The Smiths - Bigmouth Strikes Again
+Morrissey - Everyday is Like Sunday
+
+# TEST_2:
+1;The Shining;1;7.99;1
+2;Fight Club;2;9.99;19
+3;The Catcher in the Rye;3;3.49;11
+4;The Green Mile;1;15.99;6
+5;Haunted;2;13.99;1
+

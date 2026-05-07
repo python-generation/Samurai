@@ -1,0 +1,141 @@
+# INPUT DATA:
+
+# TEST_1:
+print(normalize_color(('Aquamarine', (157, 255, 212, 182))))
+print(normalize_color(('Blue', (0, 0, 255))))
+print(normalize_color((124, 18, 89)))
+print(normalize_color((47, 53, 59, 140)))
+
+# TEST_2:
+try:
+    normalize_color((118, 249))
+except ValueError as e:
+    print(e)
+    
+try:
+    normalize_color(('Rust', (183,)))
+except ValueError as e:
+    print(e)
+
+# TEST_3:
+try:
+    normalize_color((66,))
+except ValueError as e:
+    print(e)
+    
+try:
+    normalize_color(('Gamboge', (228, 155)))
+except ValueError as e:
+    print(e)
+
+# TEST_4:
+print(normalize_color(('Black', (0, 0, 0, 0))))
+print(normalize_color(('Black', (0, 0, 0))))
+print(normalize_color(('Brass', (181, 166, 66, 168))))
+print(normalize_color(('Brass', (181, 166, 66))))
+print(normalize_color(('White', (255, 255, 255, 255))))
+print(normalize_color(('White', (255, 255, 255))))
+
+# TEST_5:
+print(normalize_color((0, 0, 0, 0)))
+print(normalize_color((0, 0, 0)))
+print(normalize_color((181, 166, 66, 168)))
+print(normalize_color((181, 166, 66)))
+print(normalize_color((255, 255, 255, 255)))
+print(normalize_color((255, 255, 255)))
+
+# TEST_6:
+try:
+    print(normalize_color(('Black', (0, 0))))
+except ValueError as e:
+    print(e)
+
+try:
+    print(normalize_color(('Black', (0,))))
+except ValueError as e:
+    print(e)
+
+try:
+    print(normalize_color(('Brass', (181, 166))))
+except ValueError as e:
+    print(e)
+
+try:
+    print(normalize_color(('Brass', (181,))))
+except ValueError as e:
+    print(e)
+
+try:
+    print(normalize_color(('White', (255, 255))))
+except ValueError as e:
+    print(e)
+
+try:
+    print(normalize_color(('White', (255,))))
+except ValueError as e:
+    print(e)
+
+# TEST_7:
+try:
+    print(normalize_color(((0, 0))))
+except ValueError as e:
+    print(e)
+
+try:
+    print(normalize_color((0,)))
+except ValueError as e:
+    print(e)
+
+try:
+    print(normalize_color((181, 166)))
+except ValueError as e:
+    print(e)
+
+try:
+    print(normalize_color((181,)))
+except ValueError as e:
+    print(e)
+
+try:
+    print(normalize_color((255, 255)))
+except ValueError as e:
+    print(e)
+
+try:
+    print(normalize_color((255,)))
+except ValueError as e:
+    print(e)
+
+# TEST_8:
+logger.disabled = True
+print(normalize_color(('Aquamarine', (157, 255, 212, 182))))
+print(normalize_color(('Blue', (0, 0, 255))))
+print(normalize_color((124, 18, 89)))
+print(normalize_color((47, 53, 59, 140)))
+print(normalize_color(('Black', (0, 0, 0, 0))))
+print(normalize_color(('Black', (0, 0, 0))))
+print(normalize_color(('Brass', (181, 166, 66, 168))))
+print(normalize_color(('Brass', (181, 166, 66))))
+print(normalize_color(('White', (255, 255, 255, 255))))
+print(normalize_color(('White', (255, 255, 255))))
+print(normalize_color((0, 0, 0, 0)))
+print(normalize_color((0, 0, 0)))
+print(normalize_color((181, 166, 66, 168)))
+print(normalize_color((181, 166, 66)))
+print(normalize_color((255, 255, 255, 255)))
+print(normalize_color((255, 255, 255)))
+
+# TEST_9:
+logger.disabled = True
+colors = [(118, 249), ('Rust', (183,)), (66,), ('Gamboge', (228, 155)),
+          ('Black', (0, 0)), ('Black', (0,)), ('Brass', (181, 166)),
+          ('Brass', (181)), ('White', (255, 255)), ('White', (255,)),
+          (0, 0), (0,), (181, 166)]
+
+
+for color in colors:
+    try:
+        print(normalize_color(color))
+    except ValueError as e:
+        print(e)
+

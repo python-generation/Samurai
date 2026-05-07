@@ -1,0 +1,35 @@
+# OUTPUT DATA:
+
+# TEST_1:
+86.00 °F
+
+# TEST_2:
+30.00 °C
+
+# TEST_3:
+-459.67 °F
+
+# TEST_4:
+204.44 °C
+
+# TEST_5:
+-49.90 °F
+
+# TEST_6:
+86.56 °C
+
+# TEST_7:
+convert_temperature() got some positional-only arguments passed as keyword arguments: 'temp'
+
+# TEST_8:
+convert_temperature() takes 1 positional argument but 2 were given
+
+# TEST_9:
+convert_temperature() got some positional-only arguments passed as keyword arguments: 'temp'
+
+# TEST_10:
+-273.15 °C
+
+# TEST_11:
+752.00 °F
+

@@ -1,0 +1,41 @@
+# OUTPUT DATA:
+
+# TEST_1:
+('.', ['docs', 'images'], ['main.py'])
+('./docs', [], ['readme.md'])
+('./images', [], ['cat.jpg', 'dog.jpg'])
+
+# TEST_2:
+('.', ['data', 'files', 'module_os'], ['main.py', 'player.json'])
+('./data', ['fonts'], [])
+('./data/fonts', [], ['fontlist-v330.json'])
+('./files', [], ['file1.txt', 'file2.txt', 'file3.txt'])
+('./module_os', ['Разные файлы'], [])
+('./module_os/Разные файлы', ['Новая папка'], [])
+('./module_os/Разные файлы/Новая папка', ['Личное'], [])
+('./module_os/Разные файлы/Новая папка/Личное', [], [])
+
+# TEST_3:
+('.', ['desktop'], ['main.py'])
+('./desktop', ['fun', 'games', 'images', 'studying'], ['earth.jpg', 'python.pdf', 'shopping_list.txt', 'test.py'])
+('./desktop/fun', ['movies', 'songs'], [])
+('./desktop/fun/movies', [], [])
+('./desktop/fun/songs', [], ['Alexandra Savior Crying All the Time.mp3'])
+('./desktop/games', ['not released'], ['Psychonauts 2.exe'])
+('./desktop/games/not released', [], ['Hollow Knight Silksong.exe'])
+('./desktop/images', [], ['code.jpeg', 'stepik.png'])
+('./desktop/studying', ['books', 'data_sets'], ['exam.txt', 'fipi_demo_2022.pdf', 'homework.py'])
+('./desktop/studying/books', [], ['how to prove.pdf'])
+('./desktop/studying/data_sets', ['fonts'], ['countries.json', 'data_sample.csv', 'readme.txt', 'task_results.xlsx'])
+('./desktop/studying/data_sets/fonts', [], ['fontlist-v330.json'])
+
+# TEST_4:
+('.', ['module_os'], ['main.py'])
+('./module_os', ['Картинки', 'Программы', 'Разные файлы'], ['Неравенства.djvu'])
+('./module_os/Картинки', ['Скриншоты'], ['1.jpg', 'World_Time_Zones_Map.png', 'certificate.png', 'py.png'])
+('./module_os/Картинки/Скриншоты', [], ['Снимок экрана.png'])
+('./module_os/Программы', [], ['image_util.py', 'sort.py'])
+('./module_os/Разные файлы', ['Новая папка'], ['astros.json'])
+('./module_os/Разные файлы/Новая папка', ['Личное'], [])
+('./module_os/Разные файлы/Новая папка/Личное', [], [])
+

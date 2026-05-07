@@ -1,0 +1,54 @@
+# INPUT DATA:
+
+# TEST_1:
+shape = Rectangle(5, 10)
+print(match_shape(shape))
+
+# TEST_2:
+shape = Circle(20)
+print(match_shape(shape))
+
+# TEST_3:
+shape = Triangle(2, 3, 4)
+print(match_shape(shape))
+
+# TEST_4:
+class Square:
+    def __init__(self, a):
+        self.a = a     
+
+shape = Square(10)
+print(match_shape(shape))
+
+# TEST_5:
+shape = Rectangle(3, 12)
+print(match_shape(shape))
+
+# TEST_6:
+shape = Rectangle(9, 13)
+print(match_shape(shape))
+
+# TEST_7:
+shape = Rectangle(0, 0)
+print(match_shape(shape))
+
+# TEST_8:
+shape = Circle(30)
+print(match_shape(shape))
+
+# TEST_9:
+shape = Circle(11)
+print(match_shape(shape))
+
+# TEST_10:
+shape = Triangle(12, 5, 11)
+print(match_shape(shape))
+
+# TEST_11:
+class Pentagon:
+    def __init__(self, a):
+        self.a = a     
+
+shape = Pentagon(10)
+print(match_shape(shape))
+

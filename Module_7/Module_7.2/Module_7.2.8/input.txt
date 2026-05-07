@@ -1,0 +1,17 @@
+# INPUT DATA:
+
+# TEST_1:
+print(same_files('desktop/fun'))
+
+# TEST_2:
+print(same_files('desktop/games'))
+
+# TEST_3:
+print(same_files('desktop/studying'))
+
+# TEST_4:
+print(same_files('desktop/images'))
+
+# TEST_5:
+print(same_files('desktop'))
+

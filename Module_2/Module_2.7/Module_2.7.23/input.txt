@@ -1,0 +1,76 @@
+# INPUT DATA:
+
+# TEST_1:
+text = 'Hi! Will we go together?'
+
+print(remove_marks(text, marks='!?'))
+print(remove_marks.count)
+
+# TEST_2:
+text = 'Are you listening? Meet my family! There are my parents, my brother and me.'
+marks = '.,!?'
+
+for mark in marks:
+    print(remove_marks(text, marks=mark))
+    
+print(remove_marks.count)
+
+# TEST_3:
+text = '!Hi!!!! Will we ????go together?????'
+print(remove_marks(text, marks='!?'))
+
+# TEST_4:
+text = '!Hi!!!! Will we ????go together?????'
+
+print(remove_marks(text, marks='!?'))
+print(remove_marks.count)
+
+# TEST_5:
+text = 'Qwerty'
+marks_ = 'qwerty'
+print(remove_marks(text, marks=marks_))
+print(remove_marks.count)
+
+# TEST_6:
+text = 'Application for drivers!'
+marks = ''
+print(remove_marks(text, marks=marks))
+print(remove_marks.count)
+
+# TEST_7:
+text = 'Application for drivers!'
+marks = ' '
+print(remove_marks(text, marks=marks))
+print(remove_marks.count)
+
+# TEST_8:
+text = 'Application for drivers!'
+marks = ' p!'
+print(remove_marks(text, marks=marks))
+print(remove_marks.count)
+
+# TEST_9:
+text = '-TTTTTTTtttttttRRRRRRrrrrrr-'
+print(remove_marks(text, marks='t'))
+print(remove_marks(text, marks='r'))
+print(remove_marks(text, marks='T'))
+print(remove_marks(text, marks='R'))
+print(remove_marks(text, marks='-'))
+print(remove_marks.count)
+
+# TEST_10:
+try:
+    text = 'Hi! Will we go together?'
+    print(remove_marks(text, '!?'))
+    print(remove_marks.count)
+except Exception as e:
+    print(e)
+
+# TEST_11:
+try:
+    text = 'Hi! Will we go together?'
+    print(remove_marks('!?', text=text))
+    print(remove_marks.count)
+except Exception as e:
+    print(e)
+

@@ -1,0 +1,12 @@
+# INPUT DATA:
+
+# TEST_1:
+teleprint('Поколение', 'Python:', 'курс для самураев.')
+
+# TEST_2:
+numbers = range(1, 21)
+teleprint(*numbers, sep='... ', delay=0.1)
+
+# TEST_3:
+teleprint('эта', 'строка', 'выводится', 'мгновенно', sep='_', delay=0)
+

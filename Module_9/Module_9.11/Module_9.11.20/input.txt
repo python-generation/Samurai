@@ -1,0 +1,62 @@
+# INPUT DATA:
+
+# TEST_1:
+cursor = conn.cursor()
+cursor.execute("SELECT SPLIT_PART('beegeek-pygen', '-', 2)")
+
+print(cursor.fetchone()[0])
+
+# TEST_2:
+cursor = conn.cursor()
+cursor.execute("SELECT SPLIT_PART('beegeek-pygen', '-', 3)")
+
+print(cursor.fetchone()[0])
+
+# TEST_3:
+cursor = conn.cursor()
+cursor.execute("SELECT SPLIT_PART('Python!', '!', 2)")
+
+print(cursor.fetchone()[0])
+
+# TEST_4:
+cursor = conn.cursor()
+cursor.execute("SELECT SPLIT_PART('a.b.c', '.', 0)")
+
+print(cursor.fetchone()[0])
+
+# TEST_5:
+cursor = conn.cursor()
+cursor.execute("SELECT SPLIT_PART('a.b.c', '.', -1)")
+
+print(cursor.fetchone()[0])
+
+# TEST_6:
+cursor = conn.cursor()
+cursor.execute("SELECT SPLIT_PART('a.b', '.', 1)")
+
+print(cursor.fetchone()[0])
+
+# TEST_7:
+cursor = conn.cursor()
+cursor.execute("SELECT SPLIT_PART('apple;banana;cherry', ';', 2)")
+
+print(cursor.fetchone()[0])
+
+# TEST_8:
+cursor = conn.cursor()
+cursor.execute("SELECT SPLIT_PART('a#b#c!d!e', '#', 3)")
+
+print(cursor.fetchone()[0])
+
+# TEST_9:
+cursor = conn.cursor()
+cursor.execute("SELECT SPLIT_PART('a##b#c##d#e##f', '#', 3)")
+
+print(cursor.fetchone()[0])
+
+# TEST_10:
+cursor = conn.cursor()
+cursor.execute("SELECT SPLIT_PART('a##b#c##d#e##f', '##', 2)")
+
+print(cursor.fetchone()[0])
+

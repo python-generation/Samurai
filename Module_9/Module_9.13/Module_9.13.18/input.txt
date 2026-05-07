@@ -1,0 +1,75 @@
+# INPUT DATA:
+
+# TEST_1:
+cursor = conn.cursor()
+cursor.execute('SELECT ?;', ([1, '2', 3.14159],))
+print(cursor.fetchone())
+
+cursor.close()
+conn.close()
+
+# TEST_2:
+cursor = conn.cursor()
+cursor.execute('''
+CREATE TABLE Temp (
+    seq PYTHON_LIST
+);''')
+
+sequences = [
+    ([1, 2, 3, 4, 5],),
+    ([2.71828, 3.14159], ),
+    (['bee', 'geek', 'pygen', 'stepik'],)
+]
+
+cursor.executemany('INSERT INTO Temp VALUES (?);', sequences)
+conn.commit()
+
+cursor.execute('SELECT * FROM Temp;')
+print(cursor.fetchall())
+
+cursor.execute('''SELECT 'i:1,s:2,f:3.14159' AS "[PYTHON_LIST]";''')
+print(cursor.fetchone())
+
+cursor.close()
+conn.close()
+
+# TEST_3:
+cursor = conn.cursor()
+
+data = [([-75.7167360784678, 'fsmoosqEeRkdrggzKLiX', -49703190509879.3, -40390.52552901, -29330839274.5472],),
+        ([3311.82873234731, 1510786547942.46, 9408, 7021, 'ATkTvHeMvIDEDVWWYiir', 97161.9035851479],),
+        (['ckvAJNuplkhdxIruILAA', 1922, 'USIxZstjMxrAeqEhkBSq', 'PtXbXyfUUnxcYdTFHbRY'],), (
+        ['ZpUSwgmChppqPZULhMKt', 2569, 5421, 6777, -67874485920410.1, 'LxMuCrMerOlBjTYXmEcX', 4703,
+         -2521438572784.39],), (
+        ['VqMDpPwHrzZqRIxjGlLY', 9.49121120724419, 4886580252757.4, 'mdLoWBjZLDPiqdIuVyMk', 'PIhTKngYImArtLGWdJwJ',
+         9347],), (
+        [38762.5270614763, 2880, 4845, 'tnVolmawaIgGRAnVlcSt', 'MIWGgwbvNoxDMKLDJJQe', 'GqODjHDgqjcSniJRJtKC',
+         7504509228.78, 8770],), (
+        [7240, 5618, -77465024.4323516, 1652, 1818927.68760231, 8477, 4915, 'FoXiiwmKsQbGXeVdRWkT', 86.6016138156664,
+         7682, 5.59520114047082],),
+        ([9302, 'DLaCPrRUAmBDoAlEDFkp', -3960.42239033473, 7090, -198052.94074283, 'cQlniCGiHtTNZXhXjuMZ'],), (
+        ['TVXddptakGqRLvhhCZsn', -26.5896659995186, 760.73977981271, 3619, -845.735045843085, 3605, 6282,
+         74361677890.6035],), ([-4962458150274.54, 310322875.713848, -4.2722524614738, 3908240939032.83, 1847],)]
+
+for seq in data:
+    cursor.execute('''SELECT ?;''', seq)
+    print(cursor.fetchone())
+
+print()
+cursor.executescript('''
+CREATE TABLE Temp (
+    value PYTHON_LIST
+);''')
+
+cursor.executemany('''
+INSERT INTO Temp
+VALUES (?)
+''', data)
+conn.commit()
+
+cursor.execute('SELECT * FROM Temp;')
+print(cursor.fetchall())
+
+cursor.close()
+conn.close()
+

@@ -1,0 +1,144 @@
+# INPUT DATA:
+
+# TEST_1:
+data = [
+   {
+      "age": 33,
+      "country": "Lesotho",
+      "phone": "(927) 316-2249",
+      "family_status": "married",
+      "email": "neonatus@outlook.com"
+   },
+   {
+      "age": 25,
+      "country": "Guinea",
+      "name": "Dorey",
+      "children": "yes",
+      "email": "ismail@gmail.com",
+      "university": "Khalifa University",
+      "family_status": "married"
+   },
+]
+
+with open('people.json', 'w', encoding='utf-8') as file:
+    json.dump(data, file)
+
+get_info('people.json')
+
+# TEST_2:
+data = [
+   {
+      "name": "Doll",
+      "family_status": "married",
+      "children": "no"
+   },
+   {
+      "age": 34,
+      "country": "Ecuador",
+      "email": "heckerman@comcast.net",
+      "children": "no"
+   },
+   {
+      "country": "Macedonia",
+      "name": "Cary",
+      "children": "yes",
+      "phone": "(486) 815-4707",
+      "family_status": "single",
+      "university": "Rak Medical & Health Sciences University",
+      "email": "cosimo@verizon.net"
+   }
+]
+
+with open('people.json', 'w', encoding='utf-8') as file:
+    json.dump(data, file)
+
+get_info('people.json')
+
+# TEST_3:
+data = [
+   {
+      "age": 33,
+      "country": "Lesotho",
+      "family_status": "married"
+   },
+   {
+      "age": 25,
+      "country": "Guinea",
+      "name": "Dorey",
+      "children": "yes",
+      "university": "Khalifa University",
+      "family_status": "married"
+   },
+   {
+      "age": 46,
+      "country": "Ireland {Republic}",
+      "family_status": "single",
+      "children": "no"
+   },
+]
+
+with open('people.json', 'w', encoding='utf-8') as file:
+    json.dump(data, file)
+
+get_info('people.json')
+
+# TEST_4:
+data = [
+   {
+      "age": 33,
+      "country": "Mexico",
+      "name": "Isidora",
+      "children": "no",
+      "family_status": "single",
+      "email": "geekoid@live.com",
+      "phone": "(231) 923-5466"
+   },
+   {
+      "age": 26,
+      "country": "Japan",
+      "phone": "(770) 381-3753",
+      "email": "keiji@me.com",
+      "university": "Rochester Institute of Technology, Dubai",
+      "family_status": "married"
+   },
+   {
+      "email": "heckerman@comcast.net",
+      "name": "Doll",
+      "family_status": "married",
+      "children": "no"
+   },
+   {
+      "age": 16,
+      "university": "Khalifa University",
+      "email": "kaiser@comcast.net",
+      "children": "yes",
+   },
+]
+
+with open('people.json', 'w', encoding='utf-8') as file:
+    json.dump(data, file)
+
+get_info('people.json')
+
+# TEST_5:
+data = [
+   {
+      "country": "Denmark",
+      "name": "Celinda",
+      "children": "yes",
+      "phone": "(486) 815-4707",
+      "university": "University of Sharjah"
+   },
+   {
+      "age": 15,
+      "phone": "(917) 490-1880",
+      "university": "Ajman University of Science & Technology",
+      "children": "no"
+   },
+]
+
+with open('people.json', 'w', encoding='utf-8') as file:
+    json.dump(data, file)
+
+get_info('people.json')
+

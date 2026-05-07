@@ -1,0 +1,13 @@
+# INPUT DATA:
+
+# TEST_1:
+print(deepest())
+
+# TEST_2:
+import os
+
+os.remove('desktop/studying/data_sets/fonts/fontlist-v330.json')
+os.rmdir('desktop/studying/data_sets/fonts')
+
+print(deepest())
+

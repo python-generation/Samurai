@@ -1,0 +1,17 @@
+# INPUT DATA:
+
+# TEST_1:
+print(get_growth_rate([100, 200, 400]))
+
+# TEST_2:
+print(get_growth_rate([100, 200, 100]))
+
+# TEST_3:
+print(get_growth_rate([6618, 3405, 1240, 7422, 4568, 7552, 2526, 6473, 5631, 4835]))
+
+# TEST_4:
+print(get_growth_rate([11, 27, 26, 20, 28, 17, 11, 20, 23, 19, 30, 10, 10, 25, 12, 11, 17, 23, 11, 16]))
+
+# TEST_5:
+print(get_growth_rate([10000, 20000, 30000, 40000, 50000]))
+

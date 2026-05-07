@@ -1,0 +1,62 @@
+# INPUT DATA:
+
+# TEST_1:
+order = {'id': 2567, 'goods': ['apple', 'banana']}
+print(process(order))
+
+# TEST_2:
+order = {'id': 190, 'goods': []}
+
+try:
+    process(order)
+except GoodsError as e:
+    print(e)
+
+# TEST_3:
+order = {'goods': ['milk']}
+
+try:
+    process(order)
+except IdentifierError as e:
+    print(e)
+
+# TEST_4:
+order = {'id': 444}
+
+try:
+    process(order)
+except GoodsError as e:
+    print(e)
+
+# TEST_5:
+logger.disabled = True
+order = {'id': 478, 'goods': ['milk', 'bread', 'pancakes', 'cheese']}
+print(process(order))
+
+# TEST_6:
+logger.disabled = True
+order = {'id': 190, 'goods': []}
+
+try:
+    process(order)
+except GoodsError as e:
+    print(e)
+
+# TEST_7:
+logger.disabled = True
+order = {'goods': ['milk']}
+
+try:
+    process(order)
+except IdentifierError as e:
+    print(e)
+
+# TEST_8:
+logger.disabled = True
+order = {'id': 444}
+
+try:
+    process(order)
+except GoodsError as e:
+    print(e)
+

@@ -1,0 +1,15 @@
+# OUTPUT DATA:
+
+# TEST_1:
+INFO:beegeek:Событие уровня INFO
+WARNING:beegeek:Событие уровня WARNING
+ERROR:beegeek:Событие уровня ERROR
+CRITICAL:beegeek:Событие уровня CRITICAL
+
+# TEST_2:
+Логгер отключен
+
+# TEST_3:
+beegeek
+20
+

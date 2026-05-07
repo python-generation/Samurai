@@ -1,0 +1,19 @@
+# INPUT DATA:
+
+# TEST_1:
+print(all_extensions('files.tar.gz'))
+
+# TEST_2:
+print(all_extensions('documents/beegeek.final.docx'))
+
+# TEST_3:
+print(all_extensions('module_os/Картинки/py.png'))
+
+# TEST_4:
+paths = ['logs/app.log.1', 'backup/db.sql.gz', 'archive/project.tar.gz', 'old/config.json.bak', 'tmp/data.csv.zip',
+         'music/track.mp3.part', 'cache/image.png.gz', 'tmp/cache/images/photo.png.png.xz.gz', 'reports/summary.txt.old',
+         'scripts/setup.sh.save', 'logs/error.log.3.gz', 'dist/package.tar.xz',]
+
+for path in paths:
+    print(all_extensions(path))
+

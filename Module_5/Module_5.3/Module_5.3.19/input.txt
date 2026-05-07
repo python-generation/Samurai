@@ -1,0 +1,137 @@
+# INPUT DATA:
+
+# TEST_1:
+vs = Voting()
+
+vs.vote(51482, 'Barry')
+vs.vote(14821, 'Sarah')
+vs.vote(85632, 'Thomas')
+vs.vote(74899, 'Barry')
+
+print(vs.votes)
+print(vs.results())
+
+# TEST_2:
+vs = Voting()
+
+vs.vote(51482, 'Barry')
+
+try:
+    vs.vote(51482, 'Sarah')
+except VoteError as e:
+    print(e)
+
+print(vs.results())
+
+# TEST_3:
+logger.disabled = True
+vs = Voting()
+
+vs.vote(51482, 'Barry')
+vs.vote(14821, 'Sarah')
+vs.vote(85632, 'Thomas')
+vs.vote(74899, 'Barry')
+
+print(vs.results())
+
+# TEST_4:
+vs = Voting()
+
+vs.vote(51482, 'Barry')
+
+try:
+    vs.vote(51482, 'Barry')
+except VoteError as e:
+    print(e)
+
+print(vs.results())
+
+# TEST_5:
+logger.disabled = True
+vs = Voting()
+
+vs.vote(51482, 'Barry')
+
+try:
+    vs.vote(51482, 'Barry')
+except VoteError as e:
+    print(e)
+
+print(vs.results())
+
+# TEST_6:
+vs = Voting()
+
+vs.vote(0, 'Alice')
+vs.vote(1, 'Bob')
+
+print(vs.votes)
+print(vs.results())
+
+# TEST_7:
+logger.disabled = True
+vs = Voting()
+
+vs.vote(0, 'Alice')
+vs.vote(1, 'Bob')
+
+print(vs.votes)
+print(vs.results())
+
+# TEST_8:
+vs = Voting()
+
+vs.vote(0, 'Charlie')
+vs.vote(1, 'David')
+vs.vote(2, 'Charlie')
+vs.vote(3, 'Eve')
+vs.vote(4, 'David')
+
+print(vs.votes)
+print(vs.results())
+
+# TEST_9:
+logger.disabled = True
+vs = Voting()
+
+vs.vote(0, 'Charlie')
+vs.vote(1, 'David')
+vs.vote(2, 'Charlie')
+vs.vote(3, 'Eve')
+vs.vote(4, 'David')
+
+print(vs.votes)
+print(vs.results())
+
+# TEST_10:
+vs = Voting()
+
+vs.vote(0, 'Charlie')
+vs.vote(1, 'David')
+vs.vote(2, 'Charlie')
+vs.vote(3, 'Eve')
+vs.vote(4, 'David')
+
+# TEST_11:
+logger.disabled = True
+vs = Voting()
+
+vs.vote(0, 'Charlie')
+vs.vote(1, 'David')
+vs.vote(2, 'Charlie')
+vs.vote(3, 'Eve')
+vs.vote(4, 'David')
+
+# TEST_12:
+vs = Voting()
+
+print(vs.votes)
+print(vs.results())
+
+# TEST_13:
+logger.disabled = True
+vs = Voting()
+
+print(vs.votes)
+print(vs.results())
+

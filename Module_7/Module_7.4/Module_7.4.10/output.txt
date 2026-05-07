@@ -1,0 +1,14 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['earth.jpg', 'fun', 'games', 'images', 'python.pdf', 'shopping_list.txt', 'studying', 'test.py']
+
+# TEST_2:
+['fun/songs', 'fun/songs/Alexandra Savior Crying All the Time.mp3']
+
+# TEST_3:
+['earth.jpg', 'studying/data_sets/task_results.xlsx', 'studying/data_sets/data_sample.csv', 'games/not released/Hollow Knight Silksong.exe', 'fun/songs/Alexandra Savior Crying All the Time.mp3', 'images/stepik.png', 'studying/books/how to prove.pdf', 'studying/fipi_demo_2022.pdf', 'shopping_list.txt']
+
+# TEST_4:
+['Неравенства.djvu', 'Картинки/py.png', 'Программы/image_util.py']
+

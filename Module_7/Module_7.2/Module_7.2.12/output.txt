@@ -1,0 +1,366 @@
+# OUTPUT DATA:
+
+# TEST_1:
+module_os
+├── Картинки
+│   ├── Скриншоты
+│   │   └── Снимок экрана.png
+│   │   
+│   ├── 1.jpg
+│   ├── certificate.png
+│   ├── py.png
+│   └── World_Time_Zones_Map.png
+│   
+├── Программы
+│   ├── image_util.py
+│   └── sort.py
+│   
+├── Разные файлы
+│   ├── Новая папка
+│   │   └── Личное
+│   │
+│   └── astros.json
+│
+├── test.py
+└── Неравенства.djvu
+
+# TEST_2:
+empty
+├── empty1
+├── empty2
+│   ├── empty1
+│   └── empty2
+│       
+└── empty3
+    └── empty
+
+# TEST_3:
+desktop
+├── fun
+│   ├── movies
+│   └── songs
+│       └── Alexandra Savior Crying All the Time.mp3
+│   
+├── games
+│   ├── not released
+│   │   └── Hollow Knight Silksong.exe
+│   │   
+│   └── Psychonauts 2.exe
+│   
+├── images
+│   ├── code.jpeg
+│   └── stepik.png
+│   
+├── studying
+│   ├── books
+│   │   └── how to prove.pdf
+│   │
+│   ├── data_sets
+│   │   ├── fonts
+│   │   │   └── fontlist-v330.json
+│   │   │
+│   │   ├── countries.json
+│   │   ├── data_sample.csv
+│   │   ├── readme.txt
+│   │   └── task_results.xlsx
+│   │
+│   ├── exam.txt
+│   ├── fipi_demo_2022.pdf
+│   └── homework.py
+│
+├── earth.jpg
+├── python.pdf
+├── shopping_list.txt
+└── test.py
+
+# TEST_4:
+data
+├── another_folder
+│   ├── FOLDER
+│   │   ├── 14 копия.json
+│   │   ├── code.jpeg
+│   │   ├── emoji.json
+│   │   ├── player10.json
+│   │   ├── player11.json
+│   │   ├── player12.json
+│   │   ├── player13.json
+│   │   ├── player3.json
+│   │   ├── player4.json
+│   │   ├── player5.json
+│   │   ├── player6.json
+│   │   └── stepik.png
+│   │   
+│   ├── FOLDER_HERE
+│   │   ├── Alexandra Savior – Crying All the Time.mp3
+│   │   ├── player1.json
+│   │   ├── player14.json
+│   │   ├── player15.json
+│   │   ├── player22.json
+│   │   ├── player29.json
+│   │   ├── player36.json
+│   │   ├── player43.json
+│   │   ├── player50.json
+│   │   ├── player7.json
+│   │   ├── player8.json
+│   │   ├── stepik.json
+│   │   └── Новый текстовый документ.json
+│   │
+│   ├── player17.json
+│   ├── player18.json
+│   ├── player24.json
+│   ├── player25.json
+│   ├── player31.json
+│   ├── player32.json
+│   ├── player38.json
+│   ├── player39.json
+│   ├── player45.json
+│   ├── player46.json
+│   ├── Psychonauts 2.json
+│   ├── python.pdf
+│   └── shopping_list.txt
+│
+├── folder
+│   ├── 16 копия.json
+│   ├── player19.json
+│   ├── player20.json
+│   ├── player21.json
+│   ├── player26.json
+│   ├── player27.json
+│   ├── player28.json
+│   ├── player34.json
+│   ├── player35.json
+│   ├── player40.json
+│   ├── player41.json
+│   ├── player42.json
+│   ├── player47.json
+│   ├── player48.json
+│   ├── player49.json
+│   └── Psychonauts 2.exe
+│
+├── name_log.json
+├── player16.json
+├── player2.json
+├── player23.json
+├── player30.json
+├── player37.json
+├── player44.json
+├── player51.json
+├── player9.json
+└── python.json
+
+# TEST_5:
+studying
+├── books
+│   └── how to prove.pdf
+│   
+├── data_sets
+│   ├── fonts
+│   │   └── fontlist-v330.json
+│   │   
+│   ├── countries.json
+│   ├── data_sample.csv
+│   ├── readme.txt
+│   └── task_results.xlsx
+│   
+├── exam.txt
+├── fipi_demo_2022.pdf
+└── homework.py
+
+# TEST_6:
+another_folder
+├── FOLDER
+│   ├── 14 копия.json
+│   ├── code.jpeg
+│   ├── emoji.json
+│   ├── player10.json
+│   ├── player11.json
+│   ├── player12.json
+│   ├── player13.json
+│   ├── player3.json
+│   ├── player4.json
+│   ├── player5.json
+│   ├── player6.json
+│   └── stepik.png
+│   
+├── FOLDER_HERE
+│   ├── Alexandra Savior – Crying All the Time.mp3
+│   ├── player1.json
+│   ├── player14.json
+│   ├── player15.json
+│   ├── player22.json
+│   ├── player29.json
+│   ├── player36.json
+│   ├── player43.json
+│   ├── player50.json
+│   ├── player7.json
+│   ├── player8.json
+│   ├── stepik.json
+│   └── Новый текстовый документ.json
+│
+├── player17.json
+├── player18.json
+├── player24.json
+├── player25.json
+├── player31.json
+├── player32.json
+├── player38.json
+├── player39.json
+├── player45.json
+├── player46.json
+├── Psychonauts 2.json
+├── python.pdf
+└── shopping_list.txt
+
+# TEST_7:
+Разные файлы
+├── Новая папка
+│   └── Личное
+│       
+└── astros.json
+
+# TEST_8:
+root
+├── data
+│   ├── another_folder
+│   │   ├── FOLDER
+│   │   │   ├── 14 копия.json
+│   │   │   ├── code.jpeg
+│   │   │   ├── emoji.json
+│   │   │   ├── player10.json
+│   │   │   ├── player11.json
+│   │   │   ├── player12.json
+│   │   │   ├── player13.json
+│   │   │   ├── player3.json
+│   │   │   ├── player4.json
+│   │   │   ├── player5.json
+│   │   │   ├── player6.json
+│   │   │   └── stepik.png
+│   │   │   
+│   │   ├── FOLDER_HERE
+│   │   │   ├── Alexandra Savior – Crying All the Time.mp3
+│   │   │   ├── player1.json
+│   │   │   ├── player14.json
+│   │   │   ├── player15.json
+│   │   │   ├── player22.json
+│   │   │   ├── player29.json
+│   │   │   ├── player36.json
+│   │   │   ├── player43.json
+│   │   │   ├── player50.json
+│   │   │   ├── player7.json
+│   │   │   ├── player8.json
+│   │   │   ├── stepik.json
+│   │   │   └── Новый текстовый документ.json
+│   │   │
+│   │   ├── player17.json
+│   │   ├── player18.json
+│   │   ├── player24.json
+│   │   ├── player25.json
+│   │   ├── player31.json
+│   │   ├── player32.json
+│   │   ├── player38.json
+│   │   ├── player39.json
+│   │   ├── player45.json
+│   │   ├── player46.json
+│   │   ├── Psychonauts 2.json
+│   │   ├── python.pdf
+│   │   └── shopping_list.txt
+│   │
+│   ├── folder
+│   │   ├── 16 копия.json
+│   │   ├── player19.json
+│   │   ├── player20.json
+│   │   ├── player21.json
+│   │   ├── player26.json
+│   │   ├── player27.json
+│   │   ├── player28.json
+│   │   ├── player34.json
+│   │   ├── player35.json
+│   │   ├── player40.json
+│   │   ├── player41.json
+│   │   ├── player42.json
+│   │   ├── player47.json
+│   │   ├── player48.json
+│   │   ├── player49.json
+│   │   └── Psychonauts 2.exe
+│   │
+│   ├── name_log.json
+│   ├── player16.json
+│   ├── player2.json
+│   ├── player23.json
+│   ├── player30.json
+│   ├── player37.json
+│   ├── player44.json
+│   ├── player51.json
+│   ├── player9.json
+│   └── python.json
+│
+├── desktop
+│   ├── fun
+│   │   ├── movies
+│   │   └── songs
+│   │       └── Alexandra Savior Crying All the Time.mp3
+│   │
+│   ├── games
+│   │   ├── not released
+│   │   │   └── Hollow Knight Silksong.exe
+│   │   │
+│   │   └── Psychonauts 2.exe
+│   │
+│   ├── images
+│   │   ├── code.jpeg
+│   │   └── stepik.png
+│   │
+│   ├── studying
+│   │   ├── books
+│   │   │   └── how to prove.pdf
+│   │   │
+│   │   ├── data_sets
+│   │   │   ├── fonts
+│   │   │   │   └── fontlist-v330.json
+│   │   │   │
+│   │   │   ├── countries.json
+│   │   │   ├── data_sample.csv
+│   │   │   ├── readme.txt
+│   │   │   └── task_results.xlsx
+│   │   │
+│   │   ├── exam.txt
+│   │   ├── fipi_demo_2022.pdf
+│   │   └── homework.py
+│   │
+│   ├── earth.jpg
+│   ├── python.pdf
+│   ├── shopping_list.txt
+│   └── test.py
+│
+├── empty
+│   ├── empty1
+│   ├── empty2
+│   │   ├── empty1
+│   │   └── empty2
+│   │
+│   └── empty3
+│       └── empty
+│
+└── module_os
+    ├── Картинки
+    │   ├── Скриншоты
+    │   │   └── Снимок экрана.png
+    │   │
+    │   ├── 1.jpg
+    │   ├── certificate.png
+    │   ├── py.png
+    │   └── World_Time_Zones_Map.png
+    │
+    ├── Программы
+    │   ├── image_util.py
+    │   └── sort.py
+    │
+    ├── Разные файлы
+    │   ├── Новая папка
+    │   │   └── Личное
+    │   │
+    │   └── astros.json
+    │
+    ├── test.py
+    └── Неравенства.djvu
+

@@ -1,0 +1,65 @@
+# INPUT DATA:
+
+# TEST_1:
+print(can_join_team(10, 'f'))
+
+# TEST_2:
+print(can_join_team(11, 'm'))
+
+# TEST_3:
+print(can_join_team(7, 'm'))
+
+# TEST_4:
+print(can_join_team(18, 'f'))
+
+# TEST_5:
+print(can_join_team(11, 'f'))
+
+# TEST_6:
+print(can_join_team(12, 'f'))
+
+# TEST_7:
+print(can_join_team(13, 'f'))
+
+# TEST_8:
+print(can_join_team(14, 'f'))
+
+# TEST_9:
+print(can_join_team(15, 'f'))
+
+# TEST_10:
+print(can_join_team(9, 'f'))
+
+# TEST_11:
+print(can_join_team(16, 'f'))
+
+# TEST_12:
+print(can_join_team(25, 'f'))
+
+# TEST_13:
+print(can_join_team(9, 'm'))
+
+# TEST_14:
+print(can_join_team(10, 'm'))
+
+# TEST_15:
+print(can_join_team(11, 'm'))
+
+# TEST_16:
+print(can_join_team(12, 'm'))
+
+# TEST_17:
+print(can_join_team(13, 'm'))
+
+# TEST_18:
+print(can_join_team(14, 'm'))
+
+# TEST_19:
+print(can_join_team(15, 'm'))
+
+# TEST_20:
+print(can_join_team(16, 'm'))
+
+# TEST_21:
+print(can_join_team(25, 'm'))
+

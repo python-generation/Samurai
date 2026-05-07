@@ -1,0 +1,56 @@
+# INPUT DATA:
+
+# TEST_1:
+p1 = Rock()
+p2 = Scissors()
+
+print(get_winner(p1, p2))
+
+# TEST_2:
+p1 = Paper()
+p2 = Scissors()
+
+print(get_winner(p1, p2))
+
+# TEST_3:
+p1 = Rock()
+p2 = Rock()
+
+print(get_winner(p1, p2))
+
+# TEST_4:
+p1 = Scissors()
+p2 = Scissors()
+
+print(get_winner(p1, p2))
+
+# TEST_5:
+p1 = Paper()
+p2 = Paper()
+
+print(get_winner(p1, p2))
+
+# TEST_6:
+p1 = Rock()
+p2 = Paper()
+
+print(get_winner(p1, p2))
+
+# TEST_7:
+p1 = Scissors()
+p2 = Rock()
+
+print(get_winner(p1, p2))
+
+# TEST_8:
+p1 = Paper()
+p2 = Rock()
+
+print(get_winner(p1, p2))
+
+# TEST_9:
+p1 = Scissors()
+p2 = Paper()
+
+print(get_winner(p1, p2))
+

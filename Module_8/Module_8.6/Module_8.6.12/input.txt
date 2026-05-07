@@ -1,0 +1,58 @@
+# INPUT DATA:
+
+# TEST_1:
+import os
+
+temporary = TempDir('beegeek')
+print(os.path.exists('beegeek'))
+
+del temporary
+print(os.path.exists('beegeek'))
+
+# TEST_2:
+temporary = TempDir('beegeek')
+print(weakref.getweakrefcount(temporary))
+
+# TEST_3:
+import os
+
+tmp1 = TempDir('one')
+tmp2 = TempDir('two')
+print(os.path.exists('one'), os.path.exists('two'))
+del tmp1
+print(os.path.exists('one'), os.path.exists('two'))
+del tmp2
+print(os.path.exists('one'), os.path.exists('two'))
+
+# TEST_4:
+import os
+
+outer = TempDir('outer')
+inner_path = os.path.join('outer', 'inner')
+os.mkdir(inner_path)
+print(os.path.exists('outer'), os.path.exists(inner_path))
+del outer
+print(os.path.exists('outer'), os.path.exists(inner_path))
+
+# TEST_5:
+import os
+
+os.mkdir('tmp')
+temporary = TempDir('tmp/test1')
+print(os.path.exists('tmp/test1'))
+del temporary
+print(os.path.exists('tmp/test1'))
+print(os.path.exists('tmp'))
+
+# TEST_6:
+import os
+
+os.makedirs('main/sub')
+temporary = TempDir('main/sub/tmp')
+print(os.path.exists('main/sub/tmp'))
+del temporary
+
+print(os.path.exists('main/sub/tmp'))
+print(os.path.exists('main/sub'))
+print(os.path.exists('main'))
+

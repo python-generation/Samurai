@@ -1,0 +1,51 @@
+# OUTPUT DATA:
+
+# TEST_1:
+Field_1: {0}
+Field_2: {1}
+age: {age}
+location: {location}
+
+# TEST_2:
+PersonInfo_1: Gordon
+PersonInfo_2: Freeman
+age: 32
+location: City 17
+
+# TEST_3:
+
+
+# TEST_4:
+Field_1: {0}
+Field_2: {1}
+
+# TEST_5:
+name: {name}
+surname: {surname}
+
+# TEST_6:
+Info_1: {0}
+name: {name}
+surname: {surname}
+
+# TEST_7:
+Field_1: {0}
+
+# TEST_8:
+
+
+# TEST_9:
+Field_1: {0}
+x: {x}
+
+# TEST_10:
+Item_1: A
+Item_2: B
+Item_3: G
+Item_4: D
+Item_5: E
+x: 40
+y: 30
+z: 20
+w: 10
+

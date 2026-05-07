@@ -1,0 +1,35 @@
+# INPUT DATA:
+
+# TEST_1:
+from textwrap import fill, indent
+
+text = 'Привет! 😊 Хотел напомнить, что давно не виделись, и пора бы выбраться куда-нибудь вместе — можно сходить в кино, прогуляться по парку или просто посидеть за чашкой кофе и поболтать о всяких мелочах. Как ты смотришь на это?'
+
+print(indent(fill(text, width=40), '...', predicate=only_even))
+
+# TEST_2:
+from textwrap import indent
+
+text = '''Осенний ветер играет с листьями, унося
+их вдаль, словно маленькие кораблики в
+голубом небе.'''
+print(indent(text, '...', predicate=only_even))
+
+# TEST_3:
+from textwrap import indent
+
+text = 'Beegeek!'
+print(indent(text, '❤️', predicate=only_even))
+
+# TEST_4:
+from textwrap import indent
+
+text = 'abcde'
+print(indent(text, '#', predicate=only_even))
+
+# TEST_5:
+from textwrap import fill, indent
+
+text = 'a' * 100
+print(indent(fill(text, width=5), '#', predicate=only_even))
+

@@ -1,0 +1,43 @@
+# INPUT DATA:
+
+# TEST_1:
+person = {'name': 'Timur', 'age': 32}
+print(pop(person, 'age'))
+
+# TEST_2:
+person = {'name': 'Timur', 'age': 32}
+
+try:
+    print(pop(person, 'surname'))
+except KeyError as e:
+    print(e)
+
+# TEST_3:
+logger.disabled = True
+person = {'name': 'Timur', 'age': 32}
+print(pop(person, 'age'))
+
+# TEST_4:
+city = {'Россия': 'Москва','США': 'Вашингтон', 'Франция': 'Париж'}
+print(pop(city, 'Россия'))
+print(pop(city, 'США'))
+print(pop(city, 'Франция'))
+print(city)
+
+# TEST_5:
+city = {'Россия': 'Москва','США': 'Вашингтон', 'Франция': 'Париж'}
+
+try:
+    print(pop(city, 'Вашингтон'))
+except KeyError as e:
+    print(e)
+
+# TEST_6:
+logger.disabled = True
+city = {'Россия': 'Москва','США': 'Вашингтон', 'Франция': 'Париж'}
+
+try:
+    print(pop(city, 'Вашингтон'))
+except KeyError as e:
+    print(e)
+

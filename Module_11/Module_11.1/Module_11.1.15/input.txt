@@ -1,0 +1,65 @@
+# INPUT DATA:
+
+# TEST_1:
+DataProcessor = ValidatorType('DataProcessor', (), {
+    'process_data': lambda self: None,
+    'MAX_SIZE': 100,
+    'DEFAULT_PATH': '/tmp'
+})
+
+print(DataProcessor)
+print(DataProcessor.process_data(DataProcessor()))
+print(DataProcessor.MAX_SIZE)
+print(DataProcessor.DEFAULT_PATH)
+
+# TEST_2:
+try:
+    DataProcessor = ValidatorType('DataProcessor', (), {
+        'process_data': lambda self: None,
+        'MAX_size': 100,
+        'DEFAULT_PATH': '/tmp'
+    })
+except NameError as e:
+    print(e)
+
+# TEST_3:
+try:
+    DataProcessor = ValidatorType('DataProcessor', (), {
+        'processdata': lambda self: None,
+        'MAX_SIZE': 100,
+        'DEFAULT_PATH': '/tmp'
+    })
+except NameError as e:
+    print(e)
+
+
+# TEST_4:
+try:
+    DataProcessor = ValidatorType('DataProcessor', (), {
+        'run': lambda self: None,
+        'DefaultPath': '/tmp'
+    })
+except NameError as e:
+    print(e)
+
+# TEST_5:
+try:
+    DataProcessor = ValidatorType('DataProcessor', (), {
+        'DefaultPath': '/tmp',
+        'run': lambda self: None,
+    })
+except NameError as e:
+    print(e)
+
+# TEST_6:
+DataProcessor = ValidatorType('DataProcessor', (), {
+    '__init__': lambda self: None,
+    '__slots__': ('a', 'b'),
+    'process_run': lambda self: 'ok',
+    'MAX_VALUE': 42
+})
+
+print(DataProcessor)
+print(DataProcessor.process_run(DataProcessor()))
+print(DataProcessor.MAX_VALUE)
+

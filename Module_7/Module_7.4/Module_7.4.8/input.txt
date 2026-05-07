@@ -1,0 +1,45 @@
+# INPUT DATA:
+
+# TEST_1:
+files = ['module_os/Программы/image_util.py/image_util.py', 
+         'module_os/Программы/sort.py/sort.py']
+
+print(get_longest_name(files))
+
+# TEST_2:
+files = ['desktop/studying/exam.txt', 
+         'desktop/studying/fipi_demo_2022.pdf',
+         'desktop/studying/homework.py']
+
+print(get_longest_name(files))
+
+# TEST_3:
+files = ['data/name_log.json/name_log.json',
+         'data/player16.json/player16.json',
+         'data/player2.json/player2.json',
+         'data/player23.json/player23.json',
+         'data/player30.json/player30.json',
+         'data/player37.json/player37.json', 
+         'data/player44.json/player44.json', 
+         'data/player51.json/player51.json',
+         'data/player9.json/player9.json',
+         'data/python.json/python.json']
+
+print(get_longest_name(files))
+
+# TEST_4:
+files = ['module_os/Картинки/1.jpg', 'module_os/Картинки/certificate.png', 'module_os/Картинки/py.png', 'module_os/Картинки/World_Time_Zones_Map.png']
+print(get_longest_name(files))
+
+# TEST_5:
+files = ['desktop/earth.jpg', 'desktop/python.pdf', 'desktop/shopping_list.txt', 'desktop/test.py',
+         'desktop/fun/songs/Alexandra Savior Crying All the Time.mp3', 'desktop/games/Psychonauts 2.exe',
+         'desktop/games/not released/Hollow Knight Silksong.exe', 'desktop/images/code.jpeg',
+         'desktop/images/stepik.png', 'desktop/studying/exam.txt', 'desktop/studying/fipi_demo_2022.pdf',
+         'desktop/studying/homework.py', 'desktop/studying/books/how to prove.pdf',
+         'desktop/studying/data_sets/countries.json', 'desktop/studying/data_sets/data_sample.csv',
+         'desktop/studying/data_sets/readme.txt', 'desktop/studying/data_sets/task_results.xlsx',
+         'desktop/studying/data_sets/fonts/fontlist-v330.json']
+
+print(get_longest_name(files))
+

@@ -1,0 +1,65 @@
+# OUTPUT DATA:
+
+# TEST_1:
+xsvxnDrHfA0IdnXcHU0E
+
+# TEST_2:
+XtW3XQO6sd74
+
+# TEST_3:
+CXC3G7DJ22
+
+# TEST_4:
+generate_password() got some positional-only arguments passed as keyword arguments: 'length'
+
+# TEST_5:
+generate_password() takes 1 positional argument but 2 positional arguments (and 2 keyword-only arguments) were given
+
+# TEST_6:
+generate_password() takes 1 positional argument but 2 positional arguments (and 2 keyword-only arguments) were given
+
+# TEST_7:
+generate_password() takes 1 positional argument but 2 positional arguments (and 2 keyword-only arguments) were given
+
+# TEST_8:
+MRZVOFZDNS
+
+# TEST_9:
+vovypnjtws
+
+# TEST_10:
+3349208111
+
+# TEST_11:
+KGVuWYKinaBifMDkkclLi
+
+# TEST_12:
+5041D3OF2956ATWUXE8H
+
+# TEST_13:
+04Fg9f82fw120mg1fvs7v7
+
+# TEST_14:
+ylTkhfmOTLTWUsXC3RH7kU1bQajDZn
+
+# TEST_15:
+ZEu403e16VSz3ZPdSkuigC6u0RPu49
+
+# TEST_16:
+generate_password() missing 1 required positional argument: 'length'
+
+# TEST_17:
+generate_password() missing 1 required keyword-only argument: 'upper'
+
+# TEST_18:
+generate_password() missing 1 required keyword-only argument: 'lower'
+
+# TEST_19:
+generate_password() missing 1 required keyword-only argument: 'numeric'
+
+# TEST_20:
+generate_password() missing 1 required positional argument: 'length'
+
+# TEST_21:
+t93yGm98HegeFi2u0O6eVIF305N5ejCpV6NBEsr4TiwfAP2wU779k2McgyrhI9Y1864n7TBAcxAVRa1C52KSp2Zd02
+

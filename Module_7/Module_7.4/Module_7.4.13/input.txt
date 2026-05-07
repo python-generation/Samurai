@@ -1,0 +1,55 @@
+# INPUT DATA:
+
+# TEST_1:
+paths = ['images/cat.jpg', 'images/dog.jpg', 'docs/readme.md']
+restore(paths)
+
+for root, catalogs, files in sorted(os.walk('.')):
+    catalogs.sort()
+    files.sort()
+    print((root, catalogs, files))
+
+# TEST_2:
+paths = ['files/file1.txt', 'files/file2.txt', 'files/file3.txt', 'player.json', 'data/fonts/fontlist-v330.json', 'module_os/Разные файлы/Новая папка/Личное']
+restore(paths)
+
+for root, catalogs, files in sorted(os.walk('.')):
+    catalogs.sort()
+    files.sort()
+    print((root, catalogs, files))
+
+# TEST_3:
+paths = ['desktop/earth.jpg', 'desktop/fun', 'desktop/fun/movies', 'desktop/fun/songs',
+         'desktop/fun/songs/Alexandra Savior Crying All the Time.mp3', 'desktop/games',
+         'desktop/games/Psychonauts 2.exe', 'desktop/games/not released',
+         'desktop/games/not released/Hollow Knight Silksong.exe', 'desktop/images', 'desktop/images/code.jpeg',
+         'desktop/images/stepik.png', 'desktop/python.pdf', 'desktop/shopping_list.txt', 'desktop/studying',
+         'desktop/studying/books', 'desktop/studying/books/how to prove.pdf', 'desktop/studying/data_sets',
+         'desktop/studying/data_sets/countries.json', 'desktop/studying/data_sets/data_sample.csv',
+         'desktop/studying/data_sets/fonts', 'desktop/studying/data_sets/fonts/fontlist-v330.json',
+         'desktop/studying/data_sets/readme.txt', 'desktop/studying/data_sets/task_results.xlsx',
+         'desktop/studying/exam.txt', 'desktop/studying/fipi_demo_2022.pdf', 'desktop/studying/homework.py',
+         'desktop/test.py']
+
+restore(paths)
+
+for root, catalogs, files in sorted(os.walk('.')):
+    catalogs.sort()
+    files.sort()
+    print((root, catalogs, files))
+
+# TEST_4:
+paths = ['module_os/Картинки', 'module_os/Картинки/1.jpg', 'module_os/Картинки/World_Time_Zones_Map.png',
+         'module_os/Картинки/certificate.png', 'module_os/Картинки/py.png', 'module_os/Картинки/Скриншоты',
+         'module_os/Картинки/Скриншоты/Снимок экрана.png', 'module_os/Неравенства.djvu', 'module_os/Программы',
+         'module_os/Программы/image_util.py', 'module_os/Программы/sort.py', 'module_os/Разные файлы',
+         'module_os/Разные файлы/astros.json', 'module_os/Разные файлы/Новая папка',
+         'module_os/Разные файлы/Новая папка/Личное']
+         
+restore(paths)
+
+for root, catalogs, files in sorted(os.walk('.')):
+    catalogs.sort()
+    files.sort()
+    print((root, catalogs, files))
+

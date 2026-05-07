@@ -1,0 +1,11 @@
+# OUTPUT DATA:
+
+# TEST_1:
+('player8.json', 'player43.json', 'player39.json')
+
+# TEST_2:
+('player27.json', 'player34.json', 'player21.json')
+
+# TEST_3:
+('player27.json', 'player8.json', 'player43.json')
+

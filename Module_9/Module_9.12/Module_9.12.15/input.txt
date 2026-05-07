@@ -1,0 +1,66 @@
+# INPUT DATA:
+
+# TEST_1:
+conn = sqlite3.connect(':memory:')
+conn.row_factory = AttrsFactory
+cursor = conn.cursor()
+
+cursor.executescript('''
+DROP TABLE IF EXISTS Songs;
+CREATE TABLE Songs
+(
+    id        INTEGER PRIMARKEY,
+    trackname TEXT,
+    artist    TEXT
+);
+
+INSERT INTO Songs (id, trackname, artist)
+VALUES (1, 'Crazy on You', 'Heart'),
+       (2, 'My Lover', 'The Sounds'),
+       (3, 'Spent the Day in Bed', 'Morrissey'),
+       (4, 'Bigmouth Strikes Again', 'The Smiths'),
+       (5, 'Everyday is Like Sunday', 'Morrissey');
+''')
+conn.commit()
+
+cursor.execute('SELECT * FROM Songs;')
+
+for row in cursor.fetchall():
+    print(f'{row.artist} - {row.trackname}')
+
+cursor.close()
+conn.close()
+
+# TEST_2:
+conn = sqlite3.connect(':memory:')
+conn.row_factory = AttrsFactory
+cursor = conn.cursor()
+
+cursor.executescript('''
+DROP TABLE IF EXISTS Books;
+CREATE TABLE Books
+(
+    id        INTEGER PRIMARY KEY AUTOINCREMENT,
+    title     TEXT,
+    author_id INTEGER,
+    price     NUMERIC,
+    amount    INTEGER
+);
+
+INSERT INTO Books (title, author_id, price, amount)
+VALUES ('The Shining', 1, 7.99, 1),
+       ('Fight Club', 2, 9.99, 19),
+       ('The Catcher in the Rye', 3, 3.49, 11),
+       ('The Green Mile', 1, 15.99, 6),
+       ('Haunted', 2, 13.99, 1);
+''')
+conn.commit()
+
+cursor.execute('SELECT * FROM Books;')
+
+for row in cursor.fetchall():
+    print(row.id, row.title, row.author_id, row.price, row.amount, sep=';')
+
+cursor.close()
+conn.close()
+

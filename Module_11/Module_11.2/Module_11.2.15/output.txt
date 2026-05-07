@@ -1,0 +1,33 @@
+# OUTPUT DATA:
+
+# TEST_1:
+Нельзя переопределить метод get_name()
+
+# TEST_2:
+Hello from Child
+Hello from Base
+
+# TEST_3:
+Child
+
+# TEST_4:
+m1
+m2
+child m3
+
+# TEST_5:
+Нельзя переопределить метод m1()
+
+# TEST_6:
+child m1
+Нельзя переопределить метод m1()
+
+# TEST_7:
+Base1 m1
+Base2 m2
+Нельзя переопределить метод m1()
+Нельзя переопределить метод m2()
+
+# TEST_8:
+<class '__main__.FinalMethodsMeta'>
+

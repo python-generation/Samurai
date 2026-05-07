@@ -1,0 +1,23 @@
+# INPUT DATA:
+
+# TEST_1:
+print(split_n('module_os/Картинки/1.jpg', 1))
+
+# TEST_2:
+print(split_n('module_os/Картинки/1.jpg', 2))
+
+# TEST_3:
+print(split_n('module_os/Картинки/1.jpg', 3))
+
+# TEST_4:
+print(split_n('module_os/Разные файлы/Новая папка/Личное', 2))
+
+# TEST_5:
+print(split_n('module_os/Разные файлы/Новая папка/Личное', 3))
+
+# TEST_6:
+print(split_n('desktop/studying/data_sets/fonts/fontlist-v330.json', 5))
+
+# TEST_7:
+print(split_n('desktop/studying/data_sets/fonts/fontlist-v330.json', 3))
+

@@ -1,0 +1,17 @@
+# OUTPUT DATA:
+
+# TEST_1:
+2013, 1991
+
+# TEST_2:
+Иванов
+
+# TEST_3:
+80, 96, 29, 46, 38
+
+# TEST_4:
+Machete, Marvin's Room, Raging Bull, This Boy's Life, Silver Linings Playbook, Taxi Driver, Jackie Brown, Shark Tale, Bang the Drum Slowly, Analyze That, Meet the Parents, Wag the Dog, The Big Wedding, Night and the City, Backdraft, The Untouchables, Cop Land, Thunderheart, Being Flynn, We're No Angels, Limitless, The Bag Man, The Good Shepherd, Jacknife, Righteous Kill, Mad Dog and Glory, Brazil, Mary Shelley's Frankenstein, Stone, Killer Elite, A Bronx Tale, Falling in Love, The Adventures of Rocky & Bullwinkle, Red Lights, The Score, New Year's Eve, Ronin, Midnight Run, Last Vegas, Born to Win, Angel Heart, City by the Sea, Cape Fear, Everybody's Fine, Goodfellas, 15 Minutes, Mistress, Hide and Seek, The Intern, Awakenings, Joy, Mean Streets, The Deer Hunter, Great Expectations, True Confessions, The Mission, Killing Season, The King of Comedy, New York, Rent, Once Upon a Time in America, Meet the Fockers, Bloody Mama, The Last Tycoon, Grudge Match, Analyze This, The Bridge of San Luis Rey, Guilty by Suspicion, What Just Happened?, Heat, Godsend, Captain Shakespeare, Flawless, Stanley & Iris, Arthur and the Invisibles, Greetings, Little Fockers, Sleepers, Dirty Grandpa, Dear America: Letters Home From Vietnam, Casino, The Fan, Heist, Men of Honor
+
+# TEST_5:
+Александр
+

@@ -1,0 +1,32 @@
+# INPUT DATA:
+
+# TEST_1:
+path = 'desktop'
+steps = ['fun', 'movies']
+new_path = get_path(path, steps)                  # desktop -> desktop/fun -> desktop/fun/movies
+print(new_path)
+
+# TEST_2:
+path = 'desktop'
+steps = ['studying', 'data_sets', '..', 'books']
+new_path = get_path(path, steps)                  # desktop -> desktop/studying -> 
+                                                  # desktop/studying/data_sets -> desktop/studying ->
+                                                  # desktop/studying/books
+
+print(new_path)
+
+# TEST_3:
+path = 'desktop/studying/data_sets/fonts'
+steps = ['..', '..', '..']
+print(get_path(path, steps))
+
+# TEST_4:
+path = 'data'
+steps = ['another_folder', 'FOLDER', '..', '..', 'FOLDER_HERE']
+print(get_path(path, steps))
+
+# TEST_5:
+path = 'module_os/Разные файлы/Новая папка/Личное'
+steps = ['..', '..', '..', 'Картинки', 'Скриншоты', '..', '..', 'Программы']
+print(get_path(path, steps))
+

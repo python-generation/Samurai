@@ -1,0 +1,44 @@
+# INPUT DATA:
+
+# TEST_1:
+print(convert_temperature(30, scale='C'))
+
+# TEST_2:
+print(convert_temperature(86, scale='F'))
+
+# TEST_3:
+print(convert_temperature(-273.15, scale='C'))
+
+# TEST_4:
+print(convert_temperature(400, scale='F'))
+
+# TEST_5:
+print(convert_temperature(-45.5, scale='C'))
+
+# TEST_6:
+print(convert_temperature(187.8, scale='F'))
+
+# TEST_7:
+try:
+    print(convert_temperature(temp=107, scale='F'))
+except Exception as e:
+    print(e)
+
+# TEST_8:
+try:
+    print(convert_temperature(64, 'F'))
+except Exception as e:
+    print(e)
+
+# TEST_9:
+try:
+    print(convert_temperature('C', temp=32))
+except Exception as e:
+    print(e)
+
+# TEST_10:
+print(convert_temperature(-459.67, scale='F'))
+
+# TEST_11:
+print(convert_temperature(400, scale='C'))
+

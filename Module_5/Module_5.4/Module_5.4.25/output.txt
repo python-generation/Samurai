@@ -1,0 +1,70 @@
+# OUTPUT DATA:
+
+# TEST_1:
+INFO:create_order(): Заказ 43654 успешно создан.
+INFO:create_order(): Заказ 43674 успешно создан.
+{'client': 'Timur', 'address': 'Moscow', 'delivered': False}
+{'client': 'Valera', 'address': 'Chelyabinsk', 'delivered': False}
+
+# TEST_2:
+{'client': 'Timur', 'address': 'Moscow', 'delivered': False}
+{'client': 'Valera', 'address': 'Chelyabinsk', 'delivered': False}
+
+# TEST_3:
+INFO:create_order(): Заказ 43654 успешно создан.
+INFO:create_order(): Заказ 43674 успешно создан.
+True
+False
+
+# TEST_4:
+INFO:create_order(): Заказ 43654 успешно создан.
+ERROR:deliver(): Заказ 43654 уже доставлен.
+Заказ 43654 уже доставлен.
+
+# TEST_5:
+ERROR:get_order(): Не удалось получить информацию о заказе 87424.
+Заказ 87424 не найден.
+
+# TEST_6:
+ERROR:get_order(): Не удалось получить информацию о заказе 87424.
+Заказ 87424 не найден.
+
+# TEST_7:
+INFO:create_order(): Заказ 1 успешно создан.
+INFO:create_order(): Заказ 2 успешно создан.
+ERROR:deliver(): Заказ 2 уже доставлен.
+Заказ 2 уже доставлен.
+ERROR:get_order(): Не удалось получить информацию о заказе 3.
+Заказ 3 не найден.
+ERROR:get_order(): Не удалось получить информацию о заказе 3.
+Заказ 3 не найден.
+
+# TEST_8:
+Заказ 2 уже доставлен.
+Заказ 3 не найден.
+Заказ 3 не найден.
+
+# TEST_9:
+INFO:create_order(): Заказ 13 успешно создан.
+INFO:create_order(): Заказ 22 успешно создан.
+INFO:create_order(): Заказ 13 успешно создан.
+INFO:create_order(): Заказ 22 успешно создан.
+
+# TEST_10:
+
+
+# TEST_11:
+INFO:create_order(): Заказ 1 успешно создан.
+INFO:create_order(): Заказ 2 успешно создан.
+ERROR:deliver(): Заказ 2 уже доставлен.
+Заказ 2 уже доставлен.
+ERROR:get_order(): Не удалось получить информацию о заказе 3.
+Заказ 3 не найден.
+ERROR:get_order(): Не удалось получить информацию о заказе 3.
+Заказ 3 не найден.
+INFO:create_order(): Заказ 1 успешно создан.
+INFO:create_order(): Заказ 2 успешно создан.
+ERROR:deliver(): Заказ 2 уже доставлен.
+ERROR:get_order(): Не удалось получить информацию о заказе 3.
+ERROR:get_order(): Не удалось получить информацию о заказе 3.
+

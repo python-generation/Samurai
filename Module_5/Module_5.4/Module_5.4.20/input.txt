@@ -1,0 +1,109 @@
+# INPUT DATA:
+
+# TEST_1:
+user = User('Valera', '1234')
+user.login('1234')
+user.logout()
+
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_2:
+user = User('Timur', 'secure123')
+user.login('secure123')
+
+try:
+    user.login('secure123')
+except AlreadyLoggedInError as e:
+    print(e)
+
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_3:
+user = User('Rustam', 'zaycev_net')
+
+try:
+    user.login('1234')
+except IncorrectPasswordError as e:
+    print(e)
+
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_4:
+user = User('Rustam', 'zaycev_net')
+user.login('zaycev_net')
+
+try:
+    user.login('1234')
+except AlreadyLoggedInError as e:
+    print(e)
+
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_5:
+user = User('Nastya', 'raise_raise_raise')
+
+try:
+    user.login('raise_raise')
+except IncorrectPasswordError as e:
+    print(e)
+
+user.login('raise_raise_raise')
+
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_6:
+user = User('Valera', '1234')
+
+try:
+    user.logout()
+except NotLoggedInError as e:
+    print(e)
+    
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_7:
+user = User('Timur', 'secure123')
+user.login('secure123')
+
+try:
+    user.login('secure123')
+except AlreadyLoggedInError as e:
+    print(e)
+
+user.logout()
+
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_8:
+logger.disabled = True
+user = User('Timur', 'secure123')
+user.login('secure123')
+
+try:
+    user.login('secure123')
+except AlreadyLoggedInError as e:
+    print(e)
+
+user.logout()
+
+try:
+    user.logout()
+except NotLoggedInError as e:
+    print(e)
+
+try:
+    user.login('secure321')
+except IncorrectPasswordError as e:
+    print(e)
+
+
+with open('logs.log', encoding='utf-8') as file:
+    print(file.read())
+

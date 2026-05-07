@@ -1,0 +1,32 @@
+# INPUT DATA:
+
+# TEST_1:
+from pathlib import Path
+
+path = Path('logs/2025-08-01')
+print(get_log_name(path))
+
+# TEST_2:
+from pathlib import Path
+
+path = Path('logs/2025-08-03')
+print(get_log_name(path))
+
+# TEST_3:
+from pathlib import Path
+
+path = Path('logs/2025-08-04')
+print(get_log_name(path))
+
+# TEST_4:
+from pathlib import Path
+
+path = Path('logs/2025-08-02')
+print(get_log_name(path))
+
+# TEST_5:
+from pathlib import Path
+
+path = Path('logs/2025-08-05')
+print(get_log_name(path))
+

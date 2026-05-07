@@ -1,0 +1,20 @@
+# INPUT DATA:
+
+# TEST_1:
+for test in suite_linear:
+    print(test.id())
+
+# TEST_2:
+for test in suite_unique:
+    print(test.id())
+
+# TEST_3:
+from itertools import chain
+from unittest import TextTestRunner
+
+runner = TextTestRunner()
+
+for test in chain(suite_linear, suite_unique):
+    result = test.run()
+    print(result.wasSuccessful())
+

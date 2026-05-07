@@ -1,0 +1,24 @@
+# INPUT DATA:
+
+# TEST_1:
+import os
+
+safe_rm('desktop/fun/songs/Alexandra Savior Crying All the Time.mp3')
+print(os.path.exists('desktop/fun/songs/Alexandra Savior Crying All the Time.mp3'))
+
+# TEST_2:
+import os
+
+print(os.path.exists('desktop/games/new release/Hollow Knight Silksong.exe'))
+safe_rm('desktop/games/new release/Hollow Knight Silksong.exe')
+print(os.path.exists('desktop/games/new release/Hollow Knight Silksong.exe'))
+
+# TEST_3:
+import os
+
+files = ['desktop/earth.jpg', 'desktop/python.pdf', 'desktop/shopping_list.txt', 'desktop/test.py']
+
+for file in files:
+    safe_rm(file)
+    print(os.path.exists(file))
+

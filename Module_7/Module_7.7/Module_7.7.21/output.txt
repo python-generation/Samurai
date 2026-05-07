@@ -1,0 +1,17 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['fun_script.py', 'movie_utils.py']
+
+# TEST_2:
+['game_launcher.py']
+
+# TEST_3:
+[]
+
+# TEST_4:
+['data_inspector.py']
+
+# TEST_5:
+['test.py', 'fun_script.py', 'movie_utils.py', 'game_launcher.py', 'task_parser.py', 'data_inspector.py']
+

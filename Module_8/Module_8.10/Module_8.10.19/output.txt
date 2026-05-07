@@ -1,0 +1,41 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['Valera', 'Timur', 'Rustam', 'Artur']
+[(1, 'Valera'), (2, 'Timur'), (3, 'Rustam'), (4, 'Artur')]
+
+# TEST_2:
+Query([User(1, 'Valera', 35), User(4, 'Artur', 41)])
+Query([User(4, 'Artur', 41)])
+
+# TEST_3:
+Query([User(4, 'Artur', 41), User(3, 'Rustam', 22), User(2, 'Timur', 32), User(1, 'Valera', 35)])
+['Valera', 'Timur', 'Rustam', 'Artur']
+
+# TEST_4:
+[('Valera', 35), ('Timur', 32), ('Rustam', 22), ('Artur', 41)]
+
+# TEST_5:
+Query([User(1, 'Valera', 35), User(4, 'Artur', 41)])
+Query([User(3, 'Rustam', 22)])
+Query([User(1, 'Valera', 35), User(2, 'Timur', 32), User(4, 'Artur', 41)])
+Query([User(2, 'Timur', 32), User(3, 'Rustam', 22)])
+Query([User(1, 'Valera', 35), User(3, 'Rustam', 22), User(4, 'Artur', 41)])
+Query([User(2, 'Timur', 32)])
+
+# TEST_6:
+[(35, 'Valera'), (41, 'Artur')]
+[(22, 'Rustam')]
+[(35, 'Valera'), (32, 'Timur'), (41, 'Artur')]
+[(32, 'Timur'), (22, 'Rustam')]
+[(35, 'Valera'), (22, 'Rustam'), (41, 'Artur')]
+[(32, 'Timur')]
+
+# TEST_7:
+Query([Person('Anna', 'Ivanova', 34, 'f'), Person('Anna', 'Ivanova', 32, 'f'), Person('Olga', 'Ivanova', 32, 'f'), Person('Andrey', 'Petrov', 35, 'm'), Person('Ivan', 'Petrov', 32, 'm')])
+Query([Person('Ivan', 'Petrov', 32, 'm'), Person('Anna', 'Ivanova', 34, 'f'), Person('Andrey', 'Petrov', 35, 'm'), Person('Anna', 'Ivanova', 32, 'f'), Person('Olga', 'Ivanova', 32, 'f')])
+
+# TEST_8:
+Query([Person('Anna', 'Ivanova', 34, 'f'), Person('Andrey', 'Petrov', 35, 'm')])
+Query([Person('Ivan', 'Petrov', 32, 'm'), Person('Anna', 'Ivanova', 34, 'f'), Person('Andrey', 'Petrov', 35, 'm'), Person('Anna', 'Ivanova', 32, 'f'), Person('Olga', 'Ivanova', 32, 'f')])
+

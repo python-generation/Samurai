@@ -1,0 +1,73 @@
+# INPUT DATA:
+
+# TEST_1:
+person = Person('Timur', 33)
+print(person)
+
+# TEST_2:
+person1 = Person('Valera', 35)
+person2 = Person('Timur', 33)
+person1.add_friend(person2)
+print(person1.friends)
+
+# TEST_3:
+person1 = Person('Timur', 33)
+print(person1.friends)
+print(repr(person1))
+print(str(person1))
+
+# TEST_4:
+person1 = Person('Timur', 33)
+print(person1.friends)
+print(repr(person1))
+print(str(person1))
+
+# Добавление друга
+person2 = Person('Valera', 35)
+person1.add_friend(person2)
+print(len(person1.friends))
+print(person1.friends[0])
+
+# TEST_5:
+person1 = Person('Timur', 33)
+print(person1.friends)
+print(repr(person1))
+print(str(person1))
+
+# Добавление друга
+person2 = Person('Valera', 35)
+person1.add_friend(person2)
+print(len(person1.friends))
+print(person1.friends[0])
+
+# Добавление нескольких друзей
+person3 = Person('Nastya', 30)
+person1.add_friend(person3)
+print(len(person1.friends))
+print(person1.friends[1])
+
+# TEST_6:
+person1 = Person('Timur', 33)
+print(person1.friends)
+print(repr(person1))
+print(str(person1))
+
+# Добавление друга
+person2 = Person('Valera', 35)
+person1.add_friend(person2)
+print(len(person1.friends))
+print(person1.friends[0])
+
+# Добавление нескольких друзей
+person3 = Person('Nastya', 30)
+person1.add_friend(person3)
+print(len(person1.friends))
+print(person1.friends[1])
+
+# Проверка строкового представления
+print(repr(person1.friends[0]))
+print(repr(person1.friends[1]))
+
+print(str(person1.friends[0]))
+print(str(person1.friends[1]))
+

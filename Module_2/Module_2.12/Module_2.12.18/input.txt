@@ -1,0 +1,27 @@
+# INPUT DATA:
+
+# TEST_1:
+import sys
+
+sys.stderr.write('Произошла ошибка.\n')
+sys.stderr.write('Произошла еще одна ошибка.\n')
+
+# TEST_2:
+import traceback
+
+errors = [ValueError, TypeError, TimeoutError]
+
+for error in errors:
+    try:
+        raise error
+    except:
+        traceback.print_exc()
+        print()
+
+# TEST_3:
+import logging
+
+logging.basicConfig()                # настройка и запись логов
+logging.warning('Предупреждение')    # по умолчанию запись идет в поток ошибок
+logging.error('Ошибка')              # логирование будет изучаться позже :)
+

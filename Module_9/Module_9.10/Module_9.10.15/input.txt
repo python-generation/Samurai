@@ -1,0 +1,53 @@
+# INPUT DATA:
+
+# TEST_1:
+from prettytable import from_db_cursor
+
+data = [('Inside Out', 'Pete Docter', 2015, 95)]
+add_films(data)
+
+conn = sqlite3.connect('Pixar.db')
+cursor = conn.cursor()
+cursor.execute('SELECT * FROM Films;')
+print(from_db_cursor(cursor))
+
+# TEST_2:
+from prettytable import from_db_cursor
+
+data = [
+    ('Inside Out', 'Pete Docter', 2015, 95),
+    ('The Good Dinosaur', 'Peter Sohn', 2015, 94),
+    ('Finding Dory', 'Finding Dory', 2016, 97)
+]
+add_films(data)
+
+conn = sqlite3.connect('Pixar.db')
+cursor = conn.cursor()
+cursor.execute('SELECT * FROM Films ORDER BY id DESC LIMIT 3')
+print(from_db_cursor(cursor))
+
+# TEST_3:
+from prettytable import from_db_cursor
+
+data = []
+add_films(data)
+
+conn = sqlite3.connect('Pixar.db')
+cursor = conn.cursor()
+cursor.execute('SELECT COUNT(*) FROM Films;')
+print(from_db_cursor(cursor))
+
+# TEST_4:
+from prettytable import from_db_cursor
+
+data = [
+    ('Soul', 'Pete Docter', 2020, 100),
+    ('Soul', 'Pete Docter', 2020, 100)
+]
+add_films(data)
+
+conn = sqlite3.connect('Pixar.db')
+cursor = conn.cursor()
+cursor.execute('SELECT title, COUNT(*) FROM Films GROUP BY title HAVING COUNT(*) > 1;')
+print(from_db_cursor(cursor))
+

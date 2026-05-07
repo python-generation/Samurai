@@ -1,0 +1,14 @@
+# INPUT DATA:
+
+# TEST_1:
+print_squares(20)
+
+# TEST_2:
+print_squares(40)
+
+# TEST_3:
+print_squares(100)
+
+# TEST_4:
+print_squares(500)
+

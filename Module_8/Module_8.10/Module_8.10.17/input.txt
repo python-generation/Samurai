@@ -1,0 +1,48 @@
+# INPUT DATA:
+
+# TEST_1:
+participants = [{'name': 'Alisha Herrera', 'score': 261}, {'name': 'Daniel Ware', 'score': 152},
+                {'name': 'Andrea Mendez', 'score': 426}, {'name': 'Amanda Martinez', 'score': 492},
+                {'name': 'Joshua Johnson', 'score': 255}, {'name': 'Jamie Morales', 'score': 371},
+                {'name': 'Joseph Duncan', 'score': 370}, {'name': 'Cassandra Sanchez', 'score': 419},
+                {'name': 'Jeffrey Sosa', 'score': 242}, {'name': 'Laura Edwards', 'score': 243}]
+
+print(get_top_3(participants))
+
+# TEST_2:
+participants = [{'name': 'Tanya Duncan', 'score': 400}, {'name': 'Jamie Davis', 'score': 485},
+                {'name': 'Laura Simmons', 'score': 228}, {'name': 'Steven Castillo', 'score': 398},
+                {'name': 'Jennifer Rosario', 'score': 205}, {'name': 'Diana Newman', 'score': 161},
+                {'name': 'Ms. Christina Collier', 'score': 314}, {'name': 'Christopher Carpenter', 'score': 398},
+                {'name': 'Eric Snyder', 'score': 162}, {'name': 'Sarah Johnson', 'score': 129}]
+
+print(get_top_3(participants))
+
+# TEST_3:
+participants = [{'name': 'Toni Brown', 'score': 384}, {'name': 'Nicole Huynh', 'score': 423},
+                {'name': 'Holly Munoz', 'score': 330}, {'name': 'Angela Perez', 'score': 384},
+                {'name': 'Tiffany Wilson', 'score': 338}, {'name': 'Jennifer Adams', 'score': 357},
+                {'name': 'Michele Warren', 'score': 423}, {'name': 'William Chase', 'score': 142},
+                {'name': 'Andrea Johnson', 'score': 121}, {'name': 'Brian Wilson', 'score': 339}]
+
+print(get_top_3(participants))
+
+# TEST_4:
+participants = [{'name': 'David Martinez', 'score': 340}, {'name': 'Robert Greer', 'score': 134},
+                {'name': 'David Morgan', 'score': 166}, {'name': 'Joseph Collins', 'score': 265},
+                {'name': 'Billy Campbell', 'score': 276}, {'name': 'Curtis Howard', 'score': 494},
+                {'name': 'Cassidy Walker', 'score': 239}, {'name': 'Kevin Fuller', 'score': 473},
+                {'name': 'Daniel Kelley', 'score': 262}, {'name': 'Ashley Ward', 'score': 332},
+                {'name': 'Jerome Fletcher', 'score': 149}, {'name': 'Amber Ford', 'score': 459},
+                {'name': 'Hannah Cox', 'score': 494}, {'name': 'Thomas Crane', 'score': 336},
+                {'name': 'John Clark', 'score': 275}, {'name': 'Bryan Schwartz', 'score': 434},
+                {'name': 'Kevin Soto', 'score': 226}, {'name': 'Taylor Joseph', 'score': 343},
+                {'name': 'Mallory Cordova', 'score': 319}, {'name': 'Brent Brown', 'score': 318},
+                {'name': 'Emily Aguilar', 'score': 297}, {'name': 'Scott Miller', 'score': 263},
+                {'name': 'Juan Mahoney', 'score': 275}, {'name': 'David Romero', 'score': 326},
+                {'name': 'Melanie Ramos', 'score': 463}, {'name': 'Charles Brown', 'score': 157},
+                {'name': 'Bethany Bruce', 'score': 176}, {'name': 'Bradley Murray', 'score': 186},
+                {'name': 'Lisa Martinez', 'score': 297}, {'name': 'Sean Schmidt', 'score': 319}]
+
+print(get_top_3(participants))
+

@@ -1,0 +1,40 @@
+# INPUT DATA:
+
+# TEST_1:
+paths = [
+    ('images', [], ['cat.jpg', 'dog.jpg']),
+    ('docs', [], ['readme.md']),
+]
+
+make_filesystem(paths)
+print_tree('filesystem')
+
+# TEST_2:
+paths = [
+    ('main', ['data', 'media'], []),
+    ('main/data', [], ['file.txt']),
+    ('main/media', [], ['movie.mp4']),
+    ('empty', [], []),
+]
+
+make_filesystem(paths)
+print_tree('filesystem')
+
+# TEST_3:
+paths = [
+    ('desktop', ['fun', 'games', 'images', 'studying'], ['earth.jpg', 'python.pdf', 'shopping_list.txt', 'test.py']),
+    ('desktop/fun', ['movies', 'songs'], []), ('desktop/fun/movies', [], []),
+    ('desktop/fun/songs', [], ['Alexandra Savior Crying All the Time.mp3']),
+    ('desktop/games', ['not released'], ['Psychonauts 2.exe']),
+    ('desktop/games/not released', [], ['Hollow Knight Silksong.exe']),
+    ('desktop/images', [], ['code.jpeg', 'stepik.png']),
+    ('desktop/studying', ['books', 'data_sets'], ['exam.txt', 'fipi_demo_2022.pdf', 'homework.py']),
+    ('desktop/studying/books', [], ['how to prove.pdf']),
+    ('desktop/studying/data_sets', ['fonts'],
+     ['countries.json', 'data_sample.csv', 'readme.txt', 'task_results.xlsx']),
+    ('desktop/studying/data_sets/fonts', [], ['fontlist-v330.json'])
+]
+
+make_filesystem(paths)
+print_tree('filesystem')
+

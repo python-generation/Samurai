@@ -1,0 +1,136 @@
+# INPUT DATA:
+
+# TEST_1:
+@takes_numbers
+def sum_numbers(*args):
+    return sum(args)
+    
+print(sum_numbers(True, 2.5, complex(7)))
+
+# TEST_2:
+@takes_numbers
+def sum_numbers(*args):
+    return sum(args)
+    
+try:
+    print(sum_numbers(True, '2.5', complex(7)))
+except TypeError as e:
+    print(e)
+
+# TEST_3:
+@takes_numbers
+def sum_numbers(*args):
+    return sum(args)
+
+print(sum_numbers(1, 2, 3, 4, 5))
+
+# TEST_4:
+@takes_numbers
+def sum_numbers(*args):
+    return sum(args)
+
+print(sum_numbers(1.1, 2.2, 3.3))
+
+# TEST_5:
+@takes_numbers
+def sum_numbers(*args):
+    return sum(args)
+
+print(sum_numbers(1 + 1j, 2 + 2j, 3 + 3j))
+
+# TEST_6:
+@takes_numbers
+def sum_numbers(*args):
+    return sum(args)
+
+print(sum_numbers(True, False, True))
+
+# TEST_7:
+@takes_numbers
+def sum_numbers(*args):
+    return sum(args)
+
+print(sum_numbers(1, 2.5, 3 + 1j, True))
+
+# TEST_8:
+@takes_numbers
+def sum_numbers(a, b, c):
+    return a + b + c
+
+print(sum_numbers(a=1, b=2.5, c=3 + 1j))
+
+# TEST_9:
+@takes_numbers
+def sum_numbers(a, b, c, d):
+    return a + b + c + d
+
+print(sum_numbers(1, 2.5, c=3 + 1j, d=True))
+
+# TEST_10:
+@takes_numbers
+def sum_numbers(*args):
+    return sum(args)
+
+try:
+    print(sum_numbers(1, '2', 3))
+except TypeError as e:
+    print(e)
+
+# TEST_11:
+@takes_numbers
+def sum_numbers(*args):
+    return sum(args)
+
+try:
+    print(sum_numbers(1, [2], 3))
+except TypeError as e:
+    print(e)
+
+# TEST_12:
+@takes_numbers
+def sum_numbers(*args):
+    return sum(args)
+
+try:
+    print(sum_numbers(1, None, 3))
+except TypeError as e:
+    print(e)
+
+# TEST_13:
+@takes_numbers
+def sum_numbers(a, b):
+    return a + b
+
+try:
+    print(sum_numbers(a=1, b='2'))
+except TypeError as e:
+    print(e)
+
+# TEST_14:
+@takes_numbers
+def sum_numbers(a, b, c):
+    return a + b + c
+
+try:
+    print(sum_numbers(1, b='2', c=3))
+except TypeError as e:
+    print(e)
+
+# TEST_15:
+from decimal import Decimal
+
+@takes_numbers
+def sum_numbers(*args):
+    return sum(args)
+
+print(sum_numbers(Decimal('1.1'), Decimal('2.2')))
+
+# TEST_16:
+from fractions import Fraction
+
+@takes_numbers
+def sum_numbers(*args):
+    return sum(args)
+
+print(sum_numbers(Fraction('1/2'), Fraction('1/4')))
+

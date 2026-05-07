@@ -1,0 +1,32 @@
+# OUTPUT DATA:
+
+# TEST_1:
+beegeek
+
+# TEST_2:
+b'pygen'
+
+# TEST_3:
+Hello World!
+
+# TEST_4:
+
+
+# TEST_5:
+test
+
+# TEST_6:
+b'oldschool'
+
+# TEST_7:
+b''
+
+# TEST_8:
+b'data'
+
+# TEST_9:
+test2
+
+# TEST_10:
+b'data2'
+

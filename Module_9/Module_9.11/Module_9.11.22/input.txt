@@ -1,0 +1,80 @@
+# INPUT DATA:
+
+# TEST_1:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t1(val TEXT)')
+cursor.executemany('INSERT INTO t1(val) VALUES (?)', [('bee',), ('beegeek',), ('begin',)])
+cursor.execute('SELECT COMMON_PREFIX(val) FROM t1')
+
+print(cursor.fetchone()[0])
+
+# TEST_2:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t2(val TEXT)')
+cursor.executemany('INSERT INTO t2(val) VALUES (?)', [('bee',), ('beegeek',)])
+cursor.execute('SELECT COMMON_PREFIX(val) FROM t2')
+
+print(cursor.fetchone()[0])
+
+# TEST_3:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t3(val TEXT)')
+cursor.executemany('INSERT INTO t3(val) VALUES (?)', [('beegeek',)])
+cursor.execute('SELECT COMMON_PREFIX(val) FROM t3')
+
+print(cursor.fetchone()[0])
+
+# TEST_4:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t4(val TEXT)')
+cursor.executemany('INSERT INTO t4(val) VALUES (?)', [('beegeek',), ('pygen',), ('python',)])
+cursor.execute('SELECT COMMON_PREFIX(val) FROM t4')
+
+print(cursor.fetchone()[0])
+
+# TEST_5:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t5(val TEXT)')
+cursor.executemany('INSERT INTO t5(val) VALUES (?)', [('python',), ('python',), ('python',)])
+cursor.execute('SELECT COMMON_PREFIX(val) FROM t5')
+
+print(cursor.fetchone()[0])
+
+# TEST_6:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t6(val TEXT)')
+cursor.executemany('INSERT INTO t6(val) VALUES (?)', [('hello',), ('hell',), ('h',)])
+cursor.execute('SELECT COMMON_PREFIX(val) FROM t6')
+
+print(cursor.fetchone()[0])
+
+# TEST_7:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t7(val TEXT)')
+cursor.executemany('INSERT INTO t7(val) VALUES (?)', [('pygen',), ('beegeek',), ('python',)])
+cursor.execute('SELECT COMMON_PREFIX(val) FROM t7')
+
+print(cursor.fetchone()[0])
+
+# TEST_8:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t8(val TEXT)')
+cursor.executemany('INSERT INTO t8(val) VALUES (?)', [('python',), ('pygen',), ('beegeek',)])
+cursor.execute('SELECT COMMON_PREFIX(val) FROM t8')
+
+print(cursor.fetchone()[0])
+
+# TEST_9:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t9(val1 TEXT, val2 TEXT, val3 Text)')
+cursor.executemany('INSERT INTO t9(val1, val2, val3) VALUES (?, ?, ?)', [('bee', 'pygen', 'hello'), ('beegeek', 'py', 'be'), ('begin', 'python', 'py')])
+
+cursor.execute('SELECT COMMON_PREFIX(val1) FROM t9')
+print(cursor.fetchone()[0])
+
+cursor.execute('SELECT COMMON_PREFIX(val2) FROM t9')
+print(cursor.fetchone()[0])
+
+cursor.execute('SELECT COMMON_PREFIX(val3) FROM t9')
+print(cursor.fetchone()[0])
+

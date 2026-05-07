@@ -1,0 +1,30 @@
+# INPUT DATA:
+
+# TEST_1:
+numbers = [1, 2, 3, 4, 5, 6]
+print(filter_even(numbers))
+
+# TEST_2:
+numbers = [10, 122, 4]
+print(filter_even(numbers))
+
+# TEST_3:
+numbers = [17, 7, 9, 3, 1, 25]
+print(filter_even(numbers))
+
+# TEST_4:
+numbers = [22]
+print(filter_even(numbers))
+
+# TEST_5:
+numbers = [23]
+print(filter_even(numbers))
+
+# TEST_6:
+numbers = [0]
+print(filter_even(numbers))
+
+# TEST_7:
+numbers = [37, 9, 0, 1, 18]
+print(filter_even(numbers))
+

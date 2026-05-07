@@ -1,0 +1,80 @@
+# INPUT DATA:
+
+# TEST_1:
+print(find_max([1, 2, 3, 4, 5]))
+
+# TEST_2:
+try:
+    print(find_max([1, 2, '3', 4, 5]))
+except AssertionError as e:
+    print(e)
+
+# TEST_3:
+try:
+    print(find_max((1, 2, '3', 4, 5)))
+except AssertionError as e:
+    print(e)
+
+# TEST_4:
+try:
+    print(find_max([]))
+except AssertionError as e:
+    print(e)
+
+# TEST_5:
+print(find_max([-5, -2, 0, 5, 10]))
+
+# TEST_6:
+print(find_max([10]))
+
+# TEST_7:
+print(find_max([5, 1, 9, 3, 7]))
+
+# TEST_8:
+print(find_max([-10, -5, -20]))
+
+# TEST_9:
+print(find_max([0, 1]))
+
+# TEST_10:
+print(find_max([-100, 100]))
+
+# TEST_11:
+print(find_max([1] * 100))
+
+# TEST_12:
+try:
+    print(find_max({1, 2, 3}))
+except AssertionError as e:
+    print(e)
+
+# TEST_13:
+try:
+    print(find_max(['тут', 'был', 'Жора', ':)']))
+except AssertionError as e:
+    print(e)
+
+# TEST_14:
+try:
+    print(find_max('жук'))
+except AssertionError as e:
+    print(e)
+
+# TEST_15:
+try:
+    print(find_max(None))
+except AssertionError as e:
+    print(e)
+
+# TEST_16:
+try:
+    print(find_max([10002, 2.5, 33, 556]))
+except AssertionError as e:
+    print(e)
+
+# TEST_17:
+try:
+    print(find_max([None]))
+except AssertionError as e:
+    print(e)
+

@@ -1,0 +1,80 @@
+# INPUT DATA:
+
+# TEST_1:
+print(encode('Beegeek', 10))
+print(decode('Looqoou', 10))
+
+# TEST_2:
+print(encode('Биgeek123', 5))
+print(decode('Биljjp123', 5))
+
+# TEST_3:
+print(encode('Python1Love', 26))
+print(decode('Python1Love', 26))
+
+# TEST_4:
+text = 'The quick brown fox jumps over the lazy dog'
+encode_text = encode(text, 17)
+print(encode_text)
+print(decode(encode_text, 17))
+
+# TEST_5:
+text = '!!The-quick-brown__fox jumps over the lazy dog!!!'
+encode_text = encode(text, 17)
+print(encode_text)
+print(decode(encode_text, 17))
+
+# TEST_6:
+print(encode('ZzzZzz', 1))
+print(decode('AaaAaa', 1))
+
+# TEST_7:
+print(encode('Z', 1))
+print(decode('A', 1))
+
+# TEST_8:
+words = ['civil😀', 'so😁', 'region☺', 'beat☺', 'artist😍', 'choice🙃', 'include🤭', 'degree😝', 'push🤪', 'side😏', 'size🤥',
+         'policy🤨', '🤨🤥😏🤪😝🤭🙃😍☺😁😀']
+
+encode_words = [encode(word, 15) for word in words]
+print(encode_words)
+
+decode_words = [decode(word, 15) for word in encode_words]
+print(decode_words)
+
+# TEST_9:
+print(encode("""Since the discovery and proof of Copernicus' law, the mere recognition that it is not the sun but the earth that moves has destroyed the entire cosmography of the ancients. By refuting the law, it was possible to retain the old view of the movements of bodies, but without refuting it, it seemed impossible to continue studying the Ptolemaic worlds. But even after the discovery of Copernicus' law, the Ptolemaic worlds continued to be studied for a long time.
+Since the first man said and proved that the number of births or crimes obeys mathematical laws, and that certain geographical and political-economic conditions determine one way or another of government, that certain relations of the population to the land produce the movements of the people, since then the foundations on which history was built have been destroyed.
+By refuting the new laws, it was possible to maintain the old view of history, but without refuting them, it seemed impossible to continue studying historical events ass""", 3))
+
+print(decode("""Vlqfh wkh glvfryhub dqg surri ri Frshuqlfxv' odz, wkh phuh uhfrjqlwlrq wkdw lw lv qrw wkh vxq exw wkh hduwk wkdw pryhv kdv ghvwurbhg wkh hqwluh frvprjudskb ri wkh dqflhqwv. Eb uhixwlqj wkh odz, lw zdv srvvleoh wr uhwdlq wkh rog ylhz ri wkh pryhphqwv ri erglhv, exw zlwkrxw uhixwlqj lw, lw vhhphg lpsrvvleoh wr frqwlqxh vwxgblqj wkh Swrohpdlf zruogv. Exw hyhq diwhu wkh glvfryhub ri Frshuqlfxv' odz, wkh Swrohpdlf zruogv frqwlqxhg wr eh vwxglhg iru d orqj wlph.
+Vlqfh wkh iluvw pdq vdlg dqg suryhg wkdw wkh qxpehu ri eluwkv ru fulphv rehbv pdwkhpdwlfdo odzv, dqg wkdw fhuwdlq jhrjudsklfdo dqg srolwlfdo-hfrqrplf frqglwlrqv ghwhuplqh rqh zdb ru dqrwkhu ri jryhuqphqw, wkdw fhuwdlq uhodwlrqv ri wkh srsxodwlrq wr wkh odqg surgxfh wkh pryhphqwv ri wkh shrsoh, vlqfh wkhq wkh irxqgdwlrqv rq zklfk klvwrub zdv exlow kdyh ehhq ghvwurbhg.
+Eb uhixwlqj wkh qhz odzv, lw zdv srvvleoh wr pdlqwdlq wkh rog ylhz ri klvwrub, exw zlwkrxw uhixwlqj wkhp, lw vhhphg lpsrvvleoh wr frqwlqxh vwxgblqj klvwrulfdo hyhqwv dvv""", 3))
+
+# TEST_10:
+words = ['EvEr', 'WoUlD', 'CeRtAiN', 'WhIcH', 'WiTh', 'ThErE', 'EnViRoNmEnTaL', 'StRuCtUrE', 'NeWs', 'ThRoW', 'NoTe', 'If', 'WiN', 'ShOuLdEr', 'NeEd', 'WhErE', 'MeThOd', 'FiRsT', 'CiViL', 'BaSe']
+
+encode_words = [encode(word , 15) for word in words]
+print(encode_words)
+
+decode_words = [decode(word , 15) for word in encode_words]
+print(decode_words)
+
+# TEST_11:
+words = ['leader', 'life', 'central', 'whatever', 'true', 'show', 'year', 'teacher', 'happen', 'might', 'defense',
+         'suggest', 'boy', 'trip', 'wish', 'interest', 'star', 'system', 'husband', 'wait', 'young', 'certainly',
+         'with', 'wind', 'thought', 'hard', 'today', 'cup', 'where', 'fly', 'agreement', 'human', 'decision', 'along',
+         'billion', 'prevent', 'authority', 'those', 'do', 'perform', 'plan', 'allow', 'president', 'do', 'around',
+         'seven', 'dog', 'sea', 'use', 'my', 'head', 'whose', 'important', 'top', 'current', 'east', 'page', 'decide',
+         'mouth', 'whatever', 'hospital', 'pattern', 'smile', 'probably', 'at', 'evening', 'current', 'local', 'want',
+         'foreign', 'catch', 'option', 'meeting', 'course', 'collection', 'street', 'make', 'economic', 'fly', 'return',
+         'experience', 'east', 'position', 'foot', 'one', 'mean', 'break', 'me', 'truth', 'management', 'want',
+         'option', 'economic', 'response', 'attorney', 'table', 'push', 'travel', 'water', 'help']
+
+for i in range(1, 27):
+    encode_words = [encode(word, i) for word in words]
+    print(encode_words)
+    
+    decode_words = [decode(word, i) for word in encode_words]
+    print(decode_words)
+

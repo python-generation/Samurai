@@ -1,0 +1,138 @@
+# INPUT DATA:
+
+# TEST_1:
+file1 = open('file.txt', 'w')
+file2 = open('file.txt', 'w')
+files = [file1, file2]
+close_all(files)
+
+print(file1.closed)
+print(file2.closed)
+
+# TEST_2:
+with open('file.txt', 'w') as file:
+    print(isinstance(file, SupportsClose))
+    print(issubclass(file.__class__, SupportsClose))
+
+# TEST_3:
+file1 = open('test_file1.txt', 'w')
+file2 = open('test_file2.txt', 'w')
+files = [file1, file2]
+
+close_all(files)
+
+print(f'file1.closed -> {file1.closed}')
+print(f'file2.closed -> {file2.closed}')
+print(file1.closed and file2.closed)
+
+# TEST_4:
+with open('test_file_isinstance.txt', 'w') as file:
+    is_instance_file = isinstance(file, SupportsClose)
+    is_subclass_file = issubclass(file.__class__, SupportsClose)
+    
+    print(is_instance_file)
+    print(is_subclass_file)
+
+# TEST_5:
+class NetworkConnection:
+    def __init__(self, host, port):
+        self.host = host
+        self.port = port
+        self.connected = True
+        print(f'Connected to {self.host}:{self.port}')
+
+    def close(self) -> None:
+        if self.connected:
+            print(f'Closing connection to {self.host}:{self.port}')
+            self.connected = False
+
+    def __repr__(self):
+        return f'NetworkConnection(host="{self.host}", port={self.port}, connected={self.connected})'
+
+conn1 = NetworkConnection('localhost', 8080)
+conn2 = NetworkConnection('example.com', 443)
+connections = [conn1, conn2]
+
+close_all(connections)
+
+print(conn1)
+print(conn2)
+print(conn1.connected is False and conn2.connected is False)
+print(isinstance(conn1, SupportsClose))
+print(issubclass(NetworkConnection, SupportsClose))
+
+# TEST_6:
+class NetworkConnection:
+    def __init__(self, host, port):
+        self.host = host
+        self.port = port
+        self.connected = True
+        print(f'Connected to {self.host}:{self.port}')
+
+    def close(self) -> None:
+        if self.connected:
+            print(f'Closing connection to {self.host}:{self.port}')
+            self.connected = False
+
+    def __repr__(self):
+        return f'NetworkConnection(host="{self.host}", port={self.port}, connected={self.connected})'
+
+conn1 = NetworkConnection('localhost', 8080)
+conn2 = NetworkConnection('example.com', 443)
+connections = [conn1, conn2]
+
+close_all(connections)
+
+print(conn1)
+print(conn2)
+print(conn1.connected is False and conn2.connected is False)
+print(isinstance(conn1, SupportsClose))
+print(issubclass(NetworkConnection, SupportsClose))
+
+# TEST_7:
+class AnotherResource:
+    def close(self) -> None:
+        self.closed = True
+        print('AnotherResource closed.')
+        return None  # Явное возвращение None
+
+    def __init__(self):
+        self.closed = False
+    def __repr__(self):
+        return f'AnotherResource(closed={self.closed})'
+
+temp_file = open('temp_file.txt', 'w')
+another_resource = AnotherResource()
+mixed_closable = (temp_file, another_resource) # Используем кортеж
+
+close_all(mixed_closable)
+
+print(temp_file.closed)
+print(another_resource)
+print(temp_file.closed is True and another_resource.closed is True)
+print(isinstance(temp_file, SupportsClose))
+print(isinstance(another_resource, SupportsClose))
+
+# TEST_8:
+empty_list: list[SupportsClose] = []
+close_all(empty_list) # Не должно быть ошибок
+print('close_all([]) без ошибок.')
+
+empty_tuple: tuple[SupportsClose, ...] = ()
+close_all(empty_tuple) # Не должно быть ошибок
+print('close_all(()) без ошибок.')
+
+# TEST_9:
+class DoesNotSupportClose:
+    pass
+
+non_closable_obj = DoesNotSupportClose()
+broken_list = [non_closable_obj]
+try:
+    close_all(broken_list)
+except AttributeError as e:
+    print(e)
+    print('close' in str(e))
+else:
+    print(False)
+

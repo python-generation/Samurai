@@ -1,0 +1,31 @@
+# OUTPUT DATA:
+
+# TEST_1:
+True
+
+# TEST_2:
+Невозможно сравнить экземпляры.
+
+# TEST_3:
+False
+True
+True
+True
+True
+True
+
+# TEST_4:
+True
+True
+False
+True
+
+# TEST_5:
+False
+True
+Невозможно сравнить экземпляры.
+
+# TEST_6:
+True
+True
+

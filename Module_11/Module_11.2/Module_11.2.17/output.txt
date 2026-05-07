@@ -1,0 +1,46 @@
+# OUTPUT DATA:
+
+# TEST_1:
+{'__init__': 0}
+{'__init__': 1}
+{'__init__': 2}
+
+# TEST_2:
+{'add': 0, 'sub': 0}
+{'add': 2, 'sub': 1}
+
+# TEST_3:
+{'start': 0, 'stop': 0}
+
+# TEST_4:
+{'start': 3}
+
+# TEST_5:
+{'connect': 0, 'close': 0}
+
+# TEST_6:
+{'start': 1, 'stop': 1, 'restart': 3}
+
+# TEST_7:
+{'on': 5, 'off': 4}
+
+# TEST_8:
+[INFO] Started
+[ERROR] Error occurred
+{'log': 2}
+
+# TEST_9:
+{'method1': 1, 'method2': 1}
+{'method3': 2, 'method1': 1}
+
+# TEST_10:
+{'method1': 0, 'method2': 0}
+{'method3': 0}
+
+# TEST_11:
+{'greet': 1}
+{'greet': 2}
+
+# TEST_12:
+<class '__main__.ProfilerMeta'>
+

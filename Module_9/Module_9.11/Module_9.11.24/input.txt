@@ -1,0 +1,73 @@
+# INPUT DATA:
+
+# TEST_1:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t1(val)')
+cursor.executemany('INSERT INTO t1(val) VALUES (?)', [(4,), (4,), (5,), (1,), (4,), (2,), (5,)])
+cursor.execute('SELECT MODE(val) FROM t1')
+
+print(cursor.fetchone()[0])
+
+# TEST_2:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t2(val)')
+cursor.executemany('INSERT INTO t2(val) VALUES (?)', [(4,), (4,), (5,), (5,), (1,), (2,)])
+cursor.execute('SELECT MODE(val) FROM t2')
+
+print(cursor.fetchone()[0]) 
+
+# TEST_3:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t3(val)')
+cursor.executemany('INSERT INTO t3(val) VALUES (?)', [(1,), (8,), (5,), (3,)])
+cursor.execute('SELECT MODE(val) FROM t3')
+
+print(cursor.fetchone()[0])
+
+# TEST_4:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t4(val)')
+cursor.executemany('INSERT INTO t4(val) VALUES (?)', [('a',), ('b',), ('a',), ('c',)])
+cursor.execute('SELECT MODE(val) FROM t4')
+
+print(cursor.fetchone()[0])
+
+# TEST_5:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t5(val)')
+cursor.executemany('INSERT INTO t5(val) VALUES (?)', [(None,), (None,), (None,)])
+cursor.execute('SELECT MODE(val) FROM t5')
+
+print(cursor.fetchone()[0])
+
+# TEST_6:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t6(val)')
+cursor.executemany('INSERT INTO t6(val) VALUES (?)', [(1,), (None,), (2,), (1,), (3,), (None,), (1,)])
+cursor.execute('SELECT MODE(val) FROM t6')
+
+print(cursor.fetchone()[0])
+
+# TEST_7:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t7(val)')
+cursor.executemany('INSERT INTO t7(val) VALUES (?)', [(42,)])
+cursor.execute('SELECT MODE(val) FROM t7')
+
+print(cursor.fetchone()[0])
+
+# TEST_8:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t8(val INTEGER)')
+cursor.execute('SELECT MODE(val) FROM t8')
+
+print(cursor.fetchone()[0])
+
+# TEST_9:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t1(val)')
+cursor.executemany('INSERT INTO t1(val) VALUES (?)', [(4,), (3,), (5,), (0,), (0,), (2,), (1,)])
+cursor.execute('SELECT MODE(val) FROM t1')
+
+print(cursor.fetchone()[0])
+

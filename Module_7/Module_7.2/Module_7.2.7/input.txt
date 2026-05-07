@@ -1,0 +1,20 @@
+# INPUT DATA:
+
+# TEST_1:
+print(group_by_extension('desktop/fun'))
+
+# TEST_2:
+print(group_by_extension('desktop/studying'))
+
+# TEST_3:
+print(group_by_extension('desktop/studying/data_sets'))
+
+# TEST_4:
+print(group_by_extension('desktop/studying/books'))
+
+# TEST_5:
+print(group_by_extension('desktop/images'))
+
+# TEST_6:
+print(group_by_extension('desktop'))
+

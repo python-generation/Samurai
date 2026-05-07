@@ -1,0 +1,219 @@
+# INPUT DATA:
+
+# TEST_1:
+print(add_tag('Pygen'))
+
+# TEST_2:
+print(add_tag('Pygen', 'h2'))
+
+# TEST_3:
+logger.disabled = True
+print(add_tag('Pygen'))
+
+# TEST_4:
+add_tag('Pygen')
+
+with open('tags.log', encoding='utf-8') as file:
+    print(file.read())
+
+# TEST_5:
+print(add_tag('BeeGeek_r'))
+
+with open('tags.log', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+# TEST_6:
+logger.disabled = True
+print(add_tag('BeeGeek_r'))
+
+with open('tags.log', 'r', encoding='utf-8') as f:
+    print(f.read())
+
+# TEST_7:
+print(add_tag('BeeGeek_w'))
+
+with open('tags.log', 'w', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_8:
+logger.disabled = True
+print(add_tag('BeeGeek_w'))
+
+with open('tags.log', 'w', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_9:
+print(add_tag('BeeGeek_a'))
+
+with open('tags.log', 'a', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_10:
+logger.disabled = True
+print(add_tag('BeeGeek_a'))
+
+with open('tags.log', 'a', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_11:
+print(add_tag('BeeGeek_r+'))
+
+with open('tags.log', 'r+', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_12:
+logger.disabled = True
+print(add_tag('BeeGeek_r+'))
+
+with open('tags.log', 'r+', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_13:
+print(add_tag('BeeGeek_w+'))
+
+with open('tags.log', 'w+', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_14:
+logger.disabled = True
+print(add_tag('BeeGeek_w+'))
+
+with open('tags.log', 'w+', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_15:
+print(add_tag('BeeGeek_a+'))
+
+with open('tags.log', 'a+', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_16:
+logger.disabled = True
+print(add_tag('BeeGeek_a+'))
+
+with open('tags.log', 'a+', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_17:
+print(add_tag('BeeGeek_a', 'a'))
+
+with open('tags.log', 'a', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_18:
+logger.disabled = True
+print(add_tag('BeeGeek_a', 'a'))
+
+with open('tags.log', 'a', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_19:
+print(add_tag('BeeGeek', 'Pygen'))
+
+with open('tags.log', 'a', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_20:
+logger.disabled = True
+print(add_tag('BeeGeek', 'Pygen'))
+
+with open('tags.log', 'a', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_21:
+print(add_tag('BeeGeek', ''))
+
+with open('tags.log', 'a', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_22:
+logger.disabled = True
+print(add_tag('BeeGeek', ''))
+
+with open('tags.log', 'a', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_23:
+print(add_tag('', ''))
+
+with open('tags.log', 'a', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_24:
+print(add_tag(''))
+
+with open('tags.log', 'a', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_25:
+print(add_tag('BeeGeek_wr'))
+
+with open('tags.log', 'r', encoding='utf-8') as f:
+    try:
+        print(f.read())
+    except Exception as e:
+        print(e)
+
+# TEST_26:
+print(add_tag('<div class="page-footer__row page-footer__row_order_second"><div class="page-footer__col page-footer__apps"><a class="page-footer__mobapp-link" target="_blank"el="n8888888888rrer" href="ht999999999999999.com/serve/1888888888888846">img alt="Get it on Apple Store" src="http999999999999999999/app-store-badge-ru.svg?1745400576">/a>a class="page-footer__mobapp-link" target="_blank" rel="no888888888888888rrer"/312999733398396995">'))
+
+# TEST_27:
+print(add_tag('<div class="page-footer__row page-footer__row_order_second"><div class="page-footer__col page-footer__apps"><a class="page-footer__mobapp-link" target="_blank"el="n8888888888rrer" href="ht999999999999999.com/serve/1888888888888846">img alt="Get it on Apple Store" src="http999999999999999999/app-store-badge-ru.svg?1745400576">/a>a class="page-footer__mobapp-link" target="_blank" rel="no888888888888888rrer"/312999733398396995">', '<div style="position: absolute; left: -9999px; top: -9999px; margin: 0px; padding: 0px; border: 0px; width: 893.898px;">'))
+
+# TEST_28:
+print(add_tag('Pygen', 'h1'))
+

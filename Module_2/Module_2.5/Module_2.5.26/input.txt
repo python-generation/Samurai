@@ -1,0 +1,32 @@
+# INPUT DATA:
+
+# TEST_1:
+convert_digits(2025)
+
+# TEST_2:
+convert_digits(1368)
+
+# TEST_3:
+convert_digits(1357908642)
+
+# TEST_4:
+convert_digits(0)
+
+# TEST_5:
+convert_digits(13579)
+
+# TEST_6:
+convert_digits(2468)
+
+# TEST_7:
+convert_digits(1234567890)
+
+# TEST_8:
+convert_digits(10)
+
+# TEST_9:
+convert_digits(104)
+
+# TEST_10:
+convert_digits(11)
+

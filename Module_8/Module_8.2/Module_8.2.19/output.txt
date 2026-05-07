@@ -1,0 +1,23 @@
+# OUTPUT DATA:
+
+# TEST_1:
+def max_a_b(a, b):
+    if a > b:
+        return a
+    return b
+
+# TEST_2:
+def foo():
+    pass
+
+# TEST_3:
+def bar(x):
+    if x > 0:
+        return x
+
+# TEST_4:
+def foo():
+    def bar():
+        print('hello')
+    return bar
+

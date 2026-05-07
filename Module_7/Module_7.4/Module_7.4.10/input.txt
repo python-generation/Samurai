@@ -1,0 +1,61 @@
+# INPUT DATA:
+
+# TEST_1:
+abs_path = '/sandbox/desktop'
+paths = ['/sandbox/desktop/earth.jpg', 
+         '/sandbox/desktop/fun',
+         '/sandbox/desktop/games',
+         '/sandbox/desktop/images',
+         '/sandbox/desktop/python.pdf',
+         '/sandbox/desktop/shopping_list.txt',
+         '/sandbox/desktop/studying',
+         '/sandbox/desktop/test.py']
+
+print(relative(abs_path, paths))
+
+# TEST_2:
+abs_path = '/sandbox/desktop'
+paths = ['/sandbox/module_os/Картинки/1.jpg', 
+         'desktop/fun/movies',
+         '/sandbox/desktop/fun/songs',
+         'desktop/games',
+         '/sandbox/desktop/fun/songs/Alexandra Savior Crying All the Time.mp3']
+
+print(relative(abs_path, paths))
+
+# TEST_3:
+abs_path = '/sandbox/desktop'
+paths = ['/sandbox/desktop/earth.jpg', 'desktop/studying/homework.py', 'data/player23.json',
+         '/sandbox/desktop/studying/data_sets/task_results.xlsx', 'module_os/Разные файлы/astros.json',
+         'desktop/studying/data_sets/readme.txt', 'module_os/Картинки/Скриншоты/Снимок экрана.png',
+         'module_os/Картинки/certificate.png', '/sandbox/desktop/studying/data_sets/data_sample.csv',
+         '/sandbox/desktop/games/not released/Hollow Knight Silksong.exe', 'desktop/test.py',
+         '/sandbox/desktop/fun/songs/Alexandra Savior Crying All the Time.mp3', '/sandbox/data/player2.json',
+         'desktop/studying/data_sets/countries.json', 'desktop/studying/exam.txt', '/sandbox/desktop/images/stepik.png',
+         '/sandbox/module_os/Неравенства.djvu', 'desktop/games/Psychonauts 2.exe', '/sandbox/data/player.json',
+         '/sandbox/desktop/studying/books/how to prove.pdf', '/sandbox/module_os/Картинки/py.png',
+         'module_os/Картинки/World_Time_Zones_Map.png', '/sandbox/module_os/Программы/image_util.py',
+         'module_os/Программы/sort.py', 'desktop/python.pdf', '/sandbox/desktop/studying/fipi_demo_2022.pdf',
+         'desktop/studying/data_sets/fonts/fontlist-v330.json', '/sandbox/desktop/shopping_list.txt',
+         'module_os/Картинки/1.jpg', 'desktop/images/code.jpeg']
+
+print(relative(abs_path, paths))
+
+# TEST_4:
+abs_path = '/sandbox/module_os'
+paths = ['/sandbox/desktop/earth.jpg', 'desktop/studying/homework.py', 'data/player23.json',
+         '/sandbox/desktop/studying/data_sets/task_results.xlsx', 'module_os/Разные файлы/astros.json',
+         'desktop/studying/data_sets/readme.txt', 'module_os/Картинки/Скриншоты/Снимок экрана.png',
+         'module_os/Картинки/certificate.png', '/sandbox/desktop/studying/data_sets/data_sample.csv',
+         '/sandbox/desktop/games/not released/Hollow Knight Silksong.exe', 'desktop/test.py',
+         '/sandbox/desktop/fun/songs/Alexandra Savior Crying All the Time.mp3', '/sandbox/data/player2.json',
+         'desktop/studying/data_sets/countries.json', 'desktop/studying/exam.txt', '/sandbox/desktop/images/stepik.png',
+         '/sandbox/module_os/Неравенства.djvu', 'desktop/games/Psychonauts 2.exe', '/sandbox/data/player.json',
+         '/sandbox/desktop/studying/books/how to prove.pdf', '/sandbox/module_os/Картинки/py.png',
+         'module_os/Картинки/World_Time_Zones_Map.png', '/sandbox/module_os/Программы/image_util.py',
+         'module_os/Программы/sort.py', 'desktop/python.pdf', '/sandbox/desktop/studying/fipi_demo_2022.pdf',
+         'desktop/studying/data_sets/fonts/fontlist-v330.json', '/sandbox/desktop/shopping_list.txt',
+         'module_os/Картинки/1.jpg', 'desktop/images/code.jpeg']
+
+print(relative(abs_path, paths))
+
