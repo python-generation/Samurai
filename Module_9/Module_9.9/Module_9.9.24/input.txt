@@ -1,0 +1,60 @@
+# INPUT DATA:
+
+# TEST_1:
+print(get_full_distance())
+
+# TEST_2:
+sql =  '''
+INSERT INTO Rides (user_id, distance)
+VALUES (1, 6446),
+       (4, 6833),
+       (7, 3117),
+       (10, 5499),
+       (6, 5918),
+       (2, 3117),
+       (9, 5516),
+       (5, 5837),
+       (2, 6808),
+       (8, 3373);
+'''
+
+conn = sqlite3.connect('StepTracker.db')
+cursor = conn.cursor()
+cursor.execute('DELETE FROM Rides;')
+cursor.execute("DELETE FROM sqlite_sequence WHERE name='Rides';")
+cursor.execute(sql)
+conn.commit()
+
+print(get_full_distance())
+
+cursor.close()
+conn.close()
+
+# TEST_3:
+sql =  '''
+INSERT INTO Rides (user_id, distance)
+VALUES (2, 5568),
+       (8, 5932),
+       (4, 4768),
+       (4, 6847),
+       (10, 4523),
+       (6, 5303),
+       (7, 5320),
+       (2, 4800),
+       (3, 4953),
+       (5, 3648);
+
+'''
+
+conn = sqlite3.connect('StepTracker.db')
+cursor = conn.cursor()
+cursor.execute('DELETE FROM Rides;')
+cursor.execute("DELETE FROM sqlite_sequence WHERE name='Rides';")
+cursor.execute(sql)
+conn.commit()
+
+print(get_full_distance())
+
+cursor.close()
+conn.close()
+

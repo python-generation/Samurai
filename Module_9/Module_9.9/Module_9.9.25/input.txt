@@ -1,0 +1,41 @@
+# INPUT DATA:
+
+# TEST_1:
+print(evaluate_expressions())
+
+# TEST_2:
+sql =  '''
+INSERT INTO Variables (name, value)
+VALUES ('a', 189),
+       ('b', 250);
+'''
+
+conn = sqlite3.connect('CleverStudents.db')
+cursor = conn.cursor()
+cursor.execute('DELETE FROM Variables;')
+cursor.execute(sql)
+conn.commit()
+
+print(evaluate_expressions())
+
+cursor.close()
+conn.close()
+
+# TEST_3:
+sql =  '''
+INSERT INTO Variables (name, value)
+VALUES ('a', 0),
+       ('b', 0);
+'''
+
+conn = sqlite3.connect('CleverStudents.db')
+cursor = conn.cursor()
+cursor.execute('DELETE FROM Variables;')
+cursor.execute(sql)
+conn.commit()
+
+print(evaluate_expressions())
+
+cursor.close()
+conn.close()
+

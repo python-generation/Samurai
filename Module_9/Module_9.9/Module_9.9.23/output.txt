@@ -1,0 +1,11 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['Computer', 'English', 'Math']
+
+# TEST_2:
+[]
+
+# TEST_3:
+['Math']
+

@@ -1,0 +1,38 @@
+# OUTPUT DATA:
+
+# TEST_1:
+wwalker. Пройдено 19955 м.
+sampsonkimberly. Пройдено 14226 м.
+matthew86. Пройдено 12431 м.
+phillipstimothy. Пройдено 8162 м.
+mtrujillo. Пройдено 6218 м.
+tammy53. Пройдено 6109 м.
+william56. Пройдено 4367 м.
+amanda32. Пройдено 0 м.
+cartervictoria. Пройдено 0 м.
+johnsonmichael. Пройдено 0 м.
+
+# TEST_2:
+william56. Пройдено 9925 м.
+matthew86. Пройдено 6833 м.
+wwalker. Пройдено 6446 м.
+mtrujillo. Пройдено 5918 м.
+phillipstimothy. Пройдено 5837 м.
+tammy53. Пройдено 5516 м.
+cartervictoria. Пройдено 5499 м.
+sampsonkimberly. Пройдено 3373 м.
+amanda32. Пройдено 3117 м.
+johnsonmichael. Пройдено 0 м.
+
+# TEST_3:
+matthew86. Пройдено 11615 м.
+william56. Пройдено 10368 м.
+sampsonkimberly. Пройдено 5932 м.
+amanda32. Пройдено 5320 м.
+mtrujillo. Пройдено 5303 м.
+johnsonmichael. Пройдено 4953 м.
+cartervictoria. Пройдено 4523 м.
+phillipstimothy. Пройдено 3648 м.
+tammy53. Пройдено 0 м.
+wwalker. Пройдено 0 м.
+

@@ -1,0 +1,11 @@
+# OUTPUT DATA:
+
+# TEST_1:
+[('India', 'Asia'), ('Indonesia', 'Asia'), ('Ireland', 'Europe'), ('Israel', 'Asia'), ('Jersey', 'Europe'), ('Jordan', 'Asia'), ('Kazakhstan', 'Asia'), ('Kenya', 'Africa'), ('Kiribati', 'Oceania'), ('Kuwait', 'Asia'), ('Kyrgyzstan', 'Asia'), ('Russia', 'Europe')]
+
+# TEST_2:
+[('India', 'Asia'), ('Ireland', 'Europe'), ('Jordan', 'Asia'), ('Kenya', 'Africa'), ('Kyrgyzstan', 'Asia'), ('Russia', 'Europe')]
+
+# TEST_3:
+[('Indonesia', 'Asia'), ('Israel', 'Asia'), ('Jersey', 'Europe'), ('Kazakhstan', 'Asia'), ('Kiribati', 'Oceania'), ('Kuwait', 'Asia')]
+

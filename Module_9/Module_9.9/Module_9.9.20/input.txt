@@ -1,0 +1,57 @@
+# INPUT DATA:
+
+# TEST_1:
+print(get_countries())
+
+# TEST_2:
+sql =  '''
+INSERT INTO Countries (name, continent, area, population)
+VALUES ('Russia', 'Europe', 2259755, 20217194),
+       ('India', 'Asia', 977388, 15006874),
+       ('Iran', 'Asia', 154116, 5159120),
+       ('Ireland', 'Europe', 848972, 35421289),
+       ('Italy', 'Europe', 829713, 6163666),
+       ('Japan', 'Asia', 1927404, 6591379),
+       ('Jordan', 'Asia', 2066759, 28566620),
+       ('Kenya', 'Africa', 1405874, 20828713),
+       ('Kosovo', 'Europe', 280612, 9969562),
+       ('Kyrgyzstan', 'Asia', 291254, 33522371);
+'''
+
+conn = sqlite3.connect('Wiki.db')
+cursor = conn.cursor()
+cursor.execute('DELETE FROM Countries;')
+cursor.execute(sql)
+conn.commit()
+
+print(get_countries())
+
+cursor.close()
+conn.close()
+
+# TEST_3:
+sql =  '''
+INSERT INTO Countries (name, continent, area, population)
+VALUES ('Iceland', 'Europe', 2000000, 4899198),
+       ('Indonesia', 'Asia', 1978388, 29990280),
+       ('Iraq', 'Asia', 316347, 14528805),
+       ('Israel', 'Asia', 1686278, 17751549),
+       ('Jamaica', 'Americas', 906750, 15000000),
+       ('Jersey', 'Europe', 2117703, 35592399),
+       ('Kazakhstan', 'Asia', 2045815, 12355207),
+       ('Kiribati', 'Oceania', 1772875, 21869997),
+       ('Kuwait', 'Asia', 140155, 29354166),
+       ('Laos', 'Asia', 1489182, 11008866);
+'''
+
+conn = sqlite3.connect('Wiki.db')
+cursor = conn.cursor()
+cursor.execute('DELETE FROM Countries;')
+cursor.execute(sql)
+conn.commit()
+
+print(get_countries())
+
+cursor.close()
+conn.close()
+

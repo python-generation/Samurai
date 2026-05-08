@@ -1,0 +1,50 @@
+# INPUT DATA:
+
+# TEST_1:
+print(get_favorite_subjects())
+
+# TEST_2:
+sql =  '''
+INSERT INTO Classes (class)
+VALUES ('Computer'),
+       ('Math'),
+       ('Math'),
+       ('Biology'),
+       ('Computer');
+'''
+
+conn = sqlite3.connect('EmpireState.db')
+cursor = conn.cursor()
+cursor.execute('DELETE FROM Classes;')
+cursor.execute("DELETE FROM sqlite_sequence WHERE name='Classes';")
+cursor.execute(sql)
+conn.commit()
+
+print(get_favorite_subjects())
+
+cursor.close()
+conn.close()
+
+# TEST_3:
+sql =  '''
+INSERT INTO Classes (class)
+VALUES ('Math'),
+       ('English'),
+       ('Math'),
+       ('Math'),
+       ('Computer'),
+       ('Biology');
+'''
+
+conn = sqlite3.connect('EmpireState.db')
+cursor = conn.cursor()
+cursor.execute('DELETE FROM Classes;')
+cursor.execute("DELETE FROM sqlite_sequence WHERE name='Classes';")
+cursor.execute(sql)
+conn.commit()
+
+print(get_favorite_subjects())
+
+cursor.close()
+conn.close()
+

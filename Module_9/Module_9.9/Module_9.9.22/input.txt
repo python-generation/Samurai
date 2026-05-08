@@ -1,0 +1,47 @@
+# INPUT DATA:
+
+# TEST_1:
+print(get_count_unique_subject())
+
+# TEST_2:
+sql =  '''
+INSERT INTO Teachers (id, subject_id, dept_id)
+VALUES (4, 1, 1),
+       (2, 2, 1),
+       (1, 2, 1),
+       (5, 1, 5),
+       (3, 2, 1),
+       (5, 2, 3),
+       (1, 3, 1);
+'''
+
+conn = sqlite3.connect('EmpireState.db')
+cursor = conn.cursor()
+cursor.execute('DELETE FROM Teachers;')
+cursor.execute(sql)
+conn.commit()
+
+print(get_count_unique_subject())
+
+cursor.close()
+conn.close()
+
+# TEST_3:
+sql =  '''
+INSERT INTO Teachers (id, subject_id, dept_id)
+VALUES (2, 3, 1),
+       (3, 4, 1),
+       (2, 4, 5);
+'''
+
+conn = sqlite3.connect('EmpireState.db')
+cursor = conn.cursor()
+cursor.execute('DELETE FROM Teachers;')
+cursor.execute(sql)
+conn.commit()
+
+print(get_count_unique_subject())
+
+cursor.close()
+conn.close()
+
