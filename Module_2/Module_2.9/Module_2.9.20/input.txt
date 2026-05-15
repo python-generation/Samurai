@@ -26,7 +26,7 @@ library.add_book("Мастер и Маргарита")
 
 try:
     library.return_book("Война и мир")
-except (ValueError, BookNotBorrowedError) as e:
+except (BookNotFoundError, BookNotBorrowedError) as e:
     print(e)
 
 # TEST_4:
@@ -36,7 +36,7 @@ library.add_book("Война и мир")
 
 try:
     library.borrow_book("Грокаем алгоритмы")
-except (ValueError, BookNotAvailableError) as e:
+except (BookNotFoundError, BookNotAvailableError) as e:
     print(e)
 
 # TEST_5:
@@ -60,12 +60,12 @@ except BookNotBorrowedError as e:
 
 try:
     library.return_book("Война и мир")
-except (ValueError, BookNotBorrowedError) as e:
+except (BookNotFoundError, BookNotBorrowedError) as e:
     print(e)
     
 try:
     library.borrow_book("Дон Кихот")
-except (ValueError, BookNotAvailableError) as e:
+except (BookNotFoundError, BookNotAvailableError) as e:
     print(e)
     
 library.add_book("Одиссея")
