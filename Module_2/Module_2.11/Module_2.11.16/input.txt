@@ -8,7 +8,9 @@ persons = [
     {'name': 'Rustam', 'age': 23}
 ]
 
-print(validate(persons))    # имя и возраст всех людей списка persons являются корректными
+# имя и возраст всех людей списка persons являются корректными
+
+print(validate_many(persons))
 
 # TEST_2:
 persons = [
@@ -18,11 +20,16 @@ persons = [
     {'name': 'Rustam', 'age': 180}
 ]
 
+# проверка некоторых имен и возрастов
+# приводит к возбуждению исключения,
+# в результате чего будет создана и возбуждена
+# группа со всеми этими исключениями
+
 try:
-    print(validate(persons))        # проверка некоторых имен и возрастов
-except ExceptionGroup as e:         # привела к возбуждению исключения,
-    print(e)                        # в результате чего была создана и возбуждена
-    print(e.exceptions)             # группа со всеми этими исключениями
+    print(validate_many(persons))
+except ExceptionGroup as e:
+    print(e)                             
+    print(e.exceptions)
 
 # TEST_3:
 persons = [
@@ -32,7 +39,7 @@ persons = [
 ]
 
 try:
-    print(validate(persons))
+    print(validate_many(persons))
 except ExceptionGroup as e:
     print(e)
     print(e.exceptions)
@@ -46,7 +53,7 @@ persons = [
 ]
 
 try:
-    print(validate(persons))
+    print(validate_many(persons))
 except ExceptionGroup as e:
     print(e)
     print(e.exceptions)
@@ -59,7 +66,7 @@ persons = [
 ]
 
 try:
-    print(validate(persons))
+    print(validate_many(persons))
 except ExceptionGroup as e:
     print(e)
     print(e.exceptions)
@@ -70,7 +77,7 @@ persons = [
 ]
 
 try:
-    print(validate(persons))
+    print(validate_many(persons))
 except ExceptionGroup as e:
     print(e)
     print(e.exceptions)
@@ -82,7 +89,7 @@ persons = [
 ]
 
 try:
-    print(validate(persons))
+    print(validate_many(persons))
 except ExceptionGroup as e:
     print(e)
     print(e.exceptions)
@@ -95,7 +102,7 @@ persons = [
 ]
 
 try:
-    print(validate(persons))
+    print(validate_many(persons))
 except ExceptionGroup as e:
     print(e)
     print(e.exceptions)
