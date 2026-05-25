@@ -121,3 +121,6 @@ try:
 except AttributeError as e:
     print(e)
 
+# TEST_13:
+print(Task.total_tasks)
+

@@ -53,3 +53,6 @@ Completed
 # TEST_12:
 Невозможно создать атрибут total_tasks.
 
+# TEST_13:
+0
+
