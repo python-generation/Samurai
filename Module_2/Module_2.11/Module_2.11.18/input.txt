@@ -1,0 +1,62 @@
+# INPUT DATA:
+
+# TEST_1:
+passwords = ['xsvxnDrHfA0IdnXcHU0E', 'ZEu403e16VSz3ZPdSkuigC6u0RPu49', 'ZEu403e1']
+print(validate_passwords(passwords))
+
+# TEST_2:
+passwords = ['1Aa', '1Aafffffff', 'fffffffffffffffff', 123]
+
+try:
+    validate_passwords(passwords)
+except ExceptionGroup as grp:
+    for exc in grp.exceptions:
+        print(exc, exc.__notes__)
+
+# TEST_3:
+passwords = ['beegeek']
+
+try:
+    validate_passwords(passwords)
+except ExceptionGroup as grp:
+    print(grp.message)
+
+# TEST_4:
+passwords = ['', {1: 'one'}, '12345678', (1, 2, 3)]
+
+try:
+    validate_passwords(passwords)
+except* TypeError as grp:
+    print('Заметки TypeError:')
+
+    for exc in grp.exceptions:
+        print(exc.__notes__)
+
+    print()
+except* PasswordTooShortError as grp:
+    print('Заметки PasswordTooShortError:')
+
+    for exc in grp.exceptions:
+        print(exc.__notes__)
+
+    print()
+except* NoDigitsError as grp:
+    print('Заметки NoDigitsError:')
+
+    for exc in grp.exceptions:
+        print(exc.__notes__)
+
+    print()
+except* NoLowerCaseError as grp:
+    print('Заметки NoLowerCaseError:')
+
+    for exc in grp.exceptions:
+        print(exc.__notes__)
+
+    print()
+except* NoUpperCaseError as grp:
+    print('Заметки NoUpperCaseError:')
+
+    for exc in grp.exceptions:
+        print(exc.__notes__)
+

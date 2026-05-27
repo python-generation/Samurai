@@ -1,0 +1,38 @@
+# OUTPUT DATA:
+
+# TEST_1:
+[5.0, 10.0, 2.0]
+
+# TEST_2:
+invalid literal for int() with base 10: '11.2' <class 'ValueError'>
+["Ошибка обработки строки '11.2'"]
+division by zero <class 'ZeroDivisionError'>
+["Ошибка обработки строки '0'"]
+Нельзя извлечь корень из отрицательного числа -5 <class '__main__.NegativeResultError'>
+["Ошибка обработки строки '-5'"]
+
+# TEST_3:
+Во время обработки строк произошло несколько ошибок
+Ошибки преобразования
+Ошибки арифметических операций
+
+# TEST_4:
+(ExceptionGroup('Ошибки арифметических операций', [ZeroDivisionError('division by zero'), NegativeResultError('Нельзя извлечь корень из отрицательного числа -5')]),)
+
+# TEST_5:
+(ExceptionGroup('Ошибки преобразования', [ValueError("invalid literal for int() with base 10: 'bee'"), ValueError("invalid literal for int() with base 10: '123;'")]),)
+
+# TEST_6:
+[0.5, 0.25, 0.125]
+
+# TEST_7:
+Группа ошибок преобразования:
+<class 'ValueError'> ["Ошибка обработки строки 'bee'"]
+<class 'ValueError'> ["Ошибка обработки строки '[]'"]
+
+Группа арифметических ошибок:
+<class '__main__.NegativeResultError'> ["Ошибка обработки строки '-5'"]
+<class 'ZeroDivisionError'> ["Ошибка обработки строки '0'"]
+<class '__main__.NegativeResultError'> ["Ошибка обработки строки '-99'"]
+<class '__main__.NegativeResultError'> ["Ошибка обработки строки '-52'"]
+
