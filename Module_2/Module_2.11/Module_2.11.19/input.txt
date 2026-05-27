@@ -52,3 +52,24 @@ except ExceptionGroup as grp:
     for exc in arithmetic_errors.exceptions:
         print(type(exc), exc.__notes__)
 
+# TEST_8:
+try:
+    convert(['0'])
+except ExceptionGroup as full_exc_grp:
+    for grp in full_exc_grp.exceptions:
+        print(grp.exceptions)
+
+# TEST_9:
+try:
+    convert(['-1'])
+except ExceptionGroup as full_exc_grp:
+    for grp in full_exc_grp.exceptions:
+        print(grp.exceptions)
+
+# TEST_10:
+try:
+    convert(['3.14159'])
+except ExceptionGroup as full_exc_grp:
+    for grp in full_exc_grp.exceptions:
+        print(grp.exceptions)
+

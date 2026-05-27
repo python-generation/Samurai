@@ -60,3 +60,11 @@ except* NoUpperCaseError as grp:
     for exc in grp.exceptions:
         print(exc.__notes__)
 
+# TEST_5:
+passwords = ['PaSsWoRd']
+
+try:
+    validate_passwords(passwords)
+except ExceptionGroup as e:
+    print(e.exceptions)
+

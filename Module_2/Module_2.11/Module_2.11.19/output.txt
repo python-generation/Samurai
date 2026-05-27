@@ -36,3 +36,12 @@ division by zero <class 'ZeroDivisionError'>
 <class '__main__.NegativeResultError'> ["Ошибка обработки строки '-99'"]
 <class '__main__.NegativeResultError'> ["Ошибка обработки строки '-52'"]
 
+# TEST_8:
+(ZeroDivisionError('division by zero'),)
+
+# TEST_9:
+(NegativeResultError('Нельзя извлечь корень из отрицательного числа -1'),)
+
+# TEST_10:
+(ValueError("invalid literal for int() with base 10: '3.14159'"),)
+
