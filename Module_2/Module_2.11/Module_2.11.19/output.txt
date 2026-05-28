@@ -8,7 +8,7 @@ invalid literal for int() with base 10: '11.2' <class 'ValueError'>
 ["Ошибка обработки строки '11.2'"]
 division by zero <class 'ZeroDivisionError'>
 ["Ошибка обработки строки '0'"]
-Нельзя извлечь корень из отрицательного числа -5 <class '__main__.NegativeResultError'>
+Нельзя извлечь корень из отрицательного числа -20.0 <class '__main__.NegativeResultError'>
 ["Ошибка обработки строки '-5'"]
 
 # TEST_3:
@@ -17,7 +17,7 @@ division by zero <class 'ZeroDivisionError'>
 Ошибки арифметических операций
 
 # TEST_4:
-(ExceptionGroup('Ошибки арифметических операций', [ZeroDivisionError('division by zero'), NegativeResultError('Нельзя извлечь корень из отрицательного числа -5')]),)
+(ExceptionGroup('Ошибки арифметических операций', [ZeroDivisionError('division by zero'), NegativeResultError('Нельзя извлечь корень из отрицательного числа -20.0')]),)
 
 # TEST_5:
 (ExceptionGroup('Ошибки преобразования', [ValueError("invalid literal for int() with base 10: 'bee'"), ValueError("invalid literal for int() with base 10: '123;'")]),)
@@ -40,7 +40,7 @@ division by zero <class 'ZeroDivisionError'>
 (ZeroDivisionError('division by zero'),)
 
 # TEST_9:
-(NegativeResultError('Нельзя извлечь корень из отрицательного числа -1'),)
+(NegativeResultError('Нельзя извлечь корень из отрицательного числа -100.0'),)
 
 # TEST_10:
 (ValueError("invalid literal for int() with base 10: '3.14159'"),)
