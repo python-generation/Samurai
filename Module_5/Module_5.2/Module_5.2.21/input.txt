@@ -68,3 +68,7 @@ email_list = ['maksim@hotmail.com', 'pavel@hotmail.com', 'taisija@hotmail.com', 
 
 print([send_email(email, 'Текст 1!', 'Текст 2?') for email in email_list])
 
+# TEST_19:
+print(send_email('[\\]^_`@pygen.ru', 'Решение задач', 'Моя программа не работает, помогите'))
+print(send_email('[\\]^_`@[\\]^_`.[\\]^_`', 'Решение задач', 'Моя программа не работает, помогите'))
+
