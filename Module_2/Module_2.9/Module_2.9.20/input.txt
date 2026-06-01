@@ -77,3 +77,15 @@ except BookNotBorrowedError as e:
 
 library.add_book("В поисках утраченного времени")
 
+# TEST_6:
+library = Library()
+library.add_book("Грокаем алгоритмы")
+library.borrow_book("Грокаем алгоритмы")
+library.return_book("Грокаем алгоритмы")
+library.borrow_book("Грокаем алгоритмы")
+
+try:
+    library.borrow_book("Грокаем алгоритмы")
+except BookNotAvailableError as e:
+    print(e)
+
