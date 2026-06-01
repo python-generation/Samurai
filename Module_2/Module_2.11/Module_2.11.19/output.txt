@@ -1,47 +1,46 @@
 # OUTPUT DATA:
 
 # TEST_1:
-[5.0, 10.0, 2.0]
+[0.5, 0.8]
 
 # TEST_2:
-invalid literal for int() with base 10: '11.2' <class 'ValueError'>
-["Ошибка обработки строки '11.2'"]
-division by zero <class 'ZeroDivisionError'>
-["Ошибка обработки строки '0'"]
-Нельзя извлечь корень из отрицательного числа -20.0 <class '__main__.NegativeResultError'>
-["Ошибка обработки строки '-5'"]
+Группа наиболее распространенных ошибок при вызове функции add()
+(ExceptionGroup('Группа ошибок типа TypeError', [TypeError("unsupported operand type(s) for /: 'int' and 'str'"), TypeError('add() takes 2 positional arguments but 3 were given')]),)
 
 # TEST_3:
-Во время обработки строк произошло несколько ошибок
-Ошибки преобразования
-Ошибки арифметических операций
+Группа ошибок типа ValueError
+(ValueError("invalid literal for int() with base 10: '3.14159'"), ValueError("invalid literal for int() with base 10: '1.2'"))
+
+Группа ошибок типа TypeError
+(TypeError("int() argument must be a string, a bytes-like object or a real number, not 'dict'"), TypeError("int() argument must be a string, a bytes-like object or a real number, not 'tuple'"))
 
 # TEST_4:
-(ExceptionGroup('Ошибки арифметических операций', [ZeroDivisionError('division by zero'), NegativeResultError('Нельзя извлечь корень из отрицательного числа -20.0')]),)
+[]
 
 # TEST_5:
-(ExceptionGroup('Ошибки преобразования', [ValueError("invalid literal for int() with base 10: 'bee'"), ValueError("invalid literal for int() with base 10: '123;'")]),)
+[True, False, False, True]
 
 # TEST_6:
-[0.5, 0.25, 0.125]
+(ExceptionGroup('Группа ошибок типа ZeroDivisionError', [ZeroDivisionError('division by zero')]),)
 
 # TEST_7:
-Группа ошибок преобразования:
-<class 'ValueError'> ["Ошибка обработки строки 'bee'"]
-<class 'ValueError'> ["Ошибка обработки строки '[]'"]
+Группа ошибок типа TypeError
+(TypeError("int() argument must be a string, a bytes-like object or a real number, not 'tuple'"), TypeError("int() argument must be a string, a bytes-like object or a real number, not 'dict'"))
 
-Группа арифметических ошибок:
-<class '__main__.NegativeResultError'> ["Ошибка обработки строки '-5'"]
-<class 'ZeroDivisionError'> ["Ошибка обработки строки '0'"]
-<class '__main__.NegativeResultError'> ["Ошибка обработки строки '-99'"]
-<class '__main__.NegativeResultError'> ["Ошибка обработки строки '-52'"]
+Группа ошибок типа ValueError
+(ValueError("invalid literal for int() with base 10: '1.2'"), ValueError("invalid literal for int() with base 10: '3.14159'"))
 
 # TEST_8:
-(ZeroDivisionError('division by zero'),)
+Группа ошибок типа RecursionError
+(RecursionError('maximum recursion depth exceeded'),)
+
+Группа ошибок типа TypeError
+(TypeError("'<=' not supported between instances of 'str' and 'int'"),)
 
 # TEST_9:
-(NegativeResultError('Нельзя извлечь корень из отрицательного числа -100.0'),)
+[5, 13, 89, 6765, 832040, 102334155]
 
 # TEST_10:
-(ValueError("invalid literal for int() with base 10: '3.14159'"),)
+Группа ошибок типа TypeError
+(TypeError("'<=' not supported between instances of 'str' and 'int'"), TypeError("'<=' not supported between instances of 'str' and 'int'"), TypeError("'<=' not supported between instances of 'str' and 'int'"), TypeError("'<=' not supported between instances of 'str' and 'int'"))
 

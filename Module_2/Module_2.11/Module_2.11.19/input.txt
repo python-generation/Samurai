@@ -1,75 +1,120 @@
 # INPUT DATA:
 
 # TEST_1:
-print(convert(['4', '1', '25']))
+def add(a, b):
+    return a / b
+
+args = [(1, 2), (4, 5)]
+
+print(most_common_error(add, args))
 
 # TEST_2:
-try:
-    convert(['123', '0', '-5', '11.2'])
-except ExceptionGroup as full_exc_grp:
-    for exc_grp in full_exc_grp.exceptions:
-        for exc in exc_grp.exceptions:
-            print(exc, type(exc))
-            print(exc.__notes__)
+def add(a, b):
+    return a / b
 
-# TEST_3:
-try:
-    convert(['123', '0', '-5', '11.2'])
-except ExceptionGroup as full_exc_grp:
-    print(full_exc_grp.message)
-    
-    for exc_grp in full_exc_grp.exceptions:
-        print(exc_grp.message)
+args = [(1, '2',), (4, 0), (1, 2, 3)]
 
-# TEST_4:
 try:
-    convert(['123', '0', '-5'])
-except ExceptionGroup as full_exc_grp:
-    print(full_exc_grp.exceptions)
-
-# TEST_5:
-try:
-    convert(['bee', '123;'])
-except ExceptionGroup as full_exc_grp:
-    print(full_exc_grp.exceptions)
-
-# TEST_6:
-print(convert(['+400', '1600', '6400']))
-
-# TEST_7:
-try:
-    convert(['bee', '-5', '11', '0', '[]', '-99', '-52'])
+    print(most_common_error(add, args))
 except ExceptionGroup as grp:
-    conversion_errors, arithmetic_errors = grp.exceptions
-
-    print('Группа ошибок преобразования:')
-    for exc in conversion_errors.exceptions:
-        print(type(exc), exc.__notes__)
-
+    print(grp.message)
+    print(grp.exceptions)
     print()
 
-    print('Группа арифметических ошибок:')
-    for exc in arithmetic_errors.exceptions:
-        print(type(exc), exc.__notes__)
+# TEST_3:
+args = [('3.14159',), ({},), ((1, 2),), ('1.2',)]
+
+try:
+    print(most_common_error(int, args))
+except ExceptionGroup as full_exc_grp:
+    for grp in full_exc_grp.exceptions:
+        print(grp.message)
+        print(grp.exceptions)
+        print()
+
+# TEST_4:
+args = []
+print(most_common_error(bool, args))
+
+# TEST_5:
+args = [(1,), ('',), ([],), ('beegeek',)]
+print(most_common_error(bool, args))
+
+# TEST_6:
+def add(a, b):
+    return a / b
+
+args = [(1, 0)]
+
+try:
+    print(most_common_error(add, args))
+except ExceptionGroup as grp:
+    print(grp.exceptions)
+
+# TEST_7:
+args = [((1, 2),), ({},), ('1.2',), ('3.14159',)]
+
+try:
+    print(most_common_error(int, args))
+except ExceptionGroup as full_exc_grp:
+    for grp in full_exc_grp.exceptions:
+        print(grp.message)
+        print(grp.exceptions)
+        print()
 
 # TEST_8:
+from functools import lru_cache
+
+@lru_cache()
+def fibonacci(n):
+    if n <= 2:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+args = [(1000,), ('beegeek',)]
+
 try:
-    convert(['0'])
+    print(most_common_error(fibonacci, args))
 except ExceptionGroup as full_exc_grp:
     for grp in full_exc_grp.exceptions:
+        print(grp.message)
         print(grp.exceptions)
+        print()
 
 # TEST_9:
-try:
-    convert(['-1'])
-except ExceptionGroup as full_exc_grp:
-    for grp in full_exc_grp.exceptions:
-        print(grp.exceptions)
+from functools import lru_cache
+
+@lru_cache()
+def fibonacci(n):
+    if n <= 2:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+args = [(5,), (7,), (11,), (20,), (30,), (40,)]
+print(most_common_error(fibonacci, args))
 
 # TEST_10:
+from functools import lru_cache
+
+@lru_cache()
+def fibonacci(n):
+    if n <= 2:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+args = [('5',), ('7',), ('11',), ('20',), (1000,), (2000,), (3000,)]
+
 try:
-    convert(['3.14159'])
+    print(most_common_error(fibonacci, args))
 except ExceptionGroup as full_exc_grp:
     for grp in full_exc_grp.exceptions:
+        print(grp.message)
         print(grp.exceptions)
+        print()
 
