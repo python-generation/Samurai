@@ -5,7 +5,7 @@ print(color_mixer('красный', 'синий'))
 
 # TEST_2:
 try:
-    print(color_mixer('красный', 'блаблабла'))
+    color_mixer('красный', 'блаблабла')
 except ValueError as e:
     print(e)
 
@@ -26,37 +26,37 @@ print(color_mixer('желтый', 'синий'))
 
 # TEST_8:
 try:
-    print(color_mixer('укакуук', 'красный'))
+    color_mixer('укакуук', 'красный')
 except ValueError as e:
     print(e)
 
 # TEST_9:
 try:
-    print(color_mixer('ошибка', 'цвета'))
+    color_mixer('ошибка', 'цвета')
 except ValueError as e:
     print(e)
 
 # TEST_10:
 try:
-    print(color_mixer('желтый', 'блабла90'))
+    color_mixer('желтый', 'блабла90')
 except ValueError as e:
     print(e)
 
 # TEST_11:
 try:
-    print(color_mixer('оаволуалйц', 'желтый'))
+    color_mixer('оаволуалйц', 'желтый')
 except ValueError as e:
     print(e)
 
 # TEST_12:
 try:
-    print(color_mixer('синий', 'лолцйуцуац'))
+    color_mixer('синий', 'лолцйуцуац')
 except ValueError as e:
     print(e)
 
 # TEST_13:
 try:
-    print(color_mixer('лсьукльсуд', 'синий'))
+    color_mixer('лсьукльсуд', 'синий')
 except ValueError as e:
     print(e)
 
@@ -71,25 +71,25 @@ print(color_mixer('желтый', 'желтый'))
 
 # TEST_17:
 try:
-    print(color_mixer('питон', 'питон'))
+    color_mixer('питон', 'питон')
 except ValueError as e:
     print(e)
 
 # TEST_18:
 try:
-    print(color_mixer('оранжевый', 'оранжевый'))
+    color_mixer('оранжевый', 'оранжевый')
 except ValueError as e:
     print(e)
 
 # TEST_19:
 try:
-    print(color_mixer('зеленый', 'зеленый'))
+    color_mixer('зеленый', 'зеленый')
 except ValueError as e:
     print(e)
 
 # TEST_20:
 try:
-    print(color_mixer('фиолетовый', 'фиолетовый'))
+    color_mixer('фиолетовый', 'фиолетовый')
 except ValueError as e:
     print(e)
 
