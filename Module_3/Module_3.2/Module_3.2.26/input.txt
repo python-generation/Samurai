@@ -17,16 +17,10 @@ person = {'name': None, 'age': None}
 print(person_info(person))
 
 # TEST_5:
-person = {'name': 'Timur', 'age': 32}
+person = {'name': 'Ivan', 'age': 36}
 print(person_info(person))
 
-person = {'name': None, 'age': 32}
-print(person_info(person))
-
-person = {'name': 'Timur', 'age': None}
-print(person_info(person))
-
-person = {'name': None, 'age': None}
+person = {'name': 'Ivan', 'age': None}
 print(person_info(person))
 
 # TEST_6:
@@ -58,4 +52,25 @@ print(person_info(person))
 
 person = {'name': 'Rustam', 'age': None}
 print(person_info(person))
+
+# TEST_9:
+person = {'name': 'Timur', 'age': 32}
+print(person_info(person))
+
+person = {'name': None, 'age': 32}
+print(person_info(person))
+
+person = {'name': 'Timur', 'age': None}
+print(person_info(person))
+
+person = {'name': None, 'age': None}
+print(person_info(person))
+
+# TEST_10:
+names = ['Andrey', None, 'Petr', 'Vladimir', 'Nastya']
+ages = [35, 22, None, 18, 29]
+
+for name, age in zip(names, ages):
+    person = {'name': name, 'age': age}
+    print(person_info(person))
 
