@@ -60,3 +60,13 @@ except AlreadyLoggedInError as e:
 
 user.logout()
 
+# TEST_8:
+user = User('Timur', 'secure123')
+user.login('secure123')
+user.logout()
+
+try:
+    user.logout()
+except NotLoggedInError as e:
+    print(e)
+
