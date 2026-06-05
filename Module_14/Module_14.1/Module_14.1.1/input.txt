@@ -1,0 +1,44 @@
+# INPUT DATA:
+
+# TEST_1:
+print(string_power('beegeeek'))
+
+# TEST_2:
+print(string_power('python'))
+
+# TEST_3:
+print(string_power('aabbbbaaaa'))
+
+# TEST_4:
+print(string_power('eeeeeeeeeeeeeeeeeeeeeee'))
+
+# TEST_5:
+print(string_power('e'))
+
+# TEST_6:
+print(string_power('aabbcc'))
+
+# TEST_7:
+print(string_power('aabaaabaaaaacccaaaabcc'))
+
+# TEST_8:
+print(string_power('abcccc'))
+
+# TEST_9:
+print(string_power('aaaabbccc'))
+
+# TEST_10:
+print(string_power('abababacab'))
+
+# TEST_11:
+print(string_power('abaababbbacaab'))
+
+# TEST_12:
+print(string_power('a' * 300 + 'b' * 400 + 'c' * 300))
+
+# TEST_13:
+print(string_power('a' * 200 + 'b' * 300 + 'c' * 500))
+
+# TEST_14:
+print(string_power('a' * 1000))
+

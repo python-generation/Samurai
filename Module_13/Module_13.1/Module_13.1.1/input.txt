@@ -1,0 +1,27 @@
+# INPUT DATA:
+
+# TEST_1:
+print(group_ranges([0, 1, 2, 3, 5, 6, 7, 9]))
+
+# TEST_2:
+print(group_ranges([]))
+
+# TEST_3:
+print(group_ranges([2, 3, 5, 7, 11, 13, 17, 19]))
+
+# TEST_4:
+print(group_ranges([1, 5, 6, 7, 11]))
+
+# TEST_5:
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 55, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119]
+print(group_ranges(numbers))
+
+# TEST_6:
+print(group_ranges(list(range(100))))
+
+# TEST_7:
+print(group_ranges(list(range(100)) + list(range(200, 300)) + list(range(500, 900))))
+
+# TEST_8:
+print(group_ranges(list(range(1000))))
+

@@ -1,0 +1,37 @@
+# INPUT DATA:
+
+# TEST_1:
+phone = PhoneNumber('248,555.1234')
+
+print(phone)
+print(phone.area_code)
+print(phone.prefix)
+print(phone.line_number)
+
+# TEST_2:
+phone = PhoneNumber('2651174559')
+
+print(phone)
+print(repr(phone))
+
+# TEST_3:
+phone1 = PhoneNumber('615***392%%%1188')
+phone2 = PhoneNumber('777abc555xyz9012')
+
+print(phone1)
+print(phone2)
+
+# TEST_4:
+phone = PhoneNumber('001-205-0047')
+
+print(phone)
+print(phone.area_code)
+print(phone.prefix)
+print(phone.line_number)
+
+# TEST_5:
+phone = PhoneNumber('426...880___1934')
+
+print(phone)
+print(repr(phone))
+

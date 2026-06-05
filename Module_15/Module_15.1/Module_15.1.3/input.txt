@@ -1,0 +1,30 @@
+# INPUT DATA:
+
+# TEST_1:
+print(mul(2))
+print(mul(2)(5))
+print(mul(2)(5)(10))
+print(mul(2)(5)(10)(3))
+print(mul(2)(5)(10)(3)(8))
+
+# TEST_2:
+mul_two = mul(2)
+
+print(mul_two)
+print(mul_two * 5)
+print(mul_two(3))
+print(mul_two(3)(5))
+
+# TEST_3:
+print(mul(5) + mul(18))
+print(mul(3) - mul(8))
+print(mul(12) * mul(10))
+
+# TEST_4:
+mul_two = mul(2)
+
+print(mul_two + mul_two)
+print(mul_two * 10)
+print(mul_two // 2)
+print(mul_two / 2)
+

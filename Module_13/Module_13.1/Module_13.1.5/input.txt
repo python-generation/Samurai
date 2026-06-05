@@ -1,0 +1,86 @@
+# INPUT DATA:
+
+# TEST_1:
+# выполняется каждый третий вызов
+@lazy_call(3)
+def add(a, b):
+  return a + b
+
+
+# первый вызов, результат 3
+print(add(1, 2))
+
+# второй вызов, пропуск, результат None
+print(add(3, 4))
+
+# третий вызов, пропуск, результат None
+print(add(5, 7))
+
+# четвертый вызов, результат 30
+print(add(10, 20))
+
+# TEST_2:
+# выполняются все вызовы, кроме каждого третьего
+@lazy_call(-3)
+def sub(a, b):
+  return a - b
+
+
+# первый вызов, результат -1
+print(sub(1, 2))
+
+# второй вызов, результат 4
+print(sub(11, 7))
+
+# третий вызов, пропуск, результат None
+print(sub(5, 7))
+
+# четвертый вызов, результат 30
+print(sub(20, 10))
+
+# TEST_3:
+@lazy_call(1)
+def greet(name):
+    return f'Привет, {name}!'
+
+
+for _ in range(3):
+    print(greet('Тимур'))
+
+# TEST_4:
+@lazy_call(-1)
+def greet(name):
+    return f'Привет, {name}!'
+
+
+for _ in range(3):
+    print(greet('Тимур'))
+
+# TEST_5:
+@lazy_call(1)
+def greet(name):
+    """Функция приветствует пользователя"""
+    return f'Привет, {name}!'
+
+
+print(greet.__name__)
+print(greet.__doc__)
+
+# TEST_6:
+@lazy_call(5)
+def polynom(x):
+    return x ** 2 + 1
+
+
+for i in range(50):
+    print(polynom(i))
+
+# TEST_7:
+@lazy_call(-5)
+def polynom(x):
+    return x ** 2 + 1
+
+
+for i in range(50):
+    print(polynom(i))
+

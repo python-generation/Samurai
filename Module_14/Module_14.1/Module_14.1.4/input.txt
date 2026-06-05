@@ -1,0 +1,74 @@
+# INPUT DATA:
+
+# TEST_1:
+from time import sleep
+
+@time_cache(2)
+def add(a, b):
+    return a + b
+
+print(add(1, 2))
+
+sleep(1)
+
+print(add(1, 2))
+
+sleep(1)
+
+print(add(1, 2))
+
+# TEST_2:
+from time import sleep
+
+@time_cache(2)
+def add(a, b):
+    return a + b
+
+print(add(a=1, b=2))
+
+sleep(1)
+
+print(add(b=2, a=1))
+
+# TEST_3:
+@time_cache(0)
+def add(a, b):
+    return a + b
+
+
+print(add(1, 2))
+print(add(1, 2))
+
+# TEST_4:
+@time_cache(1)
+def fibonacci(n):
+    if n <= 2:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+print(fibonacci(8))
+
+# TEST_5:
+@time_cache(0)
+def fibonacci(n):
+    if n <= 2:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+print(fibonacci(8))
+
+# TEST_6:
+@time_cache(1)
+def fibonacci(n):
+    """Функция для вычисления чисел Фибоначчи"""
+    if n <= 2:
+        return 1
+    else:
+        return fibonacci(n - 1) + fibonacci(n - 2)
+
+
+print(fibonacci.__name__)
+print(fibonacci.__doc__)
+

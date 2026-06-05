@@ -1,0 +1,79 @@
+# INPUT DATA:
+
+# TEST_1:
+d = {'a': {'b': 5, 'z': 20},
+     'c': {'d': 3},
+     'x': 40}
+
+print(normalize(d))
+
+# TEST_2:
+d = {'a': {'b': {'c': {'d': {'e': 4}}}}}
+
+print(normalize(d))
+
+# TEST_3:
+d = {'first_name': 'Alyson', 'last_name': 'Hannigan', 'birthday': {'day': 24, 'month': 'March', 'year': 1974}}
+
+print(normalize(d))
+
+# TEST_4:
+d = {'firstname': 'Тимур', 'lastname': 'Гуев', 'birthdate': {'day': 10, 'month': 'October', 'year': 1993},
+     'address': {'streetaddress': 'Часовая 25, кв. 127',
+                 'city': {'region': 'Московская область', 'type': 'город', 'cityname': 'Москва'},
+                 'postalcode': '125315'}}
+
+print(normalize(d))
+
+# TEST_5:
+d = {'a': 11, 'b': {'c': 34, 'd': 2224, 'e': {'f': 5133, 'g': 609}}}
+print(normalize(d))
+
+# TEST_6:
+d = {'users': {'Arthur': {'grades': [4, 4, 3], 'top_grade': 4}, 'Timur': {'grades': [5, 5, 5], 'top_grade': 5}}}
+print(normalize(d))
+
+# TEST_7:
+d = {'Arthur': {'hobby': 'videogames', 'drink': 'cacao'}, 'Timur': {'hobby': 'math'}}
+print(normalize(d))
+
+# TEST_8:
+d = {
+    'Arthur': {'hobby': 'videogames', 'drink': 'cacao'},
+    'Timur': {'hobby': 'math'},
+    'Dima': {
+        'hobby': 'CS',
+        'sister':
+            {
+                'name': 'Anna',
+                'hobby': 'TV',
+                'age': 14
+            }
+    }
+}
+print(normalize(d))
+
+# TEST_9:
+d = {'ObjectName': 'Физкультурно-оздоровительный комплекс с бассейном «ГБУ «СШОР № 82» Москомспорта»',
+       'AdmArea': 'Северо-Восточный административный округ',
+       'District': 'Алтуфьевский район',
+       'Address': 'Инженерная улица, дом 5, корпус 1',
+       'WorkingHoursSummer': {'Понедельник': '10:00-11:00',
+                              'Вторник': '10:00-11:00',
+                              'Среда': '10:00-11:00',
+                              'Четверг': '10:00-11:00',
+                              'Пятница': '10:00-11:00',
+                              'Суббота': '10:00-11:00',
+                              'Воскресенье': '09:00-15:00'},
+       'DimensionsSummer': {'Square': 350, 'Length': 25, 'Width': 14, 'Depth': 1.8}}
+
+print(normalize(d))
+
+# TEST_10:
+d = {}
+print(normalize(d))
+
+# TEST_11:
+d = {'a': 1, 'b': 2, 'c': 3}
+print(normalize(d))
+

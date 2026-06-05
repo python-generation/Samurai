@@ -1,0 +1,35 @@
+# OUTPUT DATA:
+
+# TEST_1:
+{'a.b': 5, 'a.z': 20, 'c.d': 3, 'x': 40}
+
+# TEST_2:
+{'a.b.c.d.e': 4}
+
+# TEST_3:
+{'first_name': 'Alyson', 'last_name': 'Hannigan', 'birthday.day': 24, 'birthday.month': 'March', 'birthday.year': 1974}
+
+# TEST_4:
+{'firstname': 'Тимур', 'lastname': 'Гуев', 'birthdate.day': 10, 'birthdate.month': 'October', 'birthdate.year': 1993, 'address.streetaddress': 'Часовая 25, кв. 127', 'address.city.region': 'Московская область', 'address.city.type': 'город', 'address.city.cityname': 'Москва', 'address.postalcode': '125315'}
+
+# TEST_5:
+{'a': 11, 'b.c': 34, 'b.d': 2224, 'b.e.f': 5133, 'b.e.g': 609}
+
+# TEST_6:
+{'users.Arthur.grades': [4, 4, 3], 'users.Arthur.top_grade': 4, 'users.Timur.grades': [5, 5, 5], 'users.Timur.top_grade': 5}
+
+# TEST_7:
+{'Arthur.hobby': 'videogames', 'Arthur.drink': 'cacao', 'Timur.hobby': 'math'}
+
+# TEST_8:
+{'Arthur.hobby': 'videogames', 'Arthur.drink': 'cacao', 'Timur.hobby': 'math', 'Dima.hobby': 'CS', 'Dima.sister.name': 'Anna', 'Dima.sister.hobby': 'TV', 'Dima.sister.age': 14}
+
+# TEST_9:
+{'ObjectName': 'Физкультурно-оздоровительный комплекс с бассейном «ГБУ «СШОР № 82» Москомспорта»', 'AdmArea': 'Северо-Восточный административный округ', 'District': 'Алтуфьевский район', 'Address': 'Инженерная улица, дом 5, корпус 1', 'WorkingHoursSummer.Понедельник': '10:00-11:00', 'WorkingHoursSummer.Вторник': '10:00-11:00', 'WorkingHoursSummer.Среда': '10:00-11:00', 'WorkingHoursSummer.Четверг': '10:00-11:00', 'WorkingHoursSummer.Пятница': '10:00-11:00', 'WorkingHoursSummer.Суббота': '10:00-11:00', 'WorkingHoursSummer.Воскресенье': '09:00-15:00', 'DimensionsSummer.Square': 350, 'DimensionsSummer.Length': 25, 'DimensionsSummer.Width': 14, 'DimensionsSummer.Depth': 1.8}
+
+# TEST_10:
+{}
+
+# TEST_11:
+{'a': 1, 'b': 2, 'c': 3}
+

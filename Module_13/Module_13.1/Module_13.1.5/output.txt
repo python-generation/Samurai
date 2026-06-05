@@ -1,0 +1,132 @@
+# OUTPUT DATA:
+
+# TEST_1:
+3
+None
+None
+30
+
+# TEST_2:
+-1
+4
+None
+10
+
+# TEST_3:
+Привет, Тимур!
+Привет, Тимур!
+Привет, Тимур!
+
+# TEST_4:
+None
+None
+None
+
+# TEST_5:
+greet
+Функция приветствует пользователя
+
+# TEST_6:
+1
+None
+None
+None
+None
+26
+None
+None
+None
+None
+101
+None
+None
+None
+None
+226
+None
+None
+None
+None
+401
+None
+None
+None
+None
+626
+None
+None
+None
+None
+901
+None
+None
+None
+None
+1226
+None
+None
+None
+None
+1601
+None
+None
+None
+None
+2026
+None
+None
+None
+None
+
+# TEST_7:
+1
+2
+5
+10
+None
+26
+37
+50
+65
+None
+101
+122
+145
+170
+None
+226
+257
+290
+325
+None
+401
+442
+485
+530
+None
+626
+677
+730
+785
+None
+901
+962
+1025
+1090
+None
+1226
+1297
+1370
+1445
+None
+1601
+1682
+1765
+1850
+None
+2026
+2117
+2210
+2305
+None
+

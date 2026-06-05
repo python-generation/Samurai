@@ -1,0 +1,34 @@
+# OUTPUT DATA:
+
+# TEST_1:
+Timur
+33
+
+# TEST_2:
+Timur
+33
+
+# TEST_3:
+Calendar
+Motorama
+Post-punk
+2012
+
+Король и Шут
+КиШ
+Хоррор-панк
+1997
+
+# TEST_4:
+Kylian
+Mbappe
+180000000
+
+Kylian
+Mbappe
+180000000
+
+Kylian
+Mbappe
+180000000
+

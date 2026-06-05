@@ -1,0 +1,42 @@
+# INPUT DATA:
+
+# TEST_1:
+fruits = Matcher(['банан', 'яблоко', 'лимон', 'дыня', 'грейпфрут', 'папайя'])
+
+print(fruits.get_words('лимон'))
+print(fruits.get_words('????н'))
+print(fruits.get_words('?????'))
+print(fruits.get_words('?а?а??'))
+
+# TEST_2:
+fruits = Matcher(['банан', 'яблоко', 'лимон', 'дыня', 'грейпфрут', 'папайя'])
+print(len(fruits))
+
+for fruit in fruits:
+    print(fruit)
+
+# TEST_3:
+fruits = Matcher(['банан', 'яблоко', 'лимон', 'дыня', 'грейпфрут', 'папайя'])
+
+for fruit in fruits.get_words('?????'):
+    print(fruit)
+
+print()
+
+for fruit in fruits.get_words('??????'):
+    print(fruit)
+
+# TEST_4:
+fruits1 = Matcher(['банан', 'яблоко'])
+fruits2 = Matcher(['лимон', 'дыня', 'грейпфрут', 'папайя'])
+
+print(fruits1 + fruits2)
+print(fruits1[1])
+print(fruits2[-1])
+
+fruits1[:] = fruits2[1:3]
+print(fruits1)
+
+# TEST_5:
+
+

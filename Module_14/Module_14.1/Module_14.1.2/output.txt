@@ -1,0 +1,27 @@
+# OUTPUT DATA:
+
+# TEST_1:
+(True, False, 1)
+(False, False, 2)
+(False, True, 3)
+
+# TEST_2:
+(True, True, 1)
+
+# TEST_3:
+Генератор пуст
+
+# TEST_4:
+(True, False, 1)
+(False, False, 2)
+(False, False, 3)
+(False, False, 4)
+(False, False, 5)
+(False, True, 6)
+
+# TEST_5:
+(True, False, 'Hello') (False, True, 'World')
+
+# TEST_6:
+(True, False, 0) (False, False, 300) (False, False, 899) (False, False, 500) (False, True, 999)
+

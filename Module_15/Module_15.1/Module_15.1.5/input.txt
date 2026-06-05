@@ -1,0 +1,112 @@
+# INPUT DATA:
+
+# TEST_1:
+@overload
+def add(a: int, b: int):
+    return a + b
+
+
+@overload
+def add(a: str, b: str):
+    return a[0] + b[0]
+
+
+print(add(1, 2))
+print(add('bee', 'geek'))
+
+# TEST_2:
+@overload
+def polynom(x: int):
+    return x ** 2 + 2 * x - 3
+
+
+class Polynomial:
+    def __init__(self, x):
+        self.x = x
+
+    @overload
+    def polynom(self, value: int):
+        return self.x + value
+
+
+polynomial = Polynomial(5)
+print(polynom(10))
+print(polynomial.polynom(20))
+
+# TEST_3:
+@overload
+def add(a: int, b: int):
+    return a + b
+
+
+try:
+    add(1, 2.0)
+except TypeError as e:
+    print(e)
+
+# TEST_4:
+@overload
+def format(data):
+    raise TypeError('Аргумент переданного типа не поддерживается')
+
+
+@overload
+def format(data: int):
+    print(f'Целое число: {data}')
+
+
+@overload
+def format(data: float):
+    print(f'Вещественное число: {data}')
+
+
+@overload
+def format(data: tuple):
+    print(f'Элементы кортежа: {', '.join([str(obj) for obj in data])}')
+
+
+@overload
+def format(data: list):
+    print(f'Элементы списка: {', '.join([str(obj) for obj in data])}')
+
+
+@overload
+def format(data: dict):
+    print(f'Пары словаря: {', '.join([str(pair) for pair in data.items()])}')
+
+
+format(1337)
+format(20.77)
+format([10, 20, 30, 40, 50])
+format(([1, 3], [2, 4, 6]))
+format({1: 'one', 2: 'two'})
+
+# TEST_5:
+@overload
+def add(a: int, b: int):
+    return a + b
+
+
+@overload
+def add(a: str, b: str, c: str):
+    return a + b + c
+
+
+class Calculator:
+    def __init__(self, x):
+        self.x = x
+
+    @overload
+    def add(self, other: int):
+        return self.x + other
+
+
+print(add(1, 2))
+print(add('a', 'b', 'c'))
+print(Calculator(5).add(10))
+
+try:
+    add(10)
+except TypeError as e:
+    print(e)
+

@@ -1,0 +1,152 @@
+# INPUT DATA:
+
+# TEST_1:
+lru = LRUCache(2)
+
+lru.put(1, 1)
+lru.put(2, 2)
+
+print(lru.get(1))
+print(lru.get(2))
+
+# TEST_2:
+lru = LRUCache(2)
+
+lru.put(1, 1)
+lru.put(2, 2)
+lru.put(3, 3)        # 1 вытесняется
+
+print(lru.get(1))
+print(lru.get(2))
+print(lru.get(3))
+
+# TEST_3:
+lru = LRUCache(2)
+
+lru.put(1, 1)
+lru.put(2, 2)
+
+print(lru.get(1))    # 1 используется
+
+lru.put(3, 3)        # 2 вытесняется
+
+print(lru.get(1))
+print(lru.get(2))
+print(lru.get(3))
+
+# TEST_4:
+lru = LRUCache(2)
+
+lru.put(10, 100)
+lru.put(20, 200)
+
+lru.put(10, 999)
+lru.put(30, 300)
+
+print(lru.get(10))
+print(lru.get(20))
+print(lru.get(30))
+
+# TEST_5:
+lru = LRUCache(1)
+
+lru.put(100, 1)
+print(lru.get(100))
+
+lru.put(200, 2)
+
+print(lru.get(100))
+print(lru.get(200))
+
+# TEST_6:
+lru = LRUCache(3)
+
+lru.put(1, 10)
+lru.put(2, 20)
+lru.put(3, 30)
+
+lru.get(1)
+lru.get(2)
+
+lru.put(4, 40)
+
+print(lru.get(1))
+print(lru.get(2))
+print(lru.get(3))
+print(lru.get(4))
+
+# TEST_7:
+lru = LRUCache(5)
+
+lru.put(1, 1)
+lru.put(2, 2)
+lru.put(3, 3)
+lru.put(4, 4)
+lru.put(5, 5)
+
+for i in range(6, 11):
+    lru.put(i, i)
+
+print(lru.get(1))
+print(lru.get(2))
+print(lru.get(3))
+print(lru.get(4))
+print(lru.get(5))
+print(lru.get(6))
+print(lru.get(7))
+print(lru.get(8))
+print(lru.get(9))
+print(lru.get(10))
+print(lru.get(11))
+print(lru.get(12))
+
+# TEST_8:
+lru = LRUCache(1)
+
+lru.put(1, 1)
+print(lru.get(1))
+print(lru.get(1))
+print(lru.get(1))
+
+# TEST_9:
+lru = LRUCache(2)
+
+for i in range(100):
+    lru.put(1, i)
+    lru.put(2, i + 100)
+    lru.get(2)
+    lru.get(1)
+
+lru.put(3, 300)
+
+print(lru.get(1))
+print(lru.get(2))
+print(lru.get(3))
+
+# TEST_10:
+lru = LRUCache(2)
+
+lru.put(1, 10)
+lru.put(2, 20)
+
+lru.put(1, 11)
+lru.put(1, 12)
+lru.put(1, 13)
+
+lru.put(3, 30)
+
+print(lru.get(1))
+print(lru.get(2))
+print(lru.get(3))
+
+# TEST_11:
+lru = LRUCache(50)
+
+for i in range(10**6):
+    lru.get(i % 100)
+    lru.put(i % 120, i)
+
+print(lru.get(1))
+print(lru.get(2))
+print(lru.get(3))
+
