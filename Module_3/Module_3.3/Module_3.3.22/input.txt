@@ -1,6 +1,8 @@
 # INPUT DATA:
 
 # TEST_1:
+import json
+
 data = [
     {
         "name": "Holly-Anne",
@@ -24,6 +26,8 @@ with open('students.json', 'w', encoding='utf-8') as file:
 get_info('students.json')
 
 # TEST_2:
+import json
+
 data = [
     {   
         "name": "Dorelia", 
@@ -54,6 +58,8 @@ with open('students.json', 'w', encoding='utf-8') as file:
 get_info('students.json')
 
 # TEST_3:
+import json
+
 data = [
     {
         "name": "Dione", 
@@ -84,6 +90,8 @@ with open('students.json', 'w', encoding='utf-8') as file:
 get_info('students.json')
 
 # TEST_4:
+import json
+
 data = [
     {
         "name": "Ivy", 
