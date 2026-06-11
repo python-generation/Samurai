@@ -43,3 +43,7 @@ files = ['desktop/earth.jpg', 'desktop/python.pdf', 'desktop/shopping_list.txt',
 
 print(get_longest_name(files))
 
+# TEST_6:
+files = ['long_file_name.txt', 'long_directory_name/short.txt']
+print(get_longest_name(files))
+
