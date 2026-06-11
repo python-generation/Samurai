@@ -11,3 +11,14 @@ os.rmdir('desktop/studying/data_sets/fonts')
 
 print(deepest())
 
+# TEST_3:
+import os
+
+folders = ['desktop', 'folder1']
+
+for i in range(2, 10):
+    os.mkdir(os.sep.join(folders))
+    folders.append(f'folder{i}')
+
+print(deepest())
+

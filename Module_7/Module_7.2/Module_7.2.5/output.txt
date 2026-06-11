@@ -6,3 +6,6 @@
 # TEST_2:
 ['Alexandra Savior Crying All the Time.mp3', 'countries.json', 'data_sample.csv', 'Hollow Knight Silksong.exe', 'how to prove.pdf', 'readme.txt', 'task_results.xlsx']
 
+# TEST_3:
+[]
+
