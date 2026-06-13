@@ -16,6 +16,7 @@ try:
     user.login('secure123')
 except AlreadyLoggedInError as e:
     print(e)
+    print(type(e))
 
 with open('logs.log', encoding='utf-8') as file:
     print(file.read())
@@ -27,6 +28,7 @@ try:
     user.login('1234')
 except IncorrectPasswordError as e:
     print(e)
+    print(type(e))
 
 with open('logs.log', encoding='utf-8') as file:
     print(file.read())
@@ -39,6 +41,7 @@ try:
     user.login('1234')
 except AlreadyLoggedInError as e:
     print(e)
+    print(type(e))
 
 with open('logs.log', encoding='utf-8') as file:
     print(file.read())
@@ -50,6 +53,7 @@ try:
     user.login('raise_raise')
 except IncorrectPasswordError as e:
     print(e)
+    print(type(e))
 
 user.login('raise_raise_raise')
 
@@ -63,6 +67,7 @@ try:
     user.logout()
 except NotLoggedInError as e:
     print(e)
+    print(type(e))
     
 with open('logs.log', encoding='utf-8') as file:
     print(file.read())
@@ -75,6 +80,7 @@ try:
     user.login('secure123')
 except AlreadyLoggedInError as e:
     print(e)
+    print(type(e))
 
 user.logout()
 
@@ -90,6 +96,7 @@ try:
     user.login('secure123')
 except AlreadyLoggedInError as e:
     print(e)
+    print(type(e))
 
 user.logout()
 
@@ -97,11 +104,13 @@ try:
     user.logout()
 except NotLoggedInError as e:
     print(e)
+    print(type(e))
 
 try:
     user.login('secure321')
 except IncorrectPasswordError as e:
     print(e)
+    print(type(e))
 
 
 with open('logs.log', encoding='utf-8') as file:

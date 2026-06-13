@@ -13,6 +13,7 @@ try:
     user.login('secure123')
 except AlreadyLoggedInError as e:
     print(e)
+    print(type(e))
 
 # TEST_3:
 user = User('Rustam', 'zaycev_net')
@@ -21,6 +22,7 @@ try:
     user.login('1234')
 except IncorrectPasswordError as e:
     print(e)
+    print(type(e))
 
 # TEST_4:
 user = User('Rustam', 'zaycev_net')
@@ -30,6 +32,7 @@ try:
     user.login('1234')
 except AlreadyLoggedInError as e:
     print(e)
+    print(type(e))
 
 # TEST_5:
 user = User('Nastya', 'raise_raise_raise')
@@ -38,6 +41,7 @@ try:
     user.login('raise_raise')
 except IncorrectPasswordError as e:
     print(e)
+    print(type(e))
 
 user.login('raise_raise_raise')
 
@@ -48,6 +52,7 @@ try:
     user.logout()
 except NotLoggedInError as e:
     print(e)
+    print(type(e))
 
 # TEST_7:
 user = User('Timur', 'secure123')
@@ -57,6 +62,7 @@ try:
     user.login('secure123')
 except AlreadyLoggedInError as e:
     print(e)
+    print(type(e))
 
 user.logout()
 
@@ -69,4 +75,5 @@ try:
     user.logout()
 except NotLoggedInError as e:
     print(e)
+    print(type(e))
 

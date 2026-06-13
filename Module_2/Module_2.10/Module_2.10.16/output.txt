@@ -7,28 +7,35 @@
 # TEST_2:
 Пользователь 'Timur' успешно авторизован
 Пользователь 'Timur' уже авторизован
+<class '__main__.AlreadyLoggedInError'>
 
 # TEST_3:
 Неверный пароль
+<class '__main__.IncorrectPasswordError'>
 
 # TEST_4:
 Пользователь 'Rustam' успешно авторизован
 Пользователь 'Rustam' уже авторизован
+<class '__main__.AlreadyLoggedInError'>
 
 # TEST_5:
 Неверный пароль
+<class '__main__.IncorrectPasswordError'>
 Пользователь 'Nastya' успешно авторизован
 
 # TEST_6:
 Пользователь 'Valera' не авторизован
+<class '__main__.NotLoggedInError'>
 
 # TEST_7:
 Пользователь 'Timur' успешно авторизован
 Пользователь 'Timur' уже авторизован
+<class '__main__.AlreadyLoggedInError'>
 Пользователь 'Timur' вышел из системы
 
 # TEST_8:
 Пользователь 'Timur' успешно авторизован
+Пользователь 'Timur' уже авторизован
+<class '__main__.AlreadyLoggedInError'>
 Пользователь 'Timur' вышел из системы
-Пользователь 'Timur' не авторизован
 
