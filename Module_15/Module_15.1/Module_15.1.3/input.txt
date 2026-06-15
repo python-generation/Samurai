@@ -28,3 +28,16 @@ print(mul_two * 10)
 print(mul_two // 2)
 print(mul_two / 2)
 
+# TEST_5:
+mul_two = mul(2)
+mul_three = mul(3)
+
+print(mul_two + mul_three)
+print(mul_two * mul_three)
+print(mul_two - 5)
+print(mul_three / 5)
+print(6 // mul_three)
+print(5 - mul_two)
+print(6 / mul_two)
+print(10 + mul_two)
+
