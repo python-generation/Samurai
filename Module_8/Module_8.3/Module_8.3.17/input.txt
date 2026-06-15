@@ -75,3 +75,18 @@ print(is_valid('1f0aa6ff-346c6b-47-8eb4-8c688b819e0b'))
 print(is_valid('0199ec48-e729-7774-9a76e4f7f807d8c-4'))
 print(is_valid('4b022c85-438-28fde-9083-d33e5ac1e6d6'))
 
+# TEST_12:
+uuids = [
+    '0000000f-ffff-ffff-ffff-ffffffffffff',
+    'fffff0ff-ffff-ffff-ffff-ffffffffffff',
+    '00f00000-0000-0000-0000-000000000000',
+    'fffffff0-0000-0000-0000-000000000000',
+    'fffffff0-0000-ffff-0000-000000000000',
+    'ffffffff-ffff-ffff-f0ff-ffffffffffff',
+    'ffffffff-f00f-ffff-ffff-ffffffffffff',
+    '00f00000-0000-0ff0-0000-000000000000',
+]
+
+for uuid in uuids:
+    print(is_valid(uuid))
+
