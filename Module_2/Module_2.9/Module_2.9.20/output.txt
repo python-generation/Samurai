@@ -2,22 +2,39 @@
 
 # TEST_1:
 Книга 'Грокаем алгоритмы' уже выдана
+<class '__main__.BookNotAvailableError'>
 
 # TEST_2:
 Книга 'Мастер и Маргарита' не выдавалась
+<class '__main__.BookNotBorrowedError'>
 
 # TEST_3:
 Книга 'Война и мир' не принадлежит библиотеке
+<class '__main__.BookNotFoundError'>
 
 # TEST_4:
 Книга 'Грокаем алгоритмы' отсутствует в библиотеке
+<class '__main__.BookNotFoundError'>
 
 # TEST_5:
 Книга 'Грокаем алгоритмы' уже выдана
+<class '__main__.BookNotAvailableError'>
 Книга 'Мастер и Маргарита' не выдавалась
+<class '__main__.BookNotBorrowedError'>
 Книга 'Война и мир' не выдавалась
+<class '__main__.BookNotBorrowedError'>
 Книга 'Дон Кихот' отсутствует в библиотеке
+<class '__main__.BookNotFoundError'>
 
 # TEST_6:
 Книга 'Грокаем алгоритмы' уже выдана
+<class '__main__.BookNotAvailableError'>
+
+# TEST_7:
+Книга 'Грокаем алгоритмы' уже есть в библиотеке
+<class '__main__.BookAlreadyExists'>
+
+# TEST_8:
+Книга 'Грокаем алгоритмы' уже есть в библиотеке
+<class '__main__.BookAlreadyExists'>
 

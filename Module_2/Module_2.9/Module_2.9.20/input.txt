@@ -10,6 +10,7 @@ try:
     library.borrow_book("Грокаем алгоритмы")
 except BookNotAvailableError as e:
     print(e)
+    print(type(e))
 
 # TEST_2:
 library = Library()
@@ -19,6 +20,7 @@ try:
     library.return_book("Мастер и Маргарита")
 except BookNotBorrowedError as e:
     print(e)
+    print(type(e))
 
 # TEST_3:
 library = Library()
@@ -28,6 +30,7 @@ try:
     library.return_book("Война и мир")
 except (BookNotFoundError, BookNotBorrowedError) as e:
     print(e)
+    print(type(e))
 
 # TEST_4:
 library = Library()
@@ -38,6 +41,7 @@ try:
     library.borrow_book("Грокаем алгоритмы")
 except (BookNotFoundError, BookNotAvailableError) as e:
     print(e)
+    print(type(e))
 
 # TEST_5:
 library = Library()
@@ -52,21 +56,25 @@ try:
     library.borrow_book("Грокаем алгоритмы")
 except BookNotAvailableError as e:
     print(e)
+    print(type(e))
     
 try:
     library.return_book("Мастер и Маргарита")
 except BookNotBorrowedError as e:
     print(e)
+    print(type(e))
 
 try:
     library.return_book("Война и мир")
 except (BookNotFoundError, BookNotBorrowedError) as e:
     print(e)
+    print(type(e))
     
 try:
     library.borrow_book("Дон Кихот")
 except (BookNotFoundError, BookNotAvailableError) as e:
     print(e)
+    print(type(e))
     
 library.add_book("Одиссея")
 library.borrow_book("Одиссея")
@@ -74,6 +82,7 @@ try:
     library.return_book("Одиссея")
 except BookNotBorrowedError as e:
     print(e)
+    print(type(e))
 
 library.add_book("В поисках утраченного времени")
 
@@ -88,4 +97,26 @@ try:
     library.borrow_book("Грокаем алгоритмы")
 except BookNotAvailableError as e:
     print(e)
+    print(type(e))
+
+# TEST_7:
+library = Library()
+library.add_book('Грокаем алгоритмы')
+
+try:
+    library.add_book('Грокаем алгоритмы')
+except BookAlreadyExists as e:
+    print(e)
+    print(type(e))
+
+# TEST_8:
+library = Library()
+library.add_book('Грокаем алгоритмы')
+library.borrow_book('Грокаем алгоритмы')
+
+try:
+    library.add_book('Грокаем алгоритмы')
+except BookAlreadyExists as e:
+    print(e)
+    print(type(e))
 
