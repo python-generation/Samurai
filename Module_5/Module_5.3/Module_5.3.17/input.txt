@@ -32,11 +32,11 @@ logger.disabled = True
 print(numbers_sum([None, [1, 2], {'a': 1}, (3, 4)]))
 
 # TEST_10:
-print(numbers_sum([665.8, 26.12, 5.102, -1.142, -33.12, -713.4]))
+print(numbers_sum([665.5, 26.9, 5.2, -1.6, -33.5, -714.0]))
 
 # TEST_11:
 logger.disabled = True
-print(numbers_sum([665.8, 26.12, 5.102, -1.142, -33.12, -713.4]))
+print(numbers_sum([665.5, 26.9, 5.2, -1.6, -33.5, -714.0]))
 
 # TEST_12:
 print(numbers_sum([118, 'watermelon', 3.14, -5]))
