@@ -1,0 +1,57 @@
+# INPUT DATA:
+
+# TEST_1:
+text = 'The python generation students are very cool!'
+gen = get_words(text)
+next(gen)
+
+print(gen.send(3))
+print(gen.send(1))
+print(gen.send(3))
+
+# TEST_2:
+text = 'The python generation students are very cool!'
+gen = get_words(text)
+next(gen)
+
+print(gen.send(5))
+print(gen.send(3))
+
+try:
+    gen.send(1)
+except StopIteration:
+    print('Слова закончились')
+
+# TEST_3:
+text = 'Do not be sorry, be better'
+
+gen = get_words(text)
+
+next(gen)
+print(gen.send(6))
+
+# TEST_4:
+text = 'Do not be sorry, be better'
+
+gen = get_words(text)
+
+next(gen)
+print(gen.send(7))
+
+# TEST_5:
+text = 'The python generation students are very cool!'
+
+gen1 = get_words(text)
+gen2 = get_words(text)
+
+next(gen1)
+next(gen2)
+
+for n in (1, 2, 3, 4):
+    print('Генератор 1, список слов:', gen1.send(n))
+
+print()
+
+for n in (4, 2, 3):
+    print('Генератор 2, список слов:', gen2.send(n))
+

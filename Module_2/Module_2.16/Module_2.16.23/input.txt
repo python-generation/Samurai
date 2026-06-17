@@ -1,0 +1,45 @@
+# INPUT DATA:
+
+# TEST_1:
+@initialize
+def get_sum():
+    total = 0
+
+    while True:
+        num = yield total
+        total += num
+
+
+generator = get_sum()
+
+print(generator.send(10))
+print(generator.send(40))
+print(generator.send(19))
+
+# TEST_2:
+@initialize
+def print_value():
+    print('Начало выполнения генератора')
+    value = yield
+    print(value)
+    yield 'Полученное значение выведено успешно'
+
+
+generator = print_value()
+print(generator.send(5))
+
+# TEST_3:
+@initialize
+def squaring():
+    number = yield
+    
+    while number is not None:
+        number = yield number ** 2
+
+
+gen = squaring()
+print(gen.send(2))
+print(gen.send(3))
+print(gen.send(4))
+print(gen.send(5))
+

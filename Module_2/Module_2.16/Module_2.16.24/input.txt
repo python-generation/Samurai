@@ -1,0 +1,46 @@
+# INPUT DATA:
+
+# TEST_1:
+generator = concat_strings()
+next(generator)
+
+print(generator.send('bee'))
+print(generator.send('geek'))
+print(generator.send('pygen'))
+print(generator.throw(ResetAccumulation()))
+
+# TEST_2:
+generator = concat_strings()
+next(generator)
+
+print(generator.send('bee'))
+print(generator.send('geek'))
+print(generator.throw(ResetAccumulation()))
+
+print(generator.send('bee'))
+print(generator.send(3.14159))
+print(generator.send('geek'))
+print(generator.throw(ResetAccumulation()))
+
+# TEST_3:
+generator = concat_strings()
+next(generator)
+
+print(generator.send([1, 2, 3]))
+print(generator.send({1: 'one'}))
+print(generator.send(('bee',)))
+print(repr(generator.throw(ResetAccumulation())))
+
+# TEST_4:
+generator = concat_strings()
+print(next(generator))
+
+# TEST_5:
+generator = concat_strings()
+next(generator)
+
+for char in 'Python Generation':
+    print(generator.send(char))
+
+print(generator.throw(ResetAccumulation()))
+

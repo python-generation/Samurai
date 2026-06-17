@@ -1,0 +1,46 @@
+# OUTPUT DATA:
+
+# TEST_1:
+None
+None
+None
+bee, geek, pygen
+
+# TEST_2:
+None
+None
+bee, geek
+None
+None
+None
+bee, geek
+
+# TEST_3:
+None
+None
+None
+''
+
+# TEST_4:
+None
+
+# TEST_5:
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+None
+P, y, t, h, o, n,  , G, e, n, e, r, a, t, i, o, n
+

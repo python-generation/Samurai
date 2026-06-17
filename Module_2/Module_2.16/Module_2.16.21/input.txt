@@ -1,0 +1,63 @@
+# INPUT DATA:
+
+# TEST_1:
+gen = average()
+
+# 0.0
+print(next(gen))
+
+# 10 / 1 = 10.0
+print(gen.send(10))
+
+# (10 + 40) / 2 = 25.0
+print(gen.send(40))
+
+# (10 + 40 + 19) / 3 = 23.0
+print(gen.send(19))
+
+# TEST_2:
+gen = average()
+
+next(gen)
+gen.send(10)
+gen.send(40)
+gen.send(19)
+
+print(gen.send(None))
+
+# TEST_3:
+gen = average()
+
+print(next(gen))
+
+for n in range(20):
+    print(gen.send(n))
+
+# TEST_4:
+gen1 = average()
+gen2 = average()
+
+print(next(gen1))
+print(next(gen2))
+
+for n in (10, 20, 30):
+    print('Генератор 1, текущее среднее:', gen1.send(n))
+
+print()
+
+for n in (5, 15, 25, 35, 45):
+    print('Генератор 2, текущее среднее:', gen2.send(n))
+
+print()
+print(gen1.send(None))
+print(gen2.send(None))
+
+# TEST_5:
+gen = average()
+
+next(gen)
+print(gen.send(10))
+print(gen.send(-3))
+print(gen.send(11))
+print(gen.send(-15))
+

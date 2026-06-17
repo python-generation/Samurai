@@ -1,0 +1,20 @@
+# INPUT DATA:
+
+# TEST_1:
+from operator import eq
+
+# eq(1, 5) -> False
+# eq(2, 2) -> True
+# eq(3, 7) -> False
+
+print(*starfilter(eq, [1, 2, 3], [5, 2, 7]))
+
+# TEST_2:
+from operator import eq
+
+# eq(1, 5) -> False
+# больше проверок нет, 
+# так как список [1] самый короткий
+
+print(*starfilter(eq, [1], [5, 2, 7]))
+

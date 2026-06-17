@@ -1,0 +1,28 @@
+# OUTPUT DATA:
+
+# TEST_1:
+['The', 'python', 'generation']
+['students']
+['are', 'very', 'cool!']
+
+# TEST_2:
+['The', 'python', 'generation', 'students', 'are']
+['very', 'cool!']
+Слова закончились
+
+# TEST_3:
+['Do', 'not', 'be', 'sorry,', 'be', 'better']
+
+# TEST_4:
+['Do', 'not', 'be', 'sorry,', 'be', 'better']
+
+# TEST_5:
+Генератор 1, список слов: ['The']
+Генератор 1, список слов: ['python', 'generation']
+Генератор 1, список слов: ['students', 'are', 'very']
+Генератор 1, список слов: ['cool!']
+
+Генератор 2, список слов: ['The', 'python', 'generation', 'students']
+Генератор 2, список слов: ['are', 'very']
+Генератор 2, список слов: ['cool!']
+
