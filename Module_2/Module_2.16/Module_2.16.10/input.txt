@@ -18,3 +18,13 @@ from operator import eq
 
 print(*starfilter(eq, [1], [5, 2, 7]))
 
+# TEST_3:
+def predicate(a, b, c):
+    return a + b + c == 0
+
+iterable1 = (1, 5, 8, -9, 17)
+iterable2 = (i for i in range(-5, 0))
+iterable3 = [4, -1, -5, 11, -16]
+
+print(*starfilter(predicate, iterable1, iterable2, iterable3))
+

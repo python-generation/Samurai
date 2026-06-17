@@ -9,3 +9,9 @@ print(*drop([1, 2, 3, 4, 5], 0))
 # TEST_3:
 print(*drop([1, 2, 3, 4, 5], 5))
 
+# TEST_4:
+print(*drop((i for i in range(5)), 3))
+
+# TEST_5:
+print(*drop((i * i for i in range(8)), 10))
+
