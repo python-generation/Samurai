@@ -1,72 +1,77 @@
 # INPUT DATA:
 
 # TEST_1:
-order1 = Order(314159)
-order2 = Order(271828)
-
-order1.pay()
-
-print(order1.status)
-del order1
-
-print(order2.status)
-del order2
+cache = Cache()
+cache.set('user1', 'Тимур')
+cache.set('user2', 'Валера')
+del cache
 
 # TEST_2:
-order = Order(314159)
-order.cancel()
-print(order.status)
-del order
+cache = Cache()
+cache.set('user1', 'Тимур')
+cache.set('user2', 'Валера')
+
+print(cache.cache)
+print(cache.get('user1'))
+print(cache.get('user2'))
 
 # TEST_3:
-order = Order(314159)
-print(weakref.getweakrefcount(order))
+cache = Cache()
+del cache
 
 # TEST_4:
-order = Order(1005)
-order.cancel()
-print(order.status)
-order.pay()
-print(order.status)
-del order
+cache = Cache()
+print(weakref.getweakrefcount(cache))
 
 # TEST_5:
-order = Order(43621)
-order.pay()
+cache = Cache()
+print(isinstance(cache.cache, dict))
+print(len(cache.cache) == 0)
 
 # TEST_6:
-order = Order(777)
-order.pay()
-order.cancel()
-order.pay()
-print(order.status)
-del order
+cache = Cache()
+print(cache.get('missing') is None)
+print(cache.get('missing', 42) == 42)
 
 # TEST_7:
-order1 = Order(111)
-order2 = Order(222)
-order3 = Order(333)
-
-order1.pay()
-order2.cancel()
-
-del order2
-del order1
+cache = Cache()
+cache.set('key', 'first')
+cache.set('key', 'second')
+cache.set('key', 'third')
+print(cache.get('key') == 'third')
 
 # TEST_8:
-order = Order(123)
-order.pay()
-print(order.status)
-order.cancel()
-print(order.status)
+cache = Cache()
+cache.set('none_val', None)
+print(cache.get('none_val', 100) is None)
 
 # TEST_9:
-order = Order(99999)
-order.pay()
-del order
+cache1 = Cache()
+cache2 = Cache()
+cache3 = Cache()
 
-try:
-    print(order.status)
-except NameError:
-    print('Заказ удален')
+cache1.set('a', 1)
+cache1.set('b', 2)
+cache2.set('c', 3)
+
+del cache2
+del cache1
+
+# TEST_10:
+cache1 = Cache()
+cache2 = Cache()
+cache3 = Cache()
+
+cache1.set('a', 1)
+cache1.set('b', 2)
+cache2.set('b', 3)
+
+print(cache1.get('a') == 1)
+print(cache1.get('b') == 2)
+print(cache2.get('b') == 3)
+print(cache3.get('c') is None)
+
+del cache1
+del cache2
+del cache3
 
