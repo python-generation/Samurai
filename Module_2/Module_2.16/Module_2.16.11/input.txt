@@ -30,3 +30,41 @@ sizes = [1, 2, None, 5]
 
 print(*split_into(numbers, sizes))
 
+# TEST_6:
+numbers = []
+sizes = []
+
+print(*split_into(numbers, sizes))
+
+# TEST_7:
+numbers = []
+sizes = [1, 2, None]
+
+print(*split_into(numbers, sizes))
+
+# TEST_8:
+numbers = range(10)
+sizes = [None]
+
+print(*split_into(numbers, sizes))
+
+# TEST_9:
+numbers = 'beegeek'
+sizes = [3, 2, 10]
+
+print(*split_into(numbers, sizes))
+
+# TEST_10:
+numbers = (i ** 2 for i in range(10))
+sizes = [3, 1, None]
+
+print(*split_into(numbers, sizes))
+
+# TEST_11:
+from itertools import count
+
+numbers = count(1)
+sizes = [2, 3, 5, 7, 11]
+
+print(*split_into(numbers, sizes))
+

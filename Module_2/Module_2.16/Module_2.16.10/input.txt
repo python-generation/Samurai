@@ -28,3 +28,43 @@ iterable3 = [4, -1, -5, 11, -16]
 
 print(*starfilter(predicate, iterable1, iterable2, iterable3))
 
+# TEST_4:
+def predicate(*args):
+    return sum(args) > 0
+
+it1 = [9352, 931, -3140, 3366, 6396, 7543, 2291, 2116, 9369, 8568, 1891, 5854, 8507]
+it2 = (3846, 8397, 2674, -5685, -9621, 1921, 9150)
+it3 = [9426, 2540, -9111, 4702, -1919, 2096, 4715, 950, 1877]
+it4 = (3278, 5383, -9355, 7215, 1609, 1563, 8676, 806, 2404, 5711, 337)
+it5 = [3830, 8212, 4503, 120, -3961, -9871, 8367, 6055, 6055, 3567, 2978, 8283]
+it6 = (1522, 1176, 2036, 4995, -9823, -1831, 2452, 8417, 811, 7915, 2560, 2687)
+it7 = [275, 9142, -4827, 6151, -8909, -4829, 4942, 6845, 8309, 9194, 9043, 2428]
+it8 = (6707, 427, -3288, -4328, -9629, -4217, 4014, 3689, 3309, 9886)
+
+iterables = [it1, it2, it3, it4, it5, it6, it7, it8]
+
+print(*starfilter(predicate, *iterables))
+
+# TEST_5:
+it1 = ['cats', 'dogs', 'pygen', 'beegeek']
+it2 = ['meow', 'woof', 'python', 'school']
+
+print(*starfilter(lambda a, b: len(a) == len(b), it1, it2))
+
+# TEST_6:
+print(*starfilter(bool))
+
+# TEST_7:
+print(*starfilter(bool, (None, 0, 1, '', [1, 2, 3])))
+
+# TEST_8:
+def is_palindrome(s):
+    for i in range(len(s) // 2):
+        if s[i] != s[~i]:
+            return False
+
+    return True
+
+words = iter(['madam', 'pygen', 'abba', 'level', 'kayak', 'beegeek'])
+print(*starfilter(is_palindrome, words))
+
