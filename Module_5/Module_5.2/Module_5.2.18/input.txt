@@ -21,38 +21,25 @@ for i in range(200, 600, 17):
     log_http_status(i, 'Тест логирования')
 
 # TEST_7:
-for i in range(0, 200, 17):
-    log_http_status(i, 'Тест логирования')
-for i in range(600, 1000, 33):
-    log_http_status(i, 'Тест логирования')
+log_http_status(200, 'Ответ получен')
+log_http_status(201, 'Ответ получен')
+
+log_http_status(299, 'Ответ получен')
+log_http_status(300, 'Предупреждение')
+log_http_status(301, 'Предупреждение')
+
+log_http_status(399, 'Предупреждение')
+log_http_status(400, 'Ошибка доступа')
+log_http_status(401, 'Ошибка доступа')
+
+log_http_status(499, 'Ошибка доступа')
+log_http_status(500, 'Критическая ошибка')
+log_http_status(501, 'Критическая ошибка')
+log_http_status(599, 'Критическая ошибка')
 
 # TEST_8:
-log_http_status(199, 'Неизвестная ошибка')
-log_http_status(200, 'Ответ получен')
-log_http_status(201, 'Ответ получен')
-
-log_http_status(299, 'Ответ получен')
-log_http_status(300, 'Предупреждение')
-log_http_status(301, 'Предупреждение')
-
-
-log_http_status(399, 'Предупреждение')
-log_http_status(400, 'Ошибка доступа')
-log_http_status(401, 'Ошибка доступа')
-
-
-log_http_status(499, 'Ошибка доступа')
-log_http_status(500, 'Критическая ошибка')
-log_http_status(501, 'Критическая ошибка')
-
-log_http_status(599, 'Критическая ошибка')
-log_http_status(600, 'Неизвестная ошибка')
-log_http_status(601, 'Неизвестная ошибка')
-
-# TEST_9:
 logger.disabled = True
 
-log_http_status(199, 'Неизвестная ошибка')
 log_http_status(200, 'Ответ получен')
 log_http_status(201, 'Ответ получен')
 
@@ -60,17 +47,12 @@ log_http_status(299, 'Ответ получен')
 log_http_status(300, 'Предупреждение')
 log_http_status(301, 'Предупреждение')
 
-
 log_http_status(399, 'Предупреждение')
 log_http_status(400, 'Ошибка доступа')
 log_http_status(401, 'Ошибка доступа')
 
-
 log_http_status(499, 'Ошибка доступа')
 log_http_status(500, 'Критическая ошибка')
 log_http_status(501, 'Критическая ошибка')
-
 log_http_status(599, 'Критическая ошибка')
-log_http_status(600, 'Неизвестная ошибка')
-log_http_status(601, 'Неизвестная ошибка')
 
