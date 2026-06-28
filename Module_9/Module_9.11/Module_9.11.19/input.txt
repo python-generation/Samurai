@@ -26,7 +26,7 @@ print(cursor.fetchone()[0])
 
 # TEST_5:
 cursor = conn.cursor()
-cursor.execute("SELECT REGEXP('hello', 'h.*a')")
+cursor.execute("SELECT REGEXP('beegeek', 'bee')")
 
 print(cursor.fetchone()[0])
 
@@ -51,6 +51,12 @@ print(cursor.fetchone()[0])
 # TEST_9:
 cursor = conn.cursor()
 cursor.execute("SELECT REGEXP('Today is a sunny day', '.*sunny.*')")
+
+print(cursor.fetchone()[0])
+
+# TEST_10:
+cursor = conn.cursor()
+cursor.execute("SELECT REGEXP('hello', 'h.*a')")
 
 print(cursor.fetchone()[0])
 
