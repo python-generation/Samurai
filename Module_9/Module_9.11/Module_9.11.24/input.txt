@@ -71,3 +71,19 @@ cursor.execute('SELECT MODE(val) FROM t1')
 
 print(cursor.fetchone()[0])
 
+# TEST_10:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t1(val)')
+cursor.executemany('INSERT INTO t1(val) VALUES (?)', [(4,), (None,), (None,)])
+cursor.execute('SELECT MODE(val) FROM t1')
+
+print(cursor.fetchone()[0])
+
+# TEST_11:
+cursor = conn.cursor()
+cursor.execute('CREATE TABLE t1(val)')
+cursor.executemany('INSERT INTO t1(val) VALUES (?)', [(4,), (None,), (None,), (4,)])
+cursor.execute('SELECT MODE(val) FROM t1')
+
+print(cursor.fetchone()[0])
+
