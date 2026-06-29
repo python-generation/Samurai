@@ -51,7 +51,7 @@ next(generator)
 print(generator.send('bee'))
 print(generator.send('geek'))
 print(generator.throw(ResetAccumulation()))
-print(generator.throw(ResetAccumulation()))
+print(repr(generator.throw(ResetAccumulation())))
 
 # TEST_7:
 generator = concat_strings()
