@@ -44,3 +44,12 @@ None
 None
 P, y, t, h, o, n,  , G, e, n, e, r, a, t, i, o, n
 
+# TEST_6:
+None
+None
+bee, geek
+
+# TEST_7:
+bee, geek
+py, gen
+

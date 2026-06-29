@@ -44,3 +44,25 @@ for char in 'Python Generation':
 
 print(generator.throw(ResetAccumulation()))
 
+# TEST_6:
+generator = concat_strings()
+next(generator)
+
+print(generator.send('bee'))
+print(generator.send('geek'))
+print(generator.throw(ResetAccumulation()))
+print(generator.throw(ResetAccumulation()))
+
+# TEST_7:
+generator = concat_strings()
+next(generator)
+
+generator.send('bee')
+generator.send('geek')
+print(generator.throw(ResetAccumulation()))
+
+generator.send(1)
+generator.send('py')
+generator.send('gen')
+print(generator.throw(ResetAccumulation()))
+
