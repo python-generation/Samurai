@@ -1,77 +1,72 @@
 # INPUT DATA:
 
 # TEST_1:
-cache = Cache()
-cache.set('user1', 'Тимур')
-cache.set('user2', 'Валера')
-del cache
+order1 = Order(314159)
+order2 = Order(271828)
+
+order1.pay()
+
+print(order1.status)
+del order1
+
+print(order2.status)
+del order2
 
 # TEST_2:
-cache = Cache()
-cache.set('user1', 'Тимур')
-cache.set('user2', 'Валера')
-
-print(cache.cache)
-print(cache.get('user1'))
-print(cache.get('user2'))
+order = Order(314159)
+order.cancel()
+print(order.status)
+del order
 
 # TEST_3:
-cache = Cache()
-del cache
+order = Order(314159)
+print(weakref.getweakrefcount(order))
 
 # TEST_4:
-cache = Cache()
-print(weakref.getweakrefcount(cache))
+order = Order(1005)
+order.cancel()
+print(order.status)
+order.pay()
+print(order.status)
+del order
 
 # TEST_5:
-cache = Cache()
-print(isinstance(cache.cache, dict))
-print(len(cache.cache) == 0)
+order = Order(43621)
+order.pay()
 
 # TEST_6:
-cache = Cache()
-print(cache.get('missing') is None)
-print(cache.get('missing', 42) == 42)
+order = Order(777)
+order.pay()
+order.cancel()
+order.pay()
+print(order.status)
+del order
 
 # TEST_7:
-cache = Cache()
-cache.set('key', 'first')
-cache.set('key', 'second')
-cache.set('key', 'third')
-print(cache.get('key') == 'third')
+order1 = Order(111)
+order2 = Order(222)
+order3 = Order(333)
+
+order1.pay()
+order2.cancel()
+
+del order2
+del order1
 
 # TEST_8:
-cache = Cache()
-cache.set('none_val', None)
-print(cache.get('none_val', 100) is None)
+order = Order(123)
+order.pay()
+print(order.status)
+order.cancel()
+print(order.status)
 
 # TEST_9:
-cache1 = Cache()
-cache2 = Cache()
-cache3 = Cache()
+order = Order(99999)
+order.pay()
+del order
 
-cache1.set('a', 1)
-cache1.set('b', 2)
-cache2.set('c', 3)
-
-del cache2
-del cache1
-
-# TEST_10:
-cache1 = Cache()
-cache2 = Cache()
-cache3 = Cache()
-
-cache1.set('a', 1)
-cache1.set('b', 2)
-cache2.set('b', 3)
-
-print(cache1.get('a') == 1)
-print(cache1.get('b') == 2)
-print(cache2.get('b') == 3)
-print(cache3.get('c') is None)
-
-del cache1
-del cache2
-del cache3
+try:
+    print(order.status)
+except NameError:
+    print('Заказ удален')
 
