@@ -116,7 +116,7 @@ for test in suite:
 class TestValidConfig(ValidateTestCase):
     def test_order_does_not_matter(self):
         data = {'x': 1, 'y': 2, 'u': 3, 'z': 4, 'q': 5, 'w': 6, 'p': 7, 'g': 8}
-        self.assertValidateConfig(data, {})
+        self.assertValidateConfig(data, set())
 
 '''Код ниже используется для загрузки и выполнения наборов тестовых данных.
 Это будет подробно рассмотрено в следующем уроке.'''
