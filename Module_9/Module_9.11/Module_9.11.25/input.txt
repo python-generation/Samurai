@@ -74,8 +74,8 @@ print(cursor.fetchone()[0])
 # TEST_10:
 cursor = conn.cursor()
 cursor.execute('CREATE TABLE t10(val)')
-cursor.executemany('INSERT INTO t1(val) VALUES (?)', [(-4,), (3,), (5,), (0,), (0,), (-2,), (1,)])
-cursor.execute('SELECT MEDIAN(val) FROM t1')
+cursor.executemany('INSERT INTO t10(val) VALUES (?)', [(-4,), (3,), (5,), (0,), (0,), (-2,), (1,)])
+cursor.execute('SELECT MEDIAN(val) FROM t10')
 
 print(cursor.fetchone()[0])
 
