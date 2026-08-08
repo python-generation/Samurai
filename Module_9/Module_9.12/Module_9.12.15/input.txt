@@ -1,6 +1,8 @@
 # INPUT DATA:
 
 # TEST_1:
+import sqlite3
+
 conn = sqlite3.connect(':memory:')
 conn.row_factory = AttrsFactory
 cursor = conn.cursor()
@@ -32,6 +34,8 @@ cursor.close()
 conn.close()
 
 # TEST_2:
+import sqlite3
+
 conn = sqlite3.connect(':memory:')
 conn.row_factory = AttrsFactory
 cursor = conn.cursor()

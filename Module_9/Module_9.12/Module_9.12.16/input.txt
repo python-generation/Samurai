@@ -1,6 +1,8 @@
 # INPUT DATA:
 
 # TEST_1:
+import sqlite3
+
 conn = sqlite3.connect(':memory:')
 
 factory = FilteringFactory(skip_empty=True)
@@ -38,6 +40,8 @@ cursor.close()
 conn.close()
 
 # TEST_2:
+import sqlite3
+
 conn = sqlite3.connect(':memory:')
 
 factory = FilteringFactory()
@@ -75,6 +79,8 @@ cursor.close()
 conn.close()
 
 # TEST_3:
+import sqlite3
+
 conn = sqlite3.connect(':memory:')
 
 factory = FilteringFactory(skip_empty=True)
@@ -113,6 +119,8 @@ cursor.close()
 conn.close()
 
 # TEST_4:
+import sqlite3
+
 conn = sqlite3.connect(':memory:')
 
 factory = FilteringFactory()
