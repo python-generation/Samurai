@@ -18,3 +18,6 @@
 # TEST_6:
 ['01_earth.jpg', '02_Python.pdf', '03_shopping_list.txt', '04_Test.py', 'fun', 'games', 'images', 'studying']
 
+# TEST_7:
+(None, False)
+

@@ -30,3 +30,6 @@ path = 'desktop'
 sort_and_rename(path)
 print(sorted(os.listdir(path)))
 
+# TEST_7:
+print(sort_and_rename.__defaults__)
+
