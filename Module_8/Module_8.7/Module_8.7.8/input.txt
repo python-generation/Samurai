@@ -1,0 +1,21 @@
+# INPUT DATA:
+
+# TEST_1:
+print(is_builtin('itertools'))
+
+# TEST_2:
+print(is_builtin('django'))
+
+# TEST_3:
+print(is_builtin('os'))
+
+# TEST_4:
+print(is_builtin('numpy'))
+
+# TEST_5:
+print(is_builtin('more_itertools'))
+print(is_builtin('faker'))
+print(is_builtin('math'))
+print(is_builtin('pathlib'))
+print(is_builtin('sympy'))
+
