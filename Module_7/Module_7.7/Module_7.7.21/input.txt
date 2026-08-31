@@ -1,22 +1,32 @@
 # INPUT DATA:
 
 # TEST_1:
+from pathlib import Path
+
 path = Path('desktop/fun')
 print(get_files_with_import(path))
 
 # TEST_2:
+from pathlib import Path
+
 path = Path('desktop/games')
 print(get_files_with_import(path))
 
 # TEST_3:
+from pathlib import Path
+
 path = Path('desktop/studying/books')
 print(get_files_with_import(path))
 
 # TEST_4:
+from pathlib import Path
+
 path = Path('desktop/studying/data_sets')
 print(get_files_with_import(path))
 
 # TEST_5:
+from pathlib import Path
+
 path = Path('desktop')
 print(get_files_with_import(path))
 
