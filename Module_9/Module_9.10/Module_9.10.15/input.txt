@@ -1,6 +1,8 @@
 # INPUT DATA:
 
 # TEST_1:
+import sqlite3
+
 from prettytable import from_db_cursor
 
 data = [('Inside Out', 'Pete Docter', 2015, 95)]
@@ -12,6 +14,8 @@ cursor.execute('SELECT * FROM Films;')
 print(from_db_cursor(cursor))
 
 # TEST_2:
+import sqlite3
+
 from prettytable import from_db_cursor
 
 data = [
@@ -27,6 +31,8 @@ cursor.execute('SELECT * FROM Films ORDER BY id DESC LIMIT 3')
 print(from_db_cursor(cursor))
 
 # TEST_3:
+import sqlite3
+
 from prettytable import from_db_cursor
 
 data = []
@@ -38,6 +44,8 @@ cursor.execute('SELECT COUNT(*) FROM Films;')
 print(from_db_cursor(cursor))
 
 # TEST_4:
+import sqlite3
+
 from prettytable import from_db_cursor
 
 data = [
