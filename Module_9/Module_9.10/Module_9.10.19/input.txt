@@ -1,6 +1,8 @@
 # INPUT DATA:
 
 # TEST_1:
+import sqlite3
+
 from prettytable import from_db_cursor
 
 make_db()
@@ -15,6 +17,8 @@ cursor.close()
 conn.close()
 
 # TEST_2:
+import sqlite3
+
 from prettytable import from_db_cursor
 
 make_db()
@@ -29,7 +33,7 @@ cursor.close()
 conn.close()
 
 # TEST_3:
-from sqlite3 import OperationalError
+import sqlite3
 
 make_db()
 
@@ -38,7 +42,7 @@ cursor = conn.cursor()
 
 try:
     cursor.execute('SELECT * FROM RawData;')
-except OperationalError as e:
+except sqlite3.OperationalError as e:
     print(e)
 
 cursor.close()
