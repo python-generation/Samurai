@@ -184,3 +184,43 @@ print(Child.calls)
 # TEST_12:
 print(type(Profiler))
 
+# TEST_13:
+class Calculator(Profiler):
+    def add(self, a, b):
+        return a + b
+
+    def sub(self, a, b):
+        return a - b
+
+
+print(Calculator.calls)
+
+calculator = Calculator()
+
+add = calculator.add
+sub = calculator.sub
+
+add(1, 2)
+add(3, 4)
+sub(5, 6)
+
+print(Calculator.calls)
+
+# TEST_14:
+class Calculator(Profiler):
+    def add(self, a, b):
+        return a + b
+
+    def sub(self, a, b):
+        return a - b
+
+
+print(Calculator.calls)
+
+calculator = Calculator()
+calculator.add
+calculator.add
+calculator.sub
+
+print(Calculator.calls)
+
