@@ -61,3 +61,14 @@ print(gen.send(-3))
 print(gen.send(11))
 print(gen.send(-15))
 
+# TEST_6:
+gen = average()
+
+next(gen)
+gen.send(None)
+
+try:
+    gen.send(1)
+except StopIteration:
+    print('Генератор исчерпан')
+
